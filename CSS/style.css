@@ -39,7 +39,96 @@ header ul li a {
 }
 
 /* main-section */
-.main-section {
-    background-color: aquamarine;
+
+.slider {
+    position: relative;
+    overflow: hidden;
     height: 90vh;
+    width: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+    opacity: 1;
+}
+
+.slide .content {
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 35px;
+}
+.slide.current .content {
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+.slide .content h2 {
+    margin-bottom: 10px;
+}
+
+#next {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+}
+
+#prev {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
+
+.buttons button {
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.buttons button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Backgrounf images */
+.slide:first-child {
+    background: url("../img/demo1.jpg") no-repeat center center/cover;
+}
+.slide:nth-child(2) {
+    background: url("../img/demo2.jpg") no-repeat center center/cover;
+}
+.slide:nth-child(3) {
+    background: url("../img/demo3.jpg") no-repeat center center/cover;
+}
+.slide:nth-child(4) {
+    background: url("../img/demo4.jpg") no-repeat center center/cover;
+}
+.slide:nth-child(5) {
+    background: url("../img/demo5.jpg") no-repeat center center/cover;
+}
+
+@media (max-width: 500px) {
+    .slide .content {
+        bottom: -300px;
+        left: 0;
+        width: 100;
+    }
+    .slide.current .content {
+        transform: translateY(-300px);
+    }
 }
