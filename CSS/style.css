@@ -11,17 +11,27 @@ a:hover {
 
 /* HEADER */
 header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
     height: 10vh;
     width: 100%;
     display: flex;
+    padding: 0 35px;
     justify-content: space-between;
     align-items: center;
     color: white;
-    background-color: brown;
+    background-color: rgba(2, 40, 167, 0.3);
 }
 
-#logo h1 {
-    padding: 0 20px;
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo h1{
+    margin-left: 20px;
 }
 
 header ul {
@@ -40,10 +50,14 @@ header ul li a {
 
 /* main-section */
 
+.main-section {
+    position: relative;
+}
+
 .slider {
     position: relative;
     overflow: hidden;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
 }
 
