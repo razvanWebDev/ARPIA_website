@@ -135,11 +135,17 @@ header ul li a {
     background: url("../img/demo5.jpg") no-repeat center center/cover;
 }
 
+@media (max-width: 768px) {
+    .main-section ul {
+        display: none;
+    }
+}
+
 @media (max-width: 500px) {
     .slide .content {
         bottom: -300px;
         left: 0;
-        width: 100;
+        width: 100%;
     }
     .slide.current .content {
         transform: translateY(-300px);
