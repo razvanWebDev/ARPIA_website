@@ -78,7 +78,7 @@ header ul li a {
 .slide .content {
     position: absolute;
     bottom: 70px;
-    left: -600px;
+    left: 30px;
     opacity: 0;
     width: 600px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -87,7 +87,7 @@ header ul li a {
 }
 .slide.current .content {
     opacity: 1;
-    transform: translateX(600px);
+    transform: translateX(30px);
     transition: all 0.7s ease-in-out 0.3s;
 }
 .slide .content h2 {
