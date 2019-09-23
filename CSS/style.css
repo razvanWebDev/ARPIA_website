@@ -29,7 +29,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: #fdfdfd;
-    background-color: rgba(34, 42, 149, 0.85);
+    background-color: rgba(18, 20, 100, 0.7) ;
 }
 
 #logo {
@@ -67,6 +67,23 @@ header ul li a {
     margin: 4px;
     background-color: #fdfdfd;
     transition: all 0.5s ease;
+}
+.page-title {
+    margin-top: 12vh;
+    height: 28vh;
+    background: url("../img/page-title-background.jpg") no-repeat center
+        center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-title h2 {
+    font-size: 48px;
+    color: #fdfdfd;
+    animation: focus-in-expand-fwd 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+        both;
+    text-shadow: 2px 2px 2px #333333;
 }
 
 /* HOME PAGE */
@@ -157,20 +174,14 @@ header ul li a {
 
 /* GALERY PAGE */
 .galery-main-section {
-    margin-top: 10vh;
-    padding: 50px 5%;
     text-align: center;
-}
-
-.galery-main-section h2 {
-    font-size: 48px;
-    margin: 0px auto 50px;
 }
 
 .photo-galery {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px 10vw;
 }
 
 .photo-galery a {
@@ -252,11 +263,16 @@ header ul li a {
 }
 
 /* ANIMATIONS */
-@keyframes show-header {
+@keyframes focus-in-expand-fwd {
     0% {
-        transform: translateX(100%);
+        letter-spacing: -0.5em;
+        transform: translateZ(-800px);
+        filter: blur(12px);
+        opacity: 0;
     }
     100% {
-        transform: translateX(0%);
+        transform: translateZ(0);
+        filter: blur(0);
+        opacity: 1;
     }
 }
