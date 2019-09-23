@@ -7,6 +7,12 @@ const autoSlide = true; //Set to true for auto slide
 const intervalTime = 5000;
 let slideInterval;
 
+// Toggle navbar on mobile display
+const navToggle = () => {
+    nav.classList.toggle("show-nav");
+    hamburger.classList.toggle("toggle-burger");
+};
+
 // Home page slides
 const nextSlide = () => {
     const current = document.querySelector(".current");
@@ -30,12 +36,10 @@ const prevSlide = () => {
     setTimeout(() => current.classList.remove("current"));
 };
 
+// Events listeners
 const initEvents = () => {
-    // show nav on hambutger tap
-    hamburger.addEventListener("click", () => {
-        nav.classList.toggle("show-nav");
-        hamburger.classList.toggle("toggle-burger");
-    });
+    // show nav on hamburger tap
+    hamburger.addEventListener("click", navToggle);
 
     //home page slides
     if (window.location.pathname == "/") {
@@ -60,4 +64,5 @@ const initEvents = () => {
     }
 };
 
+// run
 initEvents();
