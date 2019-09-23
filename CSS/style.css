@@ -41,11 +41,12 @@ header {
 }
 
 header ul {
+    display: flex;
     list-style: none;
 }
 
 header ul li {
-    display: inline-block;
+    /* display: inline-block; */
     padding: 0 20px;
 }
 
@@ -192,7 +193,22 @@ header ul li a {
 /* RESPONSIVE */
 @media (max-width: 768px) {
     header ul {
-        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 10vh;
+        height: 90vh;
+        width: 200px ;
+        z-index: 1;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(34, 42, 149, 0.7);
+        transform: translateX(100%);
+        animation-name: show-header;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+
     }
 
     #hamburger {
@@ -204,6 +220,7 @@ header ul li a {
 }
 
 @media (max-width: 500px) {
+
     .slide .content {
         bottom: -300px;
         left: 0;
@@ -214,5 +231,15 @@ header ul li a {
     }
     .photo-galery {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ANIMATIONS */
+@keyframes show-header{
+    0% {
+        transform: translateX(100%)
+    }
+    100% {
+        transform: translateX(0%)
     }
 }
