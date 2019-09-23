@@ -42,7 +42,7 @@ const initEvents = () => {
     hamburger.addEventListener("click", navToggle);
 
     //home page slides
-    if (window.location.pathname == "/") {
+    if (window.location.pathname == "/index.html") {
         next.addEventListener("click", e => {
             nextSlide();
             if (autoSlide) {
