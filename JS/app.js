@@ -1,3 +1,5 @@
+const hamburger = document.querySelector("#hamburger");
+const nav = document.querySelector("header ul");
 const slides = document.querySelectorAll(".slide");
 const next = document.querySelector("#next");
 const prev = document.querySelector("#prev");
@@ -5,6 +7,7 @@ const autoSlide = true; //Set to true for auto slide
 const intervalTime = 5000;
 let slideInterval;
 
+// Home page slides
 const nextSlide = () => {
     const current = document.querySelector(".current");
     current.classList.remove("current");
@@ -28,6 +31,13 @@ const prevSlide = () => {
 };
 
 const initEvents = () => {
+    // show nav on hambutger tap
+    hamburger.addEventListener("click", () => {
+        nav.classList.toggle("show-nav");
+        hamburger.classList.toggle("toggle-burger");
+    });
+
+    //home page slides
     if (window.location.pathname == "/") {
         next.addEventListener("click", e => {
             nextSlide();

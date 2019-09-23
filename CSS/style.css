@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -28,7 +29,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: #fdfdfd;
-    background-color: rgba(34, 42, 149, 0.7);
+    background-color: rgba(34, 42, 149, 0.85);
 }
 
 #logo {
@@ -46,7 +47,6 @@ header ul {
 }
 
 header ul li {
-    /* display: inline-block; */
     padding: 0 20px;
 }
 
@@ -58,6 +58,7 @@ header ul li a {
 /* Hamburger */
 #hamburger {
     display: none;
+    transition: all 0.7s ease-in-out;
 }
 
 .burger-div {
@@ -192,35 +193,52 @@ header ul li a {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+    #hamburger {
+        display: block;
+    }
     header ul {
         position: absolute;
         top: 0;
         right: 0;
         margin-top: 10vh;
         height: 90vh;
-        width: 200px ;
+        min-width: 60%;
         z-index: 1;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        background-color: rgba(34, 42, 149, 0.7);
+        padding-bottom: 10vh;
+        background-color: rgba(34, 42, 149, 0.85);
         transform: translateX(100%);
-        animation-name: show-header;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-
+        transition: all 0.7s ease-in-out;
+    }
+    .show-nav {
+        transform: translateX(0%);
+    }
+    .toggle-burger .line1 {
+        transform: rotate(-135deg) translate(-5px, 6px);
+        position: relative;
+        top: 2px;
+        transition: all 0.5s ease;
     }
 
-    #hamburger {
-        display: block;
+    .toggle-burger .line2 {
+        opacity: 0;
     }
+
+    .toggle-burger .line3 {
+        transform: rotate(135deg) translate(-5px, -6px);
+        position: relative;
+        bottom: 1px;
+        transition: all 0.5s ease;
+    }
+
     .photo-galery {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 @media (max-width: 500px) {
-
     .slide .content {
         bottom: -300px;
         left: 0;
@@ -235,11 +253,11 @@ header ul li a {
 }
 
 /* ANIMATIONS */
-@keyframes show-header{
+@keyframes show-header {
     0% {
-        transform: translateX(100%)
+        transform: translateX(100%);
     }
     100% {
-        transform: translateX(0%)
+        transform: translateX(0%);
     }
 }
