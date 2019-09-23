@@ -61,11 +61,12 @@ header ul li a {
     transition: all 0.7s ease-in-out;
 }
 
-.burger-div {
+#hamburger div {
     width: 20px;
     height: 3px;
     margin: 4px;
     background-color: #fdfdfd;
+    transition: all 0.5s ease;
 }
 
 /* HOME PAGE */
@@ -219,7 +220,6 @@ header ul li a {
         transform: rotate(-135deg) translate(-5px, 6px);
         position: relative;
         top: 2px;
-        transition: all 0.5s ease;
     }
 
     .toggle-burger .line2 {
@@ -230,7 +230,6 @@ header ul li a {
         transform: rotate(135deg) translate(-5px, -6px);
         position: relative;
         bottom: 1px;
-        transition: all 0.5s ease;
     }
 
     .photo-galery {
