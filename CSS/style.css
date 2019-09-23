@@ -7,7 +7,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    color: #1A3532 ;
+    color: #1a3532;
     background-color: #fdfdfd;
 }
 
@@ -52,6 +52,18 @@ header ul li {
 header ul li a {
     color: #fdfdfd;
     text-decoration: none;
+}
+
+/* Hamburger */
+#hamburger {
+    display: none;
+}
+
+.burger-div {
+    width: 20px;
+    height: 3px;
+    margin: 4px;
+    background-color: #fdfdfd;
 }
 
 /* HOME PAGE */
@@ -179,8 +191,15 @@ header ul li a {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-    .home-main-section ul {
+    header ul {
         display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+    .photo-galery {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -192,5 +211,8 @@ header ul li a {
     }
     .slide.current .content {
         transform: translateY(-300px);
+    }
+    .photo-galery {
+        grid-template-columns: 1fr 1fr;
     }
 }
