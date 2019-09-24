@@ -178,29 +178,54 @@ header ul li a {
 }
 
 .photo-galery {
+    text-align: center;
+    justify-content: center;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 130px 130px 130px;
     padding: 50px 10vw;
+    min-height: calc(90vh - 175px);
 }
 
-.photo-galery a {
+.photo-gallery-item {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.photo-galery a:hover {
-    opacity: 0.9;
-}
-
-.photo-galery a img {
-    width: 100%;
-    border-radius: 5px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 3px;
     -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.photo-gallery-pic {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+}
+.photo-gallery-item:hover .photo-gallery-pic {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.demo1 {
+    background-image: url(../img/demo1.jpg);
+}
+.demo2 {
+    background-image: url(../img/demo2.jpg);
+}
+.demo3 {
+    background-image: url(../img/demo3.jpg);
+}
+.demo4 {
+    background-image: url(../img/demo4.jpg);
 }
 
 /* RESPONSIVE */
