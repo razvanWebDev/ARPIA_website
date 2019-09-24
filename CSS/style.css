@@ -55,6 +55,10 @@ header ul li a {
     text-decoration: none;
 }
 
+.current-page {
+    color: #2dcada;
+}
+
 /* Hamburger */
 #hamburger {
     display: none;
@@ -62,6 +66,7 @@ header ul li a {
 }
 
 #hamburger div {
+    pointer-events: none;
     width: 20px;
     height: 3px;
     margin: 4px;
@@ -182,23 +187,21 @@ header ul li a {
     justify-content: center;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 200px 200px 200px 200px 200px;
-    grid-template-rows: 130px 130px 130px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 50px 10vw;
-    min-height: calc(90vh - 175px);
 }
 
 .photo-gallery-item {
     width: 100%;
-    height: 100%;
+    height: 150px;
     overflow: hidden;
-    border-radius: 3px;
-    -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+    /* -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75); */
 }
 
 .photo-gallery-pic {
+    cursor: zoom-in;
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -284,7 +287,7 @@ header ul li a {
         transform: translateY(-300px);
     }
     .photo-galery {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-gap: 10px;
     }
 }
