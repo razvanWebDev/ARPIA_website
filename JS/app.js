@@ -1,3 +1,4 @@
+const header = document.querySelector("header");
 const hamburger = document.querySelector("#hamburger");
 const nav = document.querySelector("header ul");
 const slides = document.querySelectorAll(".slide");
@@ -14,6 +15,15 @@ const fotoGallery = document.querySelector(".photo-gallery");
 const navToggle = () => {
     nav.classList.toggle("show-nav");
     hamburger.classList.toggle("toggle-burger");
+};
+
+// Close navbar on mobile display
+const navClose = e => {
+    if (nav.classList.contains("show-nav")) {
+        if (e.target != hamburger && e.target != header) {
+            navToggle();
+        }
+    }
 };
 
 // Home page slides
@@ -61,7 +71,6 @@ const displayFotos = fotos => {
                     </a>
                 </div>`;
     });
-    console.log(galleryItems);
     fotoGallery.innerHTML = galleryItems.join("");
 };
 
@@ -69,6 +78,8 @@ const displayFotos = fotos => {
 const initEvents = () => {
     // show nav on hamburger tap
     hamburger.addEventListener("click", navToggle);
+    //hide nav on tap
+    window.addEventListener("click", navClose);
 
     //home page slides
     if (
