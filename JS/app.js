@@ -1,20 +1,24 @@
+// DOM ELEMENTS
 const header = document.querySelector("header");
 const hamburger = document.querySelector("#hamburger");
 const nav = document.querySelector(".header-links");
+// Home page
 const slides = document.querySelectorAll(".slide");
 const next = document.querySelector("#next");
 const prev = document.querySelector("#prev");
-
 const autoSlide = true; //Set to true for auto slide
 const intervalTime = 5000; //slides interval for autoslide
 let slideInterval;
-
+// Gallery page
 const fotoGallery = document.querySelector(".photo-gallery");
 const galleryModal = document.querySelector(".gallery-modal");
 const close = document.querySelector(".close");
 const galeryThumbnails = document.querySelector(".gallery-thumbnails");
 const curentPic = document.querySelector(".current-foto img");
 
+// RUNNING THE APP
+
+// HEADER
 // Toggle navbar on mobile display
 const navToggle = () => {
     nav.classList.toggle("show-nav");
@@ -30,6 +34,7 @@ const navClose = e => {
     }
 };
 
+// HOME PAGE
 // Home page slides
 const nextSlide = () => {
     const current = document.querySelector(".current");
@@ -68,7 +73,7 @@ const loadFotos = () => {
 
 const displayFotos = fotos => {
     //display foto gallery
-    const galleryItems = fotos.map(function(foto) {
+    const galleryItems = fotos.map(foto => {
         const imgPath = foto.imgPath;
         return `<div class="photo-gallery-item">
         <div class=" photo-gallery-pic" style="background-image: url(${imgPath})"></div>
@@ -77,45 +82,39 @@ const displayFotos = fotos => {
     fotoGallery.innerHTML = galleryItems.join("");
 
     //display gallery-modal thumbnails
-    const modalThumbnails = fotos.map(function(foto) {
+    const modalThumbnails = fotos.map(foto => {
         const imgPath = foto.imgPath;
         return `<img src="${imgPath}">`;
     });
     galeryThumbnails.innerHTML = modalThumbnails.join("");
     changeCurrentImg();
-    showGalleryModal();
+    displayGalleryModal();
 };
 
 // Gallery modal
-function showGalleryModal() {
+const displayGalleryModal = () => {
     const galleryPics = document.querySelectorAll(".photo-gallery-pic");
-    galleryPics.forEach(function(pic) {
-        pic.addEventListener("click", function() {
-            galleryModal.classList.add("show");
-        });
-    });
-}
+    galleryPics.forEach(pic => pic.addEventListener("click", showGalleryModal));
+};
 
+const showGalleryModal = () => galleryModal.classList.add("show");
 const hideGalleryModal = () => galleryModal.classList.remove("show");
 
-
-
-function changeCurrentImg() {
+const changeCurrentImg = () => {
     const thumbs = document.querySelectorAll(".gallery-thumbnails img");
     thumbs.forEach(thumb => {
-        thumb.addEventListener("click", function() {
-            curentPic.src = thumb.src;
-        });
+        thumb.addEventListener("click", () => (curentPic.src = thumb.src));
     });
-}
+};
 
-// Events listeners
+//  EVENTS LISTENERS
 const initEvents = () => {
     // show nav on hamburger tap
     hamburger.addEventListener("click", navToggle);
     //hide nav on tap
     window.addEventListener("click", navClose);
 
+    // HOME PAGE
     //home page slides
     if (
         window.location.pathname == "/" ||
