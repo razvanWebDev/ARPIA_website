@@ -59,6 +59,9 @@ header ul li a {
     color: #2dcada;
 }
 
+.dropdown {
+}
+
 /* Hamburger */
 #hamburger {
     display: none;
@@ -73,6 +76,8 @@ header ul li a {
     background-color: #fdfdfd;
     transition: all 0.5s ease;
 }
+
+/* Page title */
 .page-title {
     margin-top: calc(10vh + 30px);
     height: 175px;
@@ -215,7 +220,7 @@ header ul li a {
 }
 .photo-gallery-item:hover .photo-gallery-pic {
     transform: scale(1.1);
-    opacity: 0.9;
+    filter: sepia(100%);
 }
 
 /* RESPONSIVE */
