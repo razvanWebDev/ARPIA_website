@@ -57,6 +57,13 @@ const prevSlide = () => {
     current.classList.remove("current");
 };
 
+const autoSlider = () => {
+    if (autoSlide) {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, intervalTime);
+    }
+};
+
 // GALLERY PAGE
 const loadFotos = () => {
     const xhttp = new XMLHttpRequest();
@@ -87,13 +94,14 @@ const displayFotos = fotos => {
     });
     galeryThumbnails.innerHTML = modalThumbnails.join("");
     currentImg();
-    displayGalleryModal();
+    openGalleryModal();
 };
 
 // Gallery modal
-const displayGalleryModal = () => {
+// open gallery modal when gallery foto is clicked
+const openGalleryModal = () => {
     const galleryPics = document.querySelectorAll(".photo-gallery-pic");
-    galleryPics.forEach(function(pic) {
+    galleryPics.forEach(pic => {
         pic.addEventListener("click", () => {
             const imgPath = pic.getAttribute("data-path");
             curentPic.src = imgPath;
@@ -105,6 +113,7 @@ const displayGalleryModal = () => {
 const showGalleryModal = () => galleryModal.classList.add("show");
 const hideGalleryModal = () => galleryModal.classList.remove("show");
 
+// select current foto from modal thumbnails
 const currentImg = () => {
     const thumbs = document.querySelectorAll(".gallery-thumbnails img");
     thumbs.forEach(thumb => {
@@ -113,43 +122,34 @@ const currentImg = () => {
 };
 
 //  EVENTS LISTENERS
-const initEvents = () => {
-    // show nav on hamburger tap
-    hamburger.addEventListener("click", navToggle);
-    //hide nav on tap
-    window.addEventListener("click", navClose);
+// show nav on hamburger tap
+hamburger.addEventListener("click", navToggle);
+//hide nav on tap
+window.addEventListener("click", navClose);
 
-    // HOME PAGE
-    //home page slides
-    if (
-        window.location.pathname == "/" ||
-        window.location.pathname.slice(-10) == "index.html"
-    ) {
-        next.addEventListener("click", () => {
-            nextSlide();
-            if (autoSlide) {
-                clearInterval(slideInterval);
-                slideInterval = setInterval(nextSlide, intervalTime);
-            }
-        });
-        prev.addEventListener("click", () => {
-            prevSlide();
-            if (autoSlide) {
-                clearInterval(slideInterval);
-                slideInterval = setInterval(nextSlide, intervalTime);
-            }
-        });
-        // autoslide
-        if (autoSlide) {
-            slideInterval = setInterval(nextSlide, intervalTime);
-        }
+// HOME PAGE
+//home page slides
+if (
+    window.location.pathname == "/" ||
+    window.location.pathname.slice(-10) == "index.html"
+) {
+    next.addEventListener("click", () => {
+        nextSlide();
+        autoSlider();
+    });
+    prev.addEventListener("click", () => {
+        prevSlide();
+        autoSlider();
+    });
+    // autoslide
+    if (autoSlide) {
+        slideInterval = setInterval(nextSlide, intervalTime);
     }
+}
 
-    // GALLERY PAGE
-    // close gallery modal
+// GALLERY PAGE
+// close gallery modal
+if (window.location.pathname == "/gallery.html") {
+    loadFotos();
     close.addEventListener("click", hideGalleryModal);
-};
-
-// run
-initEvents();
-loadFotos();
+}

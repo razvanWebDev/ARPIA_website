@@ -12,8 +12,16 @@ body {
     background-color: #fdfdfd;
 }
 
+a {
+    text-decoration: none;
+}
+
 a:hover {
     opacity: 0.7;
+}
+
+ul {
+    list-style: none;
 }
 
 /* Header */
@@ -41,25 +49,44 @@ header {
     margin-left: 20px;
 }
 
-header ul {
+.header-links {
     display: flex;
-    list-style: none;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
 }
 
-header ul li {
-    padding: 0 20px;
-}
-
-header ul li a {
+.header-links a {
     color: #fdfdfd;
-    text-decoration: none;
 }
 
 .current-page {
-    color: #2dcada;
+    color: #2dcada !important;
 }
 
 .dropdown {
+    position: relative;
+  
+}
+
+
+.dropdown-list {
+   position: absolute;
+   background-color: rgba(18, 20, 100, 0.9);
+   padding: 10px 0;
+   visibility: hidden;
+}
+
+
+.dropdown-list li {
+ padding: 5px 20px;
+}
+
+
+.dropdown a:hover + .dropdown-list, 
+.dropdown-list:hover
+{
+    visibility: visible;
 }
 
 /* Hamburger */
@@ -141,26 +168,26 @@ header ul li a {
     margin-bottom: 10px;
 }
 
-#next,
-#prev {
+.next,
+.prev {
     position: absolute;
     top: 50%;
     opacity: 0.9;
     width: 45px;
     transition: opacity 0.1s ease-in-out;
+    cursor: pointer;
 }
 
-#next:hover,
-#prev:hover {
-    cursor: pointer;
+.next:hover,
+.prev:hover {
     opacity: 1;
 }
 
-#next {
+.next {
     right: 25px;
 }
 
-#prev {
+.prev {
     left: 25px;
     transform: rotate(180deg);
 }
