@@ -10,6 +10,8 @@ const intervalTime = 5000; //slides interval for autoslide
 let slideInterval;
 
 const fotoGallery = document.querySelector(".photo-gallery");
+
+const galleryModal = document.querySelector(".gallery-modal");
 const galeryThumbnails = document.querySelector(".gallery-thumbnails");
 const curentPic = document.querySelector(".current-foto img");
 
@@ -69,13 +71,11 @@ const displayFotos = fotos => {
     const galleryItems = fotos.map(function(foto) {
         const imgPath = foto.imgPath;
         return `<div class="photo-gallery-item">
-                    <a href="${imgPath}">
-                        <div class=" photo-gallery-pic" style="background-image: url(${imgPath})"></div>
-                    </a>
+        <div class=" photo-gallery-pic" style="background-image: url(${imgPath})"></div>
                 </div>`;
     });
     fotoGallery.innerHTML = galleryItems.join("");
-    
+
     //display gallery-modal thumbnails
     const modalThumbnails = fotos.map(function(foto) {
         const imgPath = foto.imgPath;
@@ -83,9 +83,19 @@ const displayFotos = fotos => {
     });
     galeryThumbnails.innerHTML = modalThumbnails.join("");
     changeCurrentImg();
+    showGalleryModal();
 };
 
 // Gallery modal
+function showGalleryModal() {
+    const galleryPics = document.querySelectorAll(".photo-gallery-pic");
+    galleryPics.forEach(function(pic) {
+        pic.addEventListener("click", function() {
+            galleryModal.classList.add("show");
+        });
+    });
+}
+
 function changeCurrentImg() {
     const thumbs = document.querySelectorAll(".gallery-thumbnails img");
     thumbs.forEach(thumb => {

@@ -223,7 +223,7 @@ header ul li a {
     filter: sepia(100%);
 }
 
-/* ============================= */
+/* Gallery modal */
 .gallery-modal {
     position: fixed;
     top: 0;
@@ -236,7 +236,11 @@ header ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   display: none;
+}
 
+.show {
+    display: block;
 }
 
 .current-foto {
@@ -255,12 +259,10 @@ header ul li a {
     height: 100px;
 }
 
-
 .gallery-thumbnails img{
     height: 100%;
 }
 
-/* ================================ */
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
