@@ -243,6 +243,14 @@ header ul li a {
     display: block;
 }
 
+.close {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: #fdfdfd;
+    cursor: pointer;
+}
+
 .current-foto {
     width: 90%;
     height: calc(90vh - 120px);

@@ -10,8 +10,8 @@ const intervalTime = 5000; //slides interval for autoslide
 let slideInterval;
 
 const fotoGallery = document.querySelector(".photo-gallery");
-
 const galleryModal = document.querySelector(".gallery-modal");
+const close = document.querySelector(".close");
 const galeryThumbnails = document.querySelector(".gallery-thumbnails");
 const curentPic = document.querySelector(".current-foto img");
 
@@ -96,6 +96,10 @@ function showGalleryModal() {
     });
 }
 
+const hideGalleryModal = () => galleryModal.classList.remove("show");
+
+
+
 function changeCurrentImg() {
     const thumbs = document.querySelectorAll(".gallery-thumbnails img");
     thumbs.forEach(thumb => {
@@ -136,6 +140,10 @@ const initEvents = () => {
             slideInterval = setInterval(nextSlide, intervalTime);
         }
     }
+
+    // GALLERY PAGE
+    // close gallery modal
+    close.addEventListener("click", hideGalleryModal);
 };
 
 // run
