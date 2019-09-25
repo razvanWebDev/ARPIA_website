@@ -10,6 +10,8 @@ const intervalTime = 5000; //slides interval for autoslide
 let slideInterval;
 
 const fotoGallery = document.querySelector(".photo-gallery");
+const galeryThumbnails = document.querySelector(".gallery-thumbnails");
+const curentPic = document.querySelector(".current-foto img");
 
 // Toggle navbar on mobile display
 const navToggle = () => {
@@ -63,6 +65,7 @@ const loadFotos = () => {
 };
 
 const displayFotos = fotos => {
+    //display foto gallery
     const galleryItems = fotos.map(function(foto) {
         const imgPath = foto.imgPath;
         return `<div class="photo-gallery-item">
@@ -72,7 +75,25 @@ const displayFotos = fotos => {
                 </div>`;
     });
     fotoGallery.innerHTML = galleryItems.join("");
+    
+    //display gallery-modal thumbnails
+    const modalThumbnails = fotos.map(function(foto) {
+        const imgPath = foto.imgPath;
+        return `<img src="${imgPath}">`;
+    });
+    galeryThumbnails.innerHTML = modalThumbnails.join("");
+    changeCurrentImg();
 };
+
+// Gallery modal
+function changeCurrentImg() {
+    const thumbs = document.querySelectorAll(".gallery-thumbnails img");
+    thumbs.forEach(thumb => {
+        thumb.addEventListener("click", function() {
+            curentPic.src = thumb.src;
+        });
+    });
+}
 
 // Events listeners
 const initEvents = () => {
