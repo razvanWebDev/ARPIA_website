@@ -8,6 +8,8 @@ const autoSlide = true; //Set to true for auto slide
 const intervalTime = 5000; //slides interval for autoslide
 let slideInterval;
 
+const fotoGallery = document.querySelector(".photo-gallery");
+
 // Toggle navbar on mobile display
 const navToggle = () => {
     nav.classList.toggle("show-nav");
@@ -35,6 +37,32 @@ const prevSlide = () => {
         slides[slides.length - 1].classList.add("current");
     }
     current.classList.remove("current");
+};
+
+// GALLERY PAGE
+const loadFotos = () => {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            const fotos = JSON.parse(xhttp.responseText);
+            displayFotos(fotos);
+        }
+    };
+    xhttp.open("GET", "gallery.json", true);
+    xhttp.send();
+};
+
+const displayFotos = fotos => {
+    const galleryItems = fotos.map(function(foto) {
+        const imgPath = foto.imgPath;
+        return `<div class="photo-gallery-item">
+                    <a href="${imgPath}">
+                        <div class=" photo-gallery-pic" style="background-image: url(${imgPath})"></div>
+                    </a>
+                </div>`;
+    });
+    console.log(galleryItems);
+    fotoGallery.innerHTML = galleryItems.join("");
 };
 
 // Events listeners
@@ -70,3 +98,4 @@ const initEvents = () => {
 
 // run
 initEvents();
+loadFotos();
