@@ -1,6 +1,6 @@
 const header = document.querySelector("header");
 const hamburger = document.querySelector("#hamburger");
-const nav = document.querySelector("header ul");
+const nav = document.querySelector(".header-links");
 const slides = document.querySelectorAll(".slide");
 const next = document.querySelector("#next");
 const prev = document.querySelector("#prev");

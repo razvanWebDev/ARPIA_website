@@ -218,27 +218,32 @@ header ul li a {
     opacity: 0.9;
 }
 
-
 /* RESPONSIVE */
 @media (max-width: 768px) {
     #hamburger {
         display: block;
     }
-    header ul {
+    .header-links {
+        width: 100%;
         position: absolute;
         top: 0;
         right: 0;
         margin-top: 10vh;
         height: 90vh;
-        min-width: 60%;
         z-index: 1;
+        display: flex;
+        justify-content: flex-end;
+        transform: translateX(100%);
+        transition: all 0.7s ease-in-out;
+    }
+    header ul {
+        width: 56%;
+        height: 100%;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         padding-bottom: 10vh;
         background-color: rgba(34, 42, 149, 0.9);
-        transform: translateX(100%);
-        transition: all 0.7s ease-in-out;
     }
     .show-nav {
         transform: translateX(0%);
@@ -281,6 +286,7 @@ header ul li a {
 }
 
 /* ANIMATIONS */
+/* Page titles */
 @keyframes focus-in-expand-fwd {
     0% {
         letter-spacing: -0.5em;
