@@ -17,7 +17,6 @@ const galeryThumbnails = document.querySelector(".gallery-thumbnails");
 const curentPic = document.querySelector(".current-foto img");
 
 // RUNNING THE APP
-
 // HEADER
 // Toggle navbar on mobile display
 const navToggle = () => {
@@ -76,7 +75,7 @@ const displayFotos = fotos => {
     const galleryItems = fotos.map(foto => {
         const imgPath = foto.imgPath;
         return `<div class="photo-gallery-item">
-        <div class=" photo-gallery-pic" style="background-image: url(${imgPath})"></div>
+        <div class=" photo-gallery-pic" style="background-image: url(${imgPath})" data-path="${imgPath}"></div>
                 </div>`;
     });
     fotoGallery.innerHTML = galleryItems.join("");
@@ -87,20 +86,26 @@ const displayFotos = fotos => {
         return `<img src="${imgPath}">`;
     });
     galeryThumbnails.innerHTML = modalThumbnails.join("");
-    changeCurrentImg();
+    currentImg();
     displayGalleryModal();
 };
 
 // Gallery modal
 const displayGalleryModal = () => {
     const galleryPics = document.querySelectorAll(".photo-gallery-pic");
-    galleryPics.forEach(pic => pic.addEventListener("click", showGalleryModal));
+    galleryPics.forEach(function(pic) {
+        pic.addEventListener("click", () => {
+            const imgPath = pic.getAttribute("data-path");
+            curentPic.src = imgPath;
+            showGalleryModal();
+        });
+    });
 };
 
 const showGalleryModal = () => galleryModal.classList.add("show");
 const hideGalleryModal = () => galleryModal.classList.remove("show");
 
-const changeCurrentImg = () => {
+const currentImg = () => {
     const thumbs = document.querySelectorAll(".gallery-thumbnails img");
     thumbs.forEach(thumb => {
         thumb.addEventListener("click", () => (curentPic.src = thumb.src));
