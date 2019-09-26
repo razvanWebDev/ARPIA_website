@@ -122,7 +122,11 @@ const hideGalleryModal = () => galleryModal.classList.remove("show");
 const currentImg = () => {
     const thumbs = document.querySelectorAll(".gallery-thumbnails img");
     thumbs.forEach(thumb => {
-        thumb.addEventListener("click", () => (curentPic.src = thumb.src));
+        thumb.addEventListener("click", () => {
+            thumbs.forEach(thumb => thumb.style.opacity = 1)
+            curentPic.src = thumb.src;
+            thumb.style.opacity = 0.7;
+        });
     });
 };
 

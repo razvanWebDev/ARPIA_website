@@ -283,6 +283,14 @@ header {
     height: calc(90vh - 50px);
 }
 
+.current-foto-link {
+ cursor: zoom-in;
+}
+
+.current-foto-link:hover {
+    opacity: 1;
+}
+
 .current-foto img {
     width: 100%;
     height: 100%;
@@ -295,6 +303,7 @@ header {
     width: 90%;
     overflow: hidden;
     border: 1px solid gray;
+    cursor: pointer;
 }
 
 .gallery-thumbnails {
