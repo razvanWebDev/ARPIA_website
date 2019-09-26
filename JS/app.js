@@ -5,15 +5,16 @@ const hamburger = document.querySelector("#hamburger");
 const nav = document.querySelector(".header-menu");
 const navItems = document.querySelector(".header-links");
 const navLinks = document.querySelector(".header-links a");
-// Home page
+// HOME PAGE
 const slides = document.querySelectorAll(".slide");
 const next = document.querySelector("#next");
 const prev = document.querySelector("#prev");
 const autoSlide = true; //Set to true for auto slide
 const intervalTime = 5000; //slides interval for autoslide
 let slideInterval;
-// Gallery page
+// GALLERY PAGE
 const fotoGallery = document.querySelector(".photo-gallery");
+// gallery modal
 const galleryModal = document.querySelector(".gallery-modal");
 const close = document.querySelector(".close");
 const curentPic = document.querySelector(".current-foto img");
@@ -22,6 +23,7 @@ const galeryThumbnails = document.querySelector(".gallery-thumbnails");
 const gallerySlider = document.querySelector(".gallery-slider");
 const slideLeft = document.querySelector(".slide-left");
 const slideRight = document.querySelector(".slide-right");
+let currentSlidePos = 0; // modal slider current position
 
 // RUNNING THE APP
 // HEADER
@@ -39,7 +41,6 @@ const navClose = e => {
             e.target != header &&
             e.target != navLinks &&
             e.target != navItems
-            
         ) {
             navToggle();
         }
@@ -111,6 +112,14 @@ const displayFotos = fotos => {
 };
 
 // Gallery modal
+const showGalleryModal = () => {
+    body.style.overflow = "hidden";
+    galleryModal.classList.add("show");
+};
+const hideGalleryModal = () => {
+    body.style.overflow = "auto";
+    galleryModal.classList.remove("show");
+};
 // open gallery modal when gallery foto is clicked
 const openGalleryModal = () => {
     const galleryPics = document.querySelectorAll(".photo-gallery-pic");
@@ -119,7 +128,7 @@ const openGalleryModal = () => {
     galleryPics.forEach(pic => {
         pic.addEventListener("click", () => {
             const imgPath = pic.getAttribute("data-path");
-            // highlight current modal thumbnail
+            // highlight and center current modal thumbnail
             getCurrentThumbnail(thumbs, imgPath);
             //set the selected foto as current img
             currentPicLink.setAttribute("href", imgPath);
@@ -132,26 +141,32 @@ const openGalleryModal = () => {
 
 // get current thumbnail on modal open
 const getCurrentThumbnail = (thumbs, imgPath) => {
-    let currentThumb = "";
     thumbs.forEach(thumb => {
         thumb.classList.remove("current-slide-thumbnail");
-        currentThumb = document.querySelector(
-            `.gallery-thumbnails img[src="${imgPath}"]`
-        );
-      
-        currentThumb.classList.add("current-slide-thumbnail");
     });
-    console.log(currentThumb.offsetLeft );
+    const currentThumb = document.querySelector(
+        `.gallery-thumbnails img[src="${imgPath}"]`
+    );
+    currentThumb.classList.add("current-slide-thumbnail");
+    const modalSliderPics = document.querySelectorAll(".modal-slider-pic");
+    const picCenter = modalSliderPics[0].offsetWidth / 2;
+    currentSlidePos =
+        -currentThumb.offsetLeft + galeryThumbnails.offsetWidth / 2 - picCenter;
+    getSliderMargins();
+    galeryThumbnails.style.transform = `translateX(${currentSlidePos}px)`;
 };
 
-const showGalleryModal = () => {
-    body.style.overflow = "hidden";
-    galleryModal.classList.add("show");
+const getSliderMargins = () => {
+    const modalSliderPics = document.querySelectorAll(".modal-slider-pic");
+    const picWidth = modalSliderPics[0].offsetWidth;
+    const modalSliderPicsWidth =
+        galeryThumbnails.offsetWidth - modalSliderPics.length * picWidth;
+
+    if (modalSliderPicsWidth >= currentSlidePos) {
+        currentSlidePos = modalSliderPicsWidth;
+    }
 };
-const hideGalleryModal = () => {
-    body.style.overflow = "auto";
-    galleryModal.classList.remove("show");
-};
+
 // select current foto from modal thumbnails
 const currentImg = () => {
     const thumbs = document.querySelectorAll(".gallery-thumbnails img");
@@ -166,8 +181,6 @@ const currentImg = () => {
     });
 };
 
-// modal slider current position
-let currentSlidePos = 0;
 // move modal thumbails to right
 const moveSlideRight = () => {
     const modalSliderPics = document.querySelectorAll(".modal-slider-pic");
