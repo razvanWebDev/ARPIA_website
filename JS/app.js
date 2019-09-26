@@ -14,6 +14,7 @@ const fotoGallery = document.querySelector(".photo-gallery");
 const galleryModal = document.querySelector(".gallery-modal");
 const close = document.querySelector(".close");
 const curentPic = document.querySelector(".current-foto img");
+const currentPicLink = document.querySelector(".current-foto-link");
 const galeryThumbnails = document.querySelector(".gallery-thumbnails");
 const gallerySlider = document.querySelector(".gallery-slider");
 const slideLeft = document.querySelector(".slide-left");
@@ -107,6 +108,7 @@ const openGalleryModal = () => {
     galleryPics.forEach(pic => {
         pic.addEventListener("click", () => {
             const imgPath = pic.getAttribute("data-path");
+            currentPicLink.setAttribute("href", imgPath);
             curentPic.src = imgPath;
             showGalleryModal();
         });

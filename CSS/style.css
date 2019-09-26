@@ -261,7 +261,7 @@ header {
     background-color: rgba(51, 51, 51, 0.9);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items:center;
     visibility: hidden;
 }
@@ -280,7 +280,7 @@ header {
 
 .current-foto {
     width: 90%;
-    height: calc(90vh - 120px);
+    height: calc(90vh - 50px);
 }
 
 .current-foto img {
@@ -292,8 +292,9 @@ header {
 .gallery-slider {
     position: relative;
     height: 100px;
-    width: 80%;
+    width: 90%;
     overflow: hidden;
+    border: 1px solid gray;
 }
 
 .gallery-thumbnails {
