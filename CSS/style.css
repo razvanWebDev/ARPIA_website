@@ -196,7 +196,7 @@ header {
 .prev {
     position: absolute;
     top: 50%;
-    opacity: 0.9;
+    opacity: 0.7;
     width: 45px;
     transition: opacity 0.1s ease-in-out;
     cursor: pointer;
