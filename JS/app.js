@@ -128,19 +128,19 @@ let currentSlidePos = 0;
 slideRight.addEventListener("click", () => {
     const modalSliderPic = document.querySelectorAll(".modal-slider-pic");
     const modalSliderPicWidth =
-        modalSliderPic.length * 130 - galeryThumbnails.offsetWidth;
-    console.log(-modalSliderPicWidth >= currentSlidePos);
-    if (-modalSliderPicWidth >= currentSlidePos) {
-        currentSlidePos = -modalSliderPicWidth + 130;
-    } else {
-        currentSlidePos -= 130;
-    }
+        galeryThumbnails.offsetWidth - modalSliderPic.length * 130;
 
-    // currentSlidePos = galeryThumbnails.offsetWidth ? galeryThumbnails.offsetWidth : currentSlidePos -=130;
+    currentSlidePos -= 130;
+    if (modalSliderPicWidth >= currentSlidePos) {
+        currentSlidePos = modalSliderPicWidth;
+    }
     galeryThumbnails.style.transform = `translateX(${currentSlidePos}px)`;
 });
 slideLeft.addEventListener("click", () => {
     currentSlidePos += 130;
+    if (currentSlidePos >= 0) {
+        currentSlidePos = 0;
+    }
     galeryThumbnails.style.transform = `translateX(${currentSlidePos}px)`;
 });
 
@@ -154,7 +154,7 @@ window.addEventListener("click", navClose);
 //home page slides
 if (
     window.location.pathname == "/" ||
-    window.location.pathname.slice(-10) == "index.html"
+    window.location.pathname.includes("index.html")
 ) {
     next.addEventListener("click", () => {
         nextSlide();
@@ -172,7 +172,7 @@ if (
 
 // GALLERY PAGE
 // close gallery modal
-if (window.location.pathname == "/gallery.html") {
+if (window.location.pathname.includes("gallery.html")) {
     loadFotos();
     close.addEventListener("click", hideGalleryModal);
 }
