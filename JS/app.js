@@ -107,22 +107,29 @@ const displayFotos = fotos => {
 const openGalleryModal = () => {
     const galleryPics = document.querySelectorAll(".photo-gallery-pic");
     const thumbs = document.querySelectorAll(".gallery-thumbnails img");
-
+    
     galleryPics.forEach(pic => {
         pic.addEventListener("click", () => {
             const imgPath = pic.getAttribute("data-path");
-
-            thumbs.forEach(thumb => {
-                thumb.classList.remove("current-slide-thumbnail");
-                const currentThumb = document.querySelector(
-                    `.gallery-thumbnails img[src="${imgPath}"]`
-                );
-                currentThumb.classList.add("current-slide-thumbnail");
-            });
+            // highlight current modal thumbnail 
+            getCurrentThumbnail(thumbs, imgPath);
+            //set the selected foto as current img
             currentPicLink.setAttribute("href", imgPath);
             curentPic.src = imgPath;
+            //open modal
             showGalleryModal();
         });
+    });
+};
+
+// get current thumbnail on modal open
+const getCurrentThumbnail = (thumbs, imgPath) => {
+    thumbs.forEach(thumb => {
+        thumb.classList.remove("current-slide-thumbnail");
+        const currentThumb = document.querySelector(
+            `.gallery-thumbnails img[src="${imgPath}"]`
+        );
+        currentThumb.classList.add("current-slide-thumbnail");
     });
 };
 
