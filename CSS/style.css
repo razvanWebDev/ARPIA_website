@@ -346,7 +346,7 @@ header {
     #hamburger {
         display: block;
     }
-    .header-links {
+    .header-menu {
         width: 100%;
         position: absolute;
         top: 0;
@@ -359,7 +359,7 @@ header {
         transform: translateX(100%);
         transition: all 0.7s ease-in-out;
     }
-    header ul {
+   .header-links {
         width: 56%;
         height: 100%;
         flex-direction: column;

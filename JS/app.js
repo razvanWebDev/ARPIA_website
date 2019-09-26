@@ -2,7 +2,9 @@
 const body = document.querySelector("body");
 const header = document.querySelector("header");
 const hamburger = document.querySelector("#hamburger");
-const nav = document.querySelector(".header-links");
+const nav = document.querySelector(".header-menu");
+const navItems = document.querySelector(".header-links");
+const navLinks = document.querySelector(".header-links a");
 // Home page
 const slides = document.querySelectorAll(".slide");
 const next = document.querySelector("#next");
@@ -31,8 +33,15 @@ const navToggle = () => {
 
 // Close navbar on mobile display
 const navClose = e => {
+    console.log(e.target)
     if (nav.classList.contains("show-nav")) {
-        if (e.target != hamburger && e.target != header) {
+        if (
+            e.target != hamburger &&
+            e.target != header &&
+            e.target != navLinks &&
+            e.target != navItems
+            
+        ) {
             navToggle();
         }
     }
@@ -107,11 +116,11 @@ const displayFotos = fotos => {
 const openGalleryModal = () => {
     const galleryPics = document.querySelectorAll(".photo-gallery-pic");
     const thumbs = document.querySelectorAll(".gallery-thumbnails img");
-    
+
     galleryPics.forEach(pic => {
         pic.addEventListener("click", () => {
             const imgPath = pic.getAttribute("data-path");
-            // highlight current modal thumbnail 
+            // highlight current modal thumbnail
             getCurrentThumbnail(thumbs, imgPath);
             //set the selected foto as current img
             currentPicLink.setAttribute("href", imgPath);
