@@ -123,26 +123,33 @@ const currentImg = () => {
         thumb.addEventListener("click", () => (curentPic.src = thumb.src));
     });
 };
-// move modal thumbails to right
-let currentSlidePos = 0;
-slideRight.addEventListener("click", () => {
-    const modalSliderPic = document.querySelectorAll(".modal-slider-pic");
-    const modalSliderPicWidth =
-        galeryThumbnails.offsetWidth - modalSliderPic.length * 130;
 
-    currentSlidePos -= 130;
-    if (modalSliderPicWidth >= currentSlidePos) {
-        currentSlidePos = modalSliderPicWidth;
+// modal slider current position
+let currentSlidePos = 0;
+// move modal thumbails to right
+const moveSlideRight = () => {
+    const modalSliderPics = document.querySelectorAll(".modal-slider-pic");
+    const picWidth = modalSliderPics[0].offsetWidth;
+    const modalSliderPicsWidth =
+        galeryThumbnails.offsetWidth - modalSliderPics.length * picWidth;
+
+    currentSlidePos -= picWidth;
+    if (modalSliderPicsWidth >= currentSlidePos) {
+        currentSlidePos = modalSliderPicsWidth;
     }
     galeryThumbnails.style.transform = `translateX(${currentSlidePos}px)`;
-});
-slideLeft.addEventListener("click", () => {
-    currentSlidePos += 130;
+};
+
+//move modal thumbnails to left
+const moveSlideLeft = () => {
+    const modalSliderPics = document.querySelector(".modal-slider-pic");
+    const picWidth = modalSliderPics.offsetWidth;
+    currentSlidePos += picWidth;
     if (currentSlidePos >= 0) {
         currentSlidePos = 0;
     }
     galeryThumbnails.style.transform = `translateX(${currentSlidePos}px)`;
-});
+};
 
 //  EVENTS LISTENERS
 // show nav on hamburger tap
@@ -175,4 +182,6 @@ if (
 if (window.location.pathname.includes("gallery.html")) {
     loadFotos();
     close.addEventListener("click", hideGalleryModal);
+    slideRight.addEventListener("click", moveSlideRight);
+    slideLeft.addEventListener("click", moveSlideLeft);
 }

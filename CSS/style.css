@@ -302,7 +302,7 @@ header {
     transition: transform 0.5s ease-in;
 }
 
-.gallery-thumbnails img{
+.modal-slider-pic{
     height: 100%;
     width: 130px;
 }
