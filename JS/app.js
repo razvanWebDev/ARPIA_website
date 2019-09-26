@@ -13,8 +13,11 @@ let slideInterval;
 const fotoGallery = document.querySelector(".photo-gallery");
 const galleryModal = document.querySelector(".gallery-modal");
 const close = document.querySelector(".close");
-const galeryThumbnails = document.querySelector(".gallery-thumbnails");
 const curentPic = document.querySelector(".current-foto img");
+const galeryThumbnails = document.querySelector(".gallery-thumbnails");
+const gallerySlider = document.querySelector(".gallery-slider");
+const slideLeft = document.querySelector(".slide-left");
+const slideRight = document.querySelector(".slide-right");
 
 // RUNNING THE APP
 // HEADER
@@ -90,7 +93,7 @@ const displayFotos = fotos => {
     //display gallery-modal thumbnails
     const modalThumbnails = fotos.map(foto => {
         const imgPath = foto.imgPath;
-        return `<img src="${imgPath}">`;
+        return `<img src="${imgPath}" class="modal-slider-pic">`;
     });
     galeryThumbnails.innerHTML = modalThumbnails.join("");
     currentImg();
@@ -120,6 +123,26 @@ const currentImg = () => {
         thumb.addEventListener("click", () => (curentPic.src = thumb.src));
     });
 };
+// move modal thumbails to right
+let currentSlidePos = 0;
+slideRight.addEventListener("click", () => {
+    const modalSliderPic = document.querySelectorAll(".modal-slider-pic");
+    const modalSliderPicWidth =
+        modalSliderPic.length * 130 - galeryThumbnails.offsetWidth;
+    console.log(-modalSliderPicWidth >= currentSlidePos);
+    if (-modalSliderPicWidth >= currentSlidePos) {
+        currentSlidePos = -modalSliderPicWidth + 130;
+    } else {
+        currentSlidePos -= 130;
+    }
+
+    // currentSlidePos = galeryThumbnails.offsetWidth ? galeryThumbnails.offsetWidth : currentSlidePos -=130;
+    galeryThumbnails.style.transform = `translateX(${currentSlidePos}px)`;
+});
+slideLeft.addEventListener("click", () => {
+    currentSlidePos += 130;
+    galeryThumbnails.style.transform = `translateX(${currentSlidePos}px)`;
+});
 
 //  EVENTS LISTENERS
 // show nav on hamburger tap

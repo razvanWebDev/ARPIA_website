@@ -289,15 +289,43 @@ header {
     object-fit: contain;
 }
 
+.gallery-slider {
+    position: relative;
+    height: 100px;
+    width: 80%;
+    overflow: hidden;
+}
+
 .gallery-thumbnails {
     display: flex;
-    height: 100px;
-    width: 90%;
-    overflow: hidden;
+    height: 100%;
+    transition: transform 0.5s ease-in;
 }
 
 .gallery-thumbnails img{
     height: 100%;
+    width: 130px;
+}
+
+.slide-left, .slide-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+   height: 100%;
+    padding: 15px;
+    color: #fdfdfd;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slide-left {
+    left:0;
+}
+
+.slide-right {
+    right: 0;
 }
 
 
