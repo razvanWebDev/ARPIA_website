@@ -341,6 +341,7 @@ header {
 .modal-slider-pic {
     height: 100%;
     width: 130px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
 .slide-left,
@@ -368,6 +369,7 @@ header {
 .current-slide-thumbnail {
     filter: grayscale(100%);
     transform: scale(1.2);
+    
 }
 
 /* RESPONSIVE */

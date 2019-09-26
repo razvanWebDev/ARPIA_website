@@ -85,6 +85,8 @@ const loadFotos = () => {
         if (this.readyState == 4 && this.status == 200) {
             const fotos = JSON.parse(xhttp.responseText);
             displayFotos(fotos);
+            currentImg();
+            openGalleryModal();
         }
     };
     xhttp.open("GET", "gallery.json", true);
@@ -107,8 +109,6 @@ const displayFotos = fotos => {
         return `<img src="${imgPath}" class="modal-slider-pic">`;
     });
     galeryThumbnails.innerHTML = modalThumbnails.join("");
-    currentImg();
-    openGalleryModal();
 };
 
 // Gallery modal
@@ -164,6 +164,9 @@ const getSliderMargins = () => {
 
     if (modalSliderPicsWidth >= currentSlidePos) {
         currentSlidePos = modalSliderPicsWidth;
+    }
+    if (currentSlidePos >= 0) {
+        currentSlidePos = 0;
     }
 };
 
