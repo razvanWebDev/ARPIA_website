@@ -129,9 +129,11 @@ const currentImg = () => {
     const thumbs = document.querySelectorAll(".gallery-thumbnails img");
     thumbs.forEach(thumb => {
         thumb.addEventListener("click", () => {
-            thumbs.forEach(thumb => (thumb.style.opacity = 1));
+            thumbs.forEach(thumb =>
+                thumb.classList.remove("current-slide-thumbnail")
+            );
             curentPic.src = thumb.src;
-            thumb.style.opacity = 0.7;
+            thumb.classList.add("current-slide-thumbnail");
         });
     });
 };
