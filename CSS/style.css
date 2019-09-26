@@ -355,7 +355,20 @@ header {
     padding: 15px;
     color: #fdfdfd;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.prev-modal, .next-modal {
+    width: 20px;
+    opacity: 0.6;
+}
+
+.prev-modal:hover, .next-modal:hover {
+    opacity: 1;
+}
+
+.prev-modal {
+    transform: rotate(180deg)
 }
 
 .slide-left {
