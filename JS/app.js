@@ -33,7 +33,6 @@ const navToggle = () => {
 
 // Close navbar on mobile display
 const navClose = e => {
-    console.log(e.target)
     if (nav.classList.contains("show-nav")) {
         if (
             e.target != hamburger &&
@@ -133,13 +132,16 @@ const openGalleryModal = () => {
 
 // get current thumbnail on modal open
 const getCurrentThumbnail = (thumbs, imgPath) => {
+    let currentThumb = "";
     thumbs.forEach(thumb => {
         thumb.classList.remove("current-slide-thumbnail");
-        const currentThumb = document.querySelector(
+        currentThumb = document.querySelector(
             `.gallery-thumbnails img[src="${imgPath}"]`
         );
+      
         currentThumb.classList.add("current-slide-thumbnail");
     });
+    console.log(currentThumb.offsetLeft );
 };
 
 const showGalleryModal = () => {
