@@ -258,7 +258,7 @@ header {
     z-index: 2;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(51, 51, 51, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -272,14 +272,16 @@ header {
 
 .close {
     position: absolute;
-    top: 5%;
-    right: 5%;
-    color: #fdfdfd;
+    top: 35px;
+    right: 35px;
+    color: silver;
     cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bolder;
 }
 
 .current-foto {
-    width: 90%;
+    max-width: 90%;
     height: calc(90vh - 50px);
 }
 
@@ -309,7 +311,7 @@ header {
 .gallery-thumbnails {
     display: flex;
     height: 100%;
-    transition: transform 0.5s ease-in;
+    transition: transform 0.4s ease-in-out;
 }
 
 .modal-slider-pic{

@@ -1,4 +1,5 @@
 // DOM ELEMENTS
+const body = document.querySelector("body");
 const header = document.querySelector("header");
 const hamburger = document.querySelector("#hamburger");
 const nav = document.querySelector(".header-links");
@@ -115,15 +116,20 @@ const openGalleryModal = () => {
     });
 };
 
-const showGalleryModal = () => galleryModal.classList.add("show");
-const hideGalleryModal = () => galleryModal.classList.remove("show");
-
+const showGalleryModal = () => {
+    body.style.overflow = "hidden";
+    galleryModal.classList.add("show");
+};
+const hideGalleryModal = () => {
+    body.style.overflow = "auto";
+    galleryModal.classList.remove("show");
+};
 // select current foto from modal thumbnails
 const currentImg = () => {
     const thumbs = document.querySelectorAll(".gallery-thumbnails img");
     thumbs.forEach(thumb => {
         thumb.addEventListener("click", () => {
-            thumbs.forEach(thumb => thumb.style.opacity = 1)
+            thumbs.forEach(thumb => (thumb.style.opacity = 1));
             curentPic.src = thumb.src;
             thumb.style.opacity = 0.7;
         });
