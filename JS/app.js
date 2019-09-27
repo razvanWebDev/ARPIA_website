@@ -180,6 +180,8 @@ window.onload = () => {
                     thumb.classList.remove("current-slide-thumbnail")
                 );
                 curentPic.src = thumb.src;
+                curentPic.classList.add("fade-in");
+                setTimeout(()=> curentPic.classList.remove('fade-in'), 500);
                 thumb.classList.add("current-slide-thumbnail");
             });
         });
@@ -192,7 +194,7 @@ window.onload = () => {
         const modalSliderPicsWidth =
             galeryThumbnails.offsetWidth - modalSliderPics.length * picWidth;
 
-        currentSlidePos -= picWidth*5;
+        currentSlidePos -= picWidth * 5;
         if (modalSliderPicsWidth >= currentSlidePos) {
             currentSlidePos = modalSliderPicsWidth;
         }
@@ -204,7 +206,7 @@ window.onload = () => {
         const modalSliderPics = document.querySelector(".modal-slider-pic");
         const picWidth = modalSliderPics.offsetWidth;
         // TODO move slider according to screen width
-        currentSlidePos += picWidth*5;
+        currentSlidePos += picWidth * 5;
         if (currentSlidePos >= 0) {
             currentSlidePos = 0;
         }
