@@ -327,9 +327,9 @@ header {
     position: relative;
     height: 100px;
     width: 90%;
-    overflow: auto;
-    border: 1px solid gray;
+    overflow: hidden;
     cursor: pointer;
+    box-shadow: 0 0 2px 1px silver;
 }
 
 .gallery-thumbnails {
@@ -441,6 +441,11 @@ header {
     }
     .gallery-slider {
         overflow-x: auto;
+    }
+
+    .slide-left,
+    .slide-right {
+        display: none;
     }
 }
 
