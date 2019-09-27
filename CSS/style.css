@@ -82,20 +82,20 @@ header {
 }
 
 .dropdown-list li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .dropdown-list li:first-child {
     border-radius: 5px 5px 0 0;
 }
 .dropdown-list li:last-child {
-    border-radius:0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
 }
 
 .dropdown-list li:hover {
-    background-color:rgba(18, 20, 100, 0.9);
+    background-color: rgba(18, 20, 100, 0.9);
 }
 
 .dropdown-list li a {
@@ -109,8 +109,8 @@ header {
 
 .dropdown a:hover + .dropdown-list,
 .dropdown-list:hover {
-   opacity: 1;
-   pointer-events: all;
+    opacity: 1;
+    pointer-events: all;
 }
 
 /* Hamburger */
@@ -327,7 +327,7 @@ header {
     position: relative;
     height: 100px;
     width: 90%;
-    overflow: hidden;
+    overflow: auto;
     border: 1px solid gray;
     cursor: pointer;
 }
@@ -358,19 +358,6 @@ header {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.prev-modal, .next-modal {
-    width: 20px;
-    opacity: 0.6;
-}
-
-.prev-modal:hover, .next-modal:hover {
-    opacity: 1;
-}
-
-.prev-modal {
-    transform: rotate(180deg)
-}
-
 .slide-left {
     left: 0;
 }
@@ -379,14 +366,31 @@ header {
     right: 0;
 }
 
+.prev-modal,
+.next-modal {
+    width: 20px;
+    opacity: 0.6;
+}
+
+.prev-modal {
+    transform: rotate(180deg);
+}
+
+.prev-modal:hover,
+.next-modal:hover {
+    opacity: 1;
+}
+
 .current-slide-thumbnail {
     filter: grayscale(100%);
     transform: scale(1.2);
-    
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+    header {
+        height: 10vh;
+    }
     #hamburger {
         display: block;
     }
@@ -404,7 +408,7 @@ header {
         transition: all 0.7s ease-in-out;
     }
     .header-links {
-        width: 56%;
+        width: 60%;
         height: 100%;
         flex-direction: column;
         justify-content: space-evenly;
@@ -430,10 +434,13 @@ header {
         position: relative;
         bottom: 1px;
     }
-
+    /* gallery page */
     .photo-gallery {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 15px;
+    }
+    .gallery-slider {
+        overflow-x: auto;
     }
 }
 

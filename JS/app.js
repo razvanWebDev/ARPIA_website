@@ -4,8 +4,7 @@ window.onload = () => {
     const header = document.querySelector("header");
     const hamburger = document.querySelector("#hamburger");
     const nav = document.querySelector(".header-menu");
-    const navItems = document.querySelector(".header-links");
-    const navLinks = document.querySelector(".header-links a");
+    const galleryLink = document.querySelector(".gallery-link");
     // HOME PAGE
     const slides = document.querySelectorAll(".slide");
     const next = document.querySelector("#next");
@@ -40,8 +39,7 @@ window.onload = () => {
             if (
                 e.target != hamburger &&
                 e.target != header &&
-                e.target != navLinks &&
-                e.target != navItems
+                e.target != galleryLink
             ) {
                 navToggle();
             }
@@ -194,7 +192,7 @@ window.onload = () => {
         const modalSliderPicsWidth =
             galeryThumbnails.offsetWidth - modalSliderPics.length * picWidth;
 
-        currentSlidePos -= picWidth;
+        currentSlidePos -= picWidth*5;
         if (modalSliderPicsWidth >= currentSlidePos) {
             currentSlidePos = modalSliderPicsWidth;
         }
@@ -205,7 +203,8 @@ window.onload = () => {
     const moveSlideLeft = () => {
         const modalSliderPics = document.querySelector(".modal-slider-pic");
         const picWidth = modalSliderPics.offsetWidth;
-        currentSlidePos += picWidth;
+        // TODO move slider according to screen width
+        currentSlidePos += picWidth*5;
         if (currentSlidePos >= 0) {
             currentSlidePos = 0;
         }
