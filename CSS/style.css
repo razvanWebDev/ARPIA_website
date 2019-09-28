@@ -363,7 +363,7 @@ header {
 
 .gallery-slider {
     display: flex;
-    height: 100px;
+    height: 100%;
     width: 100%;
     overflow: hidden;
     cursor: pointer;
@@ -372,7 +372,6 @@ header {
 
 .modal-slider-pic {
     height: 100%;
-    width: 130px;
     object-fit: cover;
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
@@ -430,30 +429,33 @@ header {
 
 .current-slide-thumbnail {
     filter: grayscale(100%);
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-    /* gallery page */
     .page-title h2 {
         font-size: 30px;
+    }
+
+    /* gallery page */
+    .photo-gallery {
+        grid-gap: 5px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 20px 5px;
     }
     .current-foto {
         max-width: 100%;
         height: 70vh;
     }
-
     .gallery-slider-container {
         width: 100%;
     }
     .gallery-slider {
         overflow-x: auto;
     }
-    .photo-gallery {
-        grid-gap: 5px;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-        padding: 50px 5vw;
+    .gallery-slider-container {
+        height: 10vh;
     }
 }
 
@@ -491,17 +493,58 @@ header {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
+    #logo h1 {
+        font-size: 20px;
+    }
+    /* Home page */
     .slide .content {
         bottom: -300px;
         left: 0;
         width: 100%;
     }
     .slide.current .content {
-        transform: translateY(-300px);
+        transform: translateY(calc(-5vh - 300px));
+    }
+
+    .next,
+    .prev {
+       
+        top: 40%;
+   
+        width: 25px;
+        opacity: 1;
+        
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    /* Gallery page */
+    .page-title {
+        margin-top: calc(10vh + 10px);
+        height: 10vh;
+    }
+    .page-title h2 {
+        font-size: 1.3rem;
     }
     .photo-gallery {
-        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    .photo-gallery-item {
+        height: 100px;
+    }
+    .gallery-slider-container {
+        height: 7vh;
+    }
+    .slide-left,
+    .slide-right {
+        display: none;
     }
 }
 
