@@ -95,8 +95,8 @@ window.onload = () => {
         const galleryItems = fotos.map(foto => {
             const imgPath = foto.imgPath;
             return `<div class="photo-gallery-item">
-        <div class=" photo-gallery-pic" style="background-image: url(${imgPath})" data-path="${imgPath}"></div>
-                </div>`;
+                        <div class=" photo-gallery-pic" style="background-image: url(${imgPath})" data-path="${imgPath}"></div>
+                    </div>`;
         });
         fotoGallery.innerHTML = galleryItems.join("");
 
@@ -145,9 +145,14 @@ window.onload = () => {
                 thumbs.forEach(thumb =>
                     thumb.classList.remove("current-slide-thumbnail")
                 );
+                // set modal current foto
                 curentPic.src = thumb.src;
+                currentPicLink.setAttribute("href", thumb.src);
+                // modal current foto fade in
                 curentPic.classList.add("fade-in");
+                // remove fade in class after animation ends
                 setTimeout(() => curentPic.classList.remove("fade-in"), 500);
+                // current modal thumbnail
                 thumb.classList.add("current-slide-thumbnail");
             });
         });
@@ -209,8 +214,8 @@ window.onload = () => {
     }
 
     // GALLERY PAGE
-    // close gallery modal
     if (window.location.pathname.includes("gallery.html")) {
+        // close gallery modal
         loadFotos();
         close.addEventListener("click", hideGalleryModal);
         slideRight.addEventListener("click", moveSlideRight);
