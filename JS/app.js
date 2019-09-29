@@ -83,7 +83,7 @@ window.onload = () => {
                 const fotos = JSON.parse(xhttp.responseText);
                 displayFotos(fotos);
                 currentImg();
-                openGalleryModal();
+                getModalContent();
             }
         };
         xhttp.open("GET", "JSON/gallery.json", true);
@@ -94,9 +94,11 @@ window.onload = () => {
         //display foto gallery
         const galleryItems = fotos.map(foto => {
             const imgPath = foto.imgPath;
-            return `<div class="photo-gallery-item">
+            return `<a href="#"
+                        <div class="photo-gallery-item">
                         <div class=" photo-gallery-pic" style="background-image: url(${imgPath})" data-path="${imgPath}"></div>
-                    </div>`;
+                    </div>
+                    </a>`;
         });
         fotoGallery.innerHTML = galleryItems.join("");
 
@@ -117,9 +119,16 @@ window.onload = () => {
         body.style.overflow = "auto";
         galleryModal.classList.remove("show");
     };
+    // ==TODO close modal on "back"=============================================================
+
+    // window.onhashchange = function() {
+    //     hideGalleryModal();
+    // };
+
+    // ==============================================================
 
     // open gallery modal when gallery foto is clicked
-    const openGalleryModal = () => {
+    const getModalContent = () => {
         const galleryPics = document.querySelectorAll(".photo-gallery-pic");
         const thumbs = document.querySelectorAll(".gallery-slider img");
 
