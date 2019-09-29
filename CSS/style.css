@@ -178,6 +178,11 @@ header {
 /* main-section */
 .home-main-section {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .slider {
@@ -455,7 +460,7 @@ header {
         overflow-x: auto;
     }
     .gallery-slider-container {
-        height: 10vh;
+        height: 70px;
     }
 }
 
@@ -509,12 +514,9 @@ header {
 
     .next,
     .prev {
-       
         top: 40%;
-   
         width: 25px;
         opacity: 1;
-        
     }
 
     .next {
@@ -539,9 +541,7 @@ header {
     .photo-gallery-item {
         height: 100px;
     }
-    .gallery-slider-container {
-        height: 7vh;
-    }
+  
     .slide-left,
     .slide-right {
         display: none;
