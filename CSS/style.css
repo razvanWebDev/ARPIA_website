@@ -136,7 +136,7 @@ header {
     height: 3px;
     margin: 4px;
     background-color: #fdfdfd;
-    transition: all .9s ease;
+    transition: all 0.9s ease;
 }
 
 .toggle-burger .line1 {
@@ -282,9 +282,9 @@ header {
 .photo-gallery-item {
     height: 150px;
     overflow: hidden;
-    /* -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75); */
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
 }
 
 .photo-gallery-pic {
@@ -312,7 +312,7 @@ header {
     z-index: 2;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -328,16 +328,22 @@ header {
     position: absolute;
     top: 35px;
     right: 35px;
-    color: silver;
+    color: #fdfdfd;
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bolder;
     padding: 10px;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.close:hover {
+    opacity: 0.7;
 }
 
 .current-foto {
     max-width: 90%;
     height: calc(90vh - 50px);
+    margin-bottom: 5px;
 }
 
 .fade-in {
@@ -362,7 +368,7 @@ header {
 .gallery-slider-container {
     display: flex;
     position: relative;
-    height: 100px;
+    height: 75px;
     width: 90%;
 }
 
@@ -373,12 +379,18 @@ header {
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 0 2px 1px silver;
+    background-color: #000000;
 }
 
 .modal-slider-pic {
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    opacity: 0.4;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal-slider-pic:hover {
+    opacity: 1;
 }
 
 .modal-slider-pic::selection {
@@ -433,8 +445,7 @@ header {
 }
 
 .current-slide-thumbnail {
-    filter: grayscale(100%);
-    transform: scale(1.1);
+    opacity: 1;
 }
 
 /* RESPONSIVE */
@@ -447,7 +458,7 @@ header {
     .photo-gallery {
         grid-gap: 5px;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        padding: 20px 5px;
+        padding: 10px 5px;
     }
     .current-foto {
         max-width: 100%;
@@ -541,7 +552,7 @@ header {
     .photo-gallery-item {
         height: 100px;
     }
-  
+
     .slide-left,
     .slide-right {
         display: none;

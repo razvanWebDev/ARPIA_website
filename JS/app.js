@@ -1,5 +1,6 @@
 window.onload = () => {
-    // DOM ELEMENTS
+    // DOM ELEMENTS========================================================
+    // GLOBAL
     const body = document.querySelector("body");
     const header = document.querySelector("header");
     const hamburger = document.querySelector("#hamburger");
@@ -23,7 +24,7 @@ window.onload = () => {
     const slideLeft = document.querySelector(".slide-left");
     const slideRight = document.querySelector(".slide-right");
 
-    // RUNNING THE APP
+    // RUNNING THE APP===========================================================
     // HEADER
     // Toggle navbar on mobile display
     const navToggle = () => {
@@ -82,8 +83,6 @@ window.onload = () => {
             if (this.readyState == 4 && this.status == 200) {
                 const fotos = JSON.parse(xhttp.responseText);
                 displayFotos(fotos);
-                currentImg();
-                getModalContent();
             }
         };
         xhttp.open("GET", "JSON/gallery.json", true);
@@ -108,6 +107,9 @@ window.onload = () => {
             return `<img src="${imgPath}" class="modal-slider-pic">`;
         });
         gallerySlider.innerHTML = modalThumbnails.join("");
+        //get current img for the modal
+        currentImg();
+        currentGelleryImg();
     };
 
     // Gallery modal
@@ -121,14 +123,20 @@ window.onload = () => {
     };
     // ==TODO close modal on "back"=============================================================
 
-    // window.onhashchange = function() {
-    //     hideGalleryModal();
+    // const onHashChange = () => {
+    //     window.onhashchange = function() {
+    //         if (galleryModal.classList.contains("show")) {
+    //             console.log(galleryModal.classList.contains("show"));
+    //             galleryModal.classList.remove("show");
+    //             hideGalleryModal();
+    //         }
+    //     };
     // };
 
     // ==============================================================
 
     // open gallery modal when gallery foto is clicked
-    const getModalContent = () => {
+    const currentGelleryImg = () => {
         const galleryPics = document.querySelectorAll(".photo-gallery-pic");
         const thumbs = document.querySelectorAll(".gallery-slider img");
 
@@ -196,7 +204,7 @@ window.onload = () => {
         });
     };
 
-    //  EVENTS LISTENERS
+    //  EVENTS LISTENERS===========================================================
     // show nav on hamburger tap
     hamburger.addEventListener("click", navToggle);
     //hide nav on tap
