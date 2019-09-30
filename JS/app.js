@@ -1,5 +1,5 @@
 window.onload = () => {
-    // DOM ELEMENTS========================================================
+    // ==========================DOM ELEMENTS==========================================
     // GLOBAL
     const body = document.querySelector("body");
     const header = document.querySelector("header");
@@ -24,7 +24,8 @@ window.onload = () => {
     const slideLeft = document.querySelector(".slide-left");
     const slideRight = document.querySelector(".slide-right");
 
-    // RUNNING THE APP===========================================================
+    // ============================RUN THE APP========================================
+
     // HEADER
     // Toggle navbar on mobile display
     const navToggle = () => {
@@ -93,11 +94,9 @@ window.onload = () => {
         //display foto gallery
         const galleryItems = fotos.map(foto => {
             const imgPath = foto.imgPath;
-            return `<a href="#"
-                        <div class="photo-gallery-item">
+            return `<div class="photo-gallery-item">
                         <div class=" photo-gallery-pic" style="background-image: url(${imgPath})" data-path="${imgPath}"></div>
-                    </div>
-                    </a>`;
+                    </div>`;
         });
         fotoGallery.innerHTML = galleryItems.join("");
 
@@ -109,34 +108,29 @@ window.onload = () => {
         gallerySlider.innerHTML = modalThumbnails.join("");
         //get current img for the modal
         currentImg();
-        currentGelleryImg();
+        currentGalleryImg();
     };
 
     // Gallery modal
     const showGalleryModal = () => {
         body.style.overflow = "hidden";
         galleryModal.classList.add("show");
+        //close modal on "back" event
+        history.pushState(null, null, location.href);
+        window.onpopstate = function() {
+            hideGalleryModal();
+            history.go(1);
+        };
     };
     const hideGalleryModal = () => {
         body.style.overflow = "auto";
         galleryModal.classList.remove("show");
+        //restore normal functionality for "back" event
+        history.back();
     };
-    // ==TODO close modal on "back"=============================================================
-
-    // const onHashChange = () => {
-    //     window.onhashchange = function() {
-    //         if (galleryModal.classList.contains("show")) {
-    //             console.log(galleryModal.classList.contains("show"));
-    //             galleryModal.classList.remove("show");
-    //             hideGalleryModal();
-    //         }
-    //     };
-    // };
-
-    // ==============================================================
 
     // open gallery modal when gallery foto is clicked
-    const currentGelleryImg = () => {
+    const currentGalleryImg = () => {
         const galleryPics = document.querySelectorAll(".photo-gallery-pic");
         const thumbs = document.querySelectorAll(".gallery-slider img");
 
@@ -204,7 +198,8 @@ window.onload = () => {
         });
     };
 
-    //  EVENTS LISTENERS===========================================================
+    // ========================== EVENTS LISTENERS====================================
+
     // show nav on hamburger tap
     hamburger.addEventListener("click", navToggle);
     //hide nav on tap
