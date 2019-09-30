@@ -136,7 +136,7 @@ header {
     height: 3px;
     margin: 4px;
     background-color: #fdfdfd;
-    transition: all 0.5s ease;
+    transition: all .9s ease;
 }
 
 .toggle-burger .line1 {
