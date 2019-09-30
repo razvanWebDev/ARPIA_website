@@ -174,8 +174,13 @@ header {
     text-shadow: 2px 2px 2px #333333;
 }
 
-/* HOME PAGE */
-/* main-section */
+footer {
+    min-height: 20vh;
+    background-color: rgb(32, 22, 51);
+}
+
+/*================= HOME PAGE===================== */
+/* main */
 .home-main-section {
     position: relative;
     display: flex;
@@ -264,8 +269,17 @@ header {
 .slide:nth-child(5) {
     background: url("../img/demo11.jpg") no-repeat center center/cover;
 }
+/* home section */
+.home-page-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+}
 
-/* GALLERY PAGE */
+/* ==================== GALLERY PAGE ================== */
 .gallery-main-section {
     text-align: center;
 }
@@ -405,7 +419,7 @@ header {
     position: absolute;
     top: 0;
     height: 100%;
-    padding: 15px;
+    padding: 5px;
     color: #fdfdfd;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.6);
