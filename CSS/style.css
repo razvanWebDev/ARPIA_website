@@ -165,9 +165,9 @@ main {
 /* Page title */
 .page-title {
     /* header height(6vh+18px) + margin from haeder */
-    margin-top: calc(6vh + 18px + 30px);
-    margin-bottom: 30px;
-    height: 175px;
+    margin-top: calc(6vh + 18px + 15px);
+    margin-bottom: 15px;
+    height: 80px;
     background: url("../img/page-title-background.jpg") no-repeat center
         center/cover;
     display: flex;
@@ -176,7 +176,7 @@ main {
 }
 
 .page-title h2 {
-    font-size: 48px;
+    font-size: 30px;
     color: #fdfdfd;
     animation: focus-in-expand-fwd 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
         both;
