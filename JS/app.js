@@ -226,7 +226,7 @@ window.onload = () => {
     }
 
     // GALLERY PAGE
-    if (window.location.pathname.includes("gallery.html")) {
+    if (window.location.pathname.includes("gallery_foto.html")) {
         // close gallery modal
         loadFotos();
         close.addEventListener("click", hideGalleryModal);
