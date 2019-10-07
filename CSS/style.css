@@ -289,37 +289,33 @@ footer {
     background-color: burlywood;
 }
 
-/* ==================== GALLERY PAGE ================== */
+/* ==================== FOTO-ALBUMS-PAGE ================== */
 .gallery-main-section {
-    
-   text-align: center;
- 
+    text-align: center;
 }
 
-/* ====================== */
 .photo-albums-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
-    padding:50px 150px;
+    padding: 50px 150px;
     margin: auto;
-    
 }
 .foto-album {
-  display: flex;
-  border: 2px solid #333333;
-  border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
 }
 
 .album-description {
-    width: 40%;
+    width: 45%;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     color: #333333;
-
 }
 
 .album-description h3 {
@@ -327,7 +323,7 @@ footer {
 }
 
 .album-thumbnails-container {
-    width: 60%;
+    width: 55%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 100px;
@@ -339,8 +335,7 @@ footer {
     object-fit: cover;
 }
 
-/* ====================== */
-
+/* ================================FOTO-GALLERY-PAGE======================= */
 .photo-gallery {
     text-align: center;
     justify-content: center;
@@ -525,7 +520,7 @@ footer {
         font-size: 30px;
     }
 
-    /* gallery page */
+    /*foto gallery page */
     .photo-gallery {
         grid-gap: 5px;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -609,7 +604,7 @@ footer {
         left: 10px;
     }
 
-    /* Gallery page */
+    /* foto gallery page */
     .page-title {
         margin-top: calc(10vh + 10px);
         height: 10vh;

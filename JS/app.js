@@ -86,7 +86,6 @@ window.onload = () => {
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 const fotos = JSON.parse(xhttp.responseText);
-                console.log("ok")
                 displayFotos(fotos);
             }
         };
@@ -325,14 +324,17 @@ window.onload = () => {
     }
 
     // GALLERY PAGE
-    if (window.location.pathname.includes("gallery_foto.html")) {
+    if (window.location.pathname.includes("foto-album")) {
         // close gallery modal
-       
-        loadAlbums();
+        loadFotos();
+        
         close.addEventListener("click", hideGalleryModal);
         slideRight.addEventListener("click", moveSlideRight);
         slideLeft.addEventListener("click", moveSlideLeft);
     }
+    if(window.location.pathname.includes("gallery_foto.html")){
+        loadAlbums();
+    }
 
-    loadFotos();
+   
 };
