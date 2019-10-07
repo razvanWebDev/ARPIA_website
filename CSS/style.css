@@ -393,7 +393,7 @@ footer {
     display: flex;
     position: relative;
     height: 75px;
-    width: 90%;
+    max-width: 90%;
 }
 
 .gallery-slider {
