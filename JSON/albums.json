@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "albumName": "Album 1",
+        "imgPath": [
+            "./img/demo1.jpg",
+            "./img/demo2.jpg",
+            "./img/demo3.jpg",
+            "./img/demo4.jpg",
+            "./img/demo5.jpg",
+            "./img/demo6.jpg"
+        ],
+        "description": "Vivamus ullamcorper velit risus, et faucibus tortor viverra at. Etiam consectetur lorem ac finibus scelerisque."
+    },
+    {
+        "id": 2,
+        "albumName": "Album 2",
+        "imgPath": [
+            "./img/demo1.jpg",
+            "./img/demo2.jpg",
+            "./img/demo3.jpg",
+            "./img/demo4.jpg",
+            "./img/demo5.jpg",
+            "./img/demo6.jpg"
+        ],
+        "description": "Vivamus ullamcorper velit risus, et faucibus tortor viverra at. Etiam consectetur lorem ac finibus scelerisque."
+    },
+    {
+        "id": 3,
+        "albumName": "Album 3",
+        "imgPath": [
+            "./img/demo1.jpg",
+            "./img/demo2.jpg",
+            "./img/demo3.jpg",
+            "./img/demo4.jpg",
+            "./img/demo5.jpg",
+            "./img/demo6.jpg"
+        ],
+        "description": ""
+    }
+]

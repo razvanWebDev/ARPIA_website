@@ -14,7 +14,9 @@ window.onload = () => {
     const intervalTime = 5000; //slides interval for autoslide
     let slideInterval;
     // GALLERY PAGE
+    const fotoAlbums = document.querySelector(".photo-albums-container");
     const fotoGallery = document.querySelector(".photo-gallery");
+    
     // gallery modal
     const galleryModal = document.querySelector(".gallery-modal");
     const close = document.querySelector(".close");
@@ -79,14 +81,16 @@ window.onload = () => {
 
     // GALLERY PAGE
     const loadFotos = () => {
+        
         const xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 const fotos = JSON.parse(xhttp.responseText);
+                console.log("ok")
                 displayFotos(fotos);
             }
         };
-        xhttp.open("GET", "JSON/gallery.json", true);
+        xhttp.open("GET", "../JSON/gallery.json", true);
         xhttp.send();
     };
 
@@ -98,6 +102,7 @@ window.onload = () => {
                         <div class=" photo-gallery-pic" style="background-image: url(${imgPath})" data-path="${imgPath}"></div>
                     </div>`;
         });
+       
         fotoGallery.innerHTML = galleryItems.join("");
 
         //display gallery-modal thumbnails
@@ -109,6 +114,47 @@ window.onload = () => {
         //get current img for the modal
         currentImg();
         currentGalleryImg();
+    };
+
+    const loadAlbums = () => {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                const albums = JSON.parse(xhttp.responseText);
+                displayAlbums(albums);
+            }
+        };
+        xhttp.open("GET", "JSON/albums.json", true);
+        xhttp.send();
+    };
+
+    const displayAlbums = albums => {
+        //display foto gallery
+        const galleryItems = albums.map(album => {
+            const id = album.id;
+            const albumName = album.albumName;
+            const description = "" ? "" : album.description;
+            const albumThumbnails = album.imgPath;
+            const albumPictures = albumThumbnails.map(thumbnail => {
+                return `<img src=${thumbnail} class=album-thumbnails>`;
+            });
+            return ` <a href="../Galleries/foto-album${id}.html"
+            <div class="foto-album">
+                        <div class="album-description">
+                            <h3>${albumName}</h3>
+                            <p>${description}</p>
+                        </div>
+                        <div class="album-thumbnails-container">
+                            ${albumPictures.join("")}
+                           
+                        </div>
+                    </div>
+                    </a>`;
+        });
+        fotoAlbums.innerHTML = galleryItems.join("");
+
+        // currentImg();
+        // currentGalleryImg();
     };
 
     // Gallery modal
@@ -128,15 +174,20 @@ window.onload = () => {
             hideGalleryModal();
             history.go(1);
         };
-        if(gallerySlider.scrollLeft <= 0){
+        // hide slider left arrow if scroll == 0
+        if (gallerySlider.scrollLeft <= 0) {
             slideLeft.style.display = "none";
-        }else{
+        } else {
             slideLeft.style.display = "flex";
         }
-        if (sliderThumbsWidth -(gallerySlider.offsetWidth + gallerySlider.scrollLeft) <5) 
-        {
+        // hide slider right arrow is scroll ends
+        if (
+            sliderThumbsWidth -
+                (gallerySlider.offsetWidth + gallerySlider.scrollLeft) <
+            5
+        ) {
             slideRight.style.display = "none";
-        }else{
+        } else {
             slideRight.style.display = "flex";
         }
     };
@@ -276,9 +327,12 @@ window.onload = () => {
     // GALLERY PAGE
     if (window.location.pathname.includes("gallery_foto.html")) {
         // close gallery modal
-        loadFotos();
+       
+        loadAlbums();
         close.addEventListener("click", hideGalleryModal);
         slideRight.addEventListener("click", moveSlideRight);
         slideLeft.addEventListener("click", moveSlideLeft);
     }
+
+    loadFotos();
 };
