@@ -394,6 +394,7 @@ footer {
     position: relative;
     height: 75px;
     max-width: 90%;
+    box-shadow: 0 0 2px 1px silver;
 }
 
 .gallery-slider {
@@ -402,7 +403,6 @@ footer {
     width: 100%;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 0 0 2px 1px silver;
     background-color: #000000;
 }
 

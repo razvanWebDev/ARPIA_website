@@ -112,7 +112,14 @@ window.onload = () => {
     };
 
     // Gallery modal
-    const showGalleryModal = () => {
+    // get gallery thumbs total width
+    let sliderThumbsWidth = 0;
+    const showGalleryModal = thumbs => {
+        // get gallery thumbs total width
+        thumbs.forEach(thumb => {
+            sliderThumbsWidth += thumb.offsetWidth;
+        });
+
         body.style.overflow = "hidden";
         galleryModal.classList.add("show");
         //close modal on "back" event
@@ -121,9 +128,22 @@ window.onload = () => {
             hideGalleryModal();
             history.go(1);
         };
+        if(gallerySlider.scrollLeft <= 0){
+            slideLeft.style.display = "none";
+        }else{
+            slideLeft.style.display = "flex";
+        }
+        if (sliderThumbsWidth -(gallerySlider.offsetWidth + gallerySlider.scrollLeft) <5) 
+        {
+            slideRight.style.display = "none";
+        }else{
+            slideRight.style.display = "flex";
+        }
     };
     const hideGalleryModal = () => {
         body.style.overflow = "auto";
+        // reset gallery thumbs total width
+        sliderThumbsWidth = 0;
         galleryModal.classList.remove("show");
         //restore normal functionality for "back" event
         history.back();
@@ -143,9 +163,21 @@ window.onload = () => {
                 currentPicLink.setAttribute("href", imgPath);
                 curentPic.src = imgPath;
                 //open modal
-                showGalleryModal();
+                showGalleryModal(thumbs);
             });
         });
+    };
+
+    // get current thumbnail on modal open
+    const getCurrentThumbnail = (imgPath, thumbs) => {
+        thumbs.forEach(thumb => {
+            thumb.classList.remove("current-slide-thumbnail");
+        });
+        const currentThumb = document.querySelector(
+            `.gallery-slider img[src="${imgPath}"]`
+        );
+        currentThumb.classList.add("current-slide-thumbnail");
+        currentThumb.scrollIntoView({ inline: "center" });
     };
 
     // select current foto from modal thumbnails
@@ -169,18 +201,6 @@ window.onload = () => {
         });
     };
 
-    // get current thumbnail on modal open
-    const getCurrentThumbnail = (imgPath, thumbs) => {
-        thumbs.forEach(thumb => {
-            thumb.classList.remove("current-slide-thumbnail");
-        });
-        const currentThumb = document.querySelector(
-            `.gallery-slider img[src="${imgPath}"]`
-        );
-        currentThumb.classList.add("current-slide-thumbnail");
-        currentThumb.scrollIntoView({ inline: "center" });
-    };
-
     // move modal thumbails to right
     const moveSlideRight = () => {
         gallerySlider.scrollBy({
@@ -188,6 +208,21 @@ window.onload = () => {
             left: gallerySlider.offsetWidth / 2,
             behavior: "smooth"
         });
+
+        if (
+            sliderThumbsWidth -
+                (gallerySlider.offsetWidth +
+                    gallerySlider.scrollLeft +
+                    gallerySlider.offsetWidth / 2) <
+            5
+        ) {
+            slideRight.style.display = "none";
+        }
+        if (gallerySlider.scrollLeft + gallerySlider.offsetWidth / 2 <= 0) {
+            slideLeft.style.display = "none";
+        } else {
+            slideLeft.style.display = "flex";
+        }
     };
 
     const moveSlideLeft = () => {
@@ -196,6 +231,19 @@ window.onload = () => {
             left: -gallerySlider.offsetWidth / 2,
             behavior: "smooth"
         });
+
+        if (gallerySlider.scrollLeft - gallerySlider.offsetWidth / 2 <= 0) {
+            slideLeft.style.display = "none";
+        } else {
+            slideLeft.style.display = "flex";
+        }
+        if (
+            sliderThumbsWidth -
+                (gallerySlider.offsetWidth + gallerySlider.scrollLeft) >
+            0
+        ) {
+            slideRight.style.display = "flex";
+        }
     };
 
     // ========================== EVENTS LISTENERS====================================
