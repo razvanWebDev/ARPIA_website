@@ -16,12 +16,12 @@
         "id": 2,
         "albumName": "Expozitie de pictura a Dorei Popovici,",
         "imgPath": [
-            "../img/album2/album2001-small.jpg",
-            "../img/album2/album2002-small.jpg",
-            "../img/album2/album2003-small.jpg",
-            "../img/album2/album2004-small.jpg",
-            "../img/album2/album2005-small.jpg",
-            "../img/album2/album2006-small.jpg"
+            "./img/album2/album2001-small.jpg",
+            "./img/album2/album2002-small.jpg",
+            "./img/album2/album2003-small.jpg",
+            "/img/album2/album2004-small.jpg",
+            "/img/album2/album2005-small.jpg",
+            "/img/album2/album2006-small.jpg"
         ],
         "description": "membra ARPIA-filiala Cluj, expozitia desenelor premiate in urma concursului Zborul, un vis frumos! si adunarea generala a asociatiei la sediul Radio Romania Cluj | 17 mai 2019 "
     },
