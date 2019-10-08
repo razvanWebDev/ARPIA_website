@@ -137,7 +137,7 @@ window.onload = () => {
             const albumPictures = albumThumbnails.map(thumbnail => {
                 return `<img src=${thumbnail} class=album-thumbnails>`;
             });
-            return ` <a href="../Galleries/foto-album${id}.html"
+            return ` <a href="Galleries/foto-album${id}.html"
             <div class="foto-album">
                         <div class="album-description">
                             <h3>${albumName}</h3>
