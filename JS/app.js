@@ -1,4 +1,11 @@
 window.onload = () => {
+    // get current page name to help xhttp requests in loadFotos()
+    const currentPath = window.location.pathname;
+    const currentPageName = currentPath
+        .split("/")
+        .pop()
+        .split(".")
+        .shift();
     // ==========================DOM ELEMENTS==========================================
     // GLOBAL
     const body = document.querySelector("body");
@@ -119,6 +126,7 @@ window.onload = () => {
     };
 
     const loadFotos = () => {
+        const currentPage = currentPageName.split("-").pop();
         const xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
@@ -126,7 +134,7 @@ window.onload = () => {
                 displayFotos(fotos);
             }
         };
-        xhttp.open("GET", "../JSON/album2.json", true);
+        xhttp.open("GET", `../JSON/${currentPage}.json`, true);
         xhttp.send();
     };
 
