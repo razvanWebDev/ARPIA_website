@@ -1,7 +1,4 @@
 window.onload = () => {
-    // var index = require("./index.js");
-    // index.hello();
-    console.log("okapp");
     // ==========================DOM ELEMENTS==========================================
     // GLOBAL
     const body = document.querySelector("body");
@@ -9,11 +6,17 @@ window.onload = () => {
     const hamburger = document.querySelector("#hamburger");
     const nav = document.querySelector(".header-menu");
     const galleryLink = document.querySelector(".gallery-link");
-
+    // HOME PAGE
+    const slides = document.querySelectorAll(".slide");
+    const next = document.querySelector("#next");
+    const prev = document.querySelector("#prev");
+    const autoSlide = true; //Set to true for auto slide
+    const intervalTime = 5000; //slides interval for autoslide
+    let slideInterval;
     // GALLERY PAGE
     const fotoAlbums = document.querySelector(".photo-albums-container");
     const fotoGallery = document.querySelector(".photo-gallery");
-
+    
     // gallery modal
     const galleryModal = document.querySelector(".gallery-modal");
     const close = document.querySelector(".close");
@@ -45,8 +48,40 @@ window.onload = () => {
         }
     };
 
+    // HOME PAGE
+    // Home page slides
+    const nextSlide = () => {
+        const current = document.querySelector(".current");
+        current.classList.remove("current");
+        if (current.nextElementSibling) {
+            current.nextElementSibling.classList.add("current");
+        } else {
+            slides[0].classList.add("current");
+        }
+        current.classList.remove("current");
+    };
+
+    const prevSlide = () => {
+        const current = document.querySelector(".current");
+        current.classList.remove("current");
+        if (current.previousElementSibling) {
+            current.previousElementSibling.classList.add("current");
+        } else {
+            slides[slides.length - 1].classList.add("current");
+        }
+        current.classList.remove("current");
+    };
+
+    const autoSlider = () => {
+        if (autoSlide) {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, intervalTime);
+        }
+    };
+
     // GALLERY PAGE
     const loadFotos = () => {
+        
         const xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
@@ -66,7 +101,7 @@ window.onload = () => {
                         <div class=" photo-gallery-pic" style="background-image: url(${imgPath})" data-path="${imgPath}"></div>
                     </div>`;
         });
-
+       
         fotoGallery.innerHTML = galleryItems.join("");
 
         //display gallery-modal thumbnails
@@ -116,6 +151,9 @@ window.onload = () => {
                     </a>`;
         });
         fotoAlbums.innerHTML = galleryItems.join("");
+
+        // currentImg();
+        // currentGalleryImg();
     };
 
     // Gallery modal
@@ -265,16 +303,38 @@ window.onload = () => {
     //hide nav on tap
     window.addEventListener("click", navClose);
 
+    // HOME PAGE
+    //home page slides
+    if (
+        window.location.pathname == "/" ||
+        window.location.pathname.includes("index.html")
+    ) {
+        next.addEventListener("click", () => {
+            nextSlide();
+            autoSlider();
+        });
+        prev.addEventListener("click", () => {
+            prevSlide();
+            autoSlider();
+        });
+        // autoslide
+        if (autoSlide) {
+            slideInterval = setInterval(nextSlide, intervalTime);
+        }
+    }
+
     // GALLERY PAGE
     if (window.location.pathname.includes("foto-album")) {
         // close gallery modal
         loadFotos();
-
+        
         close.addEventListener("click", hideGalleryModal);
         slideRight.addEventListener("click", moveSlideRight);
         slideLeft.addEventListener("click", moveSlideLeft);
     }
-    if (window.location.pathname.includes("gallery_foto.html")) {
+    if(window.location.pathname.includes("gallery_foto.html")){
         loadAlbums();
     }
+
+   
 };
