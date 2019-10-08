@@ -88,7 +88,7 @@ window.onload = () => {
                 displayAlbums(albums);
             }
         };
-        xhttp.open("GET", "JSON/albums.json", true);
+        xhttp.open("GET", "JSON/albums-covers.json", true);
         xhttp.send();
     };
 
@@ -134,9 +134,8 @@ window.onload = () => {
         //display foto gallery
         const galleryItems = fotos.map(foto => {
             const imgPath = foto.imgPath;
-            const imgPathSmall = foto.imgPathSmall;
             return `<div class="photo-gallery-item">
-                        <div class=" photo-gallery-pic" style="background-image: url(${imgPathSmall})" data-path="${imgPath}"></div>
+                        <div class=" photo-gallery-pic" style="background-image: url(${imgPath})" data-path="${imgPath}"></div>
                     </div>`;
         });
 
