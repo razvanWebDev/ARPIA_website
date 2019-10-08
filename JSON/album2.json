@@ -1,122 +1,162 @@
 [
     {
-        "imgPath": "../img/album2/album2001.jpg"
+        "imgPath": "../img/album2/album2001.jpg",
+        "imgPathSmall": "../img/album2/album2001-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2002.jpg"
+        "imgPath": "../img/album2/album2002.jpg",
+        "imgPathSmall": "../img/album2/album2002-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2003.jpg"
+        "imgPath": "../img/album2/album2003.jpg",
+        "imgPathSmall": "../img/album2/album2003-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2004.jpg"
+        "imgPath": "../img/album2/album2004.jpg",
+        "imgPathSmall": "../img/album2/album2004-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2005.jpg"
+        "imgPath": "../img/album2/album2005.jpg",
+        "imgPathSmall": "../img/album2/album2005-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2006.jpg"
+        "imgPath": "../img/album2/album2006.jpg",
+        "imgPathSmall": "../img/album2/album2006-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2007.jpg"
+        "imgPath": "../img/album2/album2007.jpg",
+        "imgPathSmall": "../img/album2/album2007-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2008.jpg"
+        "imgPath": "../img/album2/album2008.jpg",
+        "imgPathSmall": "../img/album2/album2008-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2009.jpg"
+        "imgPath": "../img/album2/album2009.jpg",
+        "imgPathSmall": "../img/album2/album2009-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2010.jpg"
+        "imgPath": "../img/album2/album2010.jpg",
+        "imgPathSmall": "../img/album2/album2010-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2011.jpg"
+        "imgPath": "../img/album2/album2011.jpg",
+        "imgPathSmall": "../img/album2/album2011-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2012.jpg"
+        "imgPath": "../img/album2/album2012.jpg",
+        "imgPathSmall": "../img/album2/album2012-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2013.jpg"
+        "imgPath": "../img/album2/album2013.jpg",
+        "imgPathSmall": "../img/album2/album2013-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2014.jpg"
+        "imgPath": "../img/album2/album2014.jpg",
+        "imgPathSmall": "../img/album2/album2014-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2015.jpg"
+        "imgPath": "../img/album2/album2015.jpg",
+        "imgPathSmall": "../img/album2/album2015-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2016.jpg"
+        "imgPath": "../img/album2/album2016.jpg",
+        "imgPathSmall": "../img/album2/album2016-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2017.jpg"
+        "imgPath": "../img/album2/album2017.jpg",
+        "imgPathSmall": "../img/album2/album2017-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2018.jpg"
+        "imgPath": "../img/album2/album2018.jpg",
+        "imgPathSmall": "../img/album2/album2018-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2019.jpg"
+        "imgPath": "../img/album2/album2019.jpg",
+        "imgPathSmall": "../img/album2/album2019-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2020.jpg"
+        "imgPath": "../img/album2/album2020.jpg",
+        "imgPathSmall": "../img/album2/album2020-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2021.jpg"
+        "imgPath": "../img/album2/album2021.jpg",
+        "imgPathSmall": "../img/album2/album2021-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2022.jpg"
+        "imgPath": "../img/album2/album2022.jpg",
+        "imgPathSmall": "../img/album2/album2022-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2023.jpg"
+        "imgPath": "../img/album2/album2023.jpg",
+        "imgPathSmall": "../img/album2/album2023-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2024.jpg"
+        "imgPath": "../img/album2/album2024.jpg",
+        "imgPathSmall": "../img/album2/album2024-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2025.jpg"
+        "imgPath": "../img/album2/album2025.jpg",
+        "imgPathSmall": "../img/album2/album2025-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2026.jpg"
+        "imgPath": "../img/album2/album2026.jpg",
+        "imgPathSmall": "../img/album2/album2026-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2027.jpg"
+        "imgPath": "../img/album2/album2027.jpg",
+        "imgPathSmall": "../img/album2/album2027-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2028.jpg"
+        "imgPath": "../img/album2/album2028.jpg",
+        "imgPathSmall": "../img/album2/album2028-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2029.jpg"
+        "imgPath": "../img/album2/album2029.jpg",
+        "imgPathSmall": "../img/album2/album2029-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2030.jpg"
+        "imgPath": "../img/album2/album2030.jpg",
+        "imgPathSmall": "../img/album2/album2030-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2031.jpg"
+        "imgPath": "../img/album2/album2031.jpg",
+        "imgPathSmall": "../img/album2/album2031-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2032.jpg"
+        "imgPath": "../img/album2/album2032.jpg",
+        "imgPathSmall": "../img/album2/album2032-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2033.jpg"
+        "imgPath": "../img/album2/album2033.jpg",
+        "imgPathSmall": "../img/album2/album2033-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2034.jpg"
+        "imgPath": "../img/album2/album2034.jpg",
+        "imgPathSmall": "../img/album2/album2034-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2035.jpg"
+        "imgPath": "../img/album2/album2035.jpg",
+        "imgPathSmall": "../img/album2/album2035-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2036.jpg"
+        "imgPath": "../img/album2/album2036.jpg",
+        "imgPathSmall": "../img/album2/album2036-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2037.jpg"
+        "imgPath": "../img/album2/album2037.jpg",
+        "imgPathSmall": "../img/album2/album2037-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2038.jpg"
+        "imgPath": "../img/album2/album2038.jpg",
+        "imgPathSmall": "../img/album2/album2038-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2039.jpg"
+        "imgPath": "../img/album2/album2039.jpg",
+        "imgPathSmall": "../img/album2/album2039-small.jpg"
     },
     {
-        "imgPath": "../img/album2/album2040.jpg"
+        "imgPath": "../img/album2/album2040.jpg",
+        "imgPathSmall": "../img/album2/album2040-small.jpg"
     }
 ]

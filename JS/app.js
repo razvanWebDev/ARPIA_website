@@ -16,7 +16,7 @@ window.onload = () => {
     // GALLERY PAGE
     const fotoAlbums = document.querySelector(".photo-albums-container");
     const fotoGallery = document.querySelector(".photo-gallery");
-    
+
     // gallery modal
     const galleryModal = document.querySelector(".gallery-modal");
     const close = document.querySelector(".close");
@@ -80,41 +80,6 @@ window.onload = () => {
     };
 
     // GALLERY PAGE
-    const loadFotos = () => {
-        
-        const xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                const fotos = JSON.parse(xhttp.responseText);
-                displayFotos(fotos);
-            }
-        };
-        xhttp.open("GET", "../JSON/album2.json", true);
-        xhttp.send();
-    };
-
-    const displayFotos = fotos => {
-        //display foto gallery
-        const galleryItems = fotos.map(foto => {
-            const imgPath = foto.imgPath;
-            return `<div class="photo-gallery-item">
-                        <div class=" photo-gallery-pic" style="background-image: url(${imgPath})" data-path="${imgPath}"></div>
-                    </div>`;
-        });
-       
-        fotoGallery.innerHTML = galleryItems.join("");
-
-        //display gallery-modal thumbnails
-        const modalThumbnails = fotos.map(foto => {
-            const imgPath = foto.imgPath;
-            return `<img src="${imgPath}" class="modal-slider-pic">`;
-        });
-        gallerySlider.innerHTML = modalThumbnails.join("");
-        //get current img for the modal
-        currentImg();
-        currentGalleryImg();
-    };
-
     const loadAlbums = () => {
         const xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
@@ -151,9 +116,41 @@ window.onload = () => {
                     </a>`;
         });
         fotoAlbums.innerHTML = galleryItems.join("");
+    };
 
-        // currentImg();
-        // currentGalleryImg();
+    const loadFotos = () => {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                const fotos = JSON.parse(xhttp.responseText);
+                displayFotos(fotos);
+            }
+        };
+        xhttp.open("GET", "../JSON/album2.json", true);
+        xhttp.send();
+    };
+
+    const displayFotos = fotos => {
+        //display foto gallery
+        const galleryItems = fotos.map(foto => {
+            const imgPath = foto.imgPath;
+            const imgPathSmall = foto.imgPathSmall;
+            return `<div class="photo-gallery-item">
+                        <div class=" photo-gallery-pic" style="background-image: url(${imgPathSmall})" data-path="${imgPath}"></div>
+                    </div>`;
+        });
+
+        fotoGallery.innerHTML = galleryItems.join("");
+
+        //display gallery-modal thumbnails
+        const modalThumbnails = fotos.map(foto => {
+            const imgPath = foto.imgPath;
+            return `<img src="${imgPath}" class="modal-slider-pic">`;
+        });
+        gallerySlider.innerHTML = modalThumbnails.join("");
+        //get current img for the modal
+        currentImg();
+        currentGalleryImg();
     };
 
     // Gallery modal
@@ -327,14 +324,12 @@ window.onload = () => {
     if (window.location.pathname.includes("foto-album")) {
         // close gallery modal
         loadFotos();
-        
+
         close.addEventListener("click", hideGalleryModal);
         slideRight.addEventListener("click", moveSlideRight);
         slideLeft.addEventListener("click", moveSlideLeft);
     }
-    if(window.location.pathname.includes("gallery_foto.html")){
+    if (window.location.pathname.includes("gallery_foto.html")) {
         loadAlbums();
     }
-
-   
 };
