@@ -1,16 +1,16 @@
 [
     {
         "id": 1,
-        "albumName": "Album 1",
+        "albumName": "Inaugurarea monumentului inchinat Smarandei Brăescu",
         "imgPath": [
-            "./img/demo1.jpg",
-            "./img/demo2.jpg",
-            "./img/demo3.jpg",
-            "./img/demo4.jpg",
-            "./img/demo5.jpg",
-            "./img/demo6.jpg"
+            "./img/album1/album1001.jpg",
+            "./img/album1/album1002.jpg",
+            "./img/album1/album1003.jpg",
+            "./img/album1/album1004.jpg",
+            "./img/album1/album1005.jpg",
+            "./img/album1/album1006.jpg"
         ],
-        "description": "Vivamus ullamcorper velit risus, et faucibus tortor viverra at. Etiam consectetur lorem ac finibus scelerisque."
+        "description": "in Cimitirul central din Cluj-Napoca și prezentarea filmului documentar realizat de studioul cinematografic al Armatei, Prigoana.Parcela IIB.Locul 1551, la cinema Mărăsti din Cluj-Napoca | 02 nov 2018"
     },
     {
         "id": 2,
