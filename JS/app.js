@@ -89,7 +89,7 @@ window.onload = () => {
                 displayFotos(fotos);
             }
         };
-        xhttp.open("GET", "/JSON/album2.json", true);
+        xhttp.open("GET", "../JSON/album2.json", true);
         xhttp.send();
     };
 
