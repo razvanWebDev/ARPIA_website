@@ -296,15 +296,15 @@ footer {
 
 .photo-albums-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr ;
     grid-gap: 30px;
     padding: 50px 150px;
     margin: auto;
 }
 .foto-album {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    align-items: flex-start;
     box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -313,7 +313,7 @@ footer {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     color: #333333;
 }
@@ -322,8 +322,12 @@ footer {
     margin-bottom: 10px;
 }
 
+.album-description p {
+    font-size: 15px;
+}
+
 .album-thumbnails-container {
-    width: 55%;
+    width: 60%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 100px;

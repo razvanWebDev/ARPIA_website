@@ -123,7 +123,6 @@ window.onload = () => {
                     </a>`;
         });
         fotoAlbums.innerHTML = galleryItems.join("");
-        
     };
 
     const loadFotos = () => {
@@ -134,7 +133,6 @@ window.onload = () => {
             if (this.readyState == 4 && this.status == 200) {
                 const fotos = JSON.parse(xhttp.responseText);
                 displayFotos(fotos);
-               
             }
         };
         xhttp.open("GET", `../JSON/${currentPage}.json`, true);
@@ -149,7 +147,7 @@ window.onload = () => {
                         <div class=" photo-gallery-pic" style="background-image: url(${imgPath})" data-path="${imgPath}"></div>
                     </div>`;
         });
-       
+
         fotoGallery.innerHTML = galleryItems.join("");
 
         //display gallery-modal thumbnails
@@ -161,7 +159,6 @@ window.onload = () => {
         //get current img for the modal
         currentImg();
         currentGalleryImg();
-       
     };
 
     // Gallery modal
