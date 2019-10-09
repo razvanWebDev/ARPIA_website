@@ -127,6 +127,7 @@ window.onload = () => {
 
     const loadFotos = () => {
         const currentPage = currentPageName.split("-").pop();
+        console.log(currentPage)
         const xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
@@ -329,10 +330,10 @@ window.onload = () => {
 
     // GALLERY PAGE
     if (window.location.pathname.includes("foto-album")) {
-        // close gallery modal
         loadFotos();
-
+        // close gallery modal
         close.addEventListener("click", hideGalleryModal);
+
         slideRight.addEventListener("click", moveSlideRight);
         slideLeft.addEventListener("click", moveSlideLeft);
     }

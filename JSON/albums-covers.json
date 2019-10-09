@@ -27,15 +27,15 @@
     },
     {
         "id": 3,
-        "albumName": "Album 3",
+        "albumName": "Comemorarea eroului aviator Ioan Sava",
         "imgPath": [
-            "./img/demo1.jpg",
-            "./img/demo2.jpg",
-            "./img/demo3.jpg",
-            "./img/demo4.jpg",
-            "./img/demo5.jpg",
-            "./img/demo6.jpg"
+            "./img/album3/album3001.jpg",
+            "./img/album3/album3002.jpg",
+            "./img/album3/album3003.jpg",
+            "./img/album3/album3004.jpg",
+            "./img/album3/album3005.jpg",
+            "./img/album3/album3006.jpg"
         ],
-        "description": ""
+        "description": "Ghijasa de Sus, com. Alțâna, jud. Sibiu. Lansarea cărtii prof. Tudor Vasile | 10 sept. 2016"
     }
 ]
