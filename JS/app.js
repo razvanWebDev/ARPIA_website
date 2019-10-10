@@ -109,17 +109,16 @@ window.onload = () => {
             const albumPictures = albumThumbnails.map(thumbnail => {
                 return `<img src=${thumbnail} class=album-thumbnails>`;
             });
-            return ` <a href="Galleries/foto-album${id}.html"
-            <div class="foto-album">
-                        <div class="album-description">
-                            <h3>${albumName}</h3>
-                            <p>${description}</p>
+            return ` <a href="Galleries/foto-album${id}.html">
+                        <div class="foto-album">
+                            <div class="album-description">
+                            <p>${albumName}</p>
+                           
                         </div>
                         <div class="album-thumbnails-container">
                             ${albumPictures.join("")}
-                           
+                            </div>
                         </div>
-                    </div>
                     </a>`;
         });
         fotoAlbums.innerHTML = galleryItems.join("");
