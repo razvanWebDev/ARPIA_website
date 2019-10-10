@@ -112,6 +112,9 @@ window.onload = () => {
             });
             return ` <a href="Galleries/foto-album${id}.html">
                         <div class="foto-album">
+                            <div class="album-hover">
+                                <p>Deschide</p>
+                            </div>
                             <div class="album-description">
                             <p>${albumName}</p>
                             <p>${albumDate}</p>
