@@ -23,7 +23,7 @@ window.onload = () => {
     // GALLERY PAGE
     const fotoAlbums = document.querySelector(".photo-albums-container");
     const fotoGallery = document.querySelector(".photo-gallery");
-    const galleryDescription = document.querySelector('.gallery-description')
+    const galleryDescription = document.querySelector(".gallery-description");
 
     // gallery modal
     const galleryModal = document.querySelector(".gallery-modal");
@@ -106,7 +106,7 @@ window.onload = () => {
             const id = album.id;
             const albumName = "" ? "" : album.albumName;
             const albumDate = "" ? "" : album.albumDate;
-            
+
             const albumThumbnails = album.imgPath;
             const albumPictures = albumThumbnails.map(thumbnail => {
                 return `<img src=${thumbnail} class=album-thumbnails>`;
@@ -132,7 +132,6 @@ window.onload = () => {
 
     const loadFotos = () => {
         const currentPage = currentPageName.split("-").pop();
-        console.log(currentPage);
         const xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
@@ -145,19 +144,21 @@ window.onload = () => {
     };
 
     const displayFotos = fotos => {
-        let description = fotos[0].description;
-        // TODO
-            // description = "undefined" ? "" : description;
-            galleryDescription.innerHTML = description;
+        let description = fotos[2].description;
+        if (description == undefined || description == "") {
+            description = "";
+        }
+        galleryDescription.innerHTML = description;
+
         //display foto gallery
         const galleryItems = fotos.map(foto => {
             const imgPath = foto.imgPath;
-            
+
             return `<div class="photo-gallery-item">
                         <div class=" photo-gallery-pic" style="background-image: url(${imgPath})" data-path="${imgPath}"></div>
                     </div>`;
         });
-       
+
         fotoGallery.innerHTML = galleryItems.join("");
 
         //display gallery-modal thumbnails
