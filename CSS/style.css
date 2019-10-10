@@ -366,6 +366,10 @@ footer {
     padding: 50px 10vw;
 }
 
+.gallery-details {
+    padding: 0 8%;
+}
+
 .photo-gallery-item {
     height: 150px;
     overflow: hidden;
