@@ -23,6 +23,7 @@ window.onload = () => {
     // GALLERY PAGE
     const fotoAlbums = document.querySelector(".photo-albums-container");
     const fotoGallery = document.querySelector(".photo-gallery");
+    const galleryDescription = document.querySelector('.gallery-description')
 
     // gallery modal
     const galleryModal = document.querySelector(".gallery-modal");
@@ -105,7 +106,7 @@ window.onload = () => {
             const id = album.id;
             const albumName = "" ? "" : album.albumName;
             const albumDate = "" ? "" : album.albumDate;
-            const description = "" ? "" : album.description;
+            
             const albumThumbnails = album.imgPath;
             const albumPictures = albumThumbnails.map(thumbnail => {
                 return `<img src=${thumbnail} class=album-thumbnails>`;
@@ -117,7 +118,7 @@ window.onload = () => {
                             </div>
                             <div class="album-description">
                             <p>${albumName}</p>
-                            <p>${albumDate}</p>
+                            <p>- ${albumDate} -</p>
                            
                         </div>
                         <div class="album-thumbnails-container">
@@ -144,14 +145,18 @@ window.onload = () => {
     };
 
     const displayFotos = fotos => {
+        let description = fotos[1].description;
+            description = undefined ? "" : description;
+            galleryDescription.innerHTML = description;
         //display foto gallery
         const galleryItems = fotos.map(foto => {
             const imgPath = foto.imgPath;
+            
             return `<div class="photo-gallery-item">
                         <div class=" photo-gallery-pic" style="background-image: url(${imgPath})" data-path="${imgPath}"></div>
                     </div>`;
         });
-
+       
         fotoGallery.innerHTML = galleryItems.join("");
 
         //display gallery-modal thumbnails

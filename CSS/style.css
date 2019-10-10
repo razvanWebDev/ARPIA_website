@@ -167,7 +167,7 @@ main {
     /* header height(6vh+18px) + margin from haeder */
     margin-top: calc(6vh + 18px + 15px);
     margin-bottom: 15px;
-    height: 80px;
+    padding: 15px;
     background: url("../img/page-title-background.jpg") no-repeat center
         center/cover;
     display: flex;
@@ -327,7 +327,7 @@ footer {
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.8);
     opacity: 0;
-    transition: opacity 0.3s ease-in;
+    transition: opacity 0.2s ease-in;
 }
 
 .foto-album:hover + .album-hover,
@@ -363,7 +363,7 @@ footer {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
-    padding: 0 10vw 30px;
+    padding: 50px 10vw;
 }
 
 .photo-gallery-item {
@@ -628,7 +628,6 @@ footer {
     /* foto gallery page */
     .page-title {
         margin-top: calc(10vh + 10px);
-        height: 10vh;
     }
     .page-title h2 {
         font-size: 1.3rem;
