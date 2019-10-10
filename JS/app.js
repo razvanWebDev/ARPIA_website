@@ -103,7 +103,8 @@ window.onload = () => {
         //display foto albums
         const galleryItems = albums.map(album => {
             const id = album.id;
-            const albumName = album.albumName;
+            const albumName = "" ? "" : album.albumName;
+            const albumDate = "" ? "" : album.albumDate;
             const description = "" ? "" : album.description;
             const albumThumbnails = album.imgPath;
             const albumPictures = albumThumbnails.map(thumbnail => {
@@ -113,6 +114,7 @@ window.onload = () => {
                         <div class="foto-album">
                             <div class="album-description">
                             <p>${albumName}</p>
+                            <p>${albumDate}</p>
                            
                         </div>
                         <div class="album-thumbnails-container">
