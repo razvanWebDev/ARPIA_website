@@ -145,8 +145,9 @@ window.onload = () => {
     };
 
     const displayFotos = fotos => {
-        let description = fotos[1].description;
-            description = undefined ? "" : description;
+        let description = fotos[0].description;
+        // TODO
+            // description = "undefined" ? "" : description;
             galleryDescription.innerHTML = description;
         //display foto gallery
         const galleryItems = fotos.map(foto => {
