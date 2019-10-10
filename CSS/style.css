@@ -325,7 +325,7 @@ footer {
     align-items: center;
     color: #fdfdfd;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.65);
     opacity: 0;
     transition: opacity 0.2s ease-in;
 }

@@ -144,7 +144,7 @@ window.onload = () => {
     };
 
     const displayFotos = fotos => {
-        let description = fotos[2].description;
+        let description = fotos[0].description;
         if (description == undefined || description == "") {
             description = "";
         }
