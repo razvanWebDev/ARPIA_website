@@ -541,6 +541,10 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
+    .page-title {
+        margin-bottom: 0px;
+    }
+
     .page-title h2 {
         font-size: 30px;
     }
@@ -550,10 +554,6 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 35px;
         padding: 35px;
-    }
-
-    .page-title {
-        margin-bottom: 0px;
     }
 
     /*foto gallery page */
@@ -608,6 +608,15 @@ footer {
         align-items: center;
         padding-bottom: 10vh;
         background-color: rgba(18, 20, 100, 0.9);
+    }
+
+    .page-title {
+        margin-top: calc(10vh + 15px);
+    }
+
+    /* foto albums page */
+    .album-thumbnails-container {
+        grid-auto-rows: 80px;
     }
 }
 
