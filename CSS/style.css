@@ -630,6 +630,7 @@ footer {
         left: 0;
         width: 100%;
     }
+
     .slide.current .content {
         transform: translateY(calc(-5vh - 300px));
     }
@@ -647,6 +648,13 @@ footer {
 
     .prev {
         left: 10px;
+    }
+
+    /* foto albums page */
+    .photo-albums-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
     }
 
     /* foto gallery page */
