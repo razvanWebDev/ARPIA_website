@@ -37,7 +37,7 @@ header {
     align-items: center;
     color: #fdfdfd;
     /* background-color: rgba(18, 20, 100, 0.9); */
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 #logo {
@@ -86,7 +86,7 @@ header {
     opacity: 0;
     pointer-events: none;
     transition: all 0.2s ease-in;
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.6);
     border-collapse: collapse;
     transform: translateY(-10px);
 }
@@ -166,13 +166,14 @@ main {
 /* Page title */
 .page-title {
     /* header height(6vh+18px) + margin from header */
-    margin-top: calc(6vh + 18px + 15px);
+    /* margin-top: calc(6vh + 18px + 15px); */
+    height:calc(6vh + 18px + 100px) ;
     margin-bottom: 15px;
-    padding: 15px;
+    padding-bottom: 35px;
     background: url("../img/page-title-background.jpg") no-repeat center
         center/cover;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 
@@ -187,7 +188,7 @@ main {
 footer {
   
     min-height: 20vh;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 /*================= HOME PAGE===================== */
@@ -311,7 +312,7 @@ footer {
     display: inline-block;
     position: relative;
     width: 100%;
-    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.6);
 }
 
 .album-hover {
@@ -326,7 +327,7 @@ footer {
     align-items: center;
     color: #fdfdfd;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     opacity: 0;
     transition: opacity 0.2s ease-in;
 }
@@ -610,9 +611,13 @@ footer {
         padding-bottom: 10vh;
         background-color: rgba(0, 0, 0, 0.8);
     }
-
+/* 
     .page-title {
         margin-top: calc(10vh + 15px);
+    } */
+
+    .page-title h2 {
+        font-size: 23px;
     }
 
     /* foto albums page */
