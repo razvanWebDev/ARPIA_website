@@ -1,11 +1,12 @@
 [
     {
+        "albumName": "Inaugurarea monumentului inchinat Smarandei Brăescu",
+        "date": "02 nov 2018",
         "imgPath": "../img/album1/album1001.jpg",
         "description": "In Cimitirul central din Cluj-Napoca și prezentarea filmului documentar realizat de studioul cinematografic al Armatei, Prigoana.Parcela IIB.Locul 1551, la cinema Mărăsti din Cluj-Napoca"
     },
     {
-        "imgPath": "../img/album1/album1002.jpg",
-        "description": ""
+        "imgPath": "../img/album1/album1002.jpg"
     },
     {
         "imgPath": "../img/album1/album1003.jpg"

@@ -295,6 +295,10 @@ footer {
     text-align: center;
 }
 
+.gallery-main-section .page-title {
+    padding-bottom: 15px;
+}
+
 .photo-albums-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

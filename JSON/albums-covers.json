@@ -10,8 +10,7 @@
             "./img/album1/album1004.jpg",
             "./img/album1/album1005.jpg",
             "./img/album1/album1006.jpg"
-        ],
-        "description": "in Cimitirul central din Cluj-Napoca și prezentarea filmului documentar realizat de studioul cinematografic al Armatei, Prigoana.Parcela IIB.Locul 1551, la cinema Mărăsti din Cluj-Napoca"
+        ]
     },
     {
         "id": 2,
@@ -24,8 +23,7 @@
             "./img/album2/album2004-small.jpg",
             "./img/album2/album2005-small.jpg",
             "./img/album2/album2006-small.jpg"
-        ],
-        "description": "membra ARPIA-filiala Cluj, expozitia desenelor premiate in urma concursului Zborul, un vis frumos! si adunarea generala a asociatiei la sediul Radio Romania Cluj"
+        ]
     },
     {
         "id": 3,
@@ -38,7 +36,6 @@
             "./img/album3/album3004.jpg",
             "./img/album3/album3005.jpg",
             "./img/album3/album3006.jpg"
-        ],
-        "description": "Ghijasa de Sus, com. Alțâna, jud. Sibiu. Lansarea cărtii prof. Tudor Vasile"
+        ]
     }
 ]

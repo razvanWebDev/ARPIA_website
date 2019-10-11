@@ -13,6 +13,7 @@ window.onload = () => {
     const hamburger = document.querySelector("#hamburger");
     const nav = document.querySelector(".header-menu");
     const galleryLink = document.querySelector(".gallery-link");
+    const galleryPageTitle = document.querySelector('.gallery-page-title');
     // HOME PAGE
     const slides = document.querySelectorAll(".slide");
     const next = document.querySelector("#next");
@@ -144,11 +145,16 @@ window.onload = () => {
     };
 
     const displayFotos = fotos => {
-        let description = fotos[0].description;
+        const description = fotos[0].description;
         if (description == undefined || description == "") {
             description = "";
         }
         galleryDescription.innerHTML = description;
+
+        const albumName = fotos[0].albumName;
+        const date = fotos[0].date;
+        galleryPageTitle.innerHTML = `${albumName} <br> ${date}`;
+      
 
         //display foto gallery
         const galleryItems = fotos.map(foto => {
