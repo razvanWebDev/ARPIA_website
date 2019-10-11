@@ -161,14 +161,13 @@ main {
     padding-top: 1px;
     margin-top: -1px;
     min-height: 80vh;
+    padding-bottom: 50px;
 }
 
 /* Page title */
 .page-title {
-    /* header height(6vh+18px) + margin from header */
-    /* margin-top: calc(6vh + 18px + 15px); */
+    /* header height(6vh+18px) + visible section */
     height:calc(6vh + 18px + 100px) ;
-    margin-bottom: 15px;
     padding-bottom: 35px;
     background: url("../img/page-title-background.jpg") no-repeat center
         center/cover;
@@ -365,11 +364,11 @@ footer {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
-    padding: 50px 10vw;
+    padding: 0px 10vw;
 }
 
 .gallery-details {
-    padding: 0 8%;
+    padding: 30px 10%;
 }
 
 .photo-gallery-item {
@@ -543,12 +542,10 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-    .page-title {
-        margin-bottom: 0px;
-    }
+  
 
     .page-title h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     /* foto albums page */
@@ -611,13 +608,14 @@ footer {
         padding-bottom: 10vh;
         background-color: rgba(0, 0, 0, 0.8);
     }
-/* 
-    .page-title {
-        margin-top: calc(10vh + 15px);
-    } */
+
+    main {
+        padding-bottom: 10px;
+    }
+
 
     .page-title h2 {
-        font-size: 23px;
+        font-size: 22px;
     }
 
     /* foto albums page */
@@ -664,16 +662,20 @@ footer {
     }
 
     /* foto gallery page */
-    .page-title {
-        margin-top: calc(10vh + 10px);
-    }
+   
     .page-title h2 {
-        font-size: 1.3rem;
+        font-size: 18px;
     }
+
+    .gallery-details {
+        padding: 10px 5%;
+        font-size: 14px;
+    }
+
     .photo-gallery {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         grid-gap: 10px;
-        padding: 10px;
+        padding: 0 10px;
     }
 
     .current-foto {
