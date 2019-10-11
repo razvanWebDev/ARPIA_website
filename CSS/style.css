@@ -558,16 +558,16 @@ footer {
 
     /*foto gallery page */
     .photo-gallery {
-        grid-gap: 5px;
+        grid-gap: 20px;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        padding: 10px 5px;
+        padding: 20px;
     }
     .current-foto {
-        max-width: 100%;
+        max-width: 98%;
         height: 70vh;
     }
     .gallery-slider-container {
-        width: 100%;
+        max-width: 98%;
     }
     .gallery-slider {
         overflow-x: auto;
