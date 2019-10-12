@@ -23,8 +23,9 @@ window.onload = () => {
     const intervalTime = 5000; //slides interval for autoslide
     let slideInterval;
     // GALLERY PAGE
-    const fotoAlbums = document.querySelector(".photo-albums-container");
     const fotoGallery = document.querySelector(".photo-gallery");
+    const fotoAlbums = document.querySelector(".photo-albums-container");
+    const videoAlbums = document.querySelector(".video-albums-container");
     const galleryDescription = document.querySelector(".gallery-description");
 
     // gallery modal
@@ -114,12 +115,31 @@ window.onload = () => {
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 const albums = JSON.parse(xhttp.responseText);
-                displayAlbums(albums);
+                const videos = JSON.parse(xhttp.responseText);
+                if (window.location.pathname.includes("gallery_foto.html")) {
+                    displayAlbums(albums);
+                }
+                if (window.location.pathname.includes("video.html")) {
+                    displayVideos(videos);
+                }
             }
         };
-        xhttp.open("GET", "JSON/albums-covers.json", true);
+        xhttp.open("GET", `JSON/${currentPageName}.json`, true);
         xhttp.send();
     };
+
+    // ***********************TEST****************************
+    const displayVideos = videos => {
+        const galleryItems = videos.map(video => {
+            const videoSrc = video.videoSrc;
+
+            return `<iframe width="560" height="315" src=${videoSrc} frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        });
+        videoAlbums.innerHTML = galleryItems.join("");
+    };
+
+    // ************************************************
 
     const displayAlbums = albums => {
         //display foto albums
@@ -337,6 +357,8 @@ window.onload = () => {
         }
     };
 
+    // VIDEO GALLERY PAGE
+
     // ========================== EVENTS LISTENERS====================================
 
     // show nav on hamburger tap
@@ -375,7 +397,10 @@ window.onload = () => {
         slideRight.addEventListener("click", moveSlideRight);
         slideLeft.addEventListener("click", moveSlideLeft);
     }
-    if (window.location.pathname.includes("gallery_foto.html")) {
+    if (
+        window.location.pathname.includes("gallery_foto.html") ||
+        window.location.pathname.includes("gallery_video.html")
+    ) {
         loadAlbums();
     }
 };
