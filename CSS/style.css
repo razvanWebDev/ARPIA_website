@@ -76,7 +76,7 @@ header {
 /* Dropdowen submenu */
 .dropdown {
     position: relative;
-    line-height: 8vh;
+    line-height: 55px;
 }
 
 .dropdown-list {
@@ -577,6 +577,7 @@ footer {
 @media (max-width: 768px) {
     header {
         height: 10vh;
+        background-color: rgba(0, 0, 0, 0.8);
     }
     #hamburger {
         display: block;
@@ -592,7 +593,7 @@ footer {
         display: flex;
         justify-content: flex-end;
         transform: translateX(100%);
-        transition: all 0.7s ease-in-out;
+        transition: transform 0.7s ease-in-out;
     }
     .show-nav {
         transform: translateX(0%);
