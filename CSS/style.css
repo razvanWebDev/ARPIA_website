@@ -98,7 +98,6 @@ header {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
 }
 
 .dropdown-list li:first-child {
@@ -161,7 +160,7 @@ main {
 /* Page title */
 .page-title {
     /* header height(6vh+18px) + visible section */
-    height:calc(6vh + 18px + 100px) ;
+    height: calc(6vh + 18px + 100px);
     padding-bottom: 35px;
     background: url("../img/page-title-background.jpg") no-repeat center
         center/cover;
@@ -179,9 +178,29 @@ main {
 }
 
 footer {
-  
     min-height: 20vh;
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+.to-top-arrow {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    width: 50px;
+    cursor: pointer;
+    transform: rotate(-90deg);
+    transition: opacity 0.1s ease-in;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.to-top-arrow:hover {
+    opacity: 0.8;
+}
+
+.show-to-top-arrow {
+    opacity: 0.5;
+    pointer-events: all;
 }
 
 /*================= HOME PAGE===================== */
@@ -540,8 +559,6 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-  
-
     .page-title h2 {
         font-size: 25px;
     }
@@ -612,7 +629,6 @@ footer {
         padding-bottom: 10px;
     }
 
-
     .page-title h2 {
         font-size: 22px;
     }
@@ -661,7 +677,7 @@ footer {
     }
 
     /* foto gallery page */
-   
+
     .page-title h2 {
         font-size: 18px;
     }

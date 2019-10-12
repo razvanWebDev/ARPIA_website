@@ -13,7 +13,8 @@ window.onload = () => {
     const hamburger = document.querySelector("#hamburger");
     const nav = document.querySelector(".header-menu");
     const galleryLink = document.querySelector(".gallery-link");
-    const galleryPageTitle = document.querySelector('.gallery-page-title');
+    const galleryPageTitle = document.querySelector(".gallery-page-title");
+    const upArrow = document.querySelectorAll(".to-top-arrow");
     // HOME PAGE
     const slides = document.querySelectorAll(".slide");
     const next = document.querySelector("#next");
@@ -56,6 +57,25 @@ window.onload = () => {
             }
         }
     };
+
+    // Showw scroll up arrow
+    function showArrow() {
+        const y = window.scrollY;
+        if (y >= 300) {
+            upArrow.forEach(arrow => arrow.classList.add("show-to-top-arrow"));
+        } else {
+            upArrow.forEach(arrow =>
+                arrow.classList.remove("show-to-top-arrow")
+            );
+        }
+    }
+
+    // scroll page to top
+    upArrow.forEach(arrow =>
+        arrow.addEventListener("click", () =>
+            window.scroll({ top: 0, behavior: "smooth" })
+        )
+    );
 
     // HOME PAGE
     // Home page slides
@@ -154,7 +174,6 @@ window.onload = () => {
         const albumName = fotos[0].albumName;
         const date = fotos[0].date;
         galleryPageTitle.innerHTML = `${albumName} <br> ${date}`;
-      
 
         //display foto gallery
         const galleryItems = fotos.map(foto => {
@@ -324,6 +343,8 @@ window.onload = () => {
     hamburger.addEventListener("click", navToggle);
     //hide nav on tap
     window.addEventListener("click", navClose);
+    //scroll page to top
+    window.addEventListener("scroll", showArrow);
 
     // HOME PAGE
     //home page slides
