@@ -110,6 +110,7 @@ window.onload = () => {
     };
 
     // GALLERY PAGE
+    // Ajax requests
     const loadAlbums = () => {
         const xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
@@ -125,6 +126,19 @@ window.onload = () => {
             }
         };
         xhttp.open("GET", `JSON/${currentPageName}.json`, true);
+        xhttp.send();
+    };
+
+    const loadFotos = () => {
+        const currentPage = currentPageName.split("-").pop();
+        const xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                const fotos = JSON.parse(xhttp.responseText);
+                displayFotos(fotos);
+            }
+        };
+        xhttp.open("GET", `../JSON/${currentPage}.json`, true);
         xhttp.send();
     };
 
@@ -169,19 +183,6 @@ window.onload = () => {
                     </a>`;
         });
         fotoAlbums.innerHTML = galleryItems.join("");
-    };
-
-    const loadFotos = () => {
-        const currentPage = currentPageName.split("-").pop();
-        const xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                const fotos = JSON.parse(xhttp.responseText);
-                displayFotos(fotos);
-            }
-        };
-        xhttp.open("GET", `../JSON/${currentPage}.json`, true);
-        xhttp.send();
     };
 
     const displayFotos = fotos => {

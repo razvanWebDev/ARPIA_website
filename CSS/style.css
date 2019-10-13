@@ -29,14 +29,13 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 10;
     width: 100%;
     display: flex;
     padding: 0 35px;
     justify-content: space-between;
     align-items: center;
     color: #fdfdfd;
-    /* background-color: rgba(18, 20, 100, 0.9); */
     background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -151,10 +150,13 @@ header {
 
 /* main page section */
 main {
-    padding-top: 1px;
-    margin-top: -1px;
     min-height: 80vh;
-    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px 75px;
+   
 }
 
 /* Page title */
@@ -167,6 +169,7 @@ main {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    text-align: center;
 }
 
 .page-title h2 {
@@ -305,18 +308,17 @@ footer {
 
 /* ==================== FOTO-ALBUMS-PAGE ================== */
 .gallery-main-section {
-    text-align: center;
+   width: 100%;
 }
 
-.gallery-main-section .page-title {
+.double-row {
     padding-bottom: 15px;
 }
 
 .photo-albums-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px 35px;
-    padding: 40px 5%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
     width: 100%;
 }
 
@@ -360,6 +362,7 @@ footer {
     padding: 5px;
     color: #fdfdfd;
     background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
 }
 
 .album-thumbnails-container {
@@ -381,11 +384,13 @@ footer {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
-    padding: 0px 10vw;
+    width: 100%;
+ 
 }
 
 .gallery-details {
-    padding: 30px 10%;
+    padding: 30px 10% 0px;
+    text-align: center;
 }
 
 .photo-gallery-item {
