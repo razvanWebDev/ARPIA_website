@@ -156,7 +156,6 @@ main {
     justify-content: flex-start;
     align-items: center;
     padding: 50px 75px;
-   
 }
 
 /* Page title */
@@ -308,7 +307,7 @@ footer {
 
 /* ==================== FOTO-ALBUMS-PAGE ================== */
 .gallery-main-section {
-   width: 100%;
+    width: 100%;
 }
 
 .double-row {
@@ -385,7 +384,6 @@ footer {
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
     width: 100%;
- 
 }
 
 .gallery-details {
@@ -568,6 +566,10 @@ footer {
         font-size: 25px;
     }
 
+    main {
+        padding: 20px;
+    }
+
     /* foto albums page */
     .photo-albums-container {
         grid-template-columns: repeat(2, 1fr);
@@ -631,7 +633,7 @@ footer {
     }
 
     main {
-        padding-bottom: 10px;
+        padding: 10px;
     }
 
     .page-title h2 {
@@ -672,6 +674,10 @@ footer {
 
     .prev {
         left: 10px;
+    }
+
+    main {
+        padding: 0;
     }
 
     /* foto albums page */
