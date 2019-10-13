@@ -155,7 +155,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 50px 75px;
+    padding: 50px 150px;
 }
 
 /* Page title */
@@ -300,9 +300,22 @@ footer {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding:75px 150px;
     background-color: burlywood;
+}
+
+.home-page-section h1 {
+    margin-bottom: 50px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.home-page-section p {
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-align: justify;
 }
 
 /* ==================== FOTO-ALBUMS-PAGE ================== */
@@ -381,7 +394,7 @@ footer {
     text-align: center;
     justify-content: center;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
     width: 100%;
 }
@@ -394,9 +407,9 @@ footer {
 .photo-gallery-item {
     height: 150px;
     overflow: hidden;
-    -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.8);
+    /* -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.8);
     -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.8);
-    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.8); */
 }
 
 .photo-gallery-pic {
@@ -421,10 +434,10 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 11;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -440,12 +453,11 @@ footer {
     position: absolute;
     top: 35px;
     right: 35px;
-    color: #fdfdfd;
+    color: #333333;
     cursor: pointer;
     font-size: 1.3em;
     font-weight: bolder;
     padding: 10px;
-    text-shadow: 2px 2px 2px #000000;
 }
 
 .close:hover {

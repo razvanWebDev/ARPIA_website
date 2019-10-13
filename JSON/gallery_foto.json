@@ -17,12 +17,12 @@
         "albumName": "Expozitie de pictura a Dorei Popovici",
         "albumDate": "17 mai 2019",
         "imgPath": [
-            "./img/album2/album2001-small.jpg",
-            "./img/album2/album2002-small.jpg",
-            "./img/album2/album2003-small.jpg",
-            "./img/album2/album2004-small.jpg",
-            "./img/album2/album2005-small.jpg",
-            "./img/album2/album2006-small.jpg"
+            "./img/album2/album2001.jpg",
+            "./img/album2/album2002.jpg",
+            "./img/album2/album2003.jpg",
+            "./img/album2/album2004.jpg",
+            "./img/album2/album2005.jpg",
+            "./img/album2/album2006.jpg"
         ]
     },
     {
