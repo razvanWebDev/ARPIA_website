@@ -29,9 +29,12 @@ window.onload = () => {
     const galleryDescription = document.querySelector(".gallery-description");
 
     // gallery modal
-    const galleryModal = document.querySelector(".gallery-modal");
+    const fotoGalleryModal = document.querySelector("#foto-gallery-modal");
+    const videoGalleryModal = document.querySelector("#video-gallery-modal");
+
     const close = document.querySelector(".close");
     const curentPic = document.querySelector(".current-foto img");
+    const currentVideo = document.querySelector(".current-video");
     const currentPicLink = document.querySelector(".current-foto-link");
     const gallerySlider = document.querySelector(".gallery-slider");
     const slideLeft = document.querySelector(".slide-left");
@@ -145,12 +148,63 @@ window.onload = () => {
     // ***********************TEST****************************
     const displayVideos = videos => {
         const galleryItems = videos.map(video => {
+            const videoThumbLink = video.videoThumbLink;
             const videoSrc = video.videoSrc;
 
-            return `<iframe width="560" height="315" src=${videoSrc} frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+            return `<div class="video-gallery-item">
+                        <button class="playVideo" data-path="${videoSrc}">Play</button>
+                        <div class=" photo-gallery-pic" style="background-image: url(${videoThumbLink})" ></div>
+                    </div>`;
         });
         videoAlbums.innerHTML = galleryItems.join("");
+        playCurrentVideo();
+    };
+    const playCurrentVideo = () => {
+        const playVideoBtns = document.querySelectorAll(".playVideo");
+        playVideoBtns.forEach(button =>
+            button.addEventListener("click", function() {
+                const videoSrc = this.getAttribute("data-path");
+                currentVideo.setAttribute("src", videoSrc);
+                showVideoModal();
+            })
+        );
+    };
+
+    const showVideoModal = () => {
+        videoGalleryModal.classList.add("show");
+        body.style.overflow = "hidden";
+
+        // *********TODO**********
+        //close modal on "back" event
+        // history.pushState(null, null, location.href);
+        // window.onpopstate = function() {
+
+        //     hideVideoModal();
+        //     history.go(1);
+        // };
+    };
+
+    const hideVideoModal = () => {
+        videoGalleryModal.classList.remove("show");
+        body.style.overflow = "auto";
+        currentVideo.setAttribute("src", "");
+
+        //restore normal functionality for "back" event
+        // history.back();
+    };
+    window.onpopstate = function(event) {
+        console.log(
+            "location: " +
+                document.location +
+                ", state: " +
+                JSON.stringify(event.state)
+        );
+    };
+
+    var stopVideo = function(element) {
+        var iframe = element.querySelector("iframe");
+        var iframeSrc = iframe.src;
+        iframe.src = iframeSrc;
     };
 
     // ************************************************
@@ -221,6 +275,7 @@ window.onload = () => {
     // Gallery modal
     // get gallery thumbs total width
     let sliderThumbsWidth = 0;
+    // show foto gallery modal
     const showGalleryModal = thumbs => {
         // get gallery thumbs total width
         thumbs.forEach(thumb => {
@@ -228,7 +283,7 @@ window.onload = () => {
         });
 
         body.style.overflow = "hidden";
-        galleryModal.classList.add("show");
+        fotoGalleryModal.classList.add("show");
         //close modal on "back" event
         history.pushState(null, null, location.href);
         window.onpopstate = function() {
@@ -256,7 +311,7 @@ window.onload = () => {
         body.style.overflow = "auto";
         // reset gallery thumbs total width
         sliderThumbsWidth = 0;
-        galleryModal.classList.remove("show");
+        fotoGalleryModal.classList.remove("show");
         //restore normal functionality for "back" event
         history.back();
     };
@@ -397,6 +452,13 @@ window.onload = () => {
 
         slideRight.addEventListener("click", moveSlideRight);
         slideLeft.addEventListener("click", moveSlideLeft);
+    }
+    if (window.location.pathname.includes("gallery_video")) {
+        // close gallery modal
+        close.addEventListener("click", hideVideoModal);
+        close.addEventListener("click", function() {
+            currentVideo.setAttribute("src", "");
+        });
     }
     if (
         window.location.pathname.includes("gallery_foto.html") ||
