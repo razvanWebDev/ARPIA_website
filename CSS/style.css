@@ -281,7 +281,6 @@ footer {
 .prev {
     left: 25px;
     transform: rotate(180deg);
-   
 }
 
 /* Background images */
@@ -302,7 +301,8 @@ footer {
     background-position-y:40%;
 }
 .slide:nth-child(5) {
-    background: url("../img/landing-page5.jpg") no-repeat center center/cover;
+    background: url("../img/landing-page5.jpg") no-repeat center center/contain;
+    background-color: #000000;
 }
 /* home section */
 .home-page-section {
