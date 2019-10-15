@@ -277,23 +277,28 @@ footer {
 .prev {
     left: 25px;
     transform: rotate(180deg);
+   
 }
 
 /* Background images */
 .slide:first-child {
-    background: url("../img/demo1.jpg") no-repeat center center/cover;
+    background: url("../img/landing-page1.jpg") no-repeat center/cover;
+    background-position-y:70%;
 }
 .slide:nth-child(2) {
-    background: url("../img/demo2.jpg") no-repeat center center/cover;
+    background: url("../img/landing-page2.jpg") no-repeat center/cover;
+    background-position-y:30%;
 }
 .slide:nth-child(3) {
-    background: url("../img/demo3.jpg") no-repeat center center/cover;
+    background: url("../img/landing-page3.jpg") no-repeat center/cover;
+    background-position-y:35%;
 }
 .slide:nth-child(4) {
-    background: url("../img/demo4.jpg") no-repeat center center/cover;
+    background: url("../img/landing-page4.jpg") no-repeat center/cover;
+    background-position-y:40%;
 }
 .slide:nth-child(5) {
-    background: url("../img/demo5.jpg") no-repeat center center/cover;
+    background: url("../img/landing-page5.jpg") no-repeat center center/cover;
 }
 /* home section */
 .home-page-section {
