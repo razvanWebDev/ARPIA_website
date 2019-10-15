@@ -44,13 +44,17 @@ header {
     align-items: center;
 }
 
+#logo img {
+    width:45px;
+}
+
 #logo-link {
     opacity: 1;
     color: #fdfdfd;
 }
 
 #logo h1 {
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .header-menu {
