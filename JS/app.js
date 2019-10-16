@@ -80,14 +80,14 @@ window.onload = () => {
             window.scroll({ top: 0, behavior: "smooth" })
         )
     );
-    
+
     // Check if item exists
     const ifItemExists = item => {
         if (item == undefined || item == null) {
             item = "";
         }
-        return item
-    }
+        return item;
+    };
 
     // HOME PAGE
     // Home page slides
@@ -122,6 +122,7 @@ window.onload = () => {
 
     // GALLERY PAGE
     // Ajax requests
+    // Load foto albums & video gallery
     const loadAlbums = () => {
         const xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
@@ -157,12 +158,9 @@ window.onload = () => {
     // Display video gallery items
     const displayVideos = videos => {
         const galleryItems = videos.map(video => {
-            const videoThumbLink = video.videoThumbLink;
-            const videoSrc = video.videoSrc;
-
             return `<div class="video-gallery-item">
-                        <button class="playVideo" data-path="${videoSrc}">Play</button>
-                        <div class=" photo-gallery-pic" style="background-image: url(${videoThumbLink})" ></div>
+                        <button class="playVideo" data-path="${video.videoSrc}">Play</button>
+                        <div class=" photo-gallery-pic" style="background-image: url(${video.videoThumbLink})" ></div>
                     </div>`;
         });
         videoAlbums.innerHTML = galleryItems.join("");
@@ -173,8 +171,7 @@ window.onload = () => {
         const playVideoBtns = document.querySelectorAll(".playVideo");
         playVideoBtns.forEach(button =>
             button.addEventListener("click", function() {
-                const videoSrc = this.getAttribute("data-path");
-                currentVideo.setAttribute("src", videoSrc);
+                currentVideo.src = this.getAttribute("data-path");
                 showVideoModal();
             })
         );
@@ -197,33 +194,28 @@ window.onload = () => {
     const hideVideoModal = () => {
         videoGalleryModal.classList.remove("show");
         body.style.overflow = "auto";
-        currentVideo.setAttribute("src", "");
+        currentVideo.src = "";
 
         //restore normal functionality for "back" event
         // history.back();
     };
 
     // ************************************************
-    //Dissplay foto albums
+    //Display foto albums
     const displayAlbums = albums => {
         //display foto albums
         const galleryItems = albums.map(album => {
-            const id = album.id;
-            const albumName = ifItemExists(album.albumName);
-            const albumDate = ifItemExists(album.albumDate);
-
-            const albumThumbnails = album.imgPath;
-            const albumPictures = albumThumbnails.map(thumbnail => {
+            const albumPictures = album.imgPath.map(thumbnail => {
                 return `<img src=${thumbnail} class=album-thumbnails>`;
             });
-            return ` <a href="Galleries/foto-album${id}.html">
+            return ` <a href="Galleries/foto-album${album.id}.html">
                         <div class="foto-album">
                             <div class="album-hover">
                                 <p>Deschide</p>
                             </div>
                             <div class="album-description">
-                            <p>${albumName}</p>
-                            <p>- ${albumDate} -</p>
+                            <p>${ifItemExists(album.albumName)}</p>
+                            <p>- ${ifItemExists(album.albumDate)} -</p>
                            
                         </div>
                         <div class="album-thumbnails-container">
@@ -237,21 +229,21 @@ window.onload = () => {
 
     // Display current album gallery
     const displayFotos = fotos => {
-        const description = ifItemExists(fotos[0].description);
-        galleryDescription.innerHTML = description;
-
-        const albumName = ifItemExists(fotos[0].albumName);
-        const date = ifItemExists(fotos[0].date);
-        galleryPageTitle.innerHTML = `${albumName} <br> ${date}`;
+        // get gallery title & date
+        galleryPageTitle.innerHTML = `${ifItemExists(
+            fotos[0].albumName
+        )} <br> ${ifItemExists(fotos[0].date)}`;
+        
+        //get gallery description
+        galleryDescription.innerHTML = ifItemExists(fotos[0].description);
 
         //display foto gallery
-        const galleryFotos = fotos.filter(foto => foto.imgPath != undefined)
-
+        const galleryFotos = fotos.filter(
+            foto => foto.imgPath != undefined || foto.imgPath != ""
+        );
         const galleryItems = galleryFotos.map(foto => {
-            const imgPath = foto.imgPath;
-
             return `<div class="photo-gallery-item">
-                        <div class=" photo-gallery-pic" style="background-image: url(${imgPath})" data-path="${imgPath}"></div>
+                        <div class=" photo-gallery-pic" style="background-image: url(${foto.imgPath})" data-path="${foto.imgPath}"></div>
                     </div>`;
         });
 
@@ -259,8 +251,7 @@ window.onload = () => {
 
         //display gallery-modal thumbnails
         const modalThumbnails = fotos.map(foto => {
-            const imgPath = foto.imgPath;
-            return `<img src="${imgPath}" class="modal-slider-pic">`;
+            return `<img src="${foto.imgPath}" class="modal-slider-pic">`;
         });
         gallerySlider.innerHTML = modalThumbnails.join("");
         //get current img for the modal
@@ -358,7 +349,7 @@ window.onload = () => {
                 );
                 // set modal current foto
                 curentPic.src = thumb.src;
-                currentPicLink.setAttribute("href", thumb.src);
+                currentPicLink.href = thumb.src;
                 // modal current foto fade in
                 curentPic.classList.add("fade-in");
                 // remove fade in class after animation ends
