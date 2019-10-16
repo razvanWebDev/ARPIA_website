@@ -33,7 +33,7 @@ window.onload = () => {
     const videoGalleryModal = document.querySelector("#video-gallery-modal");
 
     const close = document.querySelector(".close");
-    const curentPic = document.querySelector(".current-foto img");
+    const currentPic = document.querySelector(".current-foto img");
     const currentVideo = document.querySelector(".current-video");
     const currentPicLink = document.querySelector(".current-foto-link");
     const gallerySlider = document.querySelector(".gallery-slider");
@@ -154,7 +154,6 @@ window.onload = () => {
         xhttp.send();
     };
 
-    // ***********************TEST****************************
     // Display video gallery items
     const displayVideos = videos => {
         const galleryItems = videos.map(video => {
@@ -200,7 +199,6 @@ window.onload = () => {
         // history.back();
     };
 
-    // ************************************************
     //Display foto albums
     const displayAlbums = albums => {
         //display foto albums
@@ -233,7 +231,6 @@ window.onload = () => {
         galleryPageTitle.innerHTML = `${ifItemExists(
             fotos[0].albumName
         )} <br> ${ifItemExists(fotos[0].date)}`;
-        
         //get gallery description
         galleryDescription.innerHTML = ifItemExists(fotos[0].description);
 
@@ -246,7 +243,6 @@ window.onload = () => {
                         <div class=" photo-gallery-pic" style="background-image: url(${foto.imgPath})" data-path="${foto.imgPath}"></div>
                     </div>`;
         });
-
         fotoGallery.innerHTML = galleryItems.join("");
 
         //display gallery-modal thumbnails
@@ -255,7 +251,6 @@ window.onload = () => {
         });
         gallerySlider.innerHTML = modalThumbnails.join("");
         //get current img for the modal
-        currentImg();
         currentGalleryImg();
     };
 
@@ -277,26 +272,8 @@ window.onload = () => {
             hideGalleryModal();
             history.go(1);
         };
+        currentImg();
         showHideSliderArrows();
-    };
-
-    const showHideSliderArrows = () => {
-        // hide slider left arrow if scroll == 0
-        if (gallerySlider.scrollLeft <= 0) {
-            slideLeft.style.display = "none";
-        } else {
-            slideLeft.style.display = "flex";
-        }
-        // hide slider right arrow is scroll ends
-        if (
-            sliderThumbsWidth -
-                (gallerySlider.offsetWidth + gallerySlider.scrollLeft) <
-            5
-        ) {
-            slideRight.style.display = "none";
-        } else {
-            slideRight.style.display = "flex";
-        }
     };
 
     const hideGalleryModal = () => {
@@ -319,8 +296,8 @@ window.onload = () => {
                 // highlight and center current modal thumbnail
                 getCurrentThumbnail(imgPath, thumbs);
                 //set the selected foto as current img
-                currentPicLink.setAttribute("href", imgPath);
-                curentPic.src = imgPath;
+                currentPicLink.href = imgPath;
+                currentPic.src = imgPath;
                 //open modal
                 showGalleryModal(thumbs);
             });
@@ -348,16 +325,35 @@ window.onload = () => {
                     thumb.classList.remove("current-slide-thumbnail")
                 );
                 // set modal current foto
-                curentPic.src = thumb.src;
+                currentPic.src = thumb.src;
                 currentPicLink.href = thumb.src;
                 // modal current foto fade in
-                curentPic.classList.add("fade-in");
+                currentPic.classList.add("fade-in");
                 // remove fade in class after animation ends
-                setTimeout(() => curentPic.classList.remove("fade-in"), 500);
+                setTimeout(() => currentPic.classList.remove("fade-in"), 500);
                 // current modal thumbnail
                 thumb.classList.add("current-slide-thumbnail");
             });
         });
+    };
+
+    const showHideSliderArrows = () => {
+        // hide slider left arrow if scroll == 0
+        if (gallerySlider.scrollLeft <= 0) {
+            slideLeft.style.display = "none";
+        } else {
+            slideLeft.style.display = "flex";
+        }
+        // hide slider right arrow is scroll ends
+        if (
+            sliderThumbsWidth -
+                (gallerySlider.offsetWidth + gallerySlider.scrollLeft) <
+            5
+        ) {
+            slideRight.style.display = "none";
+        } else {
+            slideRight.style.display = "flex";
+        }
     };
 
     // move modal thumbails to right
