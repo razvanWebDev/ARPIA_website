@@ -449,6 +449,13 @@ footer {
     left: 50%;
 }
 
+#video-gallery-modal {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#video-gallery-modal .close {
+    color: #fdfdfd;
+}
 
 /* Gallery modal */
 .modal {
