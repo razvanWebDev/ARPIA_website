@@ -123,7 +123,7 @@ window.onload = () => {
                 if (window.location.pathname.includes("gallery_foto.html")) {
                     displayAlbums(albums);
                 }
-                if (window.location.pathname.includes("video.html")) {
+                if (window.location.pathname.includes("gallery_video.html")) {
                     displayVideos(videos);
                 }
             }
@@ -146,6 +146,7 @@ window.onload = () => {
     };
 
     // ***********************TEST****************************
+    // Display video gallery items
     const displayVideos = videos => {
         const galleryItems = videos.map(video => {
             const videoThumbLink = video.videoThumbLink;
@@ -159,6 +160,7 @@ window.onload = () => {
         videoAlbums.innerHTML = galleryItems.join("");
         playCurrentVideo();
     };
+    // Open modal and play current video
     const playCurrentVideo = () => {
         const playVideoBtns = document.querySelectorAll(".playVideo");
         playVideoBtns.forEach(button =>
@@ -192,23 +194,9 @@ window.onload = () => {
         //restore normal functionality for "back" event
         // history.back();
     };
-    window.onpopstate = function(event) {
-        console.log(
-            "location: " +
-                document.location +
-                ", state: " +
-                JSON.stringify(event.state)
-        );
-    };
-
-    var stopVideo = function(element) {
-        var iframe = element.querySelector("iframe");
-        var iframeSrc = iframe.src;
-        iframe.src = iframeSrc;
-    };
 
     // ************************************************
-
+    //Dissplay foto albums
     const displayAlbums = albums => {
         //display foto albums
         const galleryItems = albums.map(album => {
@@ -239,6 +227,7 @@ window.onload = () => {
         fotoAlbums.innerHTML = galleryItems.join("");
     };
 
+    // Display current album gallery
     const displayFotos = fotos => {
         const description = fotos[0].description;
         if (description == undefined || description == "") {
@@ -290,6 +279,10 @@ window.onload = () => {
             hideGalleryModal();
             history.go(1);
         };
+        showHideSliderArrows();
+    };
+
+    const showHideSliderArrows = () => {
         // hide slider left arrow if scroll == 0
         if (gallerySlider.scrollLeft <= 0) {
             slideLeft.style.display = "none";
@@ -307,6 +300,7 @@ window.onload = () => {
             slideRight.style.display = "flex";
         }
     };
+
     const hideGalleryModal = () => {
         body.style.overflow = "auto";
         // reset gallery thumbs total width
