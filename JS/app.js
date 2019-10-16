@@ -80,6 +80,14 @@ window.onload = () => {
             window.scroll({ top: 0, behavior: "smooth" })
         )
     );
+    
+    // Check if item exists
+    const ifItemExists = item => {
+        if (item == undefined || item == null) {
+            item = "";
+        }
+        return item
+    }
 
     // HOME PAGE
     // Home page slides
@@ -201,8 +209,8 @@ window.onload = () => {
         //display foto albums
         const galleryItems = albums.map(album => {
             const id = album.id;
-            const albumName = "" ? "" : album.albumName;
-            const albumDate = "" ? "" : album.albumDate;
+            const albumName = ifItemExists(album.albumName);
+            const albumDate = ifItemExists(album.albumDate);
 
             const albumThumbnails = album.imgPath;
             const albumPictures = albumThumbnails.map(thumbnail => {
@@ -229,18 +237,17 @@ window.onload = () => {
 
     // Display current album gallery
     const displayFotos = fotos => {
-        const description = fotos[0].description;
-        if (description == undefined || description == "") {
-            description = "";
-        }
+        const description = ifItemExists(fotos[0].description);
         galleryDescription.innerHTML = description;
 
-        const albumName = fotos[0].albumName;
-        const date = fotos[0].date;
+        const albumName = ifItemExists(fotos[0].albumName);
+        const date = ifItemExists(fotos[0].date);
         galleryPageTitle.innerHTML = `${albumName} <br> ${date}`;
 
         //display foto gallery
-        const galleryItems = fotos.map(foto => {
+        const galleryFotos = fotos.filter(foto => foto.imgPath != undefined)
+
+        const galleryItems = galleryFotos.map(foto => {
             const imgPath = foto.imgPath;
 
             return `<div class="photo-gallery-item">
