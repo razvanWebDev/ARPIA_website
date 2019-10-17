@@ -449,23 +449,30 @@ footer {
     align-content: center;
     grid-gap: 30px;
     width: 100%;
-}
-.video-gallery-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
     color: #fdfdfd;
-  
 }
 
-/* .playVideo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-} */
+.video-albums-container .gallery-pic {
+    cursor: default;
+}
+
+.video-title {
+    font-size: 30px;
+}
+
+.video-description {
+    font-size: 18px;
+}
+
+.playVideo {
+    width: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.playVideo:hover {
+    transform: scale(1.2);
+}
 
 
 #video-gallery-modal {
