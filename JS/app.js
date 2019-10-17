@@ -158,8 +158,17 @@ window.onload = () => {
     const displayVideos = videos => {
         const galleryItems = videos.map(video => {
             return `<div class="video-gallery-item">
-                        <button class="playVideo" data-path="${video.videoSrc}">Play</button>
-                        <div class=" photo-gallery-pic" style="background-image: url(${video.videoThumbLink})" ></div>
+                        <div class="gallery-pic" style="background-image: linear-gradient(
+                                rgba(38, 38, 38, 0.3) 0%,
+                                rgba(38, 38, 38, 0.3) 100%
+                            ), url(${video.videoThumbLink})" >
+                            <h3>Demo title</h3>
+                            <button class="playVideo" data-path="${video.videoSrc}">Play</button>
+                            <span>Demo description</span>
+                        </div>
+                        
+                        
+                        
                     </div>`;
         });
         videoAlbums.innerHTML = galleryItems.join("");
@@ -240,7 +249,7 @@ window.onload = () => {
         );
         const galleryItems = galleryFotos.map(foto => {
             return `<div class="photo-gallery-item">
-                        <div class=" photo-gallery-pic" style="background-image: url(${foto.imgPath})" data-path="${foto.imgPath}"></div>
+                        <div class="gallery-pic" style="background-image: url(${foto.imgPath})" data-path="${foto.imgPath}"></div>
                     </div>`;
         });
         fotoGallery.innerHTML = galleryItems.join("");
@@ -287,7 +296,7 @@ window.onload = () => {
 
     // open gallery modal when gallery foto is clicked
     const currentGalleryImg = () => {
-        const galleryPics = document.querySelectorAll(".photo-gallery-pic");
+        const galleryPics = document.querySelectorAll(".gallery-pic");
         const thumbs = document.querySelectorAll(".gallery-slider img");
 
         galleryPics.forEach(pic => {
