@@ -1,53 +1,52 @@
 [
     {
         "videoTitle": "",
-        "videoThumbLink" : "./img/album2/album2001.jpg",
-        "videoSrc": "https://www.youtube.com/embed/fS1TfANV0WA?&autoplay=1"
-    },
-    {
-        "videoTitle": "",
-        "videoThumbLink" : "./img/album2/album2002.jpg",
+        "videoThumbLink": "./img/album2/album2001.jpg",
         "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o?autoplay=1"
     },
     {
         "videoTitle": "",
-        "videoThumbLink" : "./img/album2/album2003.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o"
-    },
-    {
-        "videoTitle": "",
-        "videoThumbLink" : "./img/album2/album2003.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o"
-    },
-    {
-        "videoTitle": "",
-        "videoThumbLink" : "./img/album2/album2002.jpg",
+        "videoThumbLink": "./img/album2/album2002.jpg",
         "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o?autoplay=1"
     },
     {
         "videoTitle": "",
-        "videoThumbLink" : "./img/album2/album2003.jpg",
+        "videoThumbLink": "./img/album2/album2003.jpg",
         "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o"
     },
     {
         "videoTitle": "",
-        "videoThumbLink" : "./img/album2/album2003.jpg",
+        "videoThumbLink": "./img/album2/album2003.jpg",
         "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o"
     },
     {
         "videoTitle": "",
-        "videoThumbLink" : "./img/album2/album2002.jpg",
+        "videoThumbLink": "./img/album2/album2002.jpg",
         "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o?autoplay=1"
     },
     {
         "videoTitle": "",
-        "videoThumbLink" : "./img/album2/album2003.jpg",
+        "videoThumbLink": "./img/album2/album2003.jpg",
         "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o"
     },
     {
         "videoTitle": "",
-        "videoThumbLink" : "./img/album2/album2003.jpg",
+        "videoThumbLink": "./img/album2/album2003.jpg",
+        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o"
+    },
+    {
+        "videoTitle": "",
+        "videoThumbLink": "./img/album2/album2002.jpg",
+        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o?autoplay=1"
+    },
+    {
+        "videoTitle": "",
+        "videoThumbLink": "./img/album2/album2003.jpg",
+        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o"
+    },
+    {
+        "videoTitle": "",
+        "videoThumbLink": "./img/album2/album2003.jpg",
         "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o"
     }
-    
 ]

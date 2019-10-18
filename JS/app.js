@@ -46,6 +46,11 @@ window.onload = () => {
     // Toggle navbar on mobile display
     const navToggle = () => {
         nav.classList.toggle("show-nav");
+        if (nav.classList.contains("show-nav")) {
+            nav.style.animation = `navSlideIn 0.7s forwards`;
+        } else {
+            nav.style.animation = `navSlideOut 0.7s`;
+        }
         hamburger.classList.toggle("toggle-burger");
     };
 

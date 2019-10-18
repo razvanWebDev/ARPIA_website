@@ -45,7 +45,7 @@ header {
 }
 
 #logo img {
-    width:45px;
+    width: 45px;
 }
 
 #logo-link {
@@ -201,11 +201,11 @@ footer {
 }
 
 .to-top-arrow:hover {
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .show-to-top-arrow {
-    opacity: 0.5;
+    opacity: 0.8;
     pointer-events: all;
 }
 
@@ -286,19 +286,19 @@ footer {
 /* Background images */
 .slide:first-child {
     background: url("../img/landing-page1.jpg") no-repeat center/cover;
-    background-position-y:70%;
+    background-position-y: 70%;
 }
 .slide:nth-child(2) {
     background: url("../img/landing-page2.jpg") no-repeat center/cover;
-    background-position-y:30%;
+    background-position-y: 30%;
 }
 .slide:nth-child(3) {
     background: url("../img/landing-page3.jpg") no-repeat center/cover;
-    background-position-y:35%;
+    background-position-y: 35%;
 }
 .slide:nth-child(4) {
     background: url("../img/landing-page4.jpg") no-repeat center/cover;
-    background-position-y:40%;
+    background-position-y: 40%;
 }
 .slide:nth-child(5) {
     background: url("../img/landing-page5.jpg") no-repeat center center/contain;
@@ -311,18 +311,18 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 75px 150px;
+    padding: 75px 100px;
     background-color: burlywood;
 }
 
 .home-page-section h1 {
     margin-bottom: 50px;
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
 }
 
 .home-page-section p {
-    font-size: 25px;
+    font-size: 22px;
     margin-bottom: 25px;
     text-align: justify;
 }
@@ -444,7 +444,7 @@ footer {
 .video-albums-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
-    grid-auto-rows:250px;
+    grid-auto-rows: 250px;
     justify-content: center;
     align-content: center;
     grid-gap: 30px;
@@ -475,7 +475,6 @@ footer {
     transform: scale(1.1);
 }
 
-
 #video-gallery-modal {
     background-color: rgba(0, 0, 0, 0.8);
 }
@@ -493,7 +492,6 @@ footer {
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
-   
 }
 
 .video {
@@ -664,6 +662,11 @@ footer {
         padding: 35px;
     }
 
+    .foto-album:hover + .album-hover,
+    .album-hover:hover {
+        opacity: 0;
+    }
+
     /*foto gallery page */
     .photo-gallery {
         grid-gap: 20px;
@@ -709,11 +712,11 @@ footer {
         display: flex;
         justify-content: flex-end;
         transform: translateX(100%);
-        transition: transform 0.7s ease-in-out;
     }
     .show-nav {
-        transform: translateX(0%);
+        animation: navSlideIn;
     }
+
     .header-links {
         width: 60%;
         height: 100%;
@@ -819,6 +822,24 @@ footer {
 }
 
 /* ANIMATIONS */
+/* navslide in mobile */
+@keyframes navSlideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes navSlideOut {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
 /* Page titles */
 @keyframes focus-in-expand-fwd {
     0% {
