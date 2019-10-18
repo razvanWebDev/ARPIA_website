@@ -162,10 +162,19 @@ window.onload = () => {
     // Display video gallery items
     const displayVideos = videos => {
         const galleryItems = videos.map(video => {
-            return `<div class="gallery-pic" style="background-image: linear-gradient(rgba(38, 38, 38, 0.3) 0%, rgba(38, 38, 38, 0.3) 100%), url(${video.videoThumbLink})" >
-                        <h3 class="video-title">Demo title</h3>
-                        <img src=./img/btnPlay.png class="playVideo" data-path="${video.videoSrc}">
-                        <span class="video-description">Demo description</span>
+            return `<div class="gallery-pic" style="background-image: linear-gradient(rgba(38, 38, 38, 0.3) 0%, rgba(38, 38, 38, 0.3) 100%), url(${
+                video.videoThumbLink
+            })" >
+                        <h3 class="video-title">${ifItemExists(
+                            video.videoTitle
+                        )}</h3>
+                        <img src=./img/btnPlay.png class="playVideo"
+                            data-path="${video.videoSrc}?${ifItemExists(
+                video.startTime
+            )}&${ifItemExists(video.stopTime)}&autoplay=1">
+                        <span class="video-description">${ifItemExists(
+                            video.videoDescription
+                        )}</span>
                     </div>`;
         });
         videoAlbums.innerHTML = galleryItems.join("");

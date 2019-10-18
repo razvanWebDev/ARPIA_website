@@ -1,52 +1,72 @@
 [
     {
-        "videoTitle": "",
+        "videoTitle": "Video Title",
+        "videoDescription": "video description",
         "videoThumbLink": "./img/album2/album2001.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o?autoplay=1"
+        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o",
+        "startTime": "start=30",
+        "stopTime": "end=33"
     },
     {
-        "videoTitle": "",
+        "videoTitle": "Video Title",
+        "videoDescription": "video description",
         "videoThumbLink": "./img/album2/album2002.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o?autoplay=1"
+        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o",
+        "stopTime": "end=33"
     },
     {
-        "videoTitle": "",
+        "videoTitle": "Video Title",
+        "videoDescription": "video description",
         "videoThumbLink": "./img/album2/album2003.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o"
+        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o",
+        "startTime": "",
+        "stopTime": "end=33"
     },
     {
-        "videoTitle": "",
+        "videoTitle": "Video Title",
+        "videoDescription": "video description",
         "videoThumbLink": "./img/album2/album2003.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o"
+        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o",
+        "startTime": "start",
+        "stopTime": "end=33"
     },
     {
-        "videoTitle": "",
+        "videoTitle": "Video Title",
         "videoThumbLink": "./img/album2/album2002.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o?autoplay=1"
-    },
-    {
-        "videoTitle": "",
-        "videoThumbLink": "./img/album2/album2003.jpg",
         "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o"
     },
     {
-        "videoTitle": "",
+        "videoTitle": "Video Title",
         "videoThumbLink": "./img/album2/album2003.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o"
+        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o",
+        "startTime": "start=30"
     },
     {
-        "videoTitle": "",
+        "videoTitle": "Video Title",
+        "videoThumbLink": "./img/album2/album2003.jpg",
+        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o",
+        "startTime": "start=30",
+        "stopTime": "end=33"
+     
+    },
+    {
+        "videoTitle": "Video Title",
         "videoThumbLink": "./img/album2/album2002.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o?autoplay=1"
+        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o?autoplay=1",
+        "stopTime": "end=33"
     },
     {
-        "videoTitle": "",
+        "videoTitle": "Video Title",
         "videoThumbLink": "./img/album2/album2003.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o"
+        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o",
+        "startTime": "start=30",
+        "stopTime": "end=33"
     },
     {
-        "videoTitle": "",
+        "videoTitle": "Video Title",
         "videoThumbLink": "./img/album2/album2003.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o"
+        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o",
+        "startTime": "start=30",
+        "stopTime": "end=33"
     }
 ]
