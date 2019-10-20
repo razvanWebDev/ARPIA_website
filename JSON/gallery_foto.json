@@ -1,19 +1,6 @@
 [
     {
-        "id": 1,
-        "albumName": "Inaugurarea monumentului inchinat Smarandei Brăescu",
-        "albumDate": "02 nov 2018",
-        "imgPath": [
-            "./img/album1/album1001.jpg",
-            "./img/album1/album1002.jpg",
-            "./img/album1/album1003.jpg",
-            "./img/album1/album1004.jpg",
-            "./img/album1/album1005.jpg",
-            "./img/album1/album1006.jpg"
-        ]
-    },
-    {
-        "id": 2,
+        "id": 3,
         "albumName": "Expozitie de pictura a Dorei Popovici",
         "albumDate": "17 mai 2019",
         "imgPath": [
@@ -26,7 +13,20 @@
         ]
     },
     {
-        "id": 3,
+        "id": 2,
+        "albumName": "Inaugurarea monumentului inchinat Smarandei Brăescu",
+        "albumDate": "02 nov 2018",
+        "imgPath": [
+            "./img/album1/album1001.jpg",
+            "./img/album1/album1002.jpg",
+            "./img/album1/album1003.jpg",
+            "./img/album1/album1004.jpg",
+            "./img/album1/album1005.jpg",
+            "./img/album1/album1006.jpg"
+        ]
+    },
+    {
+        "id": 1,
         "albumName": "Comemorarea eroului aviator Ioan Sava",
         "albumDate": "10 sept. 2016",
         "imgPath": [
