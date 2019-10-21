@@ -55,43 +55,20 @@ window.onload = () => {
 
         window.addEventListener(
             "popstate",
-            function() {
+            () => {
                 if (location.hash === "#!/dummy") {
-                    history.replaceState(
-                        null,
-                        document.title,
-                        location.pathname
-                    );
+                    setTimeout(function(){
+                        history.replaceState(
+                            null,
+                            document.title,
+                            location.pathname
+                        );
+                    }, 0)
                     action();
                 }
             },
             false
         );
-    }
-
-    // HEADER
-    // Toggle navbar on mobile display
-    const navToggle = () => {
-        nav.classList.toggle("show-nav");
-        if (nav.classList.contains("show-nav")) {
-            nav.style.animation = `navSlideIn 0.7s forwards`;
-        } else {
-            nav.style.animation = `navSlideOut 0.7s`;
-        }
-        hamburger.classList.toggle("toggle-burger");
-    };
-
-    // Close navbar on mobile display
-    const navClose = e => {
-        if (nav.classList.contains("show-nav")) {
-            if (
-                e.target != hamburger &&
-                e.target != header &&
-                e.target != galleryLink
-            ) {
-                navToggle();
-            }
-        }
     };
 
     // Showw scroll up arrow
@@ -119,6 +96,31 @@ window.onload = () => {
             item = "";
         }
         return item;
+    };
+
+    // HEADER
+    // Toggle navbar on mobile display
+    const navToggle = () => {
+        nav.classList.toggle("show-nav");
+        if (nav.classList.contains("show-nav")) {
+            nav.style.animation = `navSlideIn 0.7s forwards`;
+        } else {
+            nav.style.animation = `navSlideOut 0.7s`;
+        }
+        hamburger.classList.toggle("toggle-burger");
+    };
+
+    // Close navbar on mobile display
+    const navClose = e => {
+        if (nav.classList.contains("show-nav")) {
+            if (
+                e.target != hamburger &&
+                e.target != header &&
+                e.target != galleryLink
+            ) {
+                navToggle();
+            }
+        }
     };
 
     // HOME PAGE
@@ -154,8 +156,9 @@ window.onload = () => {
 
     // GALLERY PAGE
     // Ajax requests
+
     // Load foto albums & video gallery
-    const loadAlbums = () => {
+    const loadGalleryItems = () => {
         const xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
@@ -173,8 +176,8 @@ window.onload = () => {
         xhttp.send();
     };
 
+    //Load fotos for each album
     const loadFotos = path => {
-        const currentPage = currentPageName.split("-").pop();
         const xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
@@ -185,18 +188,6 @@ window.onload = () => {
         };
         xhttp.open("GET", `${path}`, true);
         xhttp.send();
-    };
-
-    const showAlbumGallery = () => {
-        fotoGalleryMain.style.display = "block";
-        fotoAlbumsMain.style.display = "none";
-        disableBackEvent(hideAlbumGAllery)
-
-    };
-
-    const hideAlbumGAllery = () => {
-        fotoGalleryMain.style.display = "none";
-        fotoAlbumsMain.style.display = "block";
     };
 
     // Display video gallery items
@@ -232,26 +223,20 @@ window.onload = () => {
     };
 
     const showVideoModal = () => {
+       
         videoGalleryModal.classList.add("show");
         body.style.overflow = "hidden";
-
-        // *********TODO**********
-        //close modal on "back" event
-        // history.pushState(null, null, location.href);
-        // window.onpopstate = function() {
-
-        //     hideVideoModal();
-        //     history.go(1);
-        // };
+        // TODO disable back event
+        disableBackEvent(hideVideoModal);
     };
 
     const hideVideoModal = () => {
         videoGalleryModal.classList.remove("show");
         body.style.overflow = "auto";
-        currentVideo.src = "";
+        currentVideo.setAttribute("src", "");
+       
 
-        //restore normal functionality for "back" event
-        history.back();
+
     };
 
     //Display foto albums
@@ -284,6 +269,17 @@ window.onload = () => {
                 loadFotos(galeryPath);
             })
         );
+    };
+
+    const showAlbumGallery = () => {
+        fotoGalleryMain.style.display = "block";
+        fotoAlbumsMain.style.display = "none";
+        disableBackEvent(hideAlbumGAllery);
+    };
+
+    const hideAlbumGAllery = () => {
+        fotoGalleryMain.style.display = "none";
+        fotoAlbumsMain.style.display = "block";
     };
 
     // Display current album gallery
@@ -345,7 +341,6 @@ window.onload = () => {
         // reset gallery thumbs total width
         sliderThumbsWidth = 0;
         fotoGalleryModal.classList.remove("show");
-        
     };
 
     // open gallery modal when gallery foto is clicked
@@ -506,14 +501,14 @@ window.onload = () => {
     if (window.location.pathname.includes("gallery_video")) {
         // close gallery modal
         close.addEventListener("click", hideVideoModal);
-        close.addEventListener("click", function() {
-            currentVideo.setAttribute("src", "");
-        });
+        // close.addEventListener("click", function() {
+        //     currentVideo.setAttribute("src", "");
+        // });
     }
     if (
         window.location.pathname.includes("gallery_foto.html") ||
         window.location.pathname.includes("gallery_video.html")
     ) {
-        loadAlbums();
+        loadGalleryItems();
     }
 };
