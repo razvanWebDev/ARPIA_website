@@ -10,7 +10,8 @@
             "./img/album2/album2004.jpg",
             "./img/album2/album2005.jpg",
             "./img/album2/album2006.jpg"
-        ]
+        ],
+        "albumPath": "JSON/album3.json"
     },
     {
         "id": 2,
@@ -23,7 +24,8 @@
             "./img/album1/album1004.jpg",
             "./img/album1/album1005.jpg",
             "./img/album1/album1006.jpg"
-        ]
+        ],
+        "albumPath": "JSON/album2.json"
     },
     {
         "id": 1,
@@ -36,6 +38,7 @@
             "./img/album3/album3004.jpg",
             "./img/album3/album3005.jpg",
             "./img/album3/album3006.jpg"
-        ]
+        ],
+        "albumPath": "JSON/album1.json"
     }
 ]

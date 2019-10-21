@@ -44,14 +44,55 @@
         </div>
     </header>
     <!------------------------------------------ Foto Gallery ------------------------------------------------>
-    <div class="page-title">
-        <h2>GALERIE FOTO</h2>
-    </div>
-    <main>
-        <div class="photo-albums-container">
+    
+    
+    <div class="photo-albums-main">
+        <div class="page-title">
+            <h2>GALERIE FOTO</h2>
         </div>
-        <img src="./img/to-top-arrow.png" class="to-top-arrow" alt="to top">
-    </main>
+        <main>
+            <div class="photo-albums-container">
+            </div>
+            <img src="./img/to-top-arrow.png" class="to-top-arrow" alt="to top">
+        </main>
+    </div>
+
+
+    <div class="photo-gallery-main">
+        <div class="page-title double-row">
+            <h2 class="gallery-page-title"></h2>
+        </div>
+        <div class="gallery-details">
+            <p class="gallery-description"></p>
+        </div>
+        <main>
+            <div class="gallery-main-section">
+    
+                <div class="photo-gallery">
+                </div>
+                <!-- Gallery modal -->
+                <div id="foto-gallery-modal" class="modal">
+                    <div class="current-foto">
+                        <a href="#" class="current-foto-link">
+                            <img src="#" alt="current foto">
+                        </a>
+                    </div>
+                    <div class="gallery-slider-container">
+                        <div class="gallery-slider">
+                        </div>
+                        <div class="slide-left"><img id="prev" class="prev-modal" src="../img/airplane-arrow.png"
+                                alt="prev">
+                        </div>
+                        <div class="slide-right"><img id="next" class="next-modal" src="../img/airplane-arrow.png"
+                                alt="next">
+                        </div>
+                    </div>
+                    <span class="close">X</span>
+                </div>
+                <img src="../img/to-top-arrow.png" class="to-top-arrow" alt="to top">
+            </div>
+        </main>
+    </div>
 
     <!------------------------------------------ footer ------------------------------------------------------>
     <footer></footer>

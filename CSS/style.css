@@ -397,6 +397,9 @@ footer {
 }
 
 /* ================================FOTO-GALLERY-PAGE======================= */
+.photo-gallery-main {
+    display: none;
+}
 .photo-gallery {
     text-align: center;
     justify-content: center;
@@ -437,6 +440,7 @@ footer {
     transform: scale(1.1);
     filter: sepia(100%);
 }
+
 
 /* ==============================VIDEO-GALLERY-PAGE========================= */
 .video-albums-container {
@@ -565,7 +569,7 @@ footer {
     position: relative;
     height: 75px;
     max-width: 90%;
-    box-shadow: 0 0 2px 1px silver;
+    /* box-shadow: 0 0 2px 1px silver; */
 }
 
 .gallery-slider {
@@ -574,14 +578,17 @@ footer {
     width: 100%;
     overflow: hidden;
     cursor: pointer;
-    background-color: #000000;
+    /* background-color: #000000; */
 }
 
 .modal-slider-pic {
     height: 100%;
+    width: 75px;
     object-fit: cover;
-    opacity: 0.4;
+    opacity: 0.8;
     transition: opacity 0.3s ease-in-out;
+    border-radius: 50%;
+    margin: 0 5px;
 }
 
 .modal-slider-pic:hover {

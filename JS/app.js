@@ -23,6 +23,8 @@ window.onload = () => {
     const intervalTime = 5000; //slides interval for autoslide
     let slideInterval;
     // GALLERY PAGE
+    const fotoAlbumsMain = document.querySelector(".photo-albums-main");
+    const fotoGalleryMain = document.querySelector(".photo-gallery-main");
     const fotoGallery = document.querySelector(".photo-gallery");
     const fotoAlbums = document.querySelector(".photo-albums-container");
     const videoAlbums = document.querySelector(".video-albums-container");
@@ -146,17 +148,51 @@ window.onload = () => {
         xhttp.send();
     };
 
-    const loadFotos = () => {
+    const loadFotos = path => {
         const currentPage = currentPageName.split("-").pop();
         const xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 const fotos = JSON.parse(xhttp.responseText);
+                showAlbumGallery();
                 displayFotos(fotos);
             }
         };
-        xhttp.open("GET", `../JSON/${currentPage}.json`, true);
+        xhttp.open("GET", `${path}`, true);
         xhttp.send();
+    };
+
+    const showAlbumGallery = () => {
+        fotoGalleryMain.style.display = "block";
+        fotoAlbumsMain.style.display = "none";
+        
+
+        history.replaceState(
+            null,
+            document.title,
+            location.pathname + "#!/dummy"
+        );
+        history.pushState(null, document.title, location.pathname);
+
+        window.addEventListener(
+            "popstate",
+            function() {
+                if (location.hash === "#!/dummy") {
+                    history.replaceState(
+                        null,
+                        document.title,
+                        location.pathname
+                    );
+                    hideAlbumGAllery();
+                }
+            },
+            false
+        );
+    };
+
+    const hideAlbumGAllery = () => {
+        fotoGalleryMain.style.display = "none";
+        fotoAlbumsMain.style.display = "block";
     };
 
     // Display video gallery items
@@ -211,7 +247,7 @@ window.onload = () => {
         currentVideo.src = "";
 
         //restore normal functionality for "back" event
-        // history.back();
+        history.back();
     };
 
     //Display foto albums
@@ -221,23 +257,29 @@ window.onload = () => {
             const albumPictures = album.imgPath.map(thumbnail => {
                 return `<img src=${thumbnail} class=album-thumbnails>`;
             });
-            return ` <a href="Galleries/foto-album${album.id}.html">
-                        <div class="foto-album">
-                            <div class="album-hover">
-                                <p>Deschide</p>
-                            </div>
-                            <div class="album-description">
-                            <p>${ifItemExists(album.albumName)}</p>
-                            <p>- ${ifItemExists(album.albumDate)} -</p>
-                           
+            return ` <div class="foto-album" data-path="${album.albumPath}">
+                        <div class="album-hover">
+                         <p>Deschide</p>
+                        </div>
+                        <div class="album-description">
+                        <p>${ifItemExists(album.albumName)}</p>
+                        <p>- ${ifItemExists(album.albumDate)} -</p>
+           
                         </div>
                         <div class="album-thumbnails-container">
-                            ${albumPictures.join("")}
-                            </div>
-                        </div>
-                    </a>`;
+                              ${albumPictures.join("")}
+                         </div>
+                    </div>`;
         });
         fotoAlbums.innerHTML = galleryItems.join("");
+
+        const galleryAlbums = document.querySelectorAll(".foto-album");
+        galleryAlbums.forEach(album =>
+            album.addEventListener("click", function() {
+                const galeryPath = album.getAttribute("data-path");
+                loadFotos(galeryPath);
+            })
+        );
     };
 
     // Display current album gallery
@@ -282,11 +324,21 @@ window.onload = () => {
         body.style.overflow = "hidden";
         fotoGalleryModal.classList.add("show");
         //close modal on "back" event
-        history.pushState(null, null, location.href);
-        window.onpopstate = function() {
-            hideGalleryModal();
-            history.go(1);
-        };
+        // history.replaceState(
+        //     null,
+        //     document.title,
+        //     location.pathname + "#!/stealingyourhistory2"
+        // );
+        // history.pushState(null, document.title, location.pathname);
+
+        window.addEventListener(
+            "popstate",
+            function() {
+                hideGalleryModal();
+            },
+            false
+        );
+      
         currentImg();
         showHideSliderArrows();
     };
@@ -296,8 +348,7 @@ window.onload = () => {
         // reset gallery thumbs total width
         sliderThumbsWidth = 0;
         fotoGalleryModal.classList.remove("show");
-        //restore normal functionality for "back" event
-        history.back();
+        
     };
 
     // open gallery modal when gallery foto is clicked
@@ -448,8 +499,7 @@ window.onload = () => {
     }
 
     // GALLERY PAGE
-    if (window.location.pathname.includes("foto-album")) {
-        loadFotos();
+    if (window.location.pathname.includes("gallery_foto")) {
         // close gallery modal
         close.addEventListener("click", hideGalleryModal);
 
