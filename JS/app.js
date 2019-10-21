@@ -43,6 +43,31 @@ window.onload = () => {
     const slideRight = document.querySelector(".slide-right");
 
     // ============================RUN THE APP========================================
+    // GLOBAL
+    // Disable back event and use it for another action
+    const disableBackEvent = action => {
+        history.replaceState(
+            null,
+            document.title,
+            location.pathname + "#!/dummy"
+        );
+        history.pushState(null, document.title, location.pathname);
+
+        window.addEventListener(
+            "popstate",
+            function() {
+                if (location.hash === "#!/dummy") {
+                    history.replaceState(
+                        null,
+                        document.title,
+                        location.pathname
+                    );
+                    action();
+                }
+            },
+            false
+        );
+    }
 
     // HEADER
     // Toggle navbar on mobile display
@@ -165,29 +190,8 @@ window.onload = () => {
     const showAlbumGallery = () => {
         fotoGalleryMain.style.display = "block";
         fotoAlbumsMain.style.display = "none";
-        
+        disableBackEvent(hideAlbumGAllery)
 
-        history.replaceState(
-            null,
-            document.title,
-            location.pathname + "#!/dummy"
-        );
-        history.pushState(null, document.title, location.pathname);
-
-        window.addEventListener(
-            "popstate",
-            function() {
-                if (location.hash === "#!/dummy") {
-                    history.replaceState(
-                        null,
-                        document.title,
-                        location.pathname
-                    );
-                    hideAlbumGAllery();
-                }
-            },
-            false
-        );
     };
 
     const hideAlbumGAllery = () => {
@@ -323,14 +327,8 @@ window.onload = () => {
 
         body.style.overflow = "hidden";
         fotoGalleryModal.classList.add("show");
-        //close modal on "back" event
-        // history.replaceState(
-        //     null,
-        //     document.title,
-        //     location.pathname + "#!/stealingyourhistory2"
-        // );
-        // history.pushState(null, document.title, location.pathname);
 
+        //close modal on "back" event
         window.addEventListener(
             "popstate",
             function() {
@@ -338,7 +336,6 @@ window.onload = () => {
             },
             false
         );
-      
         currentImg();
         showHideSliderArrows();
     };
