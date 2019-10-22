@@ -13,7 +13,7 @@
         "albumPath": "JSON/album3.json"
     },
     {
-        "albumDate": "02 nov 2018",
+        "albumDate": "02 nov. 2018",
         "albumName": "Inaugurarea monumentului inchinat Smarandei Brăescu",
         "imgPath": [
             "./img/album1/album1001.jpg",
@@ -24,6 +24,20 @@
             "./img/album1/album1006.jpg"
         ],
         "albumPath": "JSON/album2.json"
+    },
+    {
+        "albumDate": "21 sept. 2018",
+        "albumName": "Eveniment omagial, in memoriam Paul Pop-Osz-Puk",
+        "imgPath": [
+            "./img/21_sept_2018/21_sept_2018_01.jpg",
+            "./img/21_sept_2018/21_sept_2018_02.jpg",
+            "./img/21_sept_2018/21_sept_2018_03.jpg",
+            "./img/21_sept_2018/21_sept_2018_04.jpg",
+            "./img/21_sept_2018/21_sept_2018_05.jpg",
+            "./img/21_sept_2018/21_sept_2018_06.jpg"
+           
+        ],
+        "albumPath": "JSON/21_sept_2018.json"
     },
     {
         "albumDate": "10 sept. 2016",
