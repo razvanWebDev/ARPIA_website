@@ -39,8 +39,8 @@ window.onload = () => {
     const currentVideo = document.querySelector(".current-video");
     const currentPicLink = document.querySelector(".current-foto-link");
     const gallerySlider = document.querySelector(".gallery-slider");
-    const slideLeft = document.querySelector(".slide-left");
-    const slideRight = document.querySelector(".slide-right");
+    const slideLeft = document.querySelector("#slide-left");
+    const slideRight = document.querySelector("#slide-right");
 
     // ============================RUN THE APP========================================
     // GLOBAL
@@ -272,6 +272,7 @@ window.onload = () => {
     };
 
     const showAlbumGallery = () => {
+        window.scrollTo(0, 0);
         fotoGalleryMain.style.display = "block";
         fotoAlbumsMain.style.display = "none";
         disableBackEvent(hideAlbumGAllery);
@@ -333,7 +334,7 @@ window.onload = () => {
             false
         );
         currentImg();
-        showHideSliderArrows();
+        // showHideSliderArrows();
     };
 
     const hideGalleryModal = () => {
@@ -346,7 +347,7 @@ window.onload = () => {
     // open gallery modal when gallery foto is clicked
     const currentGalleryImg = () => {
         const galleryPics = document.querySelectorAll(".gallery-pic");
-        const thumbs = document.querySelectorAll(".gallery-slider img");
+        const thumbs = document.querySelectorAll(".modal-slider-pic");
 
         galleryPics.forEach(pic => {
             pic.addEventListener("click", () => {
@@ -396,6 +397,7 @@ window.onload = () => {
     };
 
     const showHideSliderArrows = () => {
+        console.log("gallerySlider.scrollLeft " + gallerySlider.scrollLeft)
         // hide slider left arrow if scroll == 0
         if (gallerySlider.scrollLeft <= 0) {
             slideLeft.style.display = "none";
@@ -416,26 +418,29 @@ window.onload = () => {
 
     // move modal thumbails to right
     const moveSlideRight = () => {
+    
         gallerySlider.scrollBy({
             top: 0,
             left: gallerySlider.offsetWidth / 2,
             behavior: "smooth"
         });
 
-        if (
-            sliderThumbsWidth -
-                (gallerySlider.offsetWidth +
-                    gallerySlider.scrollLeft +
-                    gallerySlider.offsetWidth / 2) <
-            5
-        ) {
-            slideRight.style.display = "none";
-        }
-        if (gallerySlider.scrollLeft + gallerySlider.offsetWidth / 2 <= 0) {
-            slideLeft.style.display = "none";
-        } else {
-            slideLeft.style.display = "flex";
-        }
+        console.log(sliderThumbsWidth)
+
+        // if (
+        //     sliderThumbsWidth -
+        //         (gallerySlider.offsetWidth +
+        //             gallerySlider.scrollLeft +
+        //             gallerySlider.offsetWidth / 2) <
+        //     5
+        // ) {
+        //     slideRight.style.display = "none";
+        // }
+        // if (gallerySlider.scrollLeft + gallerySlider.offsetWidth / 2 <= 0) {
+        //     slideLeft.style.display = "none";
+        // } else {
+        //     slideLeft.style.display = "flex";
+        // }
     };
 
     const moveSlideLeft = () => {
@@ -445,18 +450,18 @@ window.onload = () => {
             behavior: "smooth"
         });
 
-        if (gallerySlider.scrollLeft - gallerySlider.offsetWidth / 2 <= 0) {
-            slideLeft.style.display = "none";
-        } else {
-            slideLeft.style.display = "flex";
-        }
-        if (
-            sliderThumbsWidth -
-                (gallerySlider.offsetWidth + gallerySlider.scrollLeft) >
-            0
-        ) {
-            slideRight.style.display = "flex";
-        }
+        // if (gallerySlider.scrollLeft - gallerySlider.offsetWidth / 2 <= 0) {
+        //     slideLeft.style.display = "none";
+        // } else {
+        //     slideLeft.style.display = "flex";
+        // }
+        // if (
+        //     sliderThumbsWidth -
+        //         (gallerySlider.offsetWidth + gallerySlider.scrollLeft) >
+        //     0
+        // ) {
+        //     slideRight.style.display = "flex";
+        // }
     };
 
     // VIDEO GALLERY PAGE
@@ -491,7 +496,7 @@ window.onload = () => {
     }
 
     // GALLERY PAGE
-    if (window.location.pathname.includes("gallery_foto")) {
+    if (window.location.pathname.includes("gallery_foto.html")) {
         // close gallery modal
         close.addEventListener("click", hideGalleryModal);
 
@@ -501,9 +506,7 @@ window.onload = () => {
     if (window.location.pathname.includes("gallery_video")) {
         // close gallery modal
         close.addEventListener("click", hideVideoModal);
-        // close.addEventListener("click", function() {
-        //     currentVideo.setAttribute("src", "");
-        // });
+        
     }
     if (
         window.location.pathname.includes("gallery_foto.html") ||

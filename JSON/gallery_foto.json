@@ -26,6 +26,20 @@
         "albumPath": "JSON/album2.json"
     },
     {
+        "albumDate": "26 oct. 2018",
+        "albumName": "Eveniment Miercurea Sibiului",
+        "imgPath": [
+            "./img/26_oct_2018/26_oct_2018_01.jpg",
+            "./img/26_oct_2018/26_oct_2018_02.jpg",
+            "./img/26_oct_2018/26_oct_2018_03.jpg",
+            "./img/26_oct_2018/26_oct_2018_04.jpg",
+            "./img/26_oct_2018/26_oct_2018_05.jpg",
+            "./img/26_oct_2018/26_oct_2018_06.jpg"
+            
+        ],
+        "albumPath": "JSON/26_oct_2018.json"
+    },
+    {
         "albumDate": "21 sept. 2018",
         "albumName": "Eveniment omagial, in memoriam Paul Pop-Osz-Puk",
         "imgPath": [
