@@ -1,8 +1,7 @@
 [
     {
-        "id": 3,
-        "albumName": "Expozitie de pictura a Dorei Popovici",
         "albumDate": "17 mai 2019",
+        "albumName": "Expozitie de pictura a Dorei Popovici",
         "imgPath": [
             "./img/album2/album2001.jpg",
             "./img/album2/album2002.jpg",
@@ -14,9 +13,8 @@
         "albumPath": "JSON/album3.json"
     },
     {
-        "id": 2,
-        "albumName": "Inaugurarea monumentului inchinat Smarandei Brăescu",
         "albumDate": "02 nov 2018",
+        "albumName": "Inaugurarea monumentului inchinat Smarandei Brăescu",
         "imgPath": [
             "./img/album1/album1001.jpg",
             "./img/album1/album1002.jpg",
@@ -28,9 +26,8 @@
         "albumPath": "JSON/album2.json"
     },
     {
-        "id": 1,
-        "albumName": "Comemorarea eroului aviator Ioan Sava",
         "albumDate": "10 sept. 2016",
+        "albumName": "Comemorarea eroului aviator Ioan Sava",
         "imgPath": [
             "./img/album3/album3001.jpg",
             "./img/album3/album3002.jpg",
@@ -40,5 +37,18 @@
             "./img/album3/album3006.jpg"
         ],
         "albumPath": "JSON/album1.json"
+    },
+    {
+        "albumDate": "17 mai 2014",
+        "albumName": "Adunarea generala anuala a ARPIA-filiala Cluj",
+        "imgPath": [
+            "./img/17_mai_2014/17_mai_2014_01.jpg",
+            "./img/17_mai_2014/17_mai_2014_02.jpg",
+            "./img/17_mai_2014/17_mai_2014_03.jpg",
+            "./img/17_mai_2014/17_mai_2014_04.jpg",
+            "./img/17_mai_2014/17_mai_2014_05.jpg",
+            "./img/17_mai_2014/17_mai_2014_06.jpg"
+        ],
+        "albumPath": "JSON/17_mai_2014.json"
     }
 ]
