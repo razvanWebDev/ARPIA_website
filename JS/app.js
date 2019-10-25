@@ -309,15 +309,8 @@ window.onload = () => {
     };
 
     // Gallery modal
-    // get gallery thumbs total width
-    let sliderThumbsWidth = 0;
     // show foto gallery modal
     const showGalleryModal = thumbs => {
-        // get gallery thumbs total width
-        thumbs.forEach(thumb => {
-            sliderThumbsWidth += thumb.offsetWidth;
-        });
-
         body.style.overflow = "hidden";
         fotoGalleryModal.classList.add("show");
 
@@ -330,11 +323,14 @@ window.onload = () => {
             false
         );
         currentImg();
-        showHideSliderArrows();
     };
 
-    
-    // select current foto from modal thumbnails
+    const hideGalleryModal = () => {
+        body.style.overflow = "auto";
+        fotoGalleryModal.classList.remove("show");
+    };
+
+    // select current foto on modal thumbnails click
     const currentImg = () => {
         const thumbs = document.querySelectorAll(".gallery-slider img");
         thumbs.forEach(thumb => {
@@ -355,14 +351,6 @@ window.onload = () => {
         });
     };
 
-    const hideGalleryModal = () => {
-        body.style.overflow = "auto";
-        // reset gallery thumbs total width
-        sliderThumbsWidth = 0;
-        fotoGalleryModal.classList.remove("show");
-    };
-
-
     // open gallery modal when gallery foto is clicked
     const currentGalleryImg = () => {
         const galleryPics = document.querySelectorAll(".gallery-pic");
@@ -378,6 +366,7 @@ window.onload = () => {
                 showGalleryModal(thumbs);
                 // highlight and center current modal thumbnail
                 getCurrentThumbnail(imgPath, thumbs);
+                showHideArrows();
             });
         });
     };
@@ -394,26 +383,29 @@ window.onload = () => {
         currentThumb.scrollIntoView({ inline: "center" });
     };
 
-
-    const showHideSliderArrows = () => {
-        console.log("gallerySlider.scrollLeft " + gallerySlider.scrollLeft);
+    // show hide gallery slider arrows
+    function showHideArrows() {
+        const thumbs = document.querySelectorAll(".gallery-slider img");
         // hide slider left arrow if scroll == 0
         if (gallerySlider.scrollLeft <= 0) {
             slideLeft.style.display = "none";
         } else {
             slideLeft.style.display = "flex";
         }
+
         // hide slider right arrow is scroll ends
+        //get thumbs width + margins
+        let thumbsWidth = 0;
+        thumbs.forEach(thumb => (thumbsWidth += thumb.offsetWidth + 6));
         if (
-            sliderThumbsWidth -
-                (gallerySlider.offsetWidth + gallerySlider.scrollLeft) <
-            5
+            thumbsWidth - gallerySlider.offsetWidth - gallerySlider.scrollLeft <
+            10
         ) {
             slideRight.style.display = "none";
         } else {
             slideRight.style.display = "flex";
         }
-    };
+    }
 
     // move modal thumbails to right
     const moveSlideRight = () => {
@@ -422,21 +414,6 @@ window.onload = () => {
             left: gallerySlider.offsetWidth / 2,
             behavior: "smooth"
         });
-
-        if (
-            sliderThumbsWidth -
-                (gallerySlider.offsetWidth +
-                    gallerySlider.scrollLeft +
-                    gallerySlider.offsetWidth / 2) <
-            5
-        ) {
-            slideRight.style.display = "none";
-        }
-        if (gallerySlider.scrollLeft + gallerySlider.offsetWidth / 2 <= 0) {
-            slideLeft.style.display = "none";
-        } else {
-            slideLeft.style.display = "flex";
-        }
     };
 
     const moveSlideLeft = () => {
@@ -445,19 +422,6 @@ window.onload = () => {
             left: -gallerySlider.offsetWidth / 2,
             behavior: "smooth"
         });
-
-        if (gallerySlider.scrollLeft - gallerySlider.offsetWidth / 2 <= 0) {
-            slideLeft.style.display = "none";
-        } else {
-            slideLeft.style.display = "flex";
-        }
-        if (
-            sliderThumbsWidth -
-                (gallerySlider.offsetWidth + gallerySlider.scrollLeft) >
-            0
-        ) {
-            slideRight.style.display = "flex";
-        }
     };
 
     // VIDEO GALLERY PAGE
@@ -494,8 +458,8 @@ window.onload = () => {
     // GALLERY PAGE
     if (window.location.pathname.includes("gallery_foto.html")) {
         // close gallery modal
+        gallerySlider.addEventListener("scroll", showHideArrows);
         close.addEventListener("click", hideGalleryModal);
-
         slideRight.addEventListener("click", moveSlideRight);
         slideLeft.addEventListener("click", moveSlideLeft);
     }
