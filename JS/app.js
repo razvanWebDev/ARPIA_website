@@ -57,13 +57,13 @@ window.onload = () => {
             "popstate",
             () => {
                 if (location.hash === "#!/dummy") {
-                    setTimeout(function(){
+                    setTimeout(function() {
                         history.replaceState(
                             null,
                             document.title,
                             location.pathname
                         );
-                    }, 0)
+                    }, 0);
                     action();
                 }
             },
@@ -223,7 +223,6 @@ window.onload = () => {
     };
 
     const showVideoModal = () => {
-       
         videoGalleryModal.classList.add("show");
         body.style.overflow = "hidden";
         // TODO disable back event
@@ -234,9 +233,6 @@ window.onload = () => {
         videoGalleryModal.classList.remove("show");
         body.style.overflow = "auto";
         currentVideo.setAttribute("src", "");
-       
-
-
     };
 
     //Display foto albums
@@ -334,47 +330,10 @@ window.onload = () => {
             false
         );
         currentImg();
-        // showHideSliderArrows();
+        showHideSliderArrows();
     };
 
-    const hideGalleryModal = () => {
-        body.style.overflow = "auto";
-        // reset gallery thumbs total width
-        sliderThumbsWidth = 0;
-        fotoGalleryModal.classList.remove("show");
-    };
-
-    // open gallery modal when gallery foto is clicked
-    const currentGalleryImg = () => {
-        const galleryPics = document.querySelectorAll(".gallery-pic");
-        const thumbs = document.querySelectorAll(".modal-slider-pic");
-
-        galleryPics.forEach(pic => {
-            pic.addEventListener("click", () => {
-                const imgPath = pic.getAttribute("data-path");
-                // highlight and center current modal thumbnail
-                getCurrentThumbnail(imgPath, thumbs);
-                //set the selected foto as current img
-                currentPicLink.href = imgPath;
-                currentPic.src = imgPath;
-                //open modal
-                showGalleryModal(thumbs);
-            });
-        });
-    };
-
-    // get current thumbnail on modal open
-    const getCurrentThumbnail = (imgPath, thumbs) => {
-        thumbs.forEach(thumb => {
-            thumb.classList.remove("current-slide-thumbnail");
-        });
-        const currentThumb = document.querySelector(
-            `.gallery-slider img[src="${imgPath}"]`
-        );
-        currentThumb.classList.add("current-slide-thumbnail");
-        currentThumb.scrollIntoView({ inline: "center" });
-    };
-
+    
     // select current foto from modal thumbnails
     const currentImg = () => {
         const thumbs = document.querySelectorAll(".gallery-slider img");
@@ -396,8 +355,48 @@ window.onload = () => {
         });
     };
 
+    const hideGalleryModal = () => {
+        body.style.overflow = "auto";
+        // reset gallery thumbs total width
+        sliderThumbsWidth = 0;
+        fotoGalleryModal.classList.remove("show");
+    };
+
+
+    // open gallery modal when gallery foto is clicked
+    const currentGalleryImg = () => {
+        const galleryPics = document.querySelectorAll(".gallery-pic");
+        const thumbs = document.querySelectorAll(".gallery-slider img");
+
+        galleryPics.forEach(pic => {
+            pic.addEventListener("click", () => {
+                const imgPath = pic.getAttribute("data-path");
+                //set the selected foto as current img
+                currentPicLink.href = imgPath;
+                currentPic.src = imgPath;
+                //open modal
+                showGalleryModal(thumbs);
+                // highlight and center current modal thumbnail
+                getCurrentThumbnail(imgPath, thumbs);
+            });
+        });
+    };
+
+    // get current thumbnail on modal open
+    const getCurrentThumbnail = (imgPath, thumbs) => {
+        thumbs.forEach(thumb => {
+            thumb.classList.remove("current-slide-thumbnail");
+        });
+        const currentThumb = document.querySelector(
+            `.gallery-slider img[src="${imgPath}"]`
+        );
+        currentThumb.classList.add("current-slide-thumbnail");
+        currentThumb.scrollIntoView({ inline: "center" });
+    };
+
+
     const showHideSliderArrows = () => {
-        console.log("gallerySlider.scrollLeft " + gallerySlider.scrollLeft)
+        console.log("gallerySlider.scrollLeft " + gallerySlider.scrollLeft);
         // hide slider left arrow if scroll == 0
         if (gallerySlider.scrollLeft <= 0) {
             slideLeft.style.display = "none";
@@ -418,29 +417,26 @@ window.onload = () => {
 
     // move modal thumbails to right
     const moveSlideRight = () => {
-    
         gallerySlider.scrollBy({
             top: 0,
             left: gallerySlider.offsetWidth / 2,
             behavior: "smooth"
         });
 
-        console.log(sliderThumbsWidth)
-
-        // if (
-        //     sliderThumbsWidth -
-        //         (gallerySlider.offsetWidth +
-        //             gallerySlider.scrollLeft +
-        //             gallerySlider.offsetWidth / 2) <
-        //     5
-        // ) {
-        //     slideRight.style.display = "none";
-        // }
-        // if (gallerySlider.scrollLeft + gallerySlider.offsetWidth / 2 <= 0) {
-        //     slideLeft.style.display = "none";
-        // } else {
-        //     slideLeft.style.display = "flex";
-        // }
+        if (
+            sliderThumbsWidth -
+                (gallerySlider.offsetWidth +
+                    gallerySlider.scrollLeft +
+                    gallerySlider.offsetWidth / 2) <
+            5
+        ) {
+            slideRight.style.display = "none";
+        }
+        if (gallerySlider.scrollLeft + gallerySlider.offsetWidth / 2 <= 0) {
+            slideLeft.style.display = "none";
+        } else {
+            slideLeft.style.display = "flex";
+        }
     };
 
     const moveSlideLeft = () => {
@@ -450,18 +446,18 @@ window.onload = () => {
             behavior: "smooth"
         });
 
-        // if (gallerySlider.scrollLeft - gallerySlider.offsetWidth / 2 <= 0) {
-        //     slideLeft.style.display = "none";
-        // } else {
-        //     slideLeft.style.display = "flex";
-        // }
-        // if (
-        //     sliderThumbsWidth -
-        //         (gallerySlider.offsetWidth + gallerySlider.scrollLeft) >
-        //     0
-        // ) {
-        //     slideRight.style.display = "flex";
-        // }
+        if (gallerySlider.scrollLeft - gallerySlider.offsetWidth / 2 <= 0) {
+            slideLeft.style.display = "none";
+        } else {
+            slideLeft.style.display = "flex";
+        }
+        if (
+            sliderThumbsWidth -
+                (gallerySlider.offsetWidth + gallerySlider.scrollLeft) >
+            0
+        ) {
+            slideRight.style.display = "flex";
+        }
     };
 
     // VIDEO GALLERY PAGE
@@ -506,7 +502,6 @@ window.onload = () => {
     if (window.location.pathname.includes("gallery_video")) {
         // close gallery modal
         close.addEventListener("click", hideVideoModal);
-        
     }
     if (
         window.location.pathname.includes("gallery_foto.html") ||

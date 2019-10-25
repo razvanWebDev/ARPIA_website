@@ -570,17 +570,19 @@ footer {
     display: flex;
     position: relative;
     height: 75px;
-    max-width: 90%;
+    max-width: 85%;
     /* box-shadow: 0 0 2px 1px silver; */
+    border: 5px solid blue;
 }
 
 .gallery-slider {
     display: flex;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
     cursor: pointer;
     /* background-color: #000000; */
+    border: 5px solid red;
 }
 
 .modal-slider-pic {
@@ -650,6 +652,7 @@ footer {
 
 .current-slide-thumbnail {
     opacity: 1;
+    border: 1px solid red;
 }
 
 /* RESPONSIVE */
@@ -686,12 +689,11 @@ footer {
     }
     .gallery-slider-container {
         max-width: 98%;
+        height: 70px;
+      
     }
     .gallery-slider {
         overflow-x: auto;
-    }
-    .gallery-slider-container {
-        height: 70px;
     }
 
     /* video gallery page */
@@ -817,10 +819,10 @@ footer {
         height: 100px;
     }
 
-    /* .slide-left,
-    .slide-right {
+    #slide-left,
+    #slide-right {
         display: none !important;
-    } */
+    }
 
     /* video gallery page */
     .current-video-container {
