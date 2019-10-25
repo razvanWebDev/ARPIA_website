@@ -123,39 +123,7 @@ window.onload = () => {
         }
     };
 
-    // HOME PAGE
-    // Home page slides
-    const nextSlide = () => {
-        const current = document.querySelector(".current");
-        current.classList.remove("current");
-        if (current.nextElementSibling) {
-            current.nextElementSibling.classList.add("current");
-        } else {
-            slides[0].classList.add("current");
-        }
-        current.classList.remove("current");
-    };
-
-    const prevSlide = () => {
-        const current = document.querySelector(".current");
-        current.classList.remove("current");
-        if (current.previousElementSibling) {
-            current.previousElementSibling.classList.add("current");
-        } else {
-            slides[slides.length - 1].classList.add("current");
-        }
-        current.classList.remove("current");
-    };
-
-    const autoSlider = () => {
-        if (autoSlide) {
-            clearInterval(slideInterval);
-            slideInterval = setInterval(nextSlide, intervalTime);
-        }
-    };
-
-    // GALLERY PAGE
-    // Ajax requests
+    // AJAX REQUESTS ======================================================
 
     // Load foto albums & video gallery
     const loadGalleryItems = () => {
@@ -190,6 +158,38 @@ window.onload = () => {
         xhttp.send();
     };
 
+    // HOME PAGE =========================================================================
+    // Home page slides
+    const nextSlide = () => {
+        const current = document.querySelector(".current");
+        current.classList.remove("current");
+        if (current.nextElementSibling) {
+            current.nextElementSibling.classList.add("current");
+        } else {
+            slides[0].classList.add("current");
+        }
+        current.classList.remove("current");
+    };
+
+    const prevSlide = () => {
+        const current = document.querySelector(".current");
+        current.classList.remove("current");
+        if (current.previousElementSibling) {
+            current.previousElementSibling.classList.add("current");
+        } else {
+            slides[slides.length - 1].classList.add("current");
+        }
+        current.classList.remove("current");
+    };
+
+    const autoSlider = () => {
+        if (autoSlide) {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, intervalTime);
+        }
+    };
+
+    // VIDEO GALLERY PAGE ==================================================================================
     // Display video gallery items
     const displayVideos = videos => {
         const galleryItems = videos.map(video => {
@@ -235,6 +235,7 @@ window.onload = () => {
         currentVideo.setAttribute("src", "");
     };
 
+    // FOTO GALLERY PAGE ====================================================================
     //Display foto albums
     const displayAlbums = albums => {
         //display foto albums
@@ -267,6 +268,7 @@ window.onload = () => {
         );
     };
 
+    // TODO Animation ???
     const showAlbumGallery = () => {
         window.scrollTo(0, 0);
         fotoGalleryMain.style.display = "block";
@@ -310,7 +312,7 @@ window.onload = () => {
 
     // Gallery modal
     // show foto gallery modal
-    const showGalleryModal = thumbs => {
+    const showGalleryModal = () => {
         body.style.overflow = "hidden";
         fotoGalleryModal.classList.add("show");
 
@@ -347,6 +349,7 @@ window.onload = () => {
                 setTimeout(() => currentPic.classList.remove("fade-in"), 500);
                 // current modal thumbnail
                 thumb.classList.add("current-slide-thumbnail");
+                thumb.scrollIntoView({ inline: "center", behavior: "smooth" });
             });
         });
     };
@@ -363,7 +366,7 @@ window.onload = () => {
                 currentPicLink.href = imgPath;
                 currentPic.src = imgPath;
                 //open modal
-                showGalleryModal(thumbs);
+                showGalleryModal();
                 // highlight and center current modal thumbnail
                 getCurrentThumbnail(imgPath, thumbs);
                 showHideArrows();
@@ -423,8 +426,6 @@ window.onload = () => {
             behavior: "smooth"
         });
     };
-
-    // VIDEO GALLERY PAGE
 
     // ========================== EVENTS LISTENERS====================================
 
