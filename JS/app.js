@@ -292,7 +292,7 @@ window.onload = () => {
         );
         const galleryItems = galleryFotos.map(foto => {
             return `<div class="photo-gallery-item">
-                        <div class="gallery-pic" style="background-image: url(${foto.imgPath}_small.jpg)" data-path="${foto.imgPath}.jpg" data-thumbnail="${foto.imgPath}_small.jpg"></div>
+                        <div class="gallery-pic" style="background-image: url(${foto.imgPath}.jpg)" data-path="${foto.imgPath}.jpg" data-thumbnail="${foto.imgPath}_small.jpg"></div>
                     </div>`;
         });
         fotoGallery.innerHTML = galleryItems.join("");
