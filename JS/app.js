@@ -292,14 +292,14 @@ window.onload = () => {
         );
         const galleryItems = galleryFotos.map(foto => {
             return `<div class="photo-gallery-item">
-                        <div class="gallery-pic" style="background-image: url(${foto.imgPath})" data-path="${foto.imgPath}"></div>
+                        <div class="gallery-pic" style="background-image: url(${foto.imgPath}_small.jpg)" data-path="${foto.imgPath}.jpg" data-thumbnail="${foto.imgPath}_small.jpg"></div>
                     </div>`;
         });
         fotoGallery.innerHTML = galleryItems.join("");
 
         //display gallery-modal thumbnails
         const modalThumbnails = fotos.map(foto => {
-            return `<img src="${foto.imgPath}" class="modal-slider-pic">`;
+            return `<img src="${foto.imgPath}_small.jpg" data-path="${foto.imgPath}.jpg" class="modal-slider-pic">`;
         });
         gallerySlider.innerHTML = modalThumbnails.join("");
         //get current img for the modal
@@ -320,7 +320,7 @@ window.onload = () => {
         //     },
         //     false
         // );
-        disableBackEvent(hideGalleryModal)
+        disableBackEvent(hideGalleryModal);
         // get current photo
         currentImg();
     };
@@ -339,8 +339,9 @@ window.onload = () => {
                     thumb.classList.remove("current-slide-thumbnail")
                 );
                 // set modal current foto
-                currentPic.src = thumb.src;
-                currentPicLink.href = thumb.src;
+                const currentPicSrc = thumb.getAttribute("data-path");
+                currentPic.src = currentPicSrc;
+                currentPicLink.href = currentPicSrc;
                 // modal current foto fade in
                 currentPic.classList.add("fade-in");
                 // remove fade in class after animation ends
@@ -359,13 +360,14 @@ window.onload = () => {
         galleryPics.forEach(pic => {
             pic.addEventListener("click", () => {
                 const imgPath = pic.getAttribute("data-path");
+                const thumbnailPath = pic.getAttribute("data-thumbnail");
                 //set the selected foto as current img
                 currentPicLink.href = imgPath;
                 currentPic.src = imgPath;
                 //open modal
                 showGalleryModal();
                 // highlight and center current modal thumbnail
-                getCurrentThumbnail(imgPath, thumbs);
+                getCurrentThumbnail(thumbnailPath, thumbs);
                 showHideArrows();
             });
         });
