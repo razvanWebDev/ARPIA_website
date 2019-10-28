@@ -341,7 +341,7 @@ footer {
 
 .photo-albums-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 75px;
     width: 100%;
 }
@@ -379,6 +379,10 @@ footer {
     background-color: rgba(0, 0, 0, 0.8);
     transition: all 0.5s ease-in-out;
     cursor: pointer;
+    text-align: center;
+}
+.album-description p {
+    margin-bottom: 3px;
 }
 
 .open-album {
