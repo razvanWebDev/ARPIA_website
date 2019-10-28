@@ -348,7 +348,6 @@ window.onload = () => {
                 setTimeout(() => currentPic.classList.remove("fade-in"), 500);
                 // current modal thumbnail
                 thumb.classList.add("current-slide-thumbnail");
-                thumb.scrollIntoView({ inline: "center", behavior: "smooth" });
             });
         });
     };

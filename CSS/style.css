@@ -357,7 +357,6 @@ footer {
 .foto-album:hover .album-description,
 .album-description:hover {
     transform: translateY(0);
-    /* justify-content: center; */
 }
 
 .album-description {
@@ -540,7 +539,7 @@ footer {
 }
 
 .current-foto {
-    max-width: 90%;
+    max-width: 80%;
     height: calc(90vh - 50px);
     margin-bottom: 5px;
 }

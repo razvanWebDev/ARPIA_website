@@ -13,6 +13,19 @@
         "albumPath": "JSON/album3.json"
     },
     {
+        "albumDate": "20 noi. 2018",
+        "albumName": "Reeditarea Zborului Marii Uniri pe Campia Libertatii",
+        "imgPath": [
+            "./img/20_noi_2018/20_noi_2018_01.jpg",
+            "./img/20_noi_2018/20_noi_2018_02.jpg",
+            "./img/20_noi_2018/20_noi_2018_03.jpg",
+            "./img/20_noi_2018/20_noi_2018_04.jpg",
+            "./img/20_noi_2018/20_noi_2018_05.jpg",
+            "./img/20_noi_2018/20_noi_2018_06.jpg"
+        ],
+        "albumPath": "JSON/20_noi_2018.json"
+    },
+    {
         "albumDate": "16 noi. 2018",
         "albumName": "Galeriile Casa Radio Romania Cluj",
         "imgPath": [
