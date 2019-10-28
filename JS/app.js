@@ -314,13 +314,15 @@ window.onload = () => {
         fotoGalleryModal.classList.add("show");
 
         //close modal on "back" event
-        window.addEventListener(
-            "popstate",
-            function() {
-                hideGalleryModal();
-            },
-            false
-        );
+        // window.addEventListener(
+        //     "popstate",
+        //     function() {
+        //         hideGalleryModal();
+        //     },
+        //     false
+        // );
+        disableBackEvent(hideGalleryModal)
+        // get current photo
         currentImg();
     };
 

@@ -13,6 +13,19 @@
         "albumPath": "JSON/album3.json"
     },
     {
+        "albumDate": "16 noi. 2018",
+        "albumName": "Galeriile Casa Radio Romania Cluj",
+        "imgPath": [
+            "./img/16_noi_2018/16_noi_2018_01.jpg",
+            "./img/16_noi_2018/16_noi_2018_02.jpg",
+            "./img/16_noi_2018/16_noi_2018_03.jpg",
+            "./img/16_noi_2018/16_noi_2018_04.jpg",
+            "./img/16_noi_2018/16_noi_2018_05.jpg",
+            "./img/16_noi_2018/16_noi_2018_06.jpg"
+        ],
+        "albumPath": "JSON/16_noi_2018.json"
+    },
+    {
         "albumDate": "02 nov. 2018",
         "albumName": "Inaugurarea monumentului inchinat Smarandei Brăescu",
         "imgPath": [
@@ -35,7 +48,6 @@
             "./img/26_oct_2018/26_oct_2018_04.jpg",
             "./img/26_oct_2018/26_oct_2018_05.jpg",
             "./img/26_oct_2018/26_oct_2018_06.jpg"
-            
         ],
         "albumPath": "JSON/26_oct_2018.json"
     },
@@ -49,7 +61,6 @@
             "./img/21_sept_2018/21_sept_2018_04.jpg",
             "./img/21_sept_2018/21_sept_2018_05.jpg",
             "./img/21_sept_2018/21_sept_2018_06.jpg"
-           
         ],
         "albumPath": "JSON/21_sept_2018.json"
     },
