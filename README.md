@@ -5,10 +5,9 @@
 ### Create new foto album
 
 ```
-1. Create new JSON file named album${nextIdNumber} with src for every picture &
+2. Go to gallery_foto.json and create new album object .
+1. Create new JSON file with src for every picture &
 in the first pic also insert "albumName", "date" and "description".
-2. Go to gallery_foto.json and create new object at the top of the file with next id number.
-3. Create foto-album${nextIdNumber}.html
 
 ```
 
