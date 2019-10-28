@@ -244,17 +244,14 @@ window.onload = () => {
                 return `<img src=${thumbnail} class=album-thumbnails>`;
             });
             return ` <div class="foto-album" data-path="${album.albumPath}">
-                        <div class="album-hover">
-                         <p>Deschide</p>
-                        </div>
                         <div class="album-description">
-                        <p>${ifItemExists(album.albumName)}</p>
-                        <p>- ${ifItemExists(album.albumDate)} -</p>
-           
+                            <p>${ifItemExists(album.albumName)}</p>
+                            <p>- ${ifItemExists(album.albumDate)} -</p>
+                            <p class="open-album">Deschide Album</p>
                         </div>
                         <div class="album-thumbnails-container">
-                              ${albumPictures.join("")}
-                         </div>
+                            ${albumPictures.join("")}
+                        </div>
                     </div>`;
         });
         fotoAlbums.innerHTML = galleryItems.join("");
