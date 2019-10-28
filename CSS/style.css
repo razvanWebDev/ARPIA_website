@@ -313,8 +313,12 @@ footer {
     background-color: #fdfdfd;
 }
 
+.home-page-section img {
+    width: 150px;
+    margin: 20px auto;
+}
+
 .home-page-section h1 {
-    margin-bottom: 50px;
     font-size: 30px;
     text-align: center;
 }
