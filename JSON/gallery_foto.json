@@ -3,12 +3,12 @@
         "albumDate": "17 mai 2019",
         "albumName": "Expozitie de pictura a Dorei Popovici",
         "imgPath": [
-            "./img/album2/album2001.jpg",
-            "./img/album2/album2002.jpg",
-            "./img/album2/album2003.jpg",
-            "./img/album2/album2004.jpg",
-            "./img/album2/album2005.jpg",
-            "./img/album2/album2006.jpg"
+            "./img/album2/album2001_small.jpg",
+            "./img/album2/album2002_small.jpg",
+            "./img/album2/album2003_small.jpg",
+            "./img/album2/album2004_small.jpg",
+            "./img/album2/album2005_small.jpg",
+            "./img/album2/album2006_small.jpg"
         ],
         "albumPath": "JSON/album3.json"
     },
@@ -16,12 +16,12 @@
         "albumDate": "20 noi. 2018",
         "albumName": "Reeditarea Zborului Marii Uniri pe Campia Libertatii",
         "imgPath": [
-            "./img/20_noi_2018/20_noi_2018_01.jpg",
-            "./img/20_noi_2018/20_noi_2018_02.jpg",
-            "./img/20_noi_2018/20_noi_2018_03.jpg",
-            "./img/20_noi_2018/20_noi_2018_04.jpg",
-            "./img/20_noi_2018/20_noi_2018_05.jpg",
-            "./img/20_noi_2018/20_noi_2018_06.jpg"
+            "./img/20_noi_2018/20_noi_2018_01_small.jpg",
+            "./img/20_noi_2018/20_noi_2018_02_small.jpg",
+            "./img/20_noi_2018/20_noi_2018_03_small.jpg",
+            "./img/20_noi_2018/20_noi_2018_04_small.jpg",
+            "./img/20_noi_2018/20_noi_2018_05_small.jpg",
+            "./img/20_noi_2018/20_noi_2018_06_small.jpg"
         ],
         "albumPath": "JSON/20_noi_2018.json"
     },
@@ -29,12 +29,12 @@
         "albumDate": "16 noi. 2018",
         "albumName": "Galeriile Casa Radio Romania Cluj",
         "imgPath": [
-            "./img/16_noi_2018/16_noi_2018_01.jpg",
-            "./img/16_noi_2018/16_noi_2018_02.jpg",
-            "./img/16_noi_2018/16_noi_2018_03.jpg",
-            "./img/16_noi_2018/16_noi_2018_04.jpg",
-            "./img/16_noi_2018/16_noi_2018_05.jpg",
-            "./img/16_noi_2018/16_noi_2018_06.jpg"
+            "./img/16_noi_2018/16_noi_2018_01_small.jpg",
+            "./img/16_noi_2018/16_noi_2018_02_small.jpg",
+            "./img/16_noi_2018/16_noi_2018_03_small.jpg",
+            "./img/16_noi_2018/16_noi_2018_04_small.jpg",
+            "./img/16_noi_2018/16_noi_2018_05_small.jpg",
+            "./img/16_noi_2018/16_noi_2018_06_small.jpg"
         ],
         "albumPath": "JSON/16_noi_2018.json"
     },
@@ -42,12 +42,12 @@
         "albumDate": "02 nov. 2018",
         "albumName": "Inaugurarea monumentului inchinat Smarandei Brăescu",
         "imgPath": [
-            "./img/album1/album1001.jpg",
-            "./img/album1/album1002.jpg",
-            "./img/album1/album1003.jpg",
-            "./img/album1/album1004.jpg",
-            "./img/album1/album1005.jpg",
-            "./img/album1/album1006.jpg"
+            "./img/album1/album1001_small.jpg",
+            "./img/album1/album1002_small.jpg",
+            "./img/album1/album1003_small.jpg",
+            "./img/album1/album1004_small.jpg",
+            "./img/album1/album1005_small.jpg",
+            "./img/album1/album1006_small.jpg"
         ],
         "albumPath": "JSON/album2.json"
     },
@@ -55,12 +55,12 @@
         "albumDate": "26 oct. 2018",
         "albumName": "Eveniment Miercurea Sibiului",
         "imgPath": [
-            "./img/26_oct_2018/26_oct_2018_01.jpg",
-            "./img/26_oct_2018/26_oct_2018_02.jpg",
-            "./img/26_oct_2018/26_oct_2018_03.jpg",
-            "./img/26_oct_2018/26_oct_2018_04.jpg",
-            "./img/26_oct_2018/26_oct_2018_05.jpg",
-            "./img/26_oct_2018/26_oct_2018_06.jpg"
+            "./img/26_oct_2018/26_oct_2018_01_small.jpg",
+            "./img/26_oct_2018/26_oct_2018_02_small.jpg",
+            "./img/26_oct_2018/26_oct_2018_03_small.jpg",
+            "./img/26_oct_2018/26_oct_2018_04_small.jpg",
+            "./img/26_oct_2018/26_oct_2018_05_small.jpg",
+            "./img/26_oct_2018/26_oct_2018_06_small.jpg"
         ],
         "albumPath": "JSON/26_oct_2018.json"
     },
@@ -68,12 +68,12 @@
         "albumDate": "21 sept. 2018",
         "albumName": "Eveniment omagial, in memoriam Paul Pop-Osz-Puk",
         "imgPath": [
-            "./img/21_sept_2018/21_sept_2018_01.jpg",
-            "./img/21_sept_2018/21_sept_2018_02.jpg",
-            "./img/21_sept_2018/21_sept_2018_03.jpg",
-            "./img/21_sept_2018/21_sept_2018_04.jpg",
-            "./img/21_sept_2018/21_sept_2018_05.jpg",
-            "./img/21_sept_2018/21_sept_2018_06.jpg"
+            "./img/21_sept_2018/21_sept_2018_01_small.jpg",
+            "./img/21_sept_2018/21_sept_2018_02_small.jpg",
+            "./img/21_sept_2018/21_sept_2018_03_small.jpg",
+            "./img/21_sept_2018/21_sept_2018_04_small.jpg",
+            "./img/21_sept_2018/21_sept_2018_05_small.jpg",
+            "./img/21_sept_2018/21_sept_2018_06_small.jpg"
         ],
         "albumPath": "JSON/21_sept_2018.json"
     },
@@ -81,12 +81,12 @@
         "albumDate": "10 sept. 2016",
         "albumName": "Comemorarea eroului aviator Ioan Sava",
         "imgPath": [
-            "./img/album3/album3001.jpg",
-            "./img/album3/album3002.jpg",
-            "./img/album3/album3003.jpg",
-            "./img/album3/album3004.jpg",
-            "./img/album3/album3005.jpg",
-            "./img/album3/album3006.jpg"
+            "./img/album3/album3001_small.jpg",
+            "./img/album3/album3002_small.jpg",
+            "./img/album3/album3003_small.jpg",
+            "./img/album3/album3004_small.jpg",
+            "./img/album3/album3005_small.jpg",
+            "./img/album3/album3006_small.jpg"
         ],
         "albumPath": "JSON/album1.json"
     },
@@ -94,12 +94,12 @@
         "albumDate": "17 mai 2014",
         "albumName": "Adunarea generala anuala a ARPIA-filiala Cluj",
         "imgPath": [
-            "./img/17_mai_2014/17_mai_2014_01.jpg",
-            "./img/17_mai_2014/17_mai_2014_02.jpg",
-            "./img/17_mai_2014/17_mai_2014_03.jpg",
-            "./img/17_mai_2014/17_mai_2014_04.jpg",
-            "./img/17_mai_2014/17_mai_2014_05.jpg",
-            "./img/17_mai_2014/17_mai_2014_06.jpg"
+            "./img/17_mai_2014/17_mai_2014_01_small.jpg",
+            "./img/17_mai_2014/17_mai_2014_02_small.jpg",
+            "./img/17_mai_2014/17_mai_2014_03_small.jpg",
+            "./img/17_mai_2014/17_mai_2014_04_small.jpg",
+            "./img/17_mai_2014/17_mai_2014_05_small.jpg",
+            "./img/17_mai_2014/17_mai_2014_06_small.jpg"
         ],
         "albumPath": "JSON/17_mai_2014.json"
     }
