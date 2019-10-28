@@ -244,10 +244,9 @@ window.onload = () => {
                 return `<img src=${thumbnail} class=album-thumbnails>`;
             });
             return ` <div class="foto-album" data-path="${album.albumPath}">
-                        <div class="album-description">
+                         <div class="album-description">
                             <p>${ifItemExists(album.albumName)}</p>
-                            <p>- ${ifItemExists(album.albumDate)} -</p>
-                            <p class="open-album">Deschide Album</p>
+                            <p>- ${ifItemExists(album.albumDate)} -</p> 
                         </div>
                         <div class="album-thumbnails-container">
                             ${albumPictures.join("")}
