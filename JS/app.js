@@ -413,7 +413,7 @@ window.onload = () => {
     const moveSlideRight = () => {
         gallerySlider.scrollBy({
             top: 0,
-            left: gallerySlider.offsetWidth / 2,
+            left: gallerySlider.offsetWidth / 4,
             behavior: "smooth"
         });
     };
@@ -421,7 +421,7 @@ window.onload = () => {
     const moveSlideLeft = () => {
         gallerySlider.scrollBy({
             top: 0,
-            left: -gallerySlider.offsetWidth / 2,
+            left: -gallerySlider.offsetWidth / 4,
             behavior: "smooth"
         });
     };

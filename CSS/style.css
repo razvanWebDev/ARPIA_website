@@ -409,6 +409,12 @@ footer {
 .photo-gallery-main {
     display: none;
 }
+
+.gallery-description {
+    font-size: 22px;
+    text-align: center;
+}
+
 .photo-gallery {
     text-align: center;
     justify-content: center;
@@ -651,6 +657,7 @@ footer {
 
 .current-slide-thumbnail {
     opacity: 1;
+   border: 2px solid #333333;
 }
 
 /* RESPONSIVE */
@@ -698,6 +705,9 @@ footer {
     }
 
     /*foto gallery page */
+    .gallery-description {
+        font-size: 20px;
+    }
     .photo-gallery {
         grid-gap: 20px;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -774,10 +784,6 @@ footer {
         font-size: 22px;
     }
 
-    .to-top-arrow {
-        width: 40px;
-    }
-
     .home-page-section {
         padding: 50px;
     }
@@ -799,6 +805,10 @@ footer {
     /* foto albums page */
     .album-thumbnails-container {
         grid-auto-rows: 80px;
+    }
+    /* foto gallery page */
+    .gallery-description {
+        font-size: 18px;
     }
 }
 
@@ -836,12 +846,6 @@ footer {
         padding: 0;
     }
 
-    .to-top-arrow {
-        width: 27px;
-        right: 25px;
-        
-    }
-
     .home-page-section {
         padding: 20px;
     }
@@ -870,7 +874,11 @@ footer {
     /* foto gallery page */
 
     .page-title h2 {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .gallery-description {
+        font-size: 15px;
     }
 
     .gallery-details {
