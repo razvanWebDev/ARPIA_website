@@ -17,9 +17,9 @@ window.onload = () => {
     const upArrow = document.querySelectorAll(".to-top-arrow");
     // HOME PAGE
     const slides = document.querySelectorAll(".slide");
-    const next = document.querySelector("#next");
-    const prev = document.querySelector("#prev");
-    const autoSlide = true; //Set to true for auto slide
+    const next = document.querySelector(".next");
+    const prev = document.querySelector(".prev");
+    const autoSlide = false; //Set to true for auto slide
     const intervalTime = 5000; //slides interval for autoslide
     let slideInterval;
     // GALLERY PAGE

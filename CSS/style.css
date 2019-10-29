@@ -279,17 +279,27 @@ footer {
 
 .next,
 .prev {
+    display: flex;
+    justify-content: center;
     position: absolute;
     top: 50%;
-    opacity: 0.7;
-    width: 45px;
+    opacity: 0.6;
+    padding: 10px; 
     transition: opacity 0.1s ease-in-out;
     cursor: pointer;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.next img,
+.prev img {
+    width: 20px;
+    transform: translateX(2px);
 }
 
 .next:hover,
 .prev:hover {
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .next {
@@ -460,11 +470,11 @@ footer {
 /* ==============================VIDEO-GALLERY-PAGE========================= */
 .video-albums-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 300px);
-    grid-auto-rows: 250px;
+    grid-template-columns: repeat(auto-fit, 370px);
+    grid-auto-rows: 350px;
     justify-content: center;
     align-content: center;
-    grid-gap: 30px;
+    grid-gap: 75px;
     width: 100%;
     color: #fdfdfd;
 }
@@ -657,7 +667,7 @@ footer {
 
 .current-slide-thumbnail {
     opacity: 1;
-   border: 2px solid #333333;
+   border: 2px solid #3EC1D5;
 }
 
 /* RESPONSIVE */
