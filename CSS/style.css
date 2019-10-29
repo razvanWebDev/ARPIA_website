@@ -36,7 +36,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: #fdfdfd;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 #logo {
@@ -76,7 +76,18 @@ header {
 .current-page {
     color: #2dcada !important;
 }
-/* Dropdowen submenu */
+/* Dropdown submenu */
+.gallery-link {
+    position: relative;
+    
+}
+.expand-menu {
+    width: 17px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .dropdown {
     position: relative;
     line-height: 55px;
@@ -92,7 +103,7 @@ header {
     pointer-events: none;
     transition: all 0.2s ease-in;
     border-collapse: collapse;
-    transform: translateY(-10px);
+    transform: translateY(-15px);
     color: #fdfdfd;
 }
 
@@ -100,7 +111,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid rgba(256, 256, 256, 0.5);
 }
 
 .dropdown-list li:first-child {
@@ -118,7 +128,7 @@ header {
 .dropdown-list:hover {
     opacity: 1;
     pointer-events: all;
-    transform: translateY(-2px);
+    transform: translateY(0px);
 }
 
 /* Hamburger */
@@ -368,7 +378,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 120px;
-    transition: all 0.1s;
+    transition: all 0.2s;
+    filter: grayscale(100%);
 }
 
 .album-thumbnails-container img {
@@ -378,7 +389,7 @@ footer {
 }
 
 .album-thumbnails-container:hover {
-    opacity: 0.8;
+    filter: grayscale(0%);
 }
 
 /* ================================FOTO-GALLERY-PAGE======================= */
@@ -631,6 +642,11 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
+    .dropdown a:hover + .dropdown-list,
+.dropdown-list:hover {
+  
+    transform: translateY(20px);
+}
     .page-title h2 {
         font-size: 25px;
     }

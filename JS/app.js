@@ -292,14 +292,14 @@ window.onload = () => {
         );
         const galleryItems = galleryFotos.map(foto => {
             return `<div class="photo-gallery-item">
-                        <div class="gallery-pic" style="background-image: url(${foto.imgPath}.jpg)" data-path="${foto.imgPath}.jpg" data-thumbnail="${foto.imgPath}_small.jpg"></div>
+                        <div class="gallery-pic" style="background-image: url(${foto.imgPath})" data-path="${foto.imgPath}"></div>
                     </div>`;
         });
         fotoGallery.innerHTML = galleryItems.join("");
 
         //display gallery-modal thumbnails
         const modalThumbnails = fotos.map(foto => {
-            return `<img src="${foto.imgPath}_small.jpg" data-path="${foto.imgPath}.jpg" class="modal-slider-pic">`;
+            return `<img src="${foto.imgPath}" data-path="${foto.imgPath}" class="modal-slider-pic">`;
         });
         gallerySlider.innerHTML = modalThumbnails.join("");
         //get current img for the modal
@@ -360,14 +360,14 @@ window.onload = () => {
         galleryPics.forEach(pic => {
             pic.addEventListener("click", () => {
                 const imgPath = pic.getAttribute("data-path");
-                const thumbnailPath = pic.getAttribute("data-thumbnail");
+               
                 //set the selected foto as current img
                 currentPicLink.href = imgPath;
                 currentPic.src = imgPath;
                 //open modal
                 showGalleryModal();
                 // highlight and center current modal thumbnail
-                getCurrentThumbnail(thumbnailPath, thumbs);
+                getCurrentThumbnail(imgPath, thumbs);
                 showHideArrows();
             });
         });
