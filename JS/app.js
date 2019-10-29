@@ -73,7 +73,6 @@ window.onload = () => {
     // scroll page to top
     upArrow.addEventListener("click", () =>{
         window.scroll({ top: 0, behavior: "smooth" });
-        upArrow.classList.remove("show-to-top-arrow");
     });
 
     // Showw scroll up arrow
