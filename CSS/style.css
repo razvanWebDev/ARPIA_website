@@ -235,7 +235,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 
 .slider {
@@ -287,7 +286,7 @@ footer {
     padding: 10px; 
     transition: opacity 0.1s ease-in-out;
     cursor: pointer;
-    background-color: #000;
+    background-color: #111;
     border-radius: 50%;
 }
 

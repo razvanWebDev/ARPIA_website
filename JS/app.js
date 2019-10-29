@@ -19,8 +19,8 @@ window.onload = () => {
     const slides = document.querySelectorAll(".slide");
     const next = document.querySelector(".next");
     const prev = document.querySelector(".prev");
-    const autoSlide = false; //Set to true for auto slide
-    const intervalTime = 5000; //slides interval for autoslide
+    const autoSlide = true; //Set to true for auto slide
+    const intervalTime = 6000; //slides interval for autoslide
     let slideInterval;
     // GALLERY PAGE
     const fotoAlbumsMain = document.querySelector(".photo-albums-main");
@@ -199,7 +199,7 @@ window.onload = () => {
                         <h3 class="video-title">${ifItemExists(
                             video.videoTitle
                         )}</h3>
-                        <img src=./img/btnPlay.png class="playVideo"
+                        <img src=./img/btnPlay-blue.png class="playVideo"
                             data-path="${video.videoSrc}?${ifItemExists(
                 video.startTime
             )}&${ifItemExists(video.stopTime)}&autoplay=1">
