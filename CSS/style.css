@@ -203,16 +203,16 @@ footer {
     right: 20px;
     padding: 5px 10px;
     border-radius: 3px;
+    background-color: #3ec1d5;
     cursor: pointer;
-    transition: opacity 0.1s;
     opacity: 0;
     pointer-events: none;
-    background-color: #3ec1d5;
+    transition: all 0.1s;
 }
 
 .to-top-arrow img {
     width: 25px;
-    transform: rotate(180deg);
+   
 }
 
 .to-top-arrow:hover {
@@ -278,7 +278,7 @@ footer {
     justify-content: center;
     position: absolute;
     top: 50%;
-    opacity: 0.6;
+    opacity: 0.7;
     padding: 10px;
     transition: opacity 0.1s ease-in-out;
     cursor: pointer;
@@ -342,7 +342,7 @@ footer {
 }
 
 .home-page-section img {
-    width: 150px;
+    width: 130px;
     margin: 20px auto;
 }
 

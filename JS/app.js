@@ -14,7 +14,7 @@ window.onload = () => {
     const nav = document.querySelector(".header-menu");
     const galleryLink = document.querySelector(".gallery-link");
     const galleryPageTitle = document.querySelector(".gallery-page-title");
-    const upArrow = document.querySelectorAll(".to-top-arrow");
+    const upArrow = document.querySelector(".to-top-arrow");
     // HOME PAGE
     const slides = document.querySelectorAll(".slide");
     const next = document.querySelector(".next");
@@ -70,25 +70,22 @@ window.onload = () => {
             false
         );
     };
+    // scroll page to top
+    upArrow.addEventListener("click", () =>{
+        window.scroll({ top: 0, behavior: "smooth" });
+        upArrow.classList.remove("show-to-top-arrow");
+    });
 
     // Showw scroll up arrow
     function showArrow() {
         const y = window.scrollY;
         if (y >= 300) {
-            upArrow.forEach(arrow => arrow.classList.add("show-to-top-arrow"));
+            upArrow.classList.add("show-to-top-arrow");
         } else {
-            upArrow.forEach(arrow =>
-                arrow.classList.remove("show-to-top-arrow")
-            );
+            upArrow.classList.remove("show-to-top-arrow");
         }
     }
 
-    // scroll page to top
-    upArrow.forEach(arrow =>
-        arrow.addEventListener("click", () =>
-            window.scroll({ top: 0, behavior: "smooth" })
-        )
-    );
 
     // Check if item exists
     const ifItemExists = item => {
@@ -360,7 +357,7 @@ window.onload = () => {
         galleryPics.forEach(pic => {
             pic.addEventListener("click", () => {
                 const imgPath = pic.getAttribute("data-path");
-               
+
                 //set the selected foto as current img
                 currentPicLink.href = imgPath;
                 currentPic.src = imgPath;
