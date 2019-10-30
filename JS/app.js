@@ -12,7 +12,7 @@ window.onload = () => {
     const header = document.querySelector("header");
     const hamburger = document.querySelector("#hamburger");
     const nav = document.querySelector(".header-menu");
-    const galleryLink = document.querySelector(".gallery-link");
+    const headerBlank = document.querySelector(".header-blank")
     const galleryPageTitle = document.querySelector(".gallery-page-title");
     const upArrow = document.querySelector(".to-top-arrow");
     // HOME PAGE
@@ -104,19 +104,6 @@ window.onload = () => {
             nav.style.animation = `navSlideOut 0.7s`;
         }
         hamburger.classList.toggle("toggle-burger");
-    };
-
-    // Close navbar on mobile display
-    const navClose = e => {
-        if (nav.classList.contains("show-nav")) {
-            if (
-                e.target != hamburger &&
-                e.target != header &&
-                e.target != galleryLink
-            ) {
-                navToggle();
-            }
-        }
     };
 
     // AJAX REQUESTS ======================================================
@@ -427,7 +414,7 @@ window.onload = () => {
     // show nav on hamburger tap
     hamburger.addEventListener("click", navToggle);
     //hide nav on tap
-    window.addEventListener("click", navClose);
+    headerBlank.addEventListener("click", navToggle);
     //scroll page to top
     window.addEventListener("scroll", showArrow);
 

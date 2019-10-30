@@ -721,6 +721,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 .contact-section form h3 {
     font-size: 2rem;
@@ -733,7 +734,7 @@ footer {
     width: 100%;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid rgba(41, 44, 49, 0.7);
+    border-bottom: 1px solid rgba(41, 44, 49, 0.4);
     padding-left: 5px;
     transition: border-bottom 0.3s ease-in-out;
     outline: none;
@@ -764,12 +765,10 @@ input {
 }
 
 .contact-section button {
-    width: 100%;
-    height: 25px;
+    padding: 10px 75px;
     background-color: #3ec1d5;
     color: #fdfdfd;
     border: none;
-    border-radius: 30px;
     transition: all 0.1s;
     cursor: pointer;
 }
@@ -847,35 +846,6 @@ input {
         height: 10vh;
         background-color: rgba(41, 44, 49, 0.7);
     }
-    #hamburger {
-        display: block;
-    }
-    .header-menu {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin-top: 10vh;
-        height: 90vh;
-        z-index: 1;
-        display: flex;
-        justify-content: flex-end;
-        transform: translateX(100%);
-    }
-    .show-nav {
-        animation: navSlideIn;
-    }
-
-    .header-links {
-        width: 60%;
-        height: 100%;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        padding-bottom: 10vh;
-        background-color: rgba(41, 44, 49, 0.7);
-    }
-
     .transparent-header {
         background-color: rgba(41, 44, 49, 0.7);
         border-bottom: none;
@@ -893,6 +863,40 @@ input {
         left: 5%;
         background-color: rgba(0, 0, 0, 0.8);
         box-shadow: 0 0 2px 1px silver;
+    }
+    #hamburger {
+        display: block;
+    }
+    .header-menu {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 10vh;
+        height: 90vh;
+        z-index: 1;
+        display: flex;
+        justify-content: flex-end;
+        transform: translateX(100%);
+    }
+
+    .show-nav {
+        animation: navSlideIn;
+    }
+
+    .header-links {
+        width: 60%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-bottom: 10vh;
+        background-color: rgba(41, 44, 49, 0.7);
+    }
+
+    .header-blank {
+        width: 40%;
+        height: 100%;
     }
 
     main {
