@@ -8,6 +8,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    background-color: #fdfdfd;
     color: #1a3532;
     position: relative;
 }
@@ -319,6 +320,16 @@ footer {
 .prev {
     left: 25px;
     transform: rotate(180deg);
+}
+.home-main-section svg {
+    position: absolute;
+    right: 50%;
+    bottom: 35px;
+    height: 50px;
+}
+
+#wheel {
+    animation: scroll ease 2s infinite;
 }
 
 /* Background images */
@@ -676,14 +687,15 @@ footer {
     display: flex;
     width: 100%;
     height: calc(94vh - 118px);
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
             rgba(41, 44, 49, 0.5) 0%,
             rgba(41, 44, 49, 0.5) 100%
         ),
         url(/img/20_noi_2018/20_noi_2018_06.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fdfdfd;
+    background-position-y: 40%;
+    color: #fdfdfd; */
     text-align: center;
     font-size: 1.2rem;
 }
@@ -699,8 +711,8 @@ footer {
 .form-container {
     height: 90%;
     width: 80%;
-    padding:35px 70px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 35px 70px;
+
     border-radius: 80px 0 80px 0;
 }
 .contact-section form {
@@ -711,7 +723,7 @@ footer {
     justify-content: space-between;
 }
 .contact-section form h3 {
-   font-size: 2rem;
+    font-size: 2rem;
     margin-bottom: 50px;
 }
 
@@ -721,9 +733,8 @@ footer {
     width: 100%;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #fdfdfd;
+    border-bottom: 1px solid rgba(41, 44, 49, 0.7);
     padding-left: 5px;
-    color: #fdfdfd;
     transition: border-bottom 0.3s ease-in-out;
     outline: none;
 }
@@ -759,11 +770,12 @@ input {
     color: #fdfdfd;
     border: none;
     border-radius: 30px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s;
     cursor: pointer;
 }
 
 .contact-section button:hover {
+    opacity: 0.7;
 }
 
 /* RESPONSIVE */
@@ -1049,6 +1061,20 @@ input {
         transform: translateX(100%);
     }
 }
+
+/* main page scroll wheel */
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(60px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 /* Page titles */
 @keyframes focus-in-expand-fwd {
     0% {
