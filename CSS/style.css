@@ -78,14 +78,14 @@ header {
     font-weight: bold;
 }
 /* Dropdown submenu */
-
-.expand-menu {
-    width: 17px;
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-    transform: translateX(-50%);
+.expand {
+    display:inline-block;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg); 
+    margin-left: 2px;
 }
+
 .dropdown {
     position: relative;
     line-height: calc(6vh + 19px);
@@ -166,7 +166,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 100px;
+    padding: 50px 100px;
 }
 
 /* Page title */
