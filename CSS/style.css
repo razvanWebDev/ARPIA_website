@@ -35,7 +35,7 @@ header {
     padding: 0 35px;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(41, 44, 49, 0.7);
     
 }
 
@@ -101,7 +101,7 @@ header {
 .dropdown-list {
     position: absolute;
     left: -50%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(41, 44, 49, 0.7);
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease-in-out;
@@ -309,11 +309,6 @@ footer {
 .prev {
     left: 25px;
     transform: rotate(180deg);
-}
-
-.scroll-down-arrow {
-    position: absolute;
-    bottom: 50px;
 }
 
 /* Background images */
@@ -671,6 +666,12 @@ footer {
     display: flex;
     width: 100%;
     height: calc(94vh - 118px);
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.3) 100%
+    ),  url(/img/20_noi_2018/20_noi_2018_06.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .contact-details {
     width: 40%;
@@ -751,7 +752,7 @@ footer {
 @media (max-width: 768px) {
     header {
         height: 10vh;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(41, 44, 49, 0.7);;
     }
     #hamburger {
         display: block;
@@ -779,7 +780,12 @@ footer {
         justify-content: space-evenly;
         align-items: center;
         padding-bottom: 10vh;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(41, 44, 49, 0.7);
+    }
+
+    .transparent-header {
+        background-color: rgba(41, 44, 49, 0.7);
+        border-bottom: none;
     }
 
     .dropdown {
