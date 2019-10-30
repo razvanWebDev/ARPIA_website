@@ -36,12 +36,10 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: rgba(41, 44, 49, 0.7);
-    
 }
 
 .transparent-header {
-    background-color:transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: transparent;
 }
 
 #logo {
@@ -64,6 +62,10 @@ header {
 
 .header-menu {
     width: 60%;
+}
+
+.menu-border {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .header-links {
@@ -177,11 +179,19 @@ main {
 
 /* Page title */
 .page-title {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9; */
     /* header height(6vh+18px) + visible section */
     height: calc(6vh + 18px + 100px);
     padding-bottom: 35px;
-    background: url("../img/page-title-background.jpg") no-repeat center
-        center/cover;
+    background: linear-gradient(
+            rgba(41, 44, 49, 0.3) 0%,
+            rgba(41, 44, 49, 0.3) 100%
+        ),
+        url("../img/page-title-background.jpg") no-repeat center center/cover;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -667,23 +677,94 @@ footer {
     width: 100%;
     height: calc(94vh - 118px);
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.3) 0%,
-        rgba(0, 0, 0, 0.3) 100%
-    ),  url(/img/20_noi_2018/20_noi_2018_06.jpg);
+            rgba(41, 44, 49, 0.5) 0%,
+            rgba(41, 44, 49, 0.5) 100%
+        ),
+        url(/img/20_noi_2018/20_noi_2018_06.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    color: #fdfdfd;
+    text-align: center;
+    font-size: 1.2rem;
 }
-.contact-details {
-    width: 40%;
-  height: 100%;
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.3) 0%,
-        rgba(0, 0, 0, 0.3) 100%
-    ),  url(/img/20_noi_2018/20_noi_2018_06.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.contact-section {
+    min-height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
-.contact-form
+
+.form-container {
+    height: 90%;
+    width: 80%;
+    padding:35px 70px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 80px 0 80px 0;
+}
+.contact-section form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact-section form h3 {
+   font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fdfdfd;
+    padding-left: 5px;
+    color: #fdfdfd;
+    transition: border-bottom 0.3s ease-in-out;
+    outline: none;
+}
+.contact-section form ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #3ec1d5;
+    opacity: 1; /* Firefox */
+}
+
+.contact-section form :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #3ec1d5;
+}
+
+.contact-section form ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #3ec1d5;
+}
+
+.contact-section textarea:focus,
+.contact-section input:focus {
+    border-bottom: 1px solid #3ec1d5;
+}
+
+input {
+    height: 25px;
+}
+
+.contact-section button {
+    width: 100%;
+    height: 25px;
+    background-color: #3ec1d5;
+    color: #fdfdfd;
+    border: none;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+}
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
@@ -752,7 +833,7 @@ footer {
 @media (max-width: 768px) {
     header {
         height: 10vh;
-        background-color: rgba(41, 44, 49, 0.7);;
+        background-color: rgba(41, 44, 49, 0.7);
     }
     #hamburger {
         display: block;
@@ -785,6 +866,9 @@ footer {
 
     .transparent-header {
         background-color: rgba(41, 44, 49, 0.7);
+        border-bottom: none;
+    }
+    .menu-border {
         border-bottom: none;
     }
 
