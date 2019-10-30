@@ -35,7 +35,13 @@ header {
     padding: 0 35px;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.transparent-header {
+    background-color:transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 #logo {
@@ -79,10 +85,10 @@ header {
 }
 /* Dropdown submenu */
 .expand {
-    display:inline-block;
+    display: inline-block;
     transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg); 
-    -moz-transform: rotate(-90deg); 
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
     margin-left: 2px;
 }
 
@@ -660,6 +666,24 @@ footer {
     border: 2px solid #3ec1d5;
 }
 
+/* ===================CONTACT PAGE====================== */
+.contact-main-section {
+    display: flex;
+    width: 100%;
+    height: calc(94vh - 118px);
+}
+.contact-details {
+    width: 40%;
+  height: 100%;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.3) 100%
+    ),  url(/img/20_noi_2018/20_noi_2018_06.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-form
+
 /* RESPONSIVE */
 @media (max-width: 1024px) {
     .page-title h2 {
@@ -809,10 +833,10 @@ footer {
     #logo h1 {
         font-size: 20px;
     }
-    
-.to-top-arrow img {
-    width: 15px;
-}
+
+    .to-top-arrow img {
+        width: 15px;
+    }
     /* Home page */
     .slide .content {
         bottom: -300px;
