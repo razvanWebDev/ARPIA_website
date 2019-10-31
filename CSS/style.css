@@ -187,11 +187,6 @@ main {
 
 /* Page title */
 .page-title {
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9; */
     /* header height(6vh+18px) + visible section */
     height: calc(6vh + 18px + 100px);
     padding-bottom: 35px;
@@ -216,7 +211,7 @@ main {
 
 footer {
     min-height: 20vh;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(75, 83, 32, 0.9);
 }
 
 .to-top-arrow {
@@ -238,12 +233,12 @@ footer {
     width: 25px;
 }
 
-/* .to-top-arrow:hover {
-    opacity: 0.8;
-} */
+.to-top-arrow:hover {
+    opacity: 1;
+}
 
 .show-to-top-arrow {
-    opacity: 1;
+    opacity: 0.7;
     pointer-events: all;
 }
 
@@ -283,7 +278,8 @@ footer {
     left: 30px;
     opacity: 0;
     width: 600px;
-    background-color: rgba(253, 253, 253, 0.8);
+    background-color: rgba(75, 83, 32, 0.9);
+    color: #fdfdfd;
     padding: 35px;
 }
 .slide.current .content {
@@ -305,7 +301,7 @@ footer {
     padding: 10px;
     transition: opacity 0.1s ease-in-out;
     cursor: pointer;
-    background-color: #111;
+    background-color: rgba(68, 83, 32, 0.9);
     border-radius: 50%;
 }
 
@@ -558,6 +554,7 @@ footer {
     width: 100vw;
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(246, 248, 246, 0.9);
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -652,7 +649,7 @@ footer {
     padding: 7px;
     color: #fdfdfd;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(75, 83, 32, 0.9);
 }
 
 #slide-left::selection,
@@ -790,6 +787,10 @@ input {
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
+    .to-top-arrow {
+        opacity: 1;
+    }
+
     .page-title h2 {
         font-size: 25px;
     }
