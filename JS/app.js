@@ -10,9 +10,10 @@ window.onload = () => {
     // GLOBAL
     const body = document.querySelector("body");
     const header = document.querySelector("header");
+    const pageHeader = document.querySelector(".page-header");
     const hamburger = document.querySelector("#hamburger");
     const nav = document.querySelector(".header-menu");
-    const headerBlank = document.querySelector(".header-blank")
+    const headerBlank = document.querySelector(".header-blank");
     const galleryPageTitle = document.querySelector(".gallery-page-title");
     const upArrow = document.querySelector(".to-top-arrow");
     // HOME PAGE
@@ -70,21 +71,19 @@ window.onload = () => {
             false
         );
     };
-    // scroll page to top
-    upArrow.addEventListener("click", () =>{
-        window.scroll({ top: 0, behavior: "smooth" });
-    });
 
     // Showw scroll up arrow
-    function showArrow() {
+    const showArrow = () => {
         const y = window.scrollY;
         if (y >= 300) {
             upArrow.classList.add("show-to-top-arrow");
         } else {
             upArrow.classList.remove("show-to-top-arrow");
         }
-    }
+    };
 
+    // scroll page to top
+    const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
 
     // Check if item exists
     const ifItemExists = item => {
@@ -95,6 +94,17 @@ window.onload = () => {
     };
 
     // HEADER
+    // transparent header on scroll
+    const transparentHeader = () => {
+        const y = window.scrollY;
+        if (y >= 80) {
+            pageHeader.classList.add("show-header-color");
+            nav.classList.remove("menu-border");
+        } else {
+            pageHeader.classList.remove("show-header-color");
+            nav.classList.add("menu-border");
+        }
+    };
     // Toggle navbar on mobile display
     const navToggle = () => {
         nav.classList.toggle("show-nav");
@@ -410,13 +420,16 @@ window.onload = () => {
     };
 
     // ========================== EVENTS LISTENERS====================================
-
+    // toggle transparent header
+    window.addEventListener("scroll", transparentHeader);
     // show nav on hamburger tap
     hamburger.addEventListener("click", navToggle);
     //hide nav on tap
     headerBlank.addEventListener("click", navToggle);
     //scroll page to top
     window.addEventListener("scroll", showArrow);
+    // scroll page to top
+    upArrow.addEventListener("click", scrollToTop);
 
     // HOME PAGE
     //home page slides

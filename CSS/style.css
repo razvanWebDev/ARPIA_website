@@ -38,10 +38,15 @@ header {
     align-items: center;
     /* background-color: rgba(41, 44, 49, 0.7); */
     background-color: rgba(75, 83, 32, 0.9);
+    transition: all 0.5s ease-in-out;
 }
 
-.transparent-header {
+.page-header {
     background-color: transparent;
+}
+
+.show-header-color {
+    background-color: rgba(75, 83, 32, 0.9);
 }
 
 #logo {
