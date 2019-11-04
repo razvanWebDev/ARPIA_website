@@ -337,6 +337,7 @@ footer {
     right: 50%;
     bottom: 35px;
     height: 50px;
+    cursor: pointer;
 }
 
 #wheel {
@@ -864,14 +865,13 @@ input {
 @media (max-width: 768px) {
     header {
         height: 10vh;
-        /* background-color: rgba(41, 44, 49, 0.7); */
         background-color: var(--main-theme-color-transparent);
     }
-    .transparent-header {
-        /* background-color: rgba(41, 44, 49, 0.7); */
+
+    .page-header {
         background-color: var(--main-theme-color-transparent);
-        border-bottom: none;
     }
+   
     .menu-border {
         border-bottom: none;
     }
@@ -924,6 +924,9 @@ input {
     main {
         padding: 10px;
     }
+    #scrollDown {
+        display: none;
+    }
 
     .page-title h2 {
         font-size: 22px;
@@ -967,13 +970,8 @@ input {
     }
     /* Home page */
     .slide .content {
-        bottom: -300px;
-        left: 0;
+        left: -30px;
         width: 100%;
-    }
-
-    .slide.current .content {
-        transform: translateY(calc(-5vh - 300px));
     }
 
     .next,

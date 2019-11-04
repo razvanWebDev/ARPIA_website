@@ -20,7 +20,7 @@ window.onload = () => {
     const slides = document.querySelectorAll(".slide");
     const next = document.querySelector(".next");
     const prev = document.querySelector(".prev");
-    const autoSlide = false; //Set to true for auto slide
+    const autoSlide = true; //Set to true for auto slide
     const intervalTime = 6000; //slides interval for autoslide
     let slideInterval;
     // GALLERY PAGE
@@ -420,8 +420,7 @@ window.onload = () => {
     };
 
     // ========================== EVENTS LISTENERS====================================
-    // toggle transparent header
-    window.addEventListener("scroll", transparentHeader);
+
     // show nav on hamburger tap
     hamburger.addEventListener("click", navToggle);
     //hide nav on tap
@@ -451,6 +450,11 @@ window.onload = () => {
         }
     }
 
+    if (window.location.pathname != "/" && window.innerWidth > 768) {
+        // toggle transparent header
+        window.addEventListener("scroll", transparentHeader);
+    }
+
     // GALLERY PAGE
     if (window.location.pathname.includes("gallery_foto.html")) {
         // close gallery modal
@@ -470,3 +474,4 @@ window.onload = () => {
         loadGalleryItems();
     }
 };
+
