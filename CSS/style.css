@@ -722,16 +722,24 @@ footer {
     align-items: center;
 }
 
-.form-container {
-    height: 90%;
+.contact-details-title h1 {
     width: 80%;
-    padding: 35px 70px;
-
-    border-radius: 80px 0 80px 0;
+    margin: auto;
+    font-size: 20px;
 }
+
+.contact-details-title h2 {
+    font-size: 18px;
+}
+
+.contact-info {
+    padding-bottom: 7px;
+}
+
+
 .contact-section form {
-    width: 100%;
-    height: 100%;
+    width: 65%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -791,6 +799,10 @@ input {
 .contact-section button:hover {
     background-color: var(--secondary-theme-color);
     color: var(--dark-txt-color);
+}
+
+.donation-section {
+    
 }
 
 /* RESPONSIVE */
