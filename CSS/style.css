@@ -715,9 +715,13 @@ footer {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 75px;
+
 }
+
+
 
 .contact-details-title h1 {
     width: 80%;
@@ -734,8 +738,9 @@ footer {
 }
 
 .contact-section form {
-    width: 65%;
-    height: 80%;
+   
+    width: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -786,7 +791,7 @@ footer {
 }
 .methods_div h3 {
     font-size: 20px;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 .contact-section button,
@@ -870,7 +875,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 30px 50px;
+    margin: 0 30px 30px;
     transition: all 0.3s;
     cursor: pointer;
 }
@@ -945,7 +950,6 @@ footer {
 
 .two-percent p {
     padding-bottom: 10px;
-    text-align: left;
 }
 
 .two-percent a:hover {
