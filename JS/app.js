@@ -23,6 +23,7 @@ window.onload = () => {
     const autoSlide = true; //Set to true for auto slide
     const intervalTime = 6000; //slides interval for autoslide
     let slideInterval;
+    const scrollDown = document.querySelector("#scrollDown");
     // GALLERY PAGE
     const fotoAlbumsMain = document.querySelector(".photo-albums-main");
     const fotoGalleryMain = document.querySelector(".photo-gallery-main");
@@ -181,6 +182,13 @@ window.onload = () => {
             slideInterval = setInterval(nextSlide, intervalTime);
         }
     };
+
+    
+    const scrollPage = () => window.scroll({
+        top: window.innerHeight,
+        behavior: "smooth"
+    })
+    
 
     // VIDEO GALLERY PAGE ==================================================================================
     // Display video gallery items
@@ -448,9 +456,10 @@ window.onload = () => {
         if (autoSlide) {
             slideInterval = setInterval(nextSlide, intervalTime);
         }
+        scrollDown.addEventListener('click', scrollPage);
     }
 
-    if (window.location.pathname != "/" && window.innerWidth > 768) {
+    if (!window.location.pathname.includes("index.html") && window.innerWidth > 768) {
         // toggle transparent header
         window.addEventListener("scroll", transparentHeader);
     }
@@ -474,4 +483,3 @@ window.onload = () => {
         loadGalleryItems();
     }
 };
-
