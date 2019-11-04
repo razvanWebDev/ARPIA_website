@@ -309,7 +309,7 @@ footer {
     padding: 10px;
     transition: opacity 0.1s ease-in-out;
     cursor: pointer;
-    background-color: var(--main-theme-color-transparent);
+    background-color: var(--main-theme-color);
     border-radius: 50%;
 }
 
@@ -336,8 +336,12 @@ footer {
     position: absolute;
     right: 50%;
     bottom: 35px;
-    height: 50px;
+    height: 40px;
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+   
+    
 }
 
 #wheel {
@@ -657,7 +661,7 @@ footer {
     padding: 7px;
     color: var(--light-txt-color);
     cursor: pointer;
-    background-color: var(--main-theme-color-transparent);
+    background-color: var(--main-theme-color);
 }
 
 #slide-left::selection,
@@ -681,21 +685,16 @@ footer {
 .prev-modal,
 .next-modal {
     width: 20px;
-    opacity: 0.6;
 }
 
 .prev-modal {
     transform: rotate(180deg);
 }
 
-.prev-modal:hover,
-.next-modal:hover {
-    opacity: 1;
-}
 
 .current-slide-thumbnail {
     opacity: 1;
-    border: 2px solid #3ec1d5;
+    border: 2px solid var(--main-theme-color);
 }
 
 /* ===================CONTACT PAGE====================== */
