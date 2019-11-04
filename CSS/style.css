@@ -573,7 +573,7 @@ footer {
 }
 
 .show {
-    display: flex;
+    display: flex !important;
     pointer-events: all;
 }
 
@@ -784,6 +784,10 @@ footer {
 .donation input:focus {
     border-bottom: 1px solid var(--main-theme-color-transparent);
 }
+.methods_div h3 {
+    font-size: 20px;
+    padding: 40px 0;
+}
 
 .contact-section button,
 .credit-card button,
@@ -834,8 +838,14 @@ footer {
     background-color: var(--secondary-theme-color);
     color: var(--main-theme-color);
 }
+
+.current-method {
+    background-color: var(--secondary-theme-color) !important;
+    color: var(--main-theme-color) !important;
+}
 .bank-transfer {
     display: none;
+    flex-direction: column;
 }
 .bank-transfer p {
     margin: 20px;
@@ -843,6 +853,7 @@ footer {
 
 .credit-card {
     display: none;
+    flex-direction: column;
 }
 
 .donation-amounts {
@@ -859,7 +870,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px;
+    margin: 0 30px 50px;
     transition: all 0.3s;
     cursor: pointer;
 }
@@ -894,10 +905,6 @@ footer {
     color: var(--main-theme-color-transparent);
     opacity: 0.8;
 }
-
-.donater-details h3 {
-    padding: 40px 0 20px;
-}
 .donater-details-row input {
     width: 30%;
     margin: 10px 30px;
@@ -927,15 +934,13 @@ footer {
 
 .two-percent {
     display: none;
+    flex-direction: column;
 }
 
 .form230 {
     color: var(--secondary-theme-color);
     font-weight: 550;
     cursor: pointer;
-}
-.two-percent h3 {
-    padding: 50px;
 }
 
 .two-percent p {

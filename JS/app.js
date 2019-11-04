@@ -44,6 +44,10 @@ window.onload = () => {
     const slideLeft = document.querySelector("#slide-left");
     const slideRight = document.querySelector("#slide-right");
 
+    // CONTACTPAGE
+    const donationMethods = document.querySelectorAll(".donation-methods div");
+    const methodDivs = document.querySelectorAll(".methods_div");
+
     // ============================RUN THE APP========================================
     // GLOBAL
     // Disable back event and use it for another action
@@ -183,12 +187,11 @@ window.onload = () => {
         }
     };
 
-    
-    const scrollPage = () => window.scroll({
-        top: window.innerHeight,
-        behavior: "smooth"
-    })
-    
+    const scrollPage = () =>
+        window.scroll({
+            top: window.innerHeight,
+            behavior: "smooth"
+        });
 
     // VIDEO GALLERY PAGE ==================================================================================
     // Display video gallery items
@@ -427,6 +430,17 @@ window.onload = () => {
         });
     };
 
+    // ================CONTACT PAGE ===================================
+    donationMethods.forEach(function(method) {
+        method.addEventListener("click", function() {
+            methodDivs.forEach(div => (div.style.display = "none"));
+            donationMethods.forEach(method => method.classList.remove('current-method'))
+            this.classList.add("current-method");
+            const methodName = this.getAttribute("data-link");
+            document.querySelector(`.${methodName}`).style.display = "block";
+        });
+    });
+
     // ========================== EVENTS LISTENERS====================================
 
     // show nav on hamburger tap
@@ -456,10 +470,13 @@ window.onload = () => {
         if (autoSlide) {
             slideInterval = setInterval(nextSlide, intervalTime);
         }
-        scrollDown.addEventListener('click', scrollPage);
+        scrollDown.addEventListener("click", scrollPage);
     }
 
-    if (!window.location.pathname.includes("index.html") && window.innerWidth > 768) {
+    if (
+        !window.location.pathname.includes("index.html") &&
+        window.innerWidth > 768
+    ) {
         // toggle transparent header
         window.addEventListener("scroll", transparentHeader);
     }
