@@ -340,8 +340,6 @@ footer {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-   
-    
 }
 
 #wheel {
@@ -691,7 +689,6 @@ footer {
     transform: rotate(180deg);
 }
 
-
 .current-slide-thumbnail {
     opacity: 1;
     border: 2px solid var(--main-theme-color);
@@ -702,6 +699,7 @@ footer {
     display: flex;
     width: 100%;
     height: calc(93.6vh - 118px);
+
     /* background-image: linear-gradient(
             rgba(41, 44, 49, 0.5) 0%,
             rgba(41, 44, 49, 0.5) 100%
@@ -709,8 +707,7 @@ footer {
         url(/img/20_noi_2018/20_noi_2018_06.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: 40%;
-    color: var(--light-txt-color); */
+    background-position-y: 40%; */
     text-align: center;
 }
 .contact-section {
@@ -736,7 +733,6 @@ footer {
     padding-bottom: 7px;
 }
 
-
 .contact-section form {
     width: 65%;
     height: 80%;
@@ -751,42 +747,47 @@ footer {
 }
 
 .contact-section input,
-.contact-section textarea {
+.contact-section textarea, 
+.donater-details input, 
+.donation input {
     margin-bottom: 10px;
     width: 100%;
     background-color: transparent;
     color: var(--dark-txt-color);
     border: none;
     outline: none;
-    border-bottom: 1px solid rgba(41, 44, 49, 0.4);
+    border-bottom: 1px solid var(--secondary-theme-color);
     padding-left: 5px;
     transition: border-bottom 0.3s ease-in-out;
 }
 .contact-section form ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--main-theme-color-transparent); /* Firefox */
+    opacity: 0.8;
 }
 
 .contact-section form :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: var(--main-theme-color-transparent);
+    opacity: 0.8;
 }
 
 .contact-section form ::-ms-input-placeholder {
     /* Microsoft Edge */
     color: var(--main-theme-color-transparent);
+    opacity: 0.8;
 }
 
 .contact-section textarea:focus,
-.contact-section input:focus {
+.contact-section input:focus, 
+.donater-details input:focus,
+.donation input:focus {
     border-bottom: 1px solid var(--main-theme-color-transparent);
 }
 
-input {
-    height: 25px;
-}
 
-.contact-section button {
+.contact-section button,
+.credit-card button {
     font-size: 16px;
     padding: 10px 75px;
     background-color: var(--main-theme-color);
@@ -796,14 +797,131 @@ input {
     cursor: pointer;
 }
 
-.contact-section button:hover {
+.contact-section button:hover, 
+.credit-card button:hover {
     background-color: var(--secondary-theme-color);
     color: var(--dark-txt-color);
 }
 
 .donation-section {
-    
+    text-align: center;
+    padding: 100px;
 }
+
+.donation-section h2 {
+    font-size: 35px;
+    margin: 0px auto;
+}
+
+.donation-methods {
+    display: flex;
+    padding: 50px 15%;
+    justify-content: space-between;
+}
+
+.donation-methods div {
+    background-color: var(--main-theme-color);
+    color: var(--secondary-theme-color);
+    width: 25%;
+    padding: 20px 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 30px;
+}
+
+.donation-methods div:hover {
+    background-color: var(--secondary-theme-color);
+    color: var(--main-theme-color);
+}
+.bank-transfer {
+    display: none;
+}
+.bank-transfer p {
+    margin: 20px;
+}
+
+.donation-amounts {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.donation-amount {
+    background-color: var(--secondary-theme-color);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.donation-amount:hover {
+    background-color: var(--main-theme-color);
+    color: var(--secondary-theme-color);
+}
+
+.donation input {
+  width: 100px;
+  font-size: 16px;
+    text-align: center;
+    outline: none;
+    transition: all 0.3s;
+}
+
+
+.credit-card input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--main-theme-color-transparent); /* Firefox */
+    opacity: 0.8;
+}
+
+.credit-card input :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--main-theme-color-transparent);
+    opacity: 0.8;
+}
+
+.credit-card input ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--main-theme-color-transparent);
+    opacity: 0.8;
+}
+
+.donater-details h3 {
+    padding: 40px 0 20px;
+}
+.donater-details-row input {
+    width: 30%;
+    margin:10px 30px;
+}
+
+.donater-details-row {
+    display: flex;
+    justify-content: center;
+}
+
+.privacy-policy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 50px;
+}
+
+.privacy-policy input{
+   margin-right: 5px;
+}
+
+.privacy-policy span {
+    color: var(--secondary-theme-color);
+    font-weight: 550;
+    cursor: pointer;
+}
+
+
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
@@ -882,7 +1000,7 @@ input {
     .page-header {
         background-color: var(--main-theme-color-transparent);
     }
-   
+
     .menu-border {
         border-bottom: none;
     }
