@@ -1,7 +1,7 @@
 /* GENERAL */
 :root {
     --main-bg-color: #fdfdfd;
-    --main-theme-color: rgb(42, 56, 93);
+    --main-theme-color: #2a385d;
     --main-theme-color-transparent: rgba(42, 56, 93, 0.9);
     --secondary-theme-color: #f6b332;
     --light-txt-color: #fdfdfd;
@@ -731,6 +731,11 @@ footer {
 
 .contact-details-title h2 {
     font-size: 18px;
+}
+
+.contact-icon {
+    width: 25px;
+    transform: translateY(30%);
 }
 
 .contact-info {
