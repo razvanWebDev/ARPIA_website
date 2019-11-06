@@ -204,7 +204,7 @@ window.onload = () => {
                         <h3 class="video-title">${ifItemExists(
                             video.videoTitle
                         )}</h3>
-                        <img src="img/btnPlay.png" class="playVideo"
+                        <img src="/img/btnPLay.png" class="playVideo"
                             data-path="${video.videoSrc}?${ifItemExists(
                 video.startTime
             )}&${ifItemExists(video.stopTime)}&autoplay=1">
@@ -444,12 +444,14 @@ window.onload = () => {
         });
     });
 
-    donationAmount.forEach(amount => amount.addEventListener("click", function(){
-        donationAmount.forEach(item =>
-            item.classList.remove("current-method")
-        );
-        this.classList.add("current-method");
-    }))
+    donationAmount.forEach(amount =>
+        amount.addEventListener("click", function() {
+            donationAmount.forEach(item =>
+                item.classList.remove("current-method")
+            );
+            this.classList.add("current-method");
+        })
+    );
 
     // ========================== EVENTS LISTENERS====================================
 
