@@ -1,72 +1,52 @@
 [
     {
-        "videoTitle": "Video Title",
-        "videoDescription": "video description",
-        "videoThumbLink": "./img/album2/album2001.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o",
-        "startTime": "start=30",
-        "stopTime": "end=50"
+        "videoTitle": "Activitate 2018-2019",
+        "videoDescription": "",
+        "videoThumbLink": "./img/Video_thumbnails/Activitatea_ARPIA_Cluj_2018-2019.jpg",
+        "videoSrc": "https://www.youtube.com/embed/G5CdG9wfftc"
     },
     {
-        "videoTitle": "Video Title",
-        "videoDescription": "video description",
-        "videoThumbLink": "./img/album2/album2002.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o",
-        "stopTime": "end=33"
+        "videoTitle": "Activitate 2018",
+        "videoDescription": "",
+        "videoThumbLink": "./img/Video_thumbnails/Activitate_ARPIA_Cluj_2018.jpg",
+        "videoSrc": "https://www.youtube.com/embed/zLYRQNK2KKQ"
     },
     {
-        "videoTitle": "Video Title",
-        "videoDescription": "video description",
-        "videoThumbLink": "./img/album2/album2003.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o",
+        "videoTitle": "Activitate iulie 2017 - mai 2018",
+        "videoDescription": "",
+        "videoThumbLink": "./img/Video_thumbnails/Activitate_ARPIA_Cluj_2017_iulie-2018_mai.jpg",
+        "videoSrc": "https://www.youtube.com/embed/F_nMvgUgstI"
+    },
+    {
+        "videoTitle": "Activitate 2017",
+        "videoDescription": "",
+        "videoThumbLink": "./img/Video_thumbnails/Activitate_ARPIA_Cluj_2017.jpg",
+        "videoSrc": "https://www.youtube.com/embed/ppRzW7F0KKo"
+    },
+    {
+        "videoTitle": "Activitate 2016",
+        "videoDescription": "",
+        "videoThumbLink": "./img/Video_thumbnails/Activitate_ARPIA_Cluj_2016.jpg",
+        "videoSrc": "https://www.youtube.com/embed/WMmQxAHspGI"
+    },
+    {
+        "videoTitle": "Activitate 2015",
+        "videoDescription": "",
+        "videoThumbLink": "./img/Video_thumbnails/Activitate_ARPIA_Cluj_2015.jpg",
+        "videoSrc": "https://www.youtube.com/embed/Zxkd5YH5sSI"
+    },
+    {
+        "videoTitle": "Activitate 2014",
+        "videoDescription": "",
+        "videoThumbLink": "./img/Video_thumbnails/Activitate_ARPIA_Cluj_2014.jpg",
+        "videoSrc": "https://www.youtube.com/embed/lz9fqiWMvPk"
+    },
+    {
+        "videoTitle": "Activitate 2013",
+        "videoDescription": "",
+        "videoThumbLink": "./img/Video_thumbnails/Activitate_ARPIA_Cluj_2013.jpg",
+        "videoSrc": "https://www.youtube.com/embed/hiHoV0z4oDE",
         "startTime": "",
-        "stopTime": "end=33"
-    },
-    {
-        "videoTitle": "Video Title",
-        "videoDescription": "video description",
-        "videoThumbLink": "./img/album2/album2003.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o",
-        "startTime": "start",
-        "stopTime": "end=33"
-    },
-    {
-        "videoTitle": "Video Title",
-        "videoThumbLink": "./img/album2/album2002.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o"
-    },
-    {
-        "videoTitle": "Video Title",
-        "videoThumbLink": "./img/album2/album2003.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o",
-        "startTime": "start=30"
-    },
-    {
-        "videoTitle": "Video Title",
-        "videoThumbLink": "./img/album2/album2003.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o",
-        "startTime": "start=30",
-        "stopTime": "end=33"
-     
-    },
-    {
-        "videoTitle": "Video Title",
-        "videoThumbLink": "./img/album2/album2002.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o?autoplay=1",
-        "stopTime": "end=33"
-    },
-    {
-        "videoTitle": "Video Title",
-        "videoThumbLink": "./img/album2/album2003.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o",
-        "startTime": "start=30",
-        "stopTime": "end=33"
-    },
-    {
-        "videoTitle": "Video Title",
-        "videoThumbLink": "./img/album2/album2003.jpg",
-        "videoSrc": "https://www.youtube.com/embed/LkeORYNNz2o",
-        "startTime": "start=30",
-        "stopTime": "end=33"
+        "stopTime": ""
     }
 ]
