@@ -42,14 +42,14 @@
         "albumDate": "02 nov. 2018",
         "albumName": "Inaugurarea monumentului inchinat Smarandei Brăescu",
         "imgPath": [
-            "./img/album1/album1001_small.jpg",
-            "./img/album1/album1002_small.jpg",
-            "./img/album1/album1003_small.jpg",
-            "./img/album1/album1004_small.jpg",
-            "./img/album1/album1005_small.jpg",
-            "./img/album1/album1006_small.jpg"
+            "./img/02_nov_2018/02_nov_2018_01_small.jpg",
+            "./img/02_nov_2018/02_nov_2018_02_small.jpg",
+            "./img/02_nov_2018/02_nov_2018_03_small.jpg",
+            "./img/02_nov_2018/02_nov_2018_04_small.jpg",
+            "./img/02_nov_2018/02_nov_2018_05_small.jpg",
+            "./img/02_nov_2018/02_nov_2018_06_small.jpg"
         ],
-        "albumPath": "JSON/album2.json"
+        "albumPath": "JSON/02_nov_2018.json"
     },
     {
         "albumDate": "26 oct. 2018",
@@ -81,14 +81,14 @@
         "albumDate": "10 sept. 2016",
         "albumName": "Comemorarea eroului aviator Ioan Sava",
         "imgPath": [
-            "./img/album3/album3001_small.jpg",
-            "./img/album3/album3002_small.jpg",
-            "./img/album3/album3003_small.jpg",
-            "./img/album3/album3004_small.jpg",
-            "./img/album3/album3005_small.jpg",
-            "./img/album3/album3006_small.jpg"
+            "./img/10_sept_2016/10_sept_2016_01_small.jpg",
+            "./img/10_sept_2016/10_sept_2016_02_small.jpg",
+            "./img/10_sept_2016/10_sept_2016_03_small.jpg",
+            "./img/10_sept_2016/10_sept_2016_04_small.jpg",
+            "./img/10_sept_2016/10_sept_2016_05_small.jpg",
+            "./img/10_sept_2016/10_sept_2016_06_small.jpg"
         ],
-        "albumPath": "JSON/album1.json"
+        "albumPath": "JSON/10_sept_2016.json"
     },
     {
         "albumDate": "17 mai 2014",
