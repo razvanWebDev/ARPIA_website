@@ -523,6 +523,7 @@ footer {
     width: 50px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+    z-index: 8;
 }
 
 .playVideo:hover {
