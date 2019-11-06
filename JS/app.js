@@ -204,7 +204,7 @@ window.onload = () => {
                         <h3 class="video-title">${ifItemExists(
                             video.videoTitle
                         )}</h3>
-                        <img src="/img/btnPLay.png" class="playVideo"
+                        <img src="./img/btnPLay.png" alt="play" class="playVideo"
                             data-path="${video.videoSrc}?${ifItemExists(
                 video.startTime
             )}&${ifItemExists(video.stopTime)}&autoplay=1">
