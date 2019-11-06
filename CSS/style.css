@@ -497,12 +497,13 @@ footer {
 /* ==============================VIDEO-GALLERY-PAGE========================= */
 .video-albums-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 370px);
-    grid-auto-rows: 350px;
+    grid-template-columns: repeat(auto-fit, 320px);
+    grid-auto-rows: 250px;
     justify-content: center;
     align-content: center;
-    grid-gap: 75px;
+    grid-gap: 110px;
     width: 100%;
+    padding: 40px 0;
     color: var(--light-txt-color);
 }
 
@@ -512,7 +513,7 @@ footer {
 }
 
 .video-title {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     width: 80%;
 }
@@ -525,15 +526,14 @@ footer {
     width: 50px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
-    z-index: 8;
 }
 
 .playVideo:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 #video-gallery-modal {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 #video-gallery-modal .close {
