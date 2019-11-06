@@ -47,6 +47,7 @@ window.onload = () => {
     // CONTACTPAGE
     const donationMethods = document.querySelectorAll(".donation-methods div");
     const methodDivs = document.querySelectorAll(".methods_div");
+    const donationAmount = document.querySelectorAll(".donation-amount");
 
     // ============================RUN THE APP========================================
     // GLOBAL
@@ -431,7 +432,7 @@ window.onload = () => {
     };
 
     // ================CONTACT PAGE ===================================
-    donationMethods.forEach(function(method) {
+    donationMethods.forEach(method => {
         method.addEventListener("click", function() {
             methodDivs.forEach(div => (div.style.display = "none"));
             donationMethods.forEach(method =>
@@ -442,6 +443,13 @@ window.onload = () => {
             document.querySelector(`.${methodName}`).style.display = "block";
         });
     });
+
+    donationAmount.forEach(amount => amount.addEventListener("click", function(){
+        donationAmount.forEach(item =>
+            item.classList.remove("current-method")
+        );
+        this.classList.add("current-method");
+    }))
 
     // ========================== EVENTS LISTENERS====================================
 

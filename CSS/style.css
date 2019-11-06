@@ -512,7 +512,9 @@ footer {
 }
 
 .video-title {
-    font-size: 30px;
+    font-size: 25px;
+    text-align: center;
+    width: 80%;
 }
 
 .video-description {
@@ -873,8 +875,9 @@ footer {
     justify-content: center;
 }
 
-.donation-amount {
-    background-color: var(--secondary-theme-color);
+.fixed-amount {
+    background-color: var(--main-theme-color);
+    color: var(--secondary-theme-color);
     width: 75px;
     height: 75px;
     border-radius: 50%;
@@ -886,14 +889,15 @@ footer {
     cursor: pointer;
 }
 
-.donation-amount:hover {
-    background-color: var(--main-theme-color);
-    color: var(--secondary-theme-color);
+.fixed-amount:hover {
+    background-color: var(--secondary-theme-color);
+    color: var(--main-theme-color);
 }
 
 .donation input {
     width: 100px;
     font-size: 16px;
+    padding: 10px;
     text-align: center;
     outline: none;
     transition: all 0.3s;
