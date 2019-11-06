@@ -203,7 +203,7 @@ window.onload = () => {
                         <h3 class="video-title">${ifItemExists(
                             video.videoTitle
                         )}</h3>
-                        <img src=./img/btnPlay.png class="playVideo"
+                        <img src="./img/btnPlay.png" class="playVideo"
                             data-path="${video.videoSrc}?${ifItemExists(
                 video.startTime
             )}&${ifItemExists(video.stopTime)}&autoplay=1">
@@ -434,7 +434,9 @@ window.onload = () => {
     donationMethods.forEach(function(method) {
         method.addEventListener("click", function() {
             methodDivs.forEach(div => (div.style.display = "none"));
-            donationMethods.forEach(method => method.classList.remove('current-method'))
+            donationMethods.forEach(method =>
+                method.classList.remove("current-method")
+            );
             this.classList.add("current-method");
             const methodName = this.getAttribute("data-link");
             document.querySelector(`.${methodName}`).style.display = "block";

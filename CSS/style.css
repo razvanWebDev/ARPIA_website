@@ -133,6 +133,9 @@ header {
     border-collapse: collapse;
     transform: translateY(20px);
     color: var(--light-txt-color);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.85);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.85);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.85);
 }
 
 .dropdown-list li {
