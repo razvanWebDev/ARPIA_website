@@ -241,9 +241,6 @@ footer {
     width: 25px;
 }
 
-.to-top-arrow:hover {
-    opacity: 0.8;
-}
 
 .show-to-top-arrow {
     opacity: 1;
@@ -970,10 +967,7 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-    .to-top-arrow {
-        opacity: 1;
-    }
-
+  
     .page-title h2 {
         font-size: 25px;
     }
