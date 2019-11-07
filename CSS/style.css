@@ -133,9 +133,9 @@ header {
     border-collapse: collapse;
     transform: translateY(20px);
     color: var(--light-txt-color);
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.85);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.85);
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.85);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.85);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.85);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.85);
 }
 
 .dropdown-list li {
@@ -193,7 +193,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 50px 100px;
+    padding: 80px;
 }
 
 /* Page title */
@@ -404,7 +404,7 @@ footer {
 .photo-albums-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 75px;
+    grid-gap: 20px;
     width: 100%;
 }
 
@@ -414,6 +414,7 @@ footer {
     width: 100%;
     overflow: hidden;
     cursor: pointer;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
 }
 
 .album-description {
@@ -497,13 +498,12 @@ footer {
 /* ==============================VIDEO-GALLERY-PAGE========================= */
 .video-albums-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 320px);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-auto-rows: 250px;
     justify-content: center;
     align-content: center;
-    grid-gap: 110px;
+    grid-gap: 20px;
     width: 100%;
-    padding: 40px 0;
     color: var(--light-txt-color);
 }
 
@@ -523,7 +523,6 @@ footer {
 }
 
 .playVideo {
-    width: 50px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
@@ -1059,7 +1058,7 @@ footer {
         width: 90%;
         left: 5%;
         background-color: rgb(42, 56, 93);
-        box-shadow: 0 0 5px 0px var(--secondary-theme-color);
+        box-shadow: 0 0px 5px 0px var(--secondary-theme-color);
     }
     #hamburger {
         display: block;
