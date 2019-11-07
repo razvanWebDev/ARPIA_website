@@ -220,7 +220,7 @@ main {
 }
 
 .page-title-h2 {
-    font-size: 36px;
+    font-size: 35px;
     width: 100%;
     text-align: center;
     padding-top: 50px;
@@ -968,12 +968,23 @@ footer {
 }
 
 .documents-section {
-    text-align: center;
     padding: 50px 100px;
+    text-align: center;
 }
 
-.documents-section a {
+.documents {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.documents a {
     width: 25%;
+}
+
+.documents-section button {
+    width: 100%;
 }
 
 .documents-section a:hover {
@@ -1054,6 +1065,51 @@ footer {
     .current-video-container {
         width: 80%;
     }
+
+    /* contact page */
+    .contact-main-section {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .contact-main-section div {
+        margin-bottom: 35px;
+    }
+    .contact-main-section div:last-child {
+        margin-bottom: 0px;
+    }
+    .contact-section {
+        width: 100%;
+    }
+
+    .donation-section {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .donation-section h2,
+    .documents-section h2 {
+        font-size: 25px;
+        margin: 50px auto 0px;
+    }
+    .bank-transfer {
+        padding: 0 20px;
+    }
+    .two-percent {
+        padding: 0 20px;
+    }
+
+    .documents-section {
+        padding: 0 20px;
+    }
+
+    .documents {
+        flex-direction: column;
+    }
+
+    .documents a {
+        width: 40%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1104,11 +1160,12 @@ footer {
         padding: 10vh 0;
         background-color: var(--main-theme-color-transparent);
         background: linear-gradient(
-            rgba(42, 56, 93, 0.8) 0%,
-            rgba(42, 56, 93, 0.8) 100%
-        ),
-        url("../img/page-title-background.jpg") no-repeat center center/cover;
-    /* background-position-y: 30%; */
+                rgba(42, 56, 93, 0.8) 0%,
+                rgba(42, 56, 93, 0.8) 100%
+            ),
+            url("../img/page-title-background.jpg") no-repeat center
+                center/cover;
+        background-position-x: 60%;
     }
 
     .header-blank {
