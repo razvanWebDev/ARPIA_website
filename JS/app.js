@@ -112,10 +112,10 @@ window.onload = () => {
     const transparentHeader = () => {
         const y = window.scrollY;
         if (y >= 150) {
-            pageHeader.classList.add("show-header-color");
+            pageHeader.classList.add("index-header");
             nav.classList.remove("menu-border");
         } else {
-            pageHeader.classList.remove("show-header-color");
+            pageHeader.classList.remove("index-header");
             nav.classList.add("menu-border");
         }
     };

@@ -33,7 +33,6 @@ ul {
     list-style: none;
 }
 
-
 /* Header */
 header {
     position: fixed;
@@ -45,7 +44,6 @@ header {
     padding: 0 35px;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--main-theme-color-transparent);
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.85);
     -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.85);
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.85);
@@ -59,8 +57,13 @@ header {
     box-shadow: none;
 }
 
-.show-header-color {
-    background-color: var(--main-theme-color-transparent);
+.index-header {
+    background: linear-gradient(
+            rgba(42, 56, 93, 0.8) 0%,
+            rgba(42, 56, 93, 0.8) 100%
+        ),
+        url("../img/page-title-background.jpg") no-repeat center center/cover;
+    background-position-y: 30%;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.85);
     -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.85);
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.85);
@@ -102,7 +105,7 @@ header {
 
 .header-links a {
     color: var(--light-txt-color);
-    padding: 3vh 0;
+    padding: 4vh 0;
 }
 
 .current-page {
@@ -196,7 +199,6 @@ main {
     align-items: center;
     padding: 60px 100px;
 }
-
 
 /* Page title */
 .page-title {
@@ -575,7 +577,6 @@ footer {
     pointer-events: none;
     transition: all 0.2s;
 }
-
 
 .close {
     position: absolute;
@@ -985,7 +986,6 @@ footer {
     opacity: 1;
     pointer-events: all;
 }
-
 
 .hide {
     opacity: 0 !important;
