@@ -123,13 +123,13 @@ header {
 
 .dropdown {
     position: relative;
-    line-height: calc(6vh + 19px);
+    line-height: calc(8vh + 19px);
     text-align: center;
 }
 
 .dropdown-list {
     position: absolute;
-    left: -50%;
+    left: -40%;
     background-color: var(--main-theme-color-transparent);
     opacity: 0;
     pointer-events: none;
@@ -1058,12 +1058,7 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        height: 10vh;
-        background-color: var(--main-theme-color-transparent);
-    }
-
-    .page-header {
-        background-color: var(--main-theme-color-transparent);
+        min-height: 10vh;
     }
 
     .menu-border {
@@ -1082,14 +1077,14 @@ footer {
     }
     #hamburger {
         display: block;
+        z-index: 2;
     }
     .header-menu {
         width: 100%;
         position: absolute;
         top: 0;
         right: 0;
-        margin-top: 10vh;
-        height: 90vh;
+        height: 100vh;
         z-index: 1;
         display: flex;
         justify-content: flex-end;
@@ -1101,17 +1096,23 @@ footer {
     }
 
     .header-links {
-        width: 60%;
+        width: 70%;
         height: 100%;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        padding-bottom: 10vh;
+        padding: 10vh 0;
         background-color: var(--main-theme-color-transparent);
+        background: linear-gradient(
+            rgba(42, 56, 93, 0.8) 0%,
+            rgba(42, 56, 93, 0.8) 100%
+        ),
+        url("../img/page-title-background.jpg") no-repeat center center/cover;
+    /* background-position-y: 30%; */
     }
 
     .header-blank {
-        width: 40%;
+        width: 30%;
         height: 100%;
     }
 

@@ -495,8 +495,7 @@ window.onload = () => {
     }
 
     if (
-        !window.location.pathname.includes("index.html") &&
-        window.innerWidth > 768
+        !window.location.pathname.includes("index.html")
     ) {
         // toggle transparent header
         window.addEventListener("scroll", transparentHeader);
