@@ -193,31 +193,38 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 100px;
+    padding: 60px 100px;
 }
+
 
 /* Page title */
 .page-title {
     /* header height(6vh+18px) + visible section */
-    height: calc(6vh + 18px + 100px);
+    height: calc(6vh + 18px + 150px);
     padding-bottom: 35px;
     background: linear-gradient(
-            rgba(41, 44, 49, 0.3) 0%,
-            rgba(41, 44, 49, 0.3) 100%
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(42, 56, 93, 0.8) 30%,
+            rgba(255, 255, 255, 0) 50%,
+            rgba(42, 56, 93, 0) 100%
         ),
-        url("../img/page-title-background.jpg") no-repeat center center/cover;
+        url("../img/page-title-background1.jpg") no-repeat center center/cover;
+    background-position-y: 30%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     text-align: center;
+    color: white;
 }
 
-.page-title h2 {
-    font-size: 30px;
-    color: var(--light-txt-color);
+.page-title-h2 {
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    color: var(--dark-txt-color);
     animation: focus-in-expand-fwd 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
         both;
-    text-shadow: 2px 2px 2px var(--dark-txt-color);
 }
 
 footer {
@@ -243,7 +250,6 @@ footer {
 .to-top-arrow img {
     width: 25px;
 }
-
 
 .show-to-top-arrow {
     opacity: 1;
@@ -333,7 +339,7 @@ footer {
     transform: rotate(180deg);
 }
 #scrollDown {
-    position: absolute;
+    position: fixed;
     right: 50%;
     bottom: 35px;
     cursor: pointer;
@@ -343,7 +349,6 @@ footer {
 #wheel {
     animation: scroll ease 2s infinite;
 }
-
 
 /* Background images */
 .slide:first-child {
@@ -712,7 +717,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 75px;
-
 }
 
 .contact-details-title h1 {
@@ -814,32 +818,35 @@ footer {
     padding: 100px;
 }
 
-.donation-section h2 {
+.donation-section h2,
+.documents-section h2 {
     font-size: 35px;
     margin: 0px auto;
 }
 
 .donation-methods {
     display: flex;
-    padding: 50px 15%;
-    justify-content: space-between;
+    padding: 50px 0;
+    justify-content: space-around;
 }
 
 .donation-methods div {
     background-color: var(--main-theme-color);
     color: var(--secondary-theme-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 25%;
     padding: 20px 0;
     cursor: pointer;
     transition: all 0.3s;
-    border-radius: 30px;
+    border-radius: 100px;
 }
 
 .donation-methods div:hover {
     background-color: var(--secondary-theme-color);
     color: var(--main-theme-color);
 }
-
 
 .bank-transfer {
     display: none;
@@ -889,8 +896,11 @@ footer {
 }
 
 .current-method {
-    background-color: var(--secondary-theme-color);
-    color: var(--main-theme-color);
+    background-color: var(--secondary-theme-color) !important;
+    color: var(--main-theme-color) !important;
+}
+.donation-amount.input.current-method {
+    background-color: transparent !important;
 }
 
 .credit-card input::placeholder {
@@ -962,9 +972,21 @@ footer {
     outline: none;
 }
 
+.documents-section {
+    text-align: center;
+    padding: 50px 100px;
+}
+
+.documents-section a {
+    width: 25%;
+}
+
+.documents-section a:hover {
+    opacity: 1;
+}
+
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-  
     .page-title h2 {
         font-size: 25px;
     }
