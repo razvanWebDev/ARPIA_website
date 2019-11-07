@@ -26,7 +26,7 @@ a {
 }
 
 a:hover {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 ul {
@@ -701,17 +701,9 @@ footer {
     display: flex;
     width: 100%;
     height: calc(93.6vh - 118px);
-
-    /* background-image: linear-gradient(
-            rgba(41, 44, 49, 0.5) 0%,
-            rgba(41, 44, 49, 0.5) 100%
-        ),
-        url(/img/20_noi_2018/20_noi_2018_06.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 40%; */
     text-align: center;
 }
+
 .contact-section {
     min-height: 100%;
     width: 50%;
@@ -722,8 +714,6 @@ footer {
     padding: 75px;
 
 }
-
-
 
 .contact-details-title h1 {
     width: 80%;
@@ -745,8 +735,7 @@ footer {
 }
 
 .contact-section form {
-   
-    width: 90%;
+    width: 80%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -851,10 +840,7 @@ footer {
     color: var(--main-theme-color);
 }
 
-.current-method {
-    background-color: var(--secondary-theme-color) !important;
-    color: var(--main-theme-color) !important;
-}
+
 .bank-transfer {
     display: none;
     flex-direction: column;
@@ -900,6 +886,11 @@ footer {
     text-align: center;
     outline: none;
     transition: all 0.3s;
+}
+
+.current-method {
+    background-color: var(--secondary-theme-color);
+    color: var(--main-theme-color);
 }
 
 .credit-card input::placeholder {
