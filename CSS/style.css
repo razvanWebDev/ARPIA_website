@@ -193,7 +193,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 80px;
+    padding: 100px;
 }
 
 /* Page title */
@@ -332,19 +332,18 @@ footer {
     left: 25px;
     transform: rotate(180deg);
 }
-.home-main-section svg {
+#scrollDown {
     position: absolute;
     right: 50%;
     bottom: 35px;
-    height: 40px;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
 }
 
 #wheel {
     animation: scroll ease 2s infinite;
 }
+
 
 /* Background images */
 .slide:first-child {
@@ -698,6 +697,7 @@ footer {
 
 /* ===================CONTACT PAGE====================== */
 .contact-main-section {
+    position: relative;
     display: flex;
     width: 100%;
     height: calc(93.6vh - 118px);

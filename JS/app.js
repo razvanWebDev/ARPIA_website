@@ -20,7 +20,7 @@ window.onload = () => {
     const slides = document.querySelectorAll(".slide");
     const next = document.querySelector(".next");
     const prev = document.querySelector(".prev");
-    const autoSlide = false; //Set to true for auto slide
+    const autoSlide = true; //Set to true for auto slide
     const intervalTime = 6000; //slides interval for autoslide
     let slideInterval;
     const scrollDown = document.querySelector("#scrollDown");
@@ -510,5 +510,9 @@ window.onload = () => {
         window.location.pathname.includes("gallery_video.html")
     ) {
         loadGalleryItems();
+    }
+    // CONTACT PAGE
+    if(window.location.pathname.includes("contact.html")) {
+        scrollDown.addEventListener("click", scrollPage);
     }
 };
