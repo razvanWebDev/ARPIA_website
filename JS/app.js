@@ -79,15 +79,23 @@ window.onload = () => {
     };
 
     // Showw scroll up arrow
-    const showArrow = () => {
+    const showItem = (item, scrollHeight) => {
         const y = window.scrollY;
-        if (y >= 300) {
-            upArrow.classList.add("show-to-top-arrow");
+        if (y >= scrollHeight) {
+            item.classList.add("show");
         } else {
-            upArrow.classList.remove("show-to-top-arrow");
+            item.classList.remove("show");
         }
     };
 
+    const hideItem = (item, scrollHeight) => {
+        const y = window.scrollY;
+        if (y >= scrollHeight) {
+            item.classList.add("hide");
+        } else {
+            item.classList.remove("hide");
+        }
+    };
     // scroll page to top
     const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
 
@@ -103,7 +111,7 @@ window.onload = () => {
     // transparent header on scroll
     const transparentHeader = () => {
         const y = window.scrollY;
-        if (y >= 80) {
+        if (y >= 150) {
             pageHeader.classList.add("show-header-color");
             nav.classList.remove("menu-border");
         } else {
@@ -460,7 +468,7 @@ window.onload = () => {
     //hide nav on tap
     headerBlank.addEventListener("click", navToggle);
     //scroll page to top
-    window.addEventListener("scroll", showArrow);
+    window.addEventListener("scroll", () => showItem(upArrow, 300));
     // scroll page to top
     upArrow.addEventListener("click", scrollToTop);
 
@@ -483,6 +491,7 @@ window.onload = () => {
             slideInterval = setInterval(nextSlide, intervalTime);
         }
         scrollDown.addEventListener("click", scrollPage);
+        window.addEventListener("scroll", () => hideItem(scrollDown, 50));
     }
 
     if (
@@ -514,5 +523,6 @@ window.onload = () => {
     // CONTACT PAGE
     if(window.location.pathname.includes("contact.html")) {
         scrollDown.addEventListener("click", scrollPage);
+        window.addEventListener("scroll", () => hideItem(scrollDown, 50));
     }
 };
