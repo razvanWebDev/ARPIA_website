@@ -199,7 +199,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 60px 100px;
+    padding: 50px 10%;
 }
 
 /* Page title */
@@ -222,7 +222,7 @@ main {
 }
 
 .page-title-h2 {
-    font-size: 35px;
+    font-size: 30px;
     width: 100%;
     text-align: center;
     padding-top: 50px;
@@ -376,7 +376,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 75px 100px;
+    padding: 75px 10%;
 }
 
 .home-page-section img {
@@ -394,6 +394,26 @@ footer {
     font-size: 22px;
     margin-bottom: 25px;
     text-align: justify;
+}
+
+/* ========================EVENTS PAGE======================== */
+
+.event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 35px 75px;
+    margin-bottom: 25px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    background-color:rgba(42, 56, 93, 0.03) ;
+}
+
+.event h3 {
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 /* ==================== FOTO-ALBUMS-PAGE ================== */
@@ -473,7 +493,7 @@ footer {
     justify-content: center;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
     width: 100%;
 }
 
@@ -483,7 +503,7 @@ footer {
 }
 
 .photo-gallery-item {
-    height: 150px;
+    height: 200px;
     overflow: hidden;
 }
 
