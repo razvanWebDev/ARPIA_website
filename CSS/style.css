@@ -6,6 +6,11 @@
     --secondary-theme-color: #f6b332;
     --light-txt-color: #fdfdfd;
     --dark-txt-color: rgb(42, 56, 93);
+
+    --text-size: 20px;
+    --title-size: 25px;
+    --big-title-size: 32px;
+    --small-title-size: 20px;
 }
 * {
     margin: 0;
@@ -218,7 +223,7 @@ main {
 }
 
 .page-title-h2 {
-    font-size: 30px;
+    font-size: var(--big-title-size);
     width: 100%;
     text-align: center;
     padding-top: 50px;
@@ -381,13 +386,13 @@ footer {
 }
 
 .home-page-section h1 {
-    font-size: 30px;
+    font-size: var(--title-size);
     text-align: center;
     padding: 20px 0 60px;
 }
 
 .home-page-section p {
-    font-size: 22px;
+    font-size: var(--text-size);
     margin-bottom: 25px;
     text-align: justify;
 }
@@ -397,7 +402,7 @@ footer {
 .event {
     display: flex;
     justify-content: center;
-    font-size: 18px;
+    font-size: var(--text-size);
     padding: 35px 75px;
 }
 
@@ -405,10 +410,9 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-   align-items: center;
-   min-height: 100%;
-   text-align: center;
-   
+    align-items: center;
+    min-height: 100%;
+    text-align: center;
 }
 
 .event h3 {
@@ -416,9 +420,8 @@ footer {
     padding-bottom: 18px;
 }
 
-
 .event img {
-   max-width: 25%;
+    max-width: 25%;
 }
 
 .events-container .separator {
@@ -497,8 +500,12 @@ footer {
     display: none;
 }
 
+.gallery-page-title {
+    padding-bottom: 35px;
+}
+
 .gallery-description {
-    font-size: 22px;
+    font-size: var(--text-size);
     text-align: center;
 }
 
@@ -561,13 +568,13 @@ footer {
 }
 
 .video-title {
-    font-size: 20px;
+    font-size: var(--text-size);
     text-align: center;
     width: 80%;
 }
 
 .video-description {
-    font-size: 18px;
+    text-align: center;
 }
 
 .playVideo {
@@ -767,11 +774,11 @@ footer {
 .contact-details-title h1 {
     width: 80%;
     margin: auto;
-    font-size: 25px;
+    font-size: var(--title-size);
 }
 
 .contact-details-title h2 {
-    font-size: 18px;
+    font-size: var(--text-size);
 }
 
 .contact-icon {
@@ -788,7 +795,7 @@ footer {
     align-items: center;
 }
 .contact-section form h3 {
-    font-size: 25px;
+    font-size: var(--title-size);
     margin-bottom: 35px;
 }
 
@@ -831,7 +838,7 @@ footer {
     border-bottom: 1px solid var(--main-theme-color-transparent);
 }
 .methods_div h3 {
-    font-size: 20px;
+    font-size: var(--text-size);
     padding: 20px 0;
 }
 
@@ -861,7 +868,7 @@ footer {
 
 .donation-section h2,
 .documents-section h2 {
-    font-size: 35px;
+    font-size: var(--title-size);
     margin: 0px auto;
 }
 
@@ -1052,7 +1059,7 @@ footer {
 /* RESPONSIVE */
 @media (max-width: 1024px) {
     .page-title-h2 {
-        font-size: 25px;
+        font-size: var(--title-size);
     }
 
     main {
@@ -1068,11 +1075,11 @@ footer {
     }
 
     .home-page-section h1 {
-        font-size: 25px;
+        font-size: var(--title-size);
     }
 
     .home-page-section p {
-        font-size: 20px;
+        font-size: var(--text-size);
         margin-bottom: 20px;
     }
 
@@ -1092,7 +1099,7 @@ footer {
 
     /*foto gallery page */
     .gallery-description {
-        font-size: 20px;
+        font-size: var(--text-size);
     }
     .photo-gallery {
         grid-gap: 20px;
@@ -1139,7 +1146,7 @@ footer {
 
     .donation-section h2,
     .documents-section h2 {
-        font-size: 25px;
+        font-size: var(--title-size);
         margin: 50px auto 0px;
     }
     .bank-transfer {
@@ -1231,7 +1238,7 @@ footer {
     }
 
     .page-title-h2 {
-        font-size: 22px;
+        font-size: var(--text-size);
     }
 
     .home-page-section {
@@ -1244,7 +1251,7 @@ footer {
     }
 
     .home-page-section h1 {
-        font-size: 23px;
+        font-size: 22px;
     }
 
     .home-page-section p {
@@ -1257,7 +1264,7 @@ footer {
         grid-auto-rows: 80px;
     }
     .album-description {
-        font-size: 14px;
+        font-size: 16px;
     }
     /* foto gallery page */
     .gallery-description {
@@ -1267,7 +1274,7 @@ footer {
 
 @media (max-width: 400px) {
     #logo h1 {
-        font-size: 20px;
+        font-size: var(--text-size);
     }
 
     .to-top-arrow img {
