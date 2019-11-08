@@ -35,6 +35,7 @@ window.onload = () => {
     // gallery modal
     const fotoGalleryModal = document.querySelector("#foto-gallery-modal");
     const videoGalleryModal = document.querySelector("#video-gallery-modal");
+    const blankDivs = document.querySelectorAll(".blank-div");
 
     const close = document.querySelector(".close");
     const currentPic = document.querySelector(".current-foto img");
@@ -528,6 +529,7 @@ window.onload = () => {
         close.addEventListener("click", hideGalleryModal);
         slideRight.addEventListener("click", moveSlideRight);
         slideLeft.addEventListener("click", moveSlideLeft);
+        blankDivs.forEach(div => div.addEventListener("click", hideGalleryModal));
     }
     if (window.location.pathname.includes("gallery_video")) {
         // close gallery modal
