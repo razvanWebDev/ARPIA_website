@@ -623,7 +623,8 @@ footer {
     z-index: 11;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(246, 248, 246, 0.9);
+    /* background-color: rgba(246, 248, 246, 0.9); */
+    background-color: rgba(42, 56, 93, 0.8);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -634,14 +635,14 @@ footer {
 }
 
 .close {
-    position: absolute;
-    top: 35px;
-    right: 35px;
-    color: var(--dark-txt-color);
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    color: var(--light-txt-color);
     cursor: pointer;
     font-size: 1.3em;
     font-weight: bolder;
-    padding: 10px;
+   
 }
 
 .close:hover {
@@ -674,7 +675,6 @@ footer {
 
 .blank-div {
     width: 100%;
-   
 }
 
 .gallery-slider-container {

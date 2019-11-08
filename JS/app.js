@@ -526,14 +526,14 @@ window.onload = () => {
     if (window.location.pathname.includes("gallery_foto.html")) {
         // close gallery modal
         gallerySlider.addEventListener("scroll", showHideArrows);
-        close.addEventListener("click", hideGalleryModal);
+        // close.addEventListener("click", hideGalleryModal);
         slideRight.addEventListener("click", moveSlideRight);
         slideLeft.addEventListener("click", moveSlideLeft);
         blankDivs.forEach(div => div.addEventListener("click", hideGalleryModal));
     }
     if (window.location.pathname.includes("gallery_video")) {
         // close gallery modal
-        close.addEventListener("click", hideVideoModal);
+        videoGalleryModal.addEventListener("click", hideVideoModal)
     }
     if (
         window.location.pathname.includes("gallery_foto.html") ||
