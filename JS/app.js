@@ -211,14 +211,14 @@ window.onload = () => {
     const displayEvents = arpiaEvents => {
         const events = arpiaEvents.map(event => {
             return `<div class="event">
-                        <h3>${ifItemExists(event.eventName)}<br>
-                        ${ifItemExists(event.eventDate)}
-                        </h3>
-                        <p>
-                        ${ifItemExists(event.eventDescription)}
-                        </p>
-
-                    </div>`;
+                        <div class="event-description">
+                            <h3>${ifItemExists(event.eventName)}<br>
+                            ${ifItemExists(event.eventDate)}</h3>
+                            <p>${ifItemExists(event.eventDescription)}</p>
+                        </div>
+                        <img src="${ifItemExists(event.eventPoster)}">
+                    </div>
+                    <div class="separator"></div>`;
         });
 
         eventsContainer.innerHTML = events.join("");

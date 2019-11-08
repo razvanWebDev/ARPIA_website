@@ -2,11 +2,27 @@
     {
         "eventName": "Participare ILA Berlin",
         "eventDate": "13-17 mai 2020",
-        "eventDescription": "Invitație de participare a ARPIA-filiala Cluj la ILA Berlin – expoziție de aeronave, demonstrații aeriene 13-17 mai 2020. Invitația lansata de omologul german, parțial sponsorizată de <a href=\"ila-berlin.de\">ILA Berlin</a>."
+        "eventDescription": "Invitație de participare a ARPIA-filiala Cluj la ILA Berlin – expoziție de aeronave, demonstrații aeriene 13-17 mai 2020. Invitația lansata de omologul german, parțial sponsorizată de <a href=\"https://www.ila-berlin.de/de\" target=\"blank\">ILA Berlin</a>."
     },
     {
         "eventName": "Comemorare Smaranda Brăescu",
         "eventDate": "28 februarie 2020",
-        "eventDescription": "Depunere de coroane de flori la monumentul Smarandei Brăescu din Cimitirul Central din Cluj-Napoca, cu sprijinul primăriei municipiului."
+        "eventDescription": "Depunere de coroane de flori la monumentul Smarandei Brăescu din Cimitirul Central din Cluj-Napoca, cu sprijinul <a href=\" https://primariaclujnapoca.ro/\" target=\"blank\">Primăriei Municipiului</a>."
+    },
+    {
+        "eventName": "Comemorare Traian Dârjan",
+        "eventDate": "25 februarie 2020",
+        "eventDescription": "75 de ani de la ridicarea la ceruri a lui <a href=\"https://ro.wikipedia.org/wiki/Traian_D%C3%A2rjan\" target=\"blank\">Traian Dârjan</a>, ceremonial militar si religios: eveniment organizat la aeroclub sau/și in cimitirul Someșeni, cu sprijinul Diviziei 4 Infanterie Gemina, <a href=\"https://www.mitropolia-clujului.ro/ \" target=\"blank\"> Mitropoliei </a> și <a href=\" https://primariaclujnapoca.ro/\" target=\"blank\"> Primariei Municipiului Cluj-Napoca </a>."
+    },
+    {
+        "eventName": "15 ani de la inființarea ARPIA-filiala Torino",
+        "eventDate": "27 noiembrie 2019",
+        "eventDescription": "Invitație de participare la aniversarea a 15 ani de la inființarea ARPIA-filiala Torino."
+    },
+    {
+        "eventName": "Lansare Carte <strong>Aviația Cujeană</strong>",
+        "eventDate": "6 decembrie 2019",
+        "eventDescription": "A doua lansare a cărții va fi de Ziua Mondiala a Aviatiei Civile, pe 6 decembrie 2019, la <a href=\"http://airportcluj.ro/\">Aeroportul Internațional Avram Iancu Cluj-Napoca</a>, insoțită de o expoziție cu fotografiile din carte.",
+        "eventPoster" : "./img/events/afis_lansare_carte_aeroport.jpg"
     }
 ]
