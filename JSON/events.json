@@ -23,13 +23,13 @@
         "eventName": "Lansare Carte <strong>Aviația Cujeană</strong>",
         "eventDate": "6 decembrie 2019",
         "eventDescription": "A doua lansare a cărții va fi de Ziua Mondiala a Aviatiei Civile, pe 6 decembrie 2019, la <a href=\"http://airportcluj.ro/\" target=\"blank\">Aeroportul Internațional Avram Iancu</a> din Cluj-Napoca, insoțită de o expoziție cu fotografiile din carte.",
-        "eventPoster": "./img/events/afis_lansare_carte_aeroport.jpg"
+        "eventPosterSmall": "./img/events/afis_lansare_carte_aeroport_small.jpg"
     },
     {
         "eventName": "Lansare Carte <strong>Aviația Cujeană</strong>",
         "eventDate": "5 decembrie 2019",
         "eventDescription": "Lansarea cărții <strong>Aviația Cujeană</strong> care va avea loc la Sala de spectacole a Casei Radio Romania Cluj.",
-        "eventPoster": "./img/events/afis_lansare_carte_casaradio.jpg"
+        "eventPosterSmall": "./img/events/afis_lansare_carte_casaradio_small.jpg"
     },
     {
         "eventName": "Zilele Câmpiei Turzii",

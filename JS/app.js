@@ -24,6 +24,9 @@ window.onload = () => {
     const intervalTime = 6000; //slides interval for autoslide
     let slideInterval;
     const scrollDown = document.querySelector("#scrollDown");
+    // EVENTS PAGE
+    const eventsContainer = document.querySelector(".events-container");
+    const eventsModal = document.querySelector("#events-modal");
     // GALLERY PAGE
     const fotoAlbumsMain = document.querySelector(".photo-albums-main");
     const fotoGalleryMain = document.querySelector(".photo-gallery-main");
@@ -33,6 +36,7 @@ window.onload = () => {
     const galleryDescription = document.querySelector(".gallery-description");
 
     // gallery modal
+    const modal = document.querySelector(".modal");
     const fotoGalleryModal = document.querySelector("#foto-gallery-modal");
     const videoGalleryModal = document.querySelector("#video-gallery-modal");
     const blankDivs = document.querySelectorAll(".blank-div");
@@ -208,7 +212,6 @@ window.onload = () => {
         });
 
     //===========================EVENTS PAGE==============================================================
-    const eventsContainer = document.querySelector(".events-container");
     const displayEvents = arpiaEvents => {
         const events = arpiaEvents.map(event => {
             return `<div class="event">
@@ -217,12 +220,24 @@ window.onload = () => {
                             ${ifItemExists(event.eventDate)}</h3>
                             <p>${ifItemExists(event.eventDescription)}</p>
                         </div>
-                        <img src="${ifItemExists(event.eventPoster)}">
+                        <img src="${ifItemExists(
+                            event.eventPosterSmall
+                        )}" class="event-poster">
                     </div>
                     <div class="separator"></div>`;
         });
-
         eventsContainer.innerHTML = events.join("");
+        showEventsModal();
+    };
+
+    const showEventsModal = () => {
+        const eventPics = document.querySelectorAll(".event-poster");
+        eventPics.forEach(pic =>
+            pic.addEventListener("click", function() {
+                currentPic.src = this.src.replace("_small", "");
+                showGalleryModal();
+            })
+        );
     };
 
     // VIDEO GALLERY PAGE ==================================================================================
@@ -346,7 +361,7 @@ window.onload = () => {
     // show foto gallery modal
     const showGalleryModal = () => {
         body.style.overflow = "hidden";
-        fotoGalleryModal.classList.add("show");
+        modal.classList.add("show");
 
         //close modal on "back" event
         // window.addEventListener(
@@ -363,7 +378,7 @@ window.onload = () => {
 
     const hideGalleryModal = () => {
         body.style.overflow = "auto";
-        fotoGalleryModal.classList.remove("show");
+        modal.classList.remove("show");
     };
 
     // select current foto on modal thumbnails click
@@ -524,17 +539,19 @@ window.onload = () => {
 
     // GALLERY PAGE
     if (window.location.pathname.includes("gallery_foto.html")) {
-        // close gallery modal
         gallerySlider.addEventListener("scroll", showHideArrows);
-        // close.addEventListener("click", hideGalleryModal);
         slideRight.addEventListener("click", moveSlideRight);
         slideLeft.addEventListener("click", moveSlideLeft);
-        blankDivs.forEach(div => div.addEventListener("click", hideGalleryModal));
     }
     if (window.location.pathname.includes("gallery_video")) {
-        // close gallery modal
-        videoGalleryModal.addEventListener("click", hideVideoModal)
+        videoGalleryModal.addEventListener("click", hideVideoModal);
     }
+    // CONTACT PAGE
+    if (window.location.pathname.includes("contact.html")) {
+        scrollDown.addEventListener("click", scrollPage);
+        window.addEventListener("scroll", () => hideItem(scrollDown, 50));
+    }
+    // COMMON
     if (
         window.location.pathname.includes("gallery_foto.html") ||
         window.location.pathname.includes("gallery_video.html") ||
@@ -542,9 +559,13 @@ window.onload = () => {
     ) {
         loadGalleryItems();
     }
-    // CONTACT PAGE
-    if (window.location.pathname.includes("contact.html")) {
-        scrollDown.addEventListener("click", scrollPage);
-        window.addEventListener("scroll", () => hideItem(scrollDown, 50));
+    if (
+        window.location.pathname.includes("gallery_foto.html") ||
+        window.location.pathname.includes("events.html")
+    ) {
+        blankDivs.forEach(div =>
+            div.addEventListener("click", hideGalleryModal)
+        );
+        close.addEventListener("click", hideGalleryModal);
     }
 };

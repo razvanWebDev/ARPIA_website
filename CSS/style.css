@@ -424,6 +424,8 @@ footer {
 .event img {
     max-width: 25%;
     margin-left: 35px;
+    object-fit: contain;
+    cursor: pointer;
 }
 
 .events-container .separator {
@@ -435,6 +437,10 @@ footer {
 
 .events-container .separator:last-child {
     display: none;
+}
+
+#events-modal img {
+    cursor: default;
 }
 
 /* ==================== FOTO-ALBUMS-PAGE ================== */
@@ -623,7 +629,6 @@ footer {
     z-index: 11;
     width: 100vw;
     height: 100vh;
-    /* background-color: rgba(246, 248, 246, 0.9); */
     background-color: rgba(42, 56, 93, 0.8);
     display: flex;
     flex-direction: column;
