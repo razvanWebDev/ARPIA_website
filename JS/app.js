@@ -139,11 +139,15 @@ window.onload = () => {
             if (this.readyState == 4 && this.status == 200) {
                 const albums = JSON.parse(xhttp.responseText);
                 const videos = JSON.parse(xhttp.responseText);
+                const arpiaEvents = JSON.parse(xhttp.responseText);
                 if (window.location.pathname.includes("gallery_foto.html")) {
                     displayAlbums(albums);
                 }
                 if (window.location.pathname.includes("gallery_video.html")) {
                     displayVideos(videos);
+                }
+                if (window.location.pathname.includes("events.html")) {
+                    displayEvents(arpiaEvents);
                 }
             }
         };
@@ -201,6 +205,24 @@ window.onload = () => {
             top: window.innerHeight,
             behavior: "smooth"
         });
+
+    //===========================EVENTS PAGE==============================================================
+    const eventsContainer = document.querySelector(".events-container");
+    const displayEvents = arpiaEvents => {
+        const events = arpiaEvents.map(event => {
+            return `<div class="event">
+                        <h3>${ifItemExists(event.eventName)}<br>
+                        ${ifItemExists(event.eventDate)}
+                        </h3>
+                        <p>
+                        ${ifItemExists(event.eventDescription)}
+                        </p>
+
+                    </div>`;
+        });
+
+        eventsContainer.innerHTML = events.join("");
+    };
 
     // VIDEO GALLERY PAGE ==================================================================================
     // Display video gallery items
@@ -494,9 +516,7 @@ window.onload = () => {
         window.addEventListener("scroll", () => hideItem(scrollDown, 50));
     }
 
-    if (
-        !window.location.pathname.includes("index.html")
-    ) {
+    if (!window.location.pathname.includes("index.html")) {
         // toggle transparent header
         window.addEventListener("scroll", transparentHeader);
     }
@@ -515,12 +535,13 @@ window.onload = () => {
     }
     if (
         window.location.pathname.includes("gallery_foto.html") ||
-        window.location.pathname.includes("gallery_video.html")
+        window.location.pathname.includes("gallery_video.html") ||
+        window.location.pathname.includes("events.html")
     ) {
         loadGalleryItems();
     }
     // CONTACT PAGE
-    if(window.location.pathname.includes("contact.html")) {
+    if (window.location.pathname.includes("contact.html")) {
         scrollDown.addEventListener("click", scrollPage);
         window.addEventListener("scroll", () => hideItem(scrollDown, 50));
     }
