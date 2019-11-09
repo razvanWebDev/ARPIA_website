@@ -223,6 +223,7 @@ main {
 }
 
 .page-title-h2 {
+    text-decoration: underline;
     font-size: var(--big-title-size);
     width: 100%;
     text-align: center;
@@ -370,7 +371,7 @@ footer {
 }
 .slide:nth-child(5) {
     background: url("../img/landing-page5.jpg") no-repeat center center/contain;
-    background-color: #000000;
+    background-color: var(--main-theme-color-transparent);
 }
 /* home section */
 .home-page-section {
@@ -404,8 +405,12 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: var(--text-size);
-    padding: 35px 75px;
+    padding: 35px 0px;
    
+}
+
+.event:first-child {
+    padding-top: 0;
 }
 
 .event-description {
@@ -1271,7 +1276,6 @@ footer {
     .event {
         padding: 35px;
     }
-    
     
     .event h3 {
         padding-bottom: 16px;
