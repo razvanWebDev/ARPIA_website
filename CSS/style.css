@@ -402,18 +402,17 @@ footer {
 .event {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: var(--text-size);
     padding: 35px 75px;
+   
 }
 
 .event-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    min-height: 100%;
     text-align: justify;
     text-align-last: center;
+    padding: 0 30px;
+
 }
 
 .event h3 {
@@ -423,7 +422,6 @@ footer {
 
 .event img {
     max-width: 25%;
-    margin-left: 35px;
     object-fit: contain;
     cursor: pointer;
     transition: transform 0.3s;
