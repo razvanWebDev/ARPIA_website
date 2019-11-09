@@ -26,7 +26,6 @@ window.onload = () => {
     const scrollDown = document.querySelector("#scrollDown");
     // EVENTS PAGE
     const eventsContainer = document.querySelector(".events-container");
-    const eventsModal = document.querySelector("#events-modal");
     // GALLERY PAGE
     const fotoAlbumsMain = document.querySelector(".photo-albums-main");
     const fotoGalleryMain = document.querySelector(".photo-gallery-main");
@@ -232,7 +231,9 @@ window.onload = () => {
         const eventPics = document.querySelectorAll(".event-poster");
         eventPics.forEach(pic =>
             pic.addEventListener("click", function() {
-                currentPic.src = this.src.replace("_small", "");
+                currentPicSrc = this.src.replace("_small", "");
+                currentPicLink.href = currentPicSrc;
+                currentPic.src = currentPicSrc
                 showGalleryModal();
             })
         );
@@ -275,7 +276,7 @@ window.onload = () => {
         videoGalleryModal.classList.add("show");
         body.style.overflow = "hidden";
         // TODO disable back event
-        disableBackEvent(hideVideoModal);
+        // disableBackEvent(hideVideoModal);
     };
 
     const hideVideoModal = () => {
@@ -319,6 +320,7 @@ window.onload = () => {
         fotoGalleryMain.style.display = "block";
         fotoAlbumsMain.style.display = "none";
         disableBackEvent(hideAlbumGAllery);
+      
     };
 
     const hideAlbumGAllery = () => {
@@ -361,7 +363,7 @@ window.onload = () => {
         body.style.overflow = "hidden";
         modal.classList.add("show");
 
-        //close modal on "back" event
+        // close modal on "back" event
         // window.addEventListener(
         //     "popstate",
         //     function() {
@@ -370,6 +372,7 @@ window.onload = () => {
         //     false
         // );
         disableBackEvent(hideGalleryModal);
+
         // get current photo
         currentImg();
     };

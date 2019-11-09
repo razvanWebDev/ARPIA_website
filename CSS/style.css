@@ -426,6 +426,11 @@ footer {
     margin-left: 35px;
     object-fit: contain;
     cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.event img:hover {
+ transform: scale(1.05);
 }
 
 .events-container .separator {
@@ -439,9 +444,6 @@ footer {
     display: none;
 }
 
-#events-modal img {
-    cursor: default;
-}
 
 /* ==================== FOTO-ALBUMS-PAGE ================== */
 .gallery-main-section {
