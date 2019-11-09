@@ -39,9 +39,7 @@ window.onload = () => {
     const modal = document.querySelector(".modal");
     const fotoGalleryModal = document.querySelector("#foto-gallery-modal");
     const videoGalleryModal = document.querySelector("#video-gallery-modal");
-    const blankDivs = document.querySelectorAll(".blank-div");
 
-    const close = document.querySelector(".close");
     const currentPic = document.querySelector(".current-foto img");
     const currentVideo = document.querySelector(".current-video");
     const currentPicLink = document.querySelector(".current-foto-link");
@@ -350,7 +348,7 @@ window.onload = () => {
 
         //display gallery-modal thumbnails
         const modalThumbnails = fotos.map(foto => {
-            return `<img src="${foto.imgPath}" data-path="${foto.imgPath}" class="modal-slider-pic">`;
+            return `<img src="${foto.imgPath}" data-path="${foto.imgPath}" class="modal-slider-pic modal-child">`;
         });
         gallerySlider.innerHTML = modalThumbnails.join("");
         //get current img for the modal
@@ -376,9 +374,11 @@ window.onload = () => {
         currentImg();
     };
 
-    const hideGalleryModal = () => {
-        body.style.overflow = "auto";
-        modal.classList.remove("show");
+    const hideGalleryModal = event => {
+        if (!event.target.classList.contains("modal-child")) {
+            body.style.overflow = "auto";
+            modal.classList.remove("show");
+        }
     };
 
     // select current foto on modal thumbnails click
@@ -563,9 +563,6 @@ window.onload = () => {
         window.location.pathname.includes("gallery_foto.html") ||
         window.location.pathname.includes("events.html")
     ) {
-        blankDivs.forEach(div =>
-            div.addEventListener("click", hideGalleryModal)
-        );
-        close.addEventListener("click", hideGalleryModal);
+        modal.addEventListener("click", hideGalleryModal);
     }
 };
