@@ -1,3 +1,10 @@
+// TODOS
+// Add meta tags and SEO
+// finish and review privacy policy page (see red text)
+
+
+
+
 window.onload = () => {
     // get current page name to help xhttp requests in loadFotos()
     const currentPath = window.location.pathname;
