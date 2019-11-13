@@ -90,12 +90,12 @@ window.onload = () => {
         }
     };
 
-    const hideItem = (item, scrollHeight) => {
+    const showScrollDown = (item, scrollHeight) => {
         const y = window.scrollY;
-        if (y >= scrollHeight) {
-            item.classList.add("hide");
+        if (y < scrollHeight) {
+            item.classList.add("show");
         } else {
-            item.classList.remove("hide");
+            item.classList.remove("show");
         }
     };
     // scroll page to top
@@ -243,7 +243,7 @@ window.onload = () => {
     // Display video gallery items
     const displayVideos = videos => {
         const galleryItems = videos.map(video => {
-            return `<div class="gallery-pic" style="background-image: linear-gradient(rgba(38, 38, 38, 0.3) 0%, rgba(38, 38, 38, 0.3) 100%), url(${
+            return `<div class="gallery-pic" style="background-image: linear-gradient(rgba(42, 56, 93, 0.7) 0%, rgba(42, 56, 93, 0.6) 100%), url(${
                 video.videoThumbLink
             })" >
                         <h3 class="video-title">${ifItemExists(
@@ -532,12 +532,14 @@ window.onload = () => {
             slideInterval = setInterval(nextSlide, intervalTime);
         }
         scrollDown.addEventListener("click", scrollPage);
-        window.addEventListener("scroll", () => hideItem(scrollDown, 50));
+        window.addEventListener("scroll", () => showScrollDown(scrollDown, 50));
+        window.onload = showScrollDown(scrollDown, 50);
     }
 
     if (!window.location.pathname.includes("index.html")) {
         // toggle transparent header
         window.addEventListener("scroll", transparentHeader);
+        window.onload = transparentHeader();
     }
 
     // GALLERY PAGE
@@ -552,7 +554,8 @@ window.onload = () => {
     // CONTACT PAGE
     if (window.location.pathname.includes("contact.html")) {
         scrollDown.addEventListener("click", scrollPage);
-        window.addEventListener("scroll", () => hideItem(scrollDown, 50));
+        window.addEventListener("scroll", () => showScrollDown(scrollDown, 50));
+        window.onload = showScrollDown(scrollDown, 50);
     }
     // COMMON
     if (

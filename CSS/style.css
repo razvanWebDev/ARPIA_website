@@ -345,6 +345,9 @@ footer {
     bottom: 35px;
     cursor: pointer;
     border-radius: 15px;
+    opacity: 0;
+    pointer-events: none;
+
     transition: opacity 0.3s;
 }
 
@@ -1063,13 +1066,14 @@ footer {
 /* GLOBAL AFTER */
 
 .show {
-    opacity: 1;
-    pointer-events: all;
+    opacity: 1 !important;
+    pointer-events: all !important;
 }
 
 .hide {
     opacity: 0 !important;
     pointer-events: none !important;
+
 }
 
 /* RESPONSIVE */
