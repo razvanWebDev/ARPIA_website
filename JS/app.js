@@ -1,6 +1,8 @@
 // TODOS
 // Add meta tags and SEO
 // finish and review privacy policy page (see red text)
+// credit card
+// redirect to https
 
 
 
