@@ -243,14 +243,16 @@ window.onload = () => {
   const displayVideos = videos => {
     const galleryItems = videos.map(video => {
       return `<div class="video-gallery-item">
-                <div class="gallery-pic" style="background-image: linear-gradient(rgba(42, 56, 93, 0.3) 0%, rgba(42, 56, 93, 0.3) 100%), url(${
+                <div class="gallery-pic" style="background-image: url(${
                   video.videoThumbLink
                 })" >
-                        
-                        <img src="./img/playBtn.png" alt="play" class="playVideo"
-                            data-path="${video.videoSrc}?${ifItemExists(
-        video.startTime
-      )}&${ifItemExists(video.stopTime)}&autoplay=1">
+                  <div class="playVideo" data-path="${
+                    video.videoSrc
+                  }?${ifItemExists(video.startTime)}&${ifItemExists(
+        video.stopTime
+      )}&autoplay=1">
+                      <img src="./img/playBtn.png" alt="play">
+                  </div>
                 </div>
                         <p class="video-title">${ifItemExists(
                           video.videoTitle
