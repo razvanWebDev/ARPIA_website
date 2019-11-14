@@ -595,7 +595,8 @@ footer {
   padding-left: 7px;
 }
 
-.playVideo {
+.playVideo,
+.ebook-download {
   position: absolute;
   top: 0;
   left: 0;
@@ -611,6 +612,9 @@ footer {
   pointer-events: none;
 }
 
+
+.ebook-cover:hover .ebook-download,
+.ebook-download:hover,
 .gallery-pic:hover .playVideo,
 .playVideo:hover {
   opacity: 1;
@@ -784,15 +788,22 @@ footer {
 /* ========================= EBOOKS PAGE ==================== */
 .ebook {
   display: flex;
-
   font-size: 18px;
   padding: 35px 0px;
+}
+
+.ebook-cover {
+  position: relative;
 }
 
 .ebook img {
   height: 300px;
   object-fit: contain;
   cursor: pointer;
+}
+
+.ebook-download img {
+  width: 52px;
 }
 
 .ebook-description {

@@ -495,7 +495,12 @@ window.onload = () => {
   const displayEbooks = jsonEbooks => {
     const ebooks = jsonEbooks.map(ebook => {
       return `<div class="ebook">
-      <img src="${ifItemExists(ebook.posterSmall)}">
+                        <div class="ebook-cover">
+                          <img src="${ifItemExists(ebook.posterSmall)}">
+                          <a href="${ebook.downloadLink}" class="ebook-download" target="_blank">
+                            <img src="./img/icon_download.png" alt="download">
+                          </a>
+                        </div>
                         <div class="ebook-description">
                           <div>
                             <h3>${ifItemExists(ebook.title)}</h3>
@@ -505,7 +510,7 @@ window.onload = () => {
                             <p class="ebook-about">${ifItemExists(ebook.description)}</p>
                         </div>
                         
-                    </div>
+              </div>
                     <div class="separator"></div>`;
     });
     ebooksContainer.innerHTML = ebooks.join("");
