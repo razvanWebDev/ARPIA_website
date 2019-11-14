@@ -6,10 +6,11 @@
   --secondary-theme-color: #f6b332;
   --light-txt-color: #fdfdfd;
   --dark-txt-color: rgb(42, 56, 93);
-  --gray-txt-color: #3E3F42;
+  --gray-txt-color: #3e3f42;
 
   --main-padding: 50px 10%;
 
+  --secondary-font-family: "PT Serif", Georgia, Times, serif;
   --text-size: 20px;
   --title-size: 25px;
   --big-title-size: 32px;
@@ -196,7 +197,6 @@ header {
   bottom: 1px;
 }
 
-/* main page section */
 main {
   min-height: 80vh;
   display: flex;
@@ -226,18 +226,13 @@ main {
 }
 
 .page-title-h2 {
-  text-decoration: underline;
+  font-family: var(--secondary-font-family);
   font-size: var(--big-title-size);
   width: 100%;
   text-align: center;
   padding-top: 50px;
   color: var(--dark-txt-color);
   animation: focus-in-expand-fwd 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-footer {
-  min-height: 20vh;
-  background-color: var(--main-theme-color-transparent);
 }
 
 .to-top-arrow {
@@ -257,6 +252,11 @@ footer {
 
 .to-top-arrow img {
   width: 25px;
+}
+
+footer {
+  min-height: 20vh;
+  background-color: var(--main-theme-color-transparent);
 }
 
 /*================= HOME PAGE===================== */
@@ -305,6 +305,8 @@ footer {
   transition: all 0.7s ease-in-out 0.3s;
 }
 .slide .content h2 {
+  font-family: var(--secondary-font-family);
+  font-weight: 400;
   margin-bottom: 10px;
 }
 
@@ -392,7 +394,9 @@ footer {
 }
 
 .home-page-section h1 {
-  font-size: var(--title-size);
+  font-family: var(--secondary-font-family);
+  font-weight: 400;
+  font-size: var(--big-title-size);
   text-align: center;
   padding: 20px 0 60px;
 }
@@ -424,13 +428,15 @@ footer {
 }
 
 .event h3 {
+  font-family: var(--secondary-font-family);
+  font-weight: 400;
   text-align: center;
   padding-bottom: 18px;
 }
 
 .event img {
   max-width: 25%;
-  max-height: 200px;
+  max-height: 300px;
   object-fit: contain;
   cursor: pointer;
   transition: transform 0.3s;
@@ -613,7 +619,6 @@ footer {
   pointer-events: none;
 }
 
-
 .ebook-cover:hover .ebook-download,
 .ebook-download:hover,
 .gallery-pic:hover .playVideo,
@@ -794,12 +799,15 @@ footer {
 }
 
 .ebook-cover {
+  background-color: red;
   position: relative;
+  height: 300px;
 }
 
-.ebook img {
-  height: 300px;
-  object-fit: contain;
+.ebook-poster {
+  height: 100%;
+  
+  object-fit: cover;
   cursor: pointer;
 }
 
@@ -817,7 +825,7 @@ footer {
 
 .ebook h3 {
   font-size: 30px;
-  font-family: "PT Serif", Georgia, Times, serif;
+  font-family: var(--secondary-font-family);
   font-weight: 400;
   padding-bottom: 7px;
 }
