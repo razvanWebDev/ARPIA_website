@@ -430,6 +430,7 @@ footer {
 
 .event img {
   max-width: 25%;
+  max-height: 200px;
   object-fit: contain;
   cursor: pointer;
   transition: transform 0.3s;
