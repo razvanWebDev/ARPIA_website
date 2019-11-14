@@ -6,6 +6,7 @@
   --secondary-theme-color: #f6b332;
   --light-txt-color: #fdfdfd;
   --dark-txt-color: rgb(42, 56, 93);
+  --gray-txt-color: #3E3F42;
 
   --main-padding: 50px 10%;
 
@@ -438,14 +439,14 @@ footer {
   transform: scale(1.05);
 }
 
-.events-container .separator {
+.separator {
   height: 1px;
   width: 70%;
   margin: auto;
   background-color: rgba(42, 56, 93, 0.4);
 }
 
-.events-container .separator:last-child {
+.separator:last-child {
   display: none;
 }
 
@@ -778,6 +779,43 @@ footer {
 .current-slide-thumbnail {
   opacity: 1;
   border: 2px solid var(--secondary-theme-color);
+}
+
+/* ========================= EBOOKS PAGE ==================== */
+.ebook {
+  display: flex;
+
+  font-size: 18px;
+  padding: 35px 0px;
+}
+
+.ebook img {
+  height: 300px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.ebook-description {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.ebook h3 {
+  font-size: 30px;
+  font-family: "PT Serif", Georgia, Times, serif;
+  font-weight: 400;
+  padding-bottom: 7px;
+}
+
+.ebook-about {
+  text-indent: 40px;
+}
+
+.gray-text {
+  color: #666;
 }
 
 /* ===================CONTACT PAGE====================== */
@@ -1416,7 +1454,7 @@ footer {
     transition: transform 0.3s;
   }
 
-  .events-container .separator {
+  .separator {
     width: 80%;
   }
 

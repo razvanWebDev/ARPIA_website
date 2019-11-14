@@ -53,6 +53,9 @@ window.onload = () => {
   const slideLeft = document.querySelector("#slide-left");
   const slideRight = document.querySelector("#slide-right");
 
+  // EBOOKS PAGE
+  const ebooksContainer = document.querySelector(".ebooks-container");
+
   // CONTACTPAGE
   const donationMethods = document.querySelectorAll(".donation-methods div");
   const methodDivs = document.querySelectorAll(".methods_div");
@@ -141,6 +144,7 @@ window.onload = () => {
         const albums = JSON.parse(xhttp.responseText);
         const videos = JSON.parse(xhttp.responseText);
         const arpiaEvents = JSON.parse(xhttp.responseText);
+        const ebooks = JSON.parse(xhttp.responseText);
         if (window.location.pathname.includes("gallery_foto.html")) {
           displayAlbums(albums);
         }
@@ -149,6 +153,9 @@ window.onload = () => {
         }
         if (window.location.pathname.includes("events.html")) {
           displayEvents(arpiaEvents);
+        }
+        if (window.location.pathname.includes("ebooks.html")) {
+          displayEbooks(ebooks);
         }
       }
     };
@@ -484,6 +491,26 @@ window.onload = () => {
     });
   };
 
+  // ============================EBOOKS PAGE ============================
+  const displayEbooks = jsonEbooks => {
+    const ebooks = jsonEbooks.map(ebook => {
+      return `<div class="ebook">
+      <img src="${ifItemExists(ebook.posterSmall)}">
+                        <div class="ebook-description">
+                          <div>
+                            <h3>${ifItemExists(ebook.title)}</h3>
+                            <p class="gray-text">${ifItemExists(ebook.author)}</p>
+                            <p class="gray-text">${ifItemExists(ebook.date)}</p>
+                          </div>  
+                            <p class="ebook-about">${ifItemExists(ebook.description)}</p>
+                        </div>
+                        
+                    </div>
+                    <div class="separator"></div>`;
+    });
+    ebooksContainer.innerHTML = ebooks.join("");
+  };
+
   // ================CONTACT PAGE ===================================
   donationMethods.forEach(method => {
     method.addEventListener("click", function() {
@@ -563,7 +590,8 @@ window.onload = () => {
   if (
     window.location.pathname.includes("gallery_foto.html") ||
     window.location.pathname.includes("gallery_video.html") ||
-    window.location.pathname.includes("events.html")
+    window.location.pathname.includes("events.html") ||
+    window.location.pathname.includes("ebooks.html")
   ) {
     loadGalleryItems();
   }
