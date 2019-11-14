@@ -505,7 +505,7 @@ window.onload = () => {
                           <div>
                             <h3>${ifItemExists(ebook.title)}</h3>
                             <p class="gray-text">${ifItemExists(ebook.author)}</p>
-                            <p class="gray-text">${ifItemExists(ebook.date)}</p>
+                            <p class="gray-text ebook-date">${ifItemExists(ebook.date)}</p>
                           </div>  
                             <p class="ebook-about">${ifItemExists(ebook.description)}</p>
                         </div>
