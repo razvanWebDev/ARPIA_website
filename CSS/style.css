@@ -572,10 +572,10 @@ footer {
   filter: sepia(100%);
 }
 
-/* ==============================VIDEO-GALLERY-PAGE========================= */
+/* ==============================VIDEO GALLERY PAGE========================= */
 .video-albums-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-auto-rows: 250px;
   justify-content: center;
   align-content: center;
@@ -798,7 +798,6 @@ footer {
 }
 
 .ebook-cover {
-  background-color: red;
   position: relative;
   height: 300px;
 }
@@ -1524,10 +1523,11 @@ footer {
     grid-template-columns: 1fr;
     grid-auto-rows: 250px;
     padding: 20px;
-    grid-gap: 20px;
+    grid-gap: 60px;
   }
-  .current-video-container {
-    width: 100%;
+
+  .gallery-pic {
+    padding-bottom: 150px;
   }
 }
 
