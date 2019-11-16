@@ -8,7 +8,9 @@
   --dark-txt-color: rgb(42, 56, 93);
   --gray-txt-color: #3e3f42;
 
-  --main-padding: 50px 10%;
+  --padding-main: 50px 10%;
+  --padding-1024px: 75px 50px;
+  --padding-450px: 20px;
 
   --secondary-font-family: "PT Serif", Georgia, Times, serif;
   --text-size: 20px;
@@ -203,7 +205,7 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: var(--main-padding);
+  padding: var(--padding-main);
 }
 
 /* Page title */
@@ -260,7 +262,6 @@ footer {
 }
 
 /*================= HOME PAGE===================== */
-/* main */
 .home-main-section {
   position: relative;
   display: flex;
@@ -385,7 +386,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 75px 10%;
+  padding: var(--padding-main);
 }
 
 .home-page-section img {
@@ -398,7 +399,7 @@ footer {
   font-weight: 400;
   font-size: var(--big-title-size);
   text-align: center;
-  padding: 20px 0 60px;
+  padding: 20px 20px 60px;
 }
 
 .home-page-section p {
@@ -1183,12 +1184,13 @@ footer {
   }
 
   main {
-    padding: 20px;
+    padding: var(--padding-1024px);
   }
 
   .home-page-section {
-    padding: 75px;
+    padding: var(--padding-1024px)
   }
+
 
   .home-page-section img {
     width: 100px;
@@ -1207,7 +1209,6 @@ footer {
   .photo-albums-container {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 35px;
-    padding: 35px;
   }
 
   .album-description {
@@ -1223,8 +1224,7 @@ footer {
   }
   .photo-gallery {
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
   .gallery-slider-container {
@@ -1417,6 +1417,7 @@ footer {
   /* Home page */
   .slide .content {
     left: -30px;
+    bottom: 0;
     width: 100%;
   }
 
@@ -1439,16 +1440,16 @@ footer {
   }
 
   .home-page-section {
-    padding: 20px;
+    padding: var(--padding-450px);
   }
 
   .home-page-section img {
     width: 50px;
-    margin: 5px auto;
   }
 
   .home-page-section h1 {
     font-size: 18px;
+    width: 95%;
   }
 
   .home-page-section p {
