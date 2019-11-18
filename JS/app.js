@@ -494,22 +494,23 @@ window.onload = () => {
   // ============================EBOOKS PAGE ============================
   const displayEbooks = jsonEbooks => {
     const ebooks = jsonEbooks.map(ebook => {
-      return `<div class="ebook">
-                        <div class="ebook-cover">
-                          <img src="${ifItemExists(ebook.posterSmall)}" class="ebook-poster">
-                          <a href="${ebook.downloadLink}" class="ebook-download" target="_blank">
-                            <img src="./img/icon_download.png" alt="download">
-                          </a>
-                        </div>
-                        <div class="ebook-description">
-                          <div>
-                            <h3>${ifItemExists(ebook.title)}</h3>
-                            <p class="gray-text">${ifItemExists(ebook.author)}</p>
-                            <p class="gray-text ebook-date">${ifItemExists(ebook.date)}</p>
-                          </div>  
-                            <p class="ebook-about">${ifItemExists(ebook.description)}</p>
-                        </div>
-                        
+      return `<div class="ebook">               
+                  <div class="ebook-cover">
+                    <img src="${ifItemExists(
+                      ebook.posterSmall
+                    )}" class="ebook-poster">
+                        <a href="${
+                          ebook.downloadLink
+                        }" class="ebook-download" target="_blank">
+                          <img src="./img/icon_download.png" alt="download">
+                        </a>
+                  </div>
+                  <h3>${ifItemExists(ebook.title)}</h3>
+                  <p class="gray-text">${ifItemExists(ebook.author)}</p>
+                  <p class="gray-text ebook-date">${ifItemExists(
+                    ebook.date
+                  )}</p>
+                  <p class="ebook-about">${ifItemExists(ebook.description)}</p> 
               </div>`;
     });
     ebooksContainer.innerHTML = ebooks.join("");
