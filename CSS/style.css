@@ -10,7 +10,7 @@
 
   --padding-main: 50px 10%;
   --padding-1024px: 75px 50px;
-  --padding-768px:  50px 35px;
+  --padding-768px: 50px 35px;
   --padding-450px: 20px;
 
   --secondary-font-family: "PT Serif", Georgia, Times, serif;
@@ -150,6 +150,17 @@ header {
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.85);
   -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.85);
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.85);
+}
+
+.dropdown-list .up-triangle {
+  border: 20px solid;
+  width: 10px;
+  border-color: transparent transparent var(--main-theme-color-transparent)
+    transparent;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .dropdown-list li {
@@ -418,7 +429,6 @@ footer {
   font-size: var(--text-size);
   padding: 35px 0px;
 }
-
 
 .event-description {
   text-align: justify;
@@ -804,7 +814,7 @@ footer {
 
 .ebook-poster {
   height: 100%;
-  
+
   object-fit: cover;
   cursor: pointer;
 }
@@ -1185,9 +1195,8 @@ footer {
   }
 
   .home-page-section {
-    padding: var(--padding-1024px)
+    padding: var(--padding-1024px);
   }
-
 
   .home-page-section img {
     width: 100px;
@@ -1304,9 +1313,13 @@ footer {
   .dropdown-list {
     width: 90%;
     left: 5%;
-    background-color: rgb(42, 56, 93);
-    box-shadow: 0 0px 5px 0px var(--secondary-theme-color);
+    background-color: var(--main-theme-color);
   }
+
+  .dropdown-list .up-triangle {
+    border-color: transparent transparent var(--main-theme-color) transparent;
+  }
+
   #hamburger {
     display: block;
     z-index: 2;
@@ -1354,7 +1367,6 @@ footer {
   #scrollDown {
     display: none;
   }
-
 
   .home-page-section {
     padding: var(--padding-768px);
