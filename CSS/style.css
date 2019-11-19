@@ -389,10 +389,7 @@ footer {
   background: url("../img/landing-page4.jpg") no-repeat center/cover;
   background-position-y: 40%;
 }
-.slide:nth-child(5) {
-  background: url("../img/landing-page5.jpg") no-repeat center center/contain;
-  background-color: var(--main-theme-color-transparent);
-}
+
 /* home section */
 .home-page-section {
   display: flex;
