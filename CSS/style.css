@@ -212,7 +212,6 @@ header {
 }
 
 main {
-  min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -244,7 +243,7 @@ main {
   font-size: var(--big-title-size);
   width: 100%;
   text-align: center;
-  padding-top: 50px;
+  padding: 60px 20px;
   color: var(--dark-txt-color);
   animation: focus-in-expand-fwd 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -398,17 +397,18 @@ footer {
   padding: var(--padding-main);
 }
 
+.home-page-section h1 {
+  font-family: var(--secondary-font-family);
+  font-size: var(--big-title-size);
+  width: 100%;
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--dark-txt-color);
+}
+
 .home-page-section img {
   width: 130px;
   margin: 0px auto;
-}
-
-.home-page-section h1 {
-  font-family: var(--secondary-font-family);
-  font-weight: 400;
-  font-size: var(--big-title-size);
-  text-align: center;
-  padding: 20px 20px 60px;
 }
 
 .home-page-section p {
@@ -424,7 +424,7 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: var(--text-size);
-  padding: 35px 0px;
+  padding-bottom: 35px;
 }
 
 .event-description {
@@ -853,32 +853,30 @@ footer {
 .contact-main-section {
   position: relative;
   display: flex;
-  width: 100%;
-  height: calc(93.6vh - 258px);
+  flex-direction: row;
   text-align: center;
+  justify-content: space-between;
+  align-items: space-between;
+  width: 100%;
 }
 
 .contact-section {
-  min-height: 100%;
-  width: 50%;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  padding: 50px 0 10px;
 }
 
-.contact-details-section a {
-  color: var(--dark-txt-color);
+.contact-section div {
+  text-align: center;
+  padding-bottom: 25px;
 }
 
-.contact-details-title h1 {
-  width: 80%;
-  margin: auto;
-  font-size: var(--title-size);
+.contact-section div:last-child {
+  padding-bottom: 0;
 }
 
-.contact-details-title h2 {
+.contact-section h2 {
   font-size: var(--text-size);
 }
 
@@ -887,22 +885,22 @@ footer {
   transform: translateY(20%);
 }
 
-.contact-details-section a {
+.contact-section a {
+  color: var(--dark-txt-color);
   font-weight: normal;
 }
 
-.contact-section form {
-  width: 65%;
-  height: 100%;
+.contact-form {
+  width: 450px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
-.contact-section form h3 {
-  font-size: var(--title-size);
-  margin-bottom: 35px;
+
+.contact-form h2 {
+  padding-bottom: 30px;
 }
+
 
 .contact-section input,
 .contact-section textarea,
@@ -921,19 +919,16 @@ footer {
 .contact-section form ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: var(--main-theme-color-transparent); /* Firefox */
-  opacity: 0.8;
 }
 
 .contact-section form :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: var(--main-theme-color-transparent);
-  opacity: 0.8;
 }
 
 .contact-section form ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: var(--main-theme-color-transparent);
-  opacity: 0.8;
 }
 
 .contact-section textarea:focus,
@@ -942,6 +937,8 @@ footer {
 .donation input:focus {
   border-bottom: 1px solid var(--main-theme-color-transparent);
 }
+
+
 .methods_div h3 {
   font-size: var(--text-size);
   padding: 20px 0;
@@ -968,13 +965,7 @@ footer {
 
 .donation-section {
   text-align: center;
-  padding: 100px;
-}
-
-.donation-section h2,
-.documents-section h2 {
-  font-size: var(--title-size);
-  margin: 0px auto;
+  padding: 50px;
 }
 
 .donation-methods {
@@ -1134,7 +1125,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
-  padding-top: 75px;
+  padding: 75px 0;
 }
 
 .documents-section .documents img {
