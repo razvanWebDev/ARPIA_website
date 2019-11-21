@@ -13,7 +13,7 @@
   --padding-768px: 35px;
   --padding-450px: 20px;
 
-  --secondary-font-family: 'Raleway', sans-serif;
+  --secondary-font-family: "Raleway", sans-serif;
   --text-size: 20px;
   --title-size: 25px;
   --big-title-size: 32px;
@@ -29,8 +29,12 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--main-bg-color);
-  color: var(--dark-txt-color);
+  color: var(--gray-txt-color);
   position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-txt-color );
 }
 
 a {
@@ -95,6 +99,7 @@ header {
 
 #logo h1 {
   margin-left: 15px;
+   color: var(--light-txt-color);
 }
 
 .header-menu {
@@ -217,6 +222,7 @@ main {
   justify-content: flex-start;
   align-items: center;
   padding: var(--padding-main);
+  min-height: calc(74vh - 268px);
 }
 
 /* Page title */
@@ -270,6 +276,7 @@ main {
 footer {
   min-height: 20vh;
   background-color: var(--main-theme-color-transparent);
+
 }
 
 /*================= HOME PAGE===================== */
@@ -286,7 +293,6 @@ footer {
   position: relative;
   height: 100vh;
   width: 100%;
-  
 }
 
 .slide {
@@ -421,22 +427,18 @@ footer {
   text-align: justify;
 }
 
+
+.home-page-section p:last-child {
+  margin-bottom: 0;
+}
 /* ========================EVENTS PAGE======================== */
 .event {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: var(--text-size);
-  padding: 50px 0;
 }
 
-.event:first-child {
-  padding-top: 0;
-}
-
-.event:last-child {
-  padding: 0;
-}
 
 .event-description {
   text-align: justify;
@@ -468,7 +470,7 @@ footer {
 .separator {
   height: 1px;
   width: 70%;
-  margin: auto;
+  margin: 35px auto;
   background-color: rgba(42, 56, 93, 0.4);
 }
 
@@ -689,6 +691,7 @@ footer {
   opacity: 0;
   pointer-events: none;
   transition: all 0.2s;
+  cursor: pointer;
 }
 
 .close {
@@ -914,7 +917,6 @@ footer {
   padding-bottom: 30px;
 }
 
-
 .contact-section input,
 .contact-section textarea,
 .donater-details input,
@@ -922,7 +924,7 @@ footer {
   margin-bottom: 10px;
   width: 100%;
   background-color: transparent;
-  color: var(--dark-txt-color);
+  color: var(--gray-txt-color);
   border: none;
   outline: none;
   border-bottom: 1px solid var(--secondary-theme-color);
@@ -950,7 +952,6 @@ footer {
 .donation input:focus {
   border-bottom: 1px solid var(--main-theme-color-transparent);
 }
-
 
 .methods_div h3 {
   font-size: var(--text-size);
@@ -1035,7 +1036,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:0 30px 10px;
+  margin: 0 30px 10px;
   transition: all 0.3s;
   cursor: pointer;
 }
@@ -1062,8 +1063,6 @@ footer {
   background-color: transparent !important;
   margin-bottom: 0;
 }
-
-
 
 .credit-card input::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -1139,7 +1138,8 @@ footer {
 
 .documents {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 30px;
 }
 
 .documents-section .documents img {
@@ -1187,6 +1187,10 @@ footer {
 .hide {
   opacity: 0 !important;
   pointer-events: none !important;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0 !important;
 }
 
 /* RESPONSIVE */
