@@ -13,7 +13,7 @@
   --padding-768px: 35px;
   --padding-450px: 20px;
 
-  --secondary-font-family: "PT Serif", Georgia, Times, serif;
+  --secondary-font-family: 'Raleway', sans-serif;
   --text-size: 20px;
   --title-size: 25px;
   --big-title-size: 32px;
@@ -427,21 +427,27 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: var(--text-size);
-  padding: 35px 0;
+  padding: 50px 0;
 }
 
 .event:first-child {
   padding-top: 0;
 }
 
+.event:last-child {
+  padding: 0;
+}
+
 .event-description {
   text-align: justify;
   text-align-last: center;
+  font-size: var(--text-size);
   padding: 0 30px;
 }
 
 .event h3 {
   font-family: var(--secondary-font-family);
+  font-size: var(--title-size);
   font-weight: 400;
   text-align: center;
   padding-bottom: 18px;
@@ -449,7 +455,7 @@ footer {
 
 .event img {
   max-width: 25%;
-  max-height: 300px;
+  max-height: 225px;
   object-fit: contain;
   cursor: pointer;
   transition: transform 0.3s;
@@ -1208,11 +1214,6 @@ footer {
   .home-page-section p {
     font-size: var(--text-size);
     margin-bottom: 20px;
-  }
-
-  /* events page */
-  .event:last-child {
-    padding-bottom: 0;
   }
 
   /* foto albums page */
