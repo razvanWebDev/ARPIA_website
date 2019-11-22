@@ -33,8 +33,13 @@ body {
   position: relative;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--dark-txt-color );
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-txt-color);
 }
 
 a {
@@ -99,7 +104,7 @@ header {
 
 #logo h1 {
   margin-left: 15px;
-   color: var(--light-txt-color);
+  color: var(--light-txt-color);
 }
 
 .header-menu {
@@ -276,7 +281,6 @@ main {
 footer {
   min-height: 20vh;
   background-color: var(--main-theme-color-transparent);
-
 }
 
 /*================= HOME PAGE===================== */
@@ -328,6 +332,7 @@ footer {
 }
 .slide .content h2 {
   font-family: var(--secondary-font-family);
+  color: var(--light-txt-color);
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -427,7 +432,6 @@ footer {
   text-align: justify;
 }
 
-
 .home-page-section p:last-child {
   margin-bottom: 0;
 }
@@ -438,7 +442,6 @@ footer {
   align-items: center;
   font-size: var(--text-size);
 }
-
 
 .event-description {
   text-align: justify;
@@ -646,10 +649,6 @@ footer {
 .playVideo:hover {
   opacity: 1;
   pointer-events: all;
-}
-
-#video-gallery-modal {
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 #video-gallery-modal .close {
@@ -869,7 +868,6 @@ footer {
 .contact-main-section {
   position: relative;
   display: flex;
-  flex-direction: row;
   text-align: center;
   justify-content: space-between;
   align-items: space-between;
@@ -953,9 +951,21 @@ footer {
   border-bottom: 1px solid var(--main-theme-color-transparent);
 }
 
+.methods_div {
+  padding-top: 60px;
+}
+
 .methods_div h3 {
   font-size: var(--text-size);
-  padding: 60px 0 20px;
+  padding-bottom: 20px;
+}
+
+.methods_div p {
+  margin-top: 20px;
+}
+
+.methods_div p:first-child {
+  margin-top: 0;
 }
 
 .contact-section button,
@@ -1010,11 +1020,9 @@ footer {
 .bank-transfer {
   display: none;
   flex-direction: column;
-  padding-top: 60px;
+ 
 }
-.bank-transfer p {
-  margin: 20px;
-}
+
 
 .credit-card {
   display: none;
@@ -1114,10 +1122,6 @@ footer {
   color: var(--secondary-theme-color);
   font-weight: 550;
   cursor: pointer;
-}
-
-.two-percent p {
-  padding-bottom: 10px;
 }
 
 .two-percent a:hover {
@@ -1263,51 +1267,6 @@ footer {
   .current-video-container {
     width: 90%;
   }
-
-  /* contact page */
-  .contact-main-section {
-    height: auto;
-    flex-direction: column;
-  }
-
-  .contact-main-section div {
-    margin-bottom: 35px;
-  }
-  .contact-main-section div:last-child {
-    margin-bottom: 0px;
-  }
-  .contact-section {
-    width: 100%;
-  }
-
-  .donation-section {
-    text-align: center;
-    padding: 20px;
-  }
-
-  .donation-section h2,
-  .documents-section h2 {
-    font-size: var(--title-size);
-    margin: 50px auto 0px;
-  }
-  .bank-transfer {
-    padding: 0 20px;
-  }
-  .two-percent {
-    padding: 0 20px;
-  }
-
-  .documents-section {
-    padding: 0 20px;
-  }
-
-  .documents {
-    flex-direction: column;
-  }
-
-  .documents a {
-    width: 40%;
-  }
 }
 
 @media (max-width: 768px) {
@@ -1420,6 +1379,27 @@ footer {
   .gallery-description {
     font-size: 18px;
   }
+
+  /* contact page */
+  .contact-main-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-section {
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+  }
+
+  .contact-form {
+    padding-top: 70px;
+    width: 90%;
+  }
+
+  .donation-section,
+  .documents-section {
+    padding-top: 60px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1437,6 +1417,7 @@ footer {
 
   .page-title-h2 {
     font-size: var(--big-title-size);
+    padding: 40px 0
   }
 
   /* Home page */
@@ -1619,6 +1600,48 @@ footer {
 
   .gallery-pic {
     padding-bottom: 150px;
+  }
+
+  /* contact page */
+  .contact-form {
+    width: 100%;
+  }
+
+  .donation-methods {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .donation-methods div {
+    width: 80%;
+    margin: 5px auto;
+    padding: 10px 0;
+  }
+
+  .donation-methods div:first-child {
+    margin-top: 0;
+  }
+
+  .methods_div {
+    padding-top: 20px;
+  }
+
+  .methods_div p {
+    text-align: justify;
+  }
+
+  .donation-amounts {
+    justify-content: space-around;
+  }
+
+  .fixed-amount {
+    margin: 0;
+  }
+
+  .form230-btn {
+    margin-top: 20px;
   }
 }
 
