@@ -2,7 +2,7 @@
 :root {
   --main-bg-color: #fdfdfd;
   --main-theme-color: #2a385d;
-  --main-theme-color-transparent: rgba(42, 56, 93, 0.8);
+  --main-theme-color-transparent: rgba(42, 56, 93, 0.9);
   --secondary-theme-color: #fc9f0a;
   --light-txt-color: #fdfdfd;
   --dark-txt-color: rgb(42, 56, 93);
@@ -332,9 +332,14 @@ footer {
 }
 .slide .content h2 {
   font-family: var(--secondary-font-family);
-  color: var(--light-txt-color);
-  font-weight: 400;
+  color: var(--secondary-theme-color);
+  /* font-weight: 400; */
   margin-bottom: 10px;
+}
+
+.slide .content p{
+  color: var(--light-txt-color);
+  font-weight: normal;
 }
 
 .next,
