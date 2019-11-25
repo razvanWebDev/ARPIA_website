@@ -3,7 +3,6 @@
 // finish and review privacy policy page (see red text)
 // credit card
 // fb, youtube and other social media
-// redirect to https
 // forms validation & back end
 
 window.onload = () => {
