@@ -1,9 +1,10 @@
 // TODOS
-// Add meta tags and SEO
+// meta tags and SEO
 // finish and review privacy policy page (see red text)
 // credit card
 // fb, youtube and other social media
 // forms validation & back end
+// accessibilty
 
 window.onload = () => {
   // get current page name to help xhttp requests in loadFotos()

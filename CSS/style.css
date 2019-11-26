@@ -14,10 +14,9 @@
   --padding-450px: 20px;
 
   --secondary-font-family: "Raleway", sans-serif;
-  --text-size: 20px;
-  --title-size: 25px;
-  --big-title-size: 32px;
-  --small-title-size: 20px;
+  --title-size: 1.6em;
+  --subtitle-size: 1.25em;
+  --small-text-size: 0.8em;
 }
 * {
   margin: 0;
@@ -28,6 +27,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
   background-color: var(--main-bg-color);
   color: var(--gray-txt-color);
   position: relative;
@@ -63,6 +63,7 @@ header {
   padding: 0 35px;
   justify-content: space-between;
   align-items: center;
+  font-size: var(--small-text-size);
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.85);
   -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.85);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.85);
@@ -125,12 +126,13 @@ header {
 
 .header-links a {
   color: var(--light-txt-color);
+  font-weight:400;
   padding: 4vh 0;
 }
 
 .current-page {
   color: var(--secondary-theme-color) !important;
-  font-weight: bold;
+  font-weight: 600 !important;
 }
 /* Dropdown submenu */
 .expand {
@@ -251,7 +253,7 @@ main {
 
 .page-title-h2 {
   font-family: var(--secondary-font-family);
-  font-size: var(--big-title-size);
+  font-size: var(--title-size);
   width: 100%;
   text-align: center;
   padding: 60px 20px;
@@ -321,6 +323,7 @@ footer {
   width: 600px;
   background-color: var(--main-theme-color-transparent);
   color: var(--light-txt-color);
+  font-size: var(--small-text-size);
   padding: 35px;
   z-index: 1;
 }
@@ -419,7 +422,7 @@ footer {
 
 .home-page-section h1 {
   font-family: var(--secondary-font-family);
-  font-size: var(--big-title-size);
+  font-size: var(--title-size);
   width: 100%;
   text-align: center;
   padding: 60px 20px;
@@ -432,7 +435,7 @@ footer {
 }
 
 .home-page-section p {
-  font-size: var(--text-size);
+ 
   margin-bottom: 25px;
   text-align: justify;
 }
@@ -445,19 +448,17 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: var(--text-size);
 }
 
 .event-description {
   text-align: justify;
   text-align-last: center;
-  font-size: var(--text-size);
   padding: 0 30px;
 }
 
 .event h3 {
   font-family: var(--secondary-font-family);
-  font-size: var(--title-size);
+  font-size: var(--subtitle-size);
   font-weight: 400;
   text-align: center;
   padding-bottom: 18px;
@@ -516,8 +517,10 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  font-size: var(--small-text-size);
   color: var(--light-txt-color);
+  text-align: center;
+  padding: 0 1em;
   background-color: var(--main-theme-color-transparent);
   position: absolute;
   bottom: 0;
@@ -552,11 +555,12 @@ footer {
 }
 
 .gallery-page-title {
+  font-family: var(--secondary-font-family);
+  font-size: var(--subtitle-size);
   padding-bottom: 35px;
 }
 
 .gallery-description {
-  font-size: var(--text-size);
   text-align: center;
 }
 
@@ -828,7 +832,6 @@ footer {
 
 /* ========================= EBOOKS PAGE ==================== */
 .ebook {
-  font-size: 18px;
   text-align: justify;
 }
 
@@ -850,19 +853,19 @@ footer {
 }
 
 .ebook h3 {
-  font-size: 30px;
+  font-size: var(--subtitle-size);
   font-family: var(--secondary-font-family);
   font-weight: 400;
   padding-bottom: 5px;
 }
 
 .ebook-date {
-  font-size: 16px;
+  font-size: var(--small-text-size);
   padding-bottom: 40px;
 }
 
 .ebook-about {
-  text-indent: 40px;
+  text-indent: 2em;
 }
 
 .gray-text {
@@ -874,6 +877,7 @@ footer {
   position: relative;
   display: flex;
   text-align: center;
+  font-size: var(--small-text-size);
   justify-content: space-between;
   align-items: space-between;
   width: 100%;
@@ -895,9 +899,6 @@ footer {
   padding-bottom: 0;
 }
 
-.contact-section h2 {
-  font-size: var(--text-size);
-}
 
 .contact-icon {
   width: 25px;
@@ -928,25 +929,16 @@ footer {
   width: 100%;
   background-color: transparent;
   color: var(--gray-txt-color);
+  font-size: 1em;
   border: none;
   outline: none;
   border-bottom: 1px solid var(--secondary-theme-color);
   padding-left: 5px;
   transition: border-bottom 0.3s ease-in-out;
 }
-.contact-section form ::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: var(--main-theme-color-transparent); /* Firefox */
-}
 
-.contact-section form :-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: var(--main-theme-color-transparent);
-}
-
-.contact-section form ::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: var(--main-theme-color-transparent);
+#messageInput {
+  font-size: 1.2em;
 }
 
 .contact-section textarea:focus,
@@ -961,7 +953,6 @@ footer {
 }
 
 .methods_div h3 {
-  font-size: var(--text-size);
   padding-bottom: 20px;
 }
 
@@ -976,7 +967,6 @@ footer {
 .contact-section button,
 .credit-card button,
 .form230-btn {
-  font-size: 16px;
   padding: 10px 75px;
   background-color: var(--main-theme-color);
   color: var(--secondary-theme-color);
@@ -996,6 +986,7 @@ footer {
   width: 100%;
   padding-top: 100px;
   text-align: center;
+  font-size: var(--small-text-size);
 }
 
 .donation-methods {
@@ -1061,7 +1052,6 @@ footer {
 
 .donation input {
   width: 100px;
-  font-size: 16px;
   padding: 10px;
   text-align: center;
   outline: none;
@@ -1077,20 +1067,6 @@ footer {
   margin-bottom: 0;
 }
 
-.credit-card input::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: var(--main-theme-color-transparent); /* Firefox */
-}
-
-.credit-card input :-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: var(--main-theme-color-transparent);
-}
-
-.credit-card input ::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: var(--main-theme-color-transparent);
-}
 .donater-details-row input {
   width: 30%;
   margin: 10px 30px;
@@ -1110,6 +1086,10 @@ footer {
 
 .privacy-policy input {
   margin-right: 5px;
+}
+
+.privacy-policy p {
+  margin-top: 0;
 }
 
 .privacy-policy span {
@@ -1143,6 +1123,7 @@ footer {
   padding-top: 100px;
   text-align: center;
   width: 100%;
+  font-size: var(--small-text-size);
 }
 
 .documents {
@@ -1204,10 +1185,6 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-  .page-title-h2 {
-    font-size: var(--title-size);
-  }
-
   main {
     padding: var(--padding-1024px);
   }
@@ -1220,12 +1197,7 @@ footer {
     width: 100px;
   }
 
-  .home-page-section h1 {
-    font-size: var(--title-size);
-  }
-
   .home-page-section p {
-    font-size: var(--text-size);
     margin-bottom: 20px;
   }
 
@@ -1243,9 +1215,6 @@ footer {
   }
 
   /*foto gallery page */
-  .gallery-description {
-    font-size: var(--text-size);
-  }
   .photo-gallery {
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1354,12 +1323,8 @@ footer {
     margin: 10px auto;
   }
 
-  .home-page-section h1 {
-    font-size: 22px;
-  }
 
   .home-page-section p {
-    font-size: 18px;
     margin-bottom: 20px;
   }
 
@@ -1376,13 +1341,6 @@ footer {
   /* foto albums page */
   .album-thumbnails-container {
     grid-auto-rows: 80px;
-  }
-  .album-description {
-    font-size: 16px;
-  }
-  /* foto gallery page */
-  .gallery-description {
-    font-size: 18px;
   }
 
   /* contact page */
@@ -1412,16 +1370,11 @@ footer {
     padding: var(--padding-450px);
   }
 
-  #logo h1 {
-    font-size: var(--text-size);
-  }
-
   .to-top-arrow img {
     width: 15px;
   }
 
   .page-title-h2 {
-    font-size: var(--big-title-size);
     padding: 40px 0
   }
 
@@ -1455,19 +1408,16 @@ footer {
   }
 
   .home-page-section h1 {
-    font-size: 18px;
     width: 95%;
   }
 
   .home-page-section p {
-    font-size: 16px;
     margin-bottom: 16px;
   }
 
   /* ebooks page */
 
   .ebook {
-    font-size: 16px;
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -1494,9 +1444,6 @@ footer {
   }
 
   .ebook h3 {
-    font-size: var(--title-size);
-    font-family: var(--secondary-font-family);
-    font-weight: 400;
     padding-bottom: 5px;
     -webkit-box-ordinal-group: 1;
     -moz-box-ordinal-group: 1;
@@ -1504,7 +1451,6 @@ footer {
   }
 
   .ebook-date {
-    font-size: 16px;
     padding-bottom: 0px;
   }
 
@@ -1522,16 +1468,12 @@ footer {
 
   /* events page */
   .event {
-    font-size: 16px;
     padding: 40px 0 30px 30px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .event h3 {
-    font-size: var(--text-size);
-  }
 
   .event img {
     max-width: 90%;
@@ -1553,13 +1495,9 @@ footer {
   }
 
   /* foto gallery page */
-  .gallery-description {
-    font-size: 15px;
-  }
 
   .gallery-details {
     padding: 10px 5%;
-    font-size: 14px;
   }
 
   .photo-gallery {
