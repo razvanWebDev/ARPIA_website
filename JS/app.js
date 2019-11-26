@@ -571,7 +571,7 @@ window.onload = () => {
     window.onload = showScrollDown(scrollDown, 50);
   }
 
-  if (!window.location.pathname.includes("index.html")) {
+  if (currentPageName !== "index" && currentPageName !== "") {
     // toggle transparent header
     window.addEventListener("scroll", transparentHeader);
     window.onload = transparentHeader();
