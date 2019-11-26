@@ -5,7 +5,7 @@
   --main-theme-color-transparent: rgba(42, 56, 93, 0.9);
   --secondary-theme-color: #fc9f0a;
   --light-txt-color: #fdfdfd;
-  --dark-txt-color: rgb(42, 56, 93);
+  --dark-txt-color: #2a385d;
   --gray-txt-color: #3e3f42;
 
   --padding-main: 50px 10%;
@@ -916,6 +916,16 @@ footer {
 .contact-section a {
   font-weight: normal;
 }
+
+.social-media a {
+  color: var(--dark-txt-color);
+}
+
+.social-media a svg {
+ height:2em;
+ margin: 10px;
+}
+
 
 .contact-form {
   width: 450px;
