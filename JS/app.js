@@ -38,6 +38,8 @@ window.onload = () => {
   const fotoGalleryMain = document.querySelector(".photo-gallery-main");
   const fotoGallery = document.querySelector(".photo-gallery");
   const fotoAlbums = document.querySelector(".photo-albums-container");
+  const searchBox = document.querySelector("#search");
+  const searchTags = document.querySelectorAll(".search-tag");
   const videoAlbums = document.querySelector(".video-albums-container");
   const galleryDescription = document.querySelector(".gallery-description");
 
@@ -143,6 +145,7 @@ window.onload = () => {
       if (this.readyState == 4 && this.status == 200) {
         const albums = JSON.parse(xhttp.responseText);
         const videos = JSON.parse(xhttp.responseText);
+        window.globalvideos = videos;
         const arpiaEvents = JSON.parse(xhttp.responseText);
         const ebooks = JSON.parse(xhttp.responseText);
         if (window.location.pathname.includes("gallery_foto.html")) {
@@ -272,6 +275,15 @@ window.onload = () => {
     });
     videoAlbums.innerHTML = galleryItems.join("");
     playCurrentVideo();
+  };
+
+  const dosearch = value => {
+    value = value.toLowerCase();
+    console.log(value)
+    const filteredVideos = globalvideos.filter(video => {
+      return video.videoTitle.toLowerCase().includes(value);
+    });
+    displayVideos(filteredVideos);
   };
   // Open modal and play current video
   const playCurrentVideo = () => {
@@ -584,6 +596,13 @@ window.onload = () => {
   }
   if (window.location.pathname.includes("gallery_video")) {
     videoGalleryModal.addEventListener("click", hideVideoModal);
+    searchBox.addEventListener("input", () => dosearch(searchBox.value));
+    searchTags.forEach(searchTag => {
+      searchTag.addEventListener("click", function() {
+        const searchTagValue = this.innerHTML.substring(1);
+        dosearch(searchTagValue);
+      });
+    });
   }
   // CONTACT PAGE
   if (window.location.pathname.includes("contact.html")) {
