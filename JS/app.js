@@ -115,7 +115,7 @@ window.onload = () => {
   // transparent header on scroll
   const transparentHeader = () => {
     const y = window.scrollY;
-    if (y >= 70) {
+    if (y >= 50) {
       pageHeader.classList.add("index-header");
       nav.classList.remove("menu-border");
     } else {
