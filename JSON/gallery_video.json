@@ -1,17 +1,24 @@
 [
   {
     "videoTitle": "Măndița. Foșnet de mătase albă",
-    "keywords": "Smaranda Braescu Brăescu film artistic Fosnet de matase alba",
+    "keywords": "Smaranda Braescu Brăescu film artistic Fosnet de matase alba documentar",
     "videoDescription": "Filmul „Foșnet de mătase albă” albă a fost distins cu Sabia de bronz a Festivalului internațional al filmului militar și istoric din Varșovia.",
     "videoThumbLink": "./img/Video_thumbnails/Mandita_Fosnet_de_matase_alba.jpg",
     "videoSrc": "https://www.youtube.com/embed/Tp1GZpoNM4o"
+  },
+  {
+    "videoTitle": "Măndița. Nu mă voi întoarce niciodată din drum",
+    "keywords": "Smaranda Braescu Brăescu film artistic Nu ma voi intoarce niciodata din drum documentar",
+    "videoDescription": "Film dedicat activității de pilot a Smarandei Brăescu,",
+    "videoThumbLink": "./img/Video_thumbnails/Smaranda_Braescu_nu_ma_voi_intoarce.jpg",
+    "videoSrc": "https://www.youtube.com/embed/f3FvQh-myRY"
   },
   {
     "videoTitle": "Smaranda Braescu - record salt cu parasuta",
     "keywords": "",
     "videoDescription": "În 1932, la 19 mai, stabilește un record mondial la parașutism, în urma unui salt realizat cu o parașută românească, de la înălțimea de 7400 de metri.",
     "videoThumbLink": "./img/Video_thumbnails/Smaranda_Braescu_record_salt_cu_parasuta.jpg",
-    "videoSrc": "https://www.youtube.com/embed/Tp1GZpoNM4o"
+    "videoSrc": "https://www.youtube.com/embed/yF6kr7v8yH4"
   },
   {
     "videoTitle": "Activitate ARPIA 2018-2019",
