@@ -869,7 +869,14 @@ footer {
   position: relative;
   height: 300px;
   float: left;
-  margin: 0 25px 15px 0;
+  margin: 0 25px 10px 0;
+  transition: all 0.2s;
+}
+
+
+.ebook-cover:hover {
+  filter: sepia(0.3);
+  transform: scale(1.03);
 }
 
 .ebook-poster {
@@ -1564,6 +1571,7 @@ footer {
     box-ordinal-group: 4;
   }
 
+
   .ebook-poster {
     height: 100%;
     object-fit: cover;
@@ -1588,9 +1596,6 @@ footer {
     box-ordinal-group: 5;
   }
 
-  .gray-text {
-    color: #666;
-  }
 
   /* contact page */
   .contact-form {

@@ -40,7 +40,7 @@ window.onload = () => {
   const fotoAlbums = document.querySelector(".photo-albums-container");
   const searchBox = document.querySelector("#search");
   const searchTags = document.querySelectorAll(".search-tag");
-  const allMovies = document.querySelector("#all-movies")
+  const allMovies = document.querySelector("#all-movies");
   const videoAlbums = document.querySelector(".video-albums-container");
   const galleryDescription = document.querySelector(".gallery-description");
 
@@ -281,9 +281,11 @@ window.onload = () => {
   const dosearch = value => {
     value = value.toLowerCase();
     const filteredVideos = globalvideos.filter(video => {
-      return video.videoTitle.toLowerCase().includes(value) ||
-      video.videoDescription.toLowerCase().includes(value) ||
-      video.keywords.toLowerCase().includes(value);
+      return (
+        video.videoTitle.toLowerCase().includes(value) ||
+        video.videoDescription.toLowerCase().includes(value) ||
+        video.keywords.toLowerCase().includes(value)
+      );
     });
     displayVideos(filteredVideos);
   };
@@ -509,16 +511,13 @@ window.onload = () => {
   const displayEbooks = jsonEbooks => {
     const ebooks = jsonEbooks.map(ebook => {
       return `<div class="ebook">               
+                <a href="${ebook.downloadLink}" target="_blank">
                   <div class="ebook-cover">
                     <img src="${ifItemExists(
                       ebook.posterSmall
                     )}" class="ebook-poster">
-                        <a href="${
-                          ebook.downloadLink
-                        }" class="ebook-download" target="_blank">
-                          <img src="./img/icon_download.png" alt="download">
-                        </a>
-                  </div>
+                    </div>
+                </a>
                   <h3>${ifItemExists(ebook.title)}</h3>
                   <p class="gray-text">${ifItemExists(ebook.author)}</p>
                   <p class="gray-text ebook-date">${ifItemExists(
@@ -607,10 +606,9 @@ window.onload = () => {
       });
     });
 
-    allMovies.addEventListener('click', function(){
-      displayVideos(window.globalvideos)
-    })
-
+    allMovies.addEventListener("click", function() {
+      displayVideos(window.globalvideos);
+    });
   }
   // CONTACT PAGE
   if (window.location.pathname.includes("contact.html")) {
