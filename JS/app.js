@@ -279,9 +279,10 @@ window.onload = () => {
 
   const dosearch = value => {
     value = value.toLowerCase();
-    console.log(value)
     const filteredVideos = globalvideos.filter(video => {
-      return video.videoTitle.toLowerCase().includes(value);
+      return video.videoTitle.toLowerCase().includes(value) ||
+      video.videoDescription.toLowerCase().includes(value) ||
+      video.keywords.toLowerCase().includes(value);
     });
     displayVideos(filteredVideos);
   };
