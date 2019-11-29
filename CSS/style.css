@@ -618,16 +618,21 @@ footer {
 #search {
   margin-bottom: 20px;
   width: 250px;
-  height: 50px;
+  height: 40px;
   padding-left: 20px;
+  border: 1px solid var(--main-theme-color-transparent);
+  color: var(--gray-txt-color);
+  border-radius: 50px;
+  outline: none;
 }
 
 .search-tags {
   margin-bottom: 40px;
+  font-size: 0.7em;
 }
 
 .search-tag {
-  margin:20px;
+  margin:10px;
   cursor: pointer;
 }
 
@@ -1216,6 +1221,10 @@ footer {
 
 .no-margin-bottom {
   margin-bottom: 0 !important;
+}
+
+.no-padding-top {
+  padding-top: 0;
 }
 
 /* RESPONSIVE */

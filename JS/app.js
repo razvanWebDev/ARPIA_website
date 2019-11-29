@@ -40,6 +40,7 @@ window.onload = () => {
   const fotoAlbums = document.querySelector(".photo-albums-container");
   const searchBox = document.querySelector("#search");
   const searchTags = document.querySelectorAll(".search-tag");
+  const allMovies = document.querySelector("#all-movies")
   const videoAlbums = document.querySelector(".video-albums-container");
   const galleryDescription = document.querySelector(".gallery-description");
 
@@ -597,6 +598,7 @@ window.onload = () => {
   }
   if (window.location.pathname.includes("gallery_video")) {
     videoGalleryModal.addEventListener("click", hideVideoModal);
+
     searchBox.addEventListener("input", () => dosearch(searchBox.value));
     searchTags.forEach(searchTag => {
       searchTag.addEventListener("click", function() {
@@ -604,6 +606,11 @@ window.onload = () => {
         dosearch(searchTagValue);
       });
     });
+
+    allMovies.addEventListener('click', function(){
+      displayVideos(window.globalvideos)
+    })
+
   }
   // CONTACT PAGE
   if (window.location.pathname.includes("contact.html")) {
