@@ -655,13 +655,12 @@ footer {
 
 .video-title {
   color: var(--dark-txt-color);
-  padding-top: 7px;
+  padding: 7px 0;
   font-size: 0.9em;
 }
 
 .video-description {
   color: var(--gray-txt-color);
-  padding-right: 1.5em;
   font-size: 0.7em;
   text-align: justify;
 }
