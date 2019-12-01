@@ -4,7 +4,7 @@
     "keywords": "Smaranda Braescu Brăescu film artistic Fosnet de matase alba documentar",
     "videoDescription": "Filmul „Foșnet de mătase albă” albă a fost distins cu Sabia de bronz a Festivalului internațional al filmului militar și istoric din Varșovia.",
     "videoThumbLink": "./img/Video_thumbnails/Mandita_Fosnet_de_matase_alba.jpg",
-    "videoSrc": "https://www.youtube.com/embed/Tp1GZpoNM4o"
+    "videoSrc": "https://www.youtube.com/embed/jatAOC1VGRw"
   },
   {
     "videoTitle": "Măndița. Nu mă voi întoarce niciodată din drum",
@@ -12,6 +12,13 @@
     "videoDescription": "Film dedicat activității de pilot a Smarandei Brăescu,",
     "videoThumbLink": "./img/Video_thumbnails/Smaranda_Braescu_nu_ma_voi_intoarce.jpg",
     "videoSrc": "https://www.youtube.com/embed/f3FvQh-myRY"
+  },
+  {
+    "videoTitle": "Măndița. Prigoana",
+    "keywords": "Smaranda Braescu Brăescu film artistic Prigoana documentar",
+    "videoDescription": "Ultima parte din trilogia dedicată activității de pilot a Smarandei Brăescu,",
+    "videoThumbLink": "./img/Video_thumbnails/Smaranda_Braescu_Prigoana.jpg",
+    "videoSrc": "https://www.youtube.com/embed/J-TtvHau6hE"
   },
   {
     "videoTitle": "Pilotul Unirii",
