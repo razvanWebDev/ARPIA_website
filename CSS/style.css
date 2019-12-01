@@ -19,7 +19,6 @@
   --small-text-size: 0.8em;
   --mobile-title-size: 1.25em;
   --mobile-subtitle-size: 1.13em;
-
 }
 * {
   margin: 0;
@@ -129,7 +128,7 @@ header {
 
 .header-links a {
   color: var(--light-txt-color);
-  font-weight:400;
+  font-weight: 400;
   padding: 4vh 0;
 }
 
@@ -343,7 +342,7 @@ footer {
   margin-bottom: 10px;
 }
 
-.slide .content p{
+.slide .content p {
   color: var(--light-txt-color);
   font-weight: normal;
 }
@@ -438,7 +437,6 @@ footer {
 }
 
 .home-page-section p {
- 
   margin-bottom: 25px;
   text-align: justify;
 }
@@ -615,15 +613,63 @@ footer {
 }
 
 /* ==============================VIDEO GALLERY PAGE========================= */
-#search {
-  margin-bottom: 20px;
-  width: 250px;
+
+#search-video-form{
+  position: relative;
+  transition: all 1s;
+  width: 40px;
   height: 40px;
-  padding-left: 20px;
-  border: 1px solid var(--main-theme-color-transparent);
-  color: var(--gray-txt-color);
-  border-radius: 50px;
-  outline: none;
+  background: var(--main-bg-color);
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 1px solid var(--main-theme-color);
+  margin-bottom: 20px;
+}
+
+#search-video-form input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;;
+  height:100%;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: none;
+  font-size: 0.7em;
+  border-radius: 25px;
+  padding: 0 20px;
+}
+
+#search-video-form .fa{
+  box-sizing: border-box;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  border-radius: 50%;
+  color: var(--main-theme-color);
+  background-color: var(--main-bg-color);
+  text-align: center;
+  font-size: 0.8em;
+  transition: all 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-video-form:hover {
+  width: 200px;
+}
+
+#search-video-form:hover input{
+  display: block;
+}
+
+#search-video-form:hover .fa{
+  background: var(--main-theme-color);
+  color: var(--main-bg-color);
 }
 
 .search-tags {
@@ -632,7 +678,7 @@ footer {
 }
 
 .search-tag {
-  margin:10px;
+  margin: 10px;
   cursor: pointer;
 }
 
@@ -873,7 +919,6 @@ footer {
   transition: all 0.2s;
 }
 
-
 .ebook-cover:hover {
   filter: sepia(0.3);
   transform: scale(1.03);
@@ -936,7 +981,6 @@ footer {
   padding-bottom: 0;
 }
 
-
 .contact-icon {
   width: 25px;
   transform: translateY(20%);
@@ -951,10 +995,9 @@ footer {
 }
 
 .social-media a svg {
- height:2em;
- margin: 10px;
+  height: 2em;
+  margin: 10px;
 }
-
 
 .contact-form {
   width: 450px;
@@ -1062,9 +1105,7 @@ footer {
 .bank-transfer {
   display: none;
   flex-direction: column;
- 
 }
-
 
 .credit-card {
   display: none;
@@ -1373,7 +1414,6 @@ footer {
     margin: 10px auto;
   }
 
-
   .home-page-section p {
     margin-bottom: 20px;
   }
@@ -1416,7 +1456,6 @@ footer {
 }
 
 @media (max-width: 450px) {
-
   body {
     font-size: 1em;
   }
@@ -1508,7 +1547,7 @@ footer {
 
   .photo-gallery {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    grid-gap: 10px; 
+    grid-gap: 10px;
   }
 
   .photo-gallery-item {
@@ -1549,7 +1588,6 @@ footer {
     padding-bottom: 150px;
   }
 
-
   /* ebooks page */
   .ebook {
     display: -webkit-box;
@@ -1570,7 +1608,6 @@ footer {
     -moz-box-ordinal-group: 4;
     box-ordinal-group: 4;
   }
-
 
   .ebook-poster {
     height: 100%;
@@ -1595,7 +1632,6 @@ footer {
     -moz-box-ordinal-group: 5;
     box-ordinal-group: 5;
   }
-
 
   /* contact page */
   .contact-form {
@@ -1638,7 +1674,6 @@ footer {
 
   .donater-details-row input {
     min-width: 40%;
-   
   }
 
   .form230-btn {
