@@ -41,7 +41,7 @@ body::after {
   content: "";
   background: url("../img/romanian-flag.jpg") no-repeat center/cover;
   background-attachment: fixed;
-  opacity: 0.2;
+  opacity: 0.15;
   top: 0;
   left: 0;
   bottom: 0;
@@ -67,6 +67,10 @@ a {
 
 ul {
   list-style: none;
+}
+
+button {
+  outline: none;
 }
 
 /* Header */
@@ -529,7 +533,6 @@ footer {
   width: 100%;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
 }
 
 .album-description {
@@ -688,13 +691,20 @@ footer {
 }
 
 .search-tags {
-  margin-bottom: 40px;
+  min-height: 4em;
   font-size: 0.7em;
 }
 
 .search-tag {
-  margin: 10px;
+  margin: 0 2em;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.search-tag:hover {
+  font-size: 1.05em;
+  text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.35);
+  margin: 0 1.8em;
 }
 
 .video-albums-container {
@@ -1240,7 +1250,7 @@ footer {
 
 .documents-section .documents img {
   width: 120px;
-  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
 }
 
 .documents-section a {

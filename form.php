@@ -60,11 +60,10 @@ $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 // 'X-Mailer: PHP/' . phpversion();
 mail($email_to, $email_subject, $email_message, $headers);  
-echo "Formularul a fost trimis cu success! <a href='contact.html' style='text-decoration:none;color:#2a385d;'> Înapoi</a>";
+echo "Formularul a fost trimis cu success! <a href='contact.html' style='text-decoration:none;color:#fc9f0a;'> Înapoi</a>";
 
-// echo "Thank You!" . " -" . "<a href='contact.html' style='text-decoration:none;color:#ff0099;'> Return Home</a>";
 
-// header("Location: index.html?mailsend")
+// header("Location: contact.html?mailsend")
 ?>
 
 <?php
