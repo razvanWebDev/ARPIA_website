@@ -1022,7 +1022,7 @@ footer {
   border: none;
   outline: none;
   border-bottom: 1px solid var(--secondary-theme-color);
-  padding-left: 5px;
+  padding: 10px;
   transition: border-bottom 0.3s ease-in-out;
 }
 

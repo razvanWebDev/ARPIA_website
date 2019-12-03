@@ -60,6 +60,8 @@ window.onload = () => {
   const ebooksContainer = document.querySelector(".ebooks-container");
 
   // CONTACTPAGE
+  const contactFormBtn = document.querySelector(".contact-form button");
+  const reuiredFields = document.querySelectorAll(".required-field");
   const donationMethods = document.querySelectorAll(".donation-methods div");
   const methodDivs = document.querySelectorAll(".methods_div");
   const donationAmount = document.querySelectorAll(".donation-amount");
@@ -530,6 +532,28 @@ window.onload = () => {
   };
 
   // ================CONTACT PAGE ===================================
+  function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
+
+  const email = document.querySelector(".email");
+
+  function checkContactForm(event) {
+    reuiredFields.forEach(field => {
+      field.style.backgroundColor = "#fdfdfd";
+      if (field.value == "") {
+        event.preventDefault();
+        field.style.backgroundColor = "#ff110033";
+      }
+    });
+
+    if (validateEmail(email.value) == false) {
+      event.preventDefault();
+      email.style.backgroundColor = "#ff110033";
+    }
+  }
+
   donationMethods.forEach(method => {
     method.addEventListener("click", function() {
       methodDivs.forEach(div => (div.style.display = "none"));
@@ -615,6 +639,11 @@ window.onload = () => {
     scrollDown.addEventListener("click", scrollPage);
     window.addEventListener("scroll", () => showScrollDown(scrollDown, 50));
     window.onload = showScrollDown(scrollDown, 50);
+    contactFormBtn.addEventListener("click", checkContactForm);
+    reuiredFields.forEach(field => {
+      field.addEventListener("input", checkContactForm);
+    });
+  
   }
   // COMMON
   if (

@@ -31,10 +31,7 @@
 
 
 if(isset($_POST['email'])) {
-     
-    // CHANGE THE TWO LINES BELOW
     $email_to = "crsn_razvan@yahoo.com";
-     
     $email_subject = "website html form submissions";
      
      
@@ -97,8 +94,7 @@ mail($email_to, $email_subject, $email_message, $headers);
 ?>
  
 <!-- place your own success html below -->
- 
-Thank you for contacting us. 
+echo "Formularul a fost trimis cu success!" . " -" . "<a href='contact.html' style='text-decoration:none;color:#2a385d;'> Înapoi</a>";
 <?php
 }
 die();
