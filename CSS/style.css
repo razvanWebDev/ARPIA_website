@@ -1000,14 +1000,18 @@ footer {
 }
 
 .contact-form {
-  width: 450px;
+  width: 480px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: left;
+  background-color: rgba(42, 56, 93, 0.1);
+  padding: 30px;
 }
 
 .contact-form h2 {
   padding-bottom: 30px;
+  text-align: center;
 }
 
 .contact-section input,
