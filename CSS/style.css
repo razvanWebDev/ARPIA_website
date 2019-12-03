@@ -30,9 +30,24 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.3em;
-  background-color: var(--main-bg-color);
+
+
+  /* background-color: var(--main-bg-color); */
   color: var(--gray-txt-color);
   position: relative;
+}
+
+body::after {
+  content: "";
+  background: url("../img/romanian-flag.jpg") no-repeat center/cover;
+  background-attachment: fixed;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 
 h1,
