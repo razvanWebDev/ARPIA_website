@@ -33,7 +33,7 @@
 if(isset($_POST['email'])) {
      
     // CHANGE THE TWO LINES BELOW
-    $email_to = "crsn_razvan.com";
+    $email_to = "crsn_razvan@yahoo.com";
      
     $email_subject = "website html form submissions";
      
@@ -92,14 +92,13 @@ if(isset($_POST['email'])) {
 // create email headers
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
+// 'X-Mailer: PHP/' . phpversion();
 mail($email_to, $email_subject, $email_message, $headers);  
 ?>
  
 <!-- place your own success html below -->
  
-Thank you for contacting us. We will be in touch with you very soon.
- 
+Thank you for contacting us. 
 <?php
 }
 die();
