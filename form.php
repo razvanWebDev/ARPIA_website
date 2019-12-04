@@ -100,18 +100,18 @@ if(isset($_POST['email'])) {
       $returnpath = "-f" . $email;
       
       // Send email
-      $mail = mail($toEmail, $emailSubject, $message, $headers, $returnpath);
-      echo "Formularul a fost trimis cu success! <a href='contact.html' style='text-decoration:none;color:#fc9f0a;'> Înapoi</a>";
+      $mail = mail($toEmail, $message, $headers, $returnpath);
       
       // Delete attachment file from the server
       @unlink($uploadedFile);
-  }else{
-       // Set content-type header for sending HTML email
+    }else{
+      // Set content-type header for sending HTML email
       $headers .= "\r\n". "MIME-Version: 1.0";
       $headers .= "\r\n". "Content-type:text/html;charset=UTF-8";
       
       // Send email
-      $mail = mail($toEmail, $emailSubject, $email_message, $headers); 
+      $mail = mail($toEmail, $email_message, $headers); 
+      echo "Formularul a fost trimis cu success! <a href='contact.html' style='text-decoration:none;color:#fc9f0a;'> Înapoi</a>";
   }
      
      
