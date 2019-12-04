@@ -100,7 +100,7 @@ if(isset($_POST['email'])) {
       $returnpath = "-f" . $email;
       
       // Send email
-      $mail = mail($toEmail, $message, $headers, $returnpath);
+      $mail = mail($email_to, $email_subject, $message, $headers, $returnpath);
       
       // Delete attachment file from the server
       @unlink($uploadedFile);
@@ -110,7 +110,7 @@ if(isset($_POST['email'])) {
       $headers .= "\r\n". "Content-type:text/html;charset=UTF-8";
       
       // Send email
-      $mail = mail($toEmail, $email_message, $headers); 
+      $mail = mail($email_to, $email_subject, $email_message, $headers); 
       echo "Formularul a fost trimis cu success! <a href='contact.html' style='text-decoration:none;color:#fc9f0a;'> Înapoi</a>";
   }
      
