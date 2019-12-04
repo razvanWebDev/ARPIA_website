@@ -1,6 +1,6 @@
 <?php 
 if(isset($_POST['email'])) {
-    $email_to = "crsn_razvan@yahoo.com";
+    $email_to = "crsn_razvan@yahoo.com, contact.arpiacluj@gmail.com";
     $email_subject = "Mesaj de la website ARPIA - filiala Cluj";
      
      
