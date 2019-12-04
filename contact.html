@@ -101,17 +101,18 @@
             </div>
 
             <div class="contact-section">
-                <form method="POST" action="form.php" class="contact-form" name="contact-form">
+                <form method="POST" action="form.php" enctype="multipart/form-data" class="contact-form"
+                    name="contact-form">
                     <h2>Contact</h2>
-                    <label for="name">Nume:*</label>
+                    <label for="name">Nume: *</label>
                     <input type="text" name="name" class="required-field">
-                    <label for="email">Email:*</label>
+                    <label for="email">Email: *</label>
                     <input type="text" name="email" class="required-field email">
                     <label for="phone">Telefon:</label>
                     <input type="text" name="phone">
-                    <textarea id="messageInput" name="message" rows="5" placeholder="mesajul dvs:*"
+                    <textarea id="messageInput" name="message" rows="5" placeholder="mesajul dvs: *"
                         class="required-field"></textarea>
-                    <br>
+                   Trimiteți un fișier: <input type="file" name="selectedfile" />
                     <button type="submit" name="submit">Trimite</button>
                 </form>
                 </form>

@@ -541,7 +541,7 @@ window.onload = () => {
 
   function checkContactForm(event) {
     reuiredFields.forEach(field => {
-      field.style.backgroundColor = "#fdfdfd";
+      field.style.backgroundColor = "transparent";
       if (field.value == "") {
         event.preventDefault();
         field.style.backgroundColor = "#ff110033";

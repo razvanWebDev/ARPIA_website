@@ -42,7 +42,7 @@ if(isset($_POST['email'])) {
   if(strlen($error_message) > 0) {
     died($error_message);
   }
-    $email_message = "Detaliile masejului.\n\n";
+    $email_message = "Detaliile mesajului.\n\n";
      
     function clean_string($string) {
       $bad = array("content-type","bcc:","to:","cc:","href");
@@ -58,8 +58,8 @@ if(isset($_POST['email'])) {
 // create email headers
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
-// 'X-Mailer: PHP/' . phpversion();
-mail($email_to, $email_subject, $email_message, $headers);  
+'X-Mailer: PHP/' . phpversion();
+@mail($email_to, $email_subject, $email_message, $headers);  
 echo "Formularul a fost trimis cu success! <a href='contact.html' style='text-decoration:none;color:#fc9f0a;'> Înapoi</a>";
 
 
