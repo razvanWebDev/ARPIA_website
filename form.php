@@ -1,73 +1,126 @@
-<?php 
-if(isset($_POST['email'])) {
-    $email_to = "contact.arpiacluj@gmail.com, crsn_razvan@yahoo.com";
-    $email_subject = "Mesaj de la website ARPIA - filiala Cluj";
-     
-     
-    function died($error) {
-        // your error code can go here
-        echo "Ne pare rau, dar am am găsit erori în formular. ";
-        echo "Aceste erori apar mai jos.<br /><br />";
-        echo $error."<br /><br />";
-        echo "Va rugăm sa corectați erorile.<br /><br />";
-        die();
-    }
-     
-    // validation expected data exists
-    if(!isset($_POST['name']) ||
-        !isset($_POST['email']) ||
-        !isset($_POST['phone']) ||
-        !isset($_POST['message'])) {
-        died('Ne pare rau, dar am am găsit erori în formular.');       
-    }
-     
-    $name = $_POST['name']; // required
-    $email_from = $_POST['email']; // required
-    $telephone = $_POST['phone']; // not required
-    $comments = $_POST['message']; // required
-     
-    $error_message = "";
-    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-  if(!preg_match($email_exp,$email_from)) {
-    $error_message .= 'Adresa de email nu este valida.<br />';
-  }
-    $string_exp = "/^[A-Za-z .'-]+$/";
-  if(!preg_match($string_exp,$name)) {
-    $error_message .= 'Vă rugăm să completați numele.<br />';
-  }
- 
-  if(strlen($comments) < 2) {
-    $error_message .= 'Vă rugăm să completați mesajul.<br />';
-  }
-  if(strlen($error_message) > 0) {
-    died($error_message);
-  }
-    $email_message = "Detaliile mesajului.\n\n";
-     
-    function clean_string($string) {
-      $bad = array("content-type","bcc:","to:","cc:","href");
-      return str_replace($bad,"",$string);
-    }
-     
-    $email_message .= "Nume: ".clean_string($name)."\n";
-    $email_message .= "Email: ".clean_string($email_from)."\n";
-    $email_message .= "Telefon: ".clean_string($telephone)."\n";
-    $email_message .= "Mesaj: ".clean_string($comments)."\n";
-     
-     
-// create email headers
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);  
-echo "Formularul a fost trimis cu success! <a href='contact.html' style='text-decoration:none;color:#fc9f0a;'> Înapoi</a>";
-
-
-// header("Location: contact.html?mailsend")
-?>
-
 <?php
-}
-die();
+$postData = $uploadedFile = $statusMsg = '';
+$msgClass = 'errordiv';
+$phone = $_POST['phone'];
+if(isset($_POST['submit'])){
+    // Get the submitted form data
+    $postData = $_POST;
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    
+    // Check whether submitted data is not empty
+    if(!empty($email) && !empty($name) && !empty($message)){
+        
+        // Validate email
+        if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
+            $statusMsg = 'Please enter your valid email.';
+        }else{
+            $uploadStatus = 1;
+            
+            // Upload attachment file
+            if(!empty($_FILES["attachment"]["name"])){
+                
+                // File path config
+                $targetDir = "uploads/";
+                $fileName = basename($_FILES["attachment"]["name"]);
+                $targetFilePath = $targetDir . $fileName;
+                $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
+                
+                // Allow certain file formats
+                $allowTypes = array('pdf', 'doc', 'docx', 'jpg', 'png', 'jpeg');
+                if(in_array($fileType, $allowTypes)){
+                    // Upload file to the server
+                    if(move_uploaded_file($_FILES["attachment"]["tmp_name"], $targetFilePath)){
+                        $uploadedFile = $targetFilePath;
+                    }else{
+                        $uploadStatus = 0;
+                        $statusMsg = "Sorry, there was an error uploading your file.";
+                    }
+                }else{
+                    $uploadStatus = 0;
+                    $statusMsg = 'Sorry, only PDF, DOC, JPG, JPEG, & PNG files are allowed to upload.';
+                }
+            }
+            
+            if($uploadStatus == 1){
+                
+                // Recipient
+                $toEmail = 'crsn_razvan@yahoo.com';
 
+                // Sender
+                $from = $email;
+                $fromName = $name;
+                
+                // Subject
+                $emailSubject = 'Contact Request Submitted by '.$name;
+                
+                // Message 
+                $htmlContent = '<h2>Contact Request Submitted</h2>
+                    <p><b>Name:</b> '.$name.'</p>
+                    <p><b>Email:</b> '.$email.'</p>
+                    <p><b>Phone:</b> '.$phone.'</p>
+                    <p><b>Message:</b><br/>'.$message.'</p>';
+                
+                // Header for sender info
+                $headers = "From: $fromName"." <".$from.">";
+
+                if(!empty($uploadedFile) && file_exists($uploadedFile)){
+                    
+                    // Boundary 
+                    $semi_rand = md5(time()); 
+                    $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x"; 
+                    
+                    // Headers for attachment 
+                    $headers .= "\nMIME-Version: 1.0\n" . "Content-Type: multipart/mixed;\n" . " boundary=\"{$mime_boundary}\""; 
+                    
+                    // Multipart boundary 
+                    $message = "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"UTF-8\"\n" .
+                    "Content-Transfer-Encoding: 7bit\n\n" . $htmlContent . "\n\n"; 
+                    
+                    // Preparing attachment
+                    if(is_file($uploadedFile)){
+                        $message .= "--{$mime_boundary}\n";
+                        $fp =    @fopen($uploadedFile,"rb");
+                        $data =  @fread($fp,filesize($uploadedFile));
+                        @fclose($fp);
+                        $data = chunk_split(base64_encode($data));
+                        $message .= "Content-Type: application/octet-stream; name=\"".basename($uploadedFile)."\"\n" . 
+                        "Content-Description: ".basename($uploadedFile)."\n" .
+                        "Content-Disposition: attachment;\n" . " filename=\"".basename($uploadedFile)."\"; size=".filesize($uploadedFile).";\n" . 
+                        "Content-Transfer-Encoding: base64\n\n" . $data . "\n\n";
+                    }
+                    
+                    $message .= "--{$mime_boundary}--";
+                    $returnpath = "-f" . $email;
+                    
+                    // Send email
+                    $mail = mail($toEmail, $emailSubject, $message, $headers, $returnpath);
+                    
+                    // Delete attachment file from the server
+                    @unlink($uploadedFile);
+                }else{
+                     // Set content-type header for sending HTML email
+                    $headers .= "\r\n". "MIME-Version: 1.0";
+                    $headers .= "\r\n". "Content-type:text/html;charset=UTF-8";
+                    
+                    // Send email
+                    $mail = mail($toEmail, $emailSubject, $htmlContent, $headers); 
+                }
+                
+                // If mail sent
+                if($mail){
+                    $statusMsg = 'Your contact request has been submitted successfully !';
+                    $msgClass = 'succdiv';
+                    
+                    $postData = '';
+                }else{
+                    $statusMsg = 'Your contact request submission failed, please try again.';
+                }
+            }
+        }
+    }else{
+        $statusMsg = 'Please fill all the fields.';
+    }
+}
 ?>
