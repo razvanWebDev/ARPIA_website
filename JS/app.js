@@ -575,7 +575,12 @@ window.onload = () => {
 
     // validate checkbox
     validateCheckBox();
-    formcheckBox.addEventListener("click", validateCheckBox);
+    formcheckBox.addEventListener("click", () => {
+      privacyPolicy_p.style.backgroundColor = "transparent";
+      if (!formcheckBox.checked) {
+        privacyPolicy_p.style.backgroundColor = "#ff110033";
+      }
+    });
   }
 
   donationMethods.forEach(method => {
