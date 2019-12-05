@@ -694,6 +694,7 @@ footer {
 .search-tags {
   min-height: 4em;
   font-size: 0.7em;
+  text-align: center;
 }
 
 .search-tag {
@@ -1366,6 +1367,12 @@ footer {
     margin: 20px 0 50px;
   }
   /* video gallery page */
+  .video-albums-container {
+   
+    grid-template-columns: repeat(auto-fill, minmax(300px, 0.5fr));
+    grid-gap: 100px 20px;
+  }
+
   .current-video-container {
     width: 90%;
   }
@@ -1614,8 +1621,6 @@ footer {
   /* video gallery page */
   .video-albums-container {
     grid-template-columns: 1fr;
-    grid-auto-rows: 250px;
-    grid-gap: 60px;
   }
   .current-video-container {
     width: 100%;

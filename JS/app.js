@@ -63,7 +63,7 @@ window.onload = () => {
   const reuiredFields = document.querySelectorAll(".required-field");
   const email = document.querySelector(".email");
   const privacyPolicy_p = document.querySelector(".privacy-policy");
-  const contactFormcheckBox = document.querySelector(".contact-form-checkbox");
+  const formcheckBox = document.querySelector(".form-checkbox");
   const contactFormBtn = document.querySelector(".contact-form button");
   const donationMethods = document.querySelectorAll(".donation-methods div");
   const methodDivs = document.querySelectorAll(".methods_div");
@@ -550,7 +550,7 @@ window.onload = () => {
 
   const validateCheckBox = () => {
     privacyPolicy_p.style.backgroundColor = "transparent";
-    if (!contactFormcheckBox.checked) {
+    if (!formcheckBox.checked) {
       event.preventDefault();
       privacyPolicy_p.style.backgroundColor = "#ff110033";
     }
@@ -575,7 +575,7 @@ window.onload = () => {
 
     // validate checkbox
     validateCheckBox();
-    contactFormcheckBox.addEventListener("click", validateCheckBox);
+    formcheckBox.addEventListener("click", validateCheckBox);
   }
 
   donationMethods.forEach(method => {
