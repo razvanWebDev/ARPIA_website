@@ -6,6 +6,7 @@
   --secondary-theme-color: #fc9f0a;
   --light-txt-color: #fdfdfd;
   --dark-txt-color: #2a385d;
+  --link-txt-color: #00628B;
   --gray-txt-color: #3e3f42;
 
   --padding-main: 50px 10%;
@@ -61,7 +62,7 @@ h6 {
 
 a {
   text-decoration: none;
-  color: var(--secondary-theme-color);
+  color: var(--link-txt-color);
   font-weight: bold;
 }
 
@@ -1208,6 +1209,7 @@ footer {
 .privacy-policy input {
   margin-right: 5px;
   transform: translateY(35%);
+  width: auto !important;
 }
 
 .privacy-policy p {
