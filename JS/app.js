@@ -59,9 +59,12 @@ window.onload = () => {
   // EBOOKS PAGE
   const ebooksContainer = document.querySelector(".ebooks-container");
 
-  // CONTACTPAGE
-  const contactFormBtn = document.querySelector(".contact-form button");
+  // CONTACT PAGE
   const reuiredFields = document.querySelectorAll(".required-field");
+  const email = document.querySelector(".email");
+  const privacyPolicy_p = document.querySelector(".privacy-policy");
+  const contactFormcheckBox = document.querySelector(".contact-form-checkbox");
+  const contactFormBtn = document.querySelector(".contact-form button");
   const donationMethods = document.querySelectorAll(".donation-methods div");
   const methodDivs = document.querySelectorAll(".methods_div");
   const donationAmount = document.querySelectorAll(".donation-amount");
@@ -537,21 +540,42 @@ window.onload = () => {
     return re.test(String(email).toLowerCase());
   }
 
-  const email = document.querySelector(".email");
+  const validateFormInput = (condition, item) => {
+    item.style.backgroundColor = "transparent";
+    if (condition) {
+      event.preventDefault();
+      item.style.backgroundColor = "#ff110033";
+    }
+  };
 
-  function checkContactForm(event) {
+  const validateCheckBox = () => {
+    privacyPolicy_p.style.backgroundColor = "transparent";
+    if (!contactFormcheckBox.checked) {
+      event.preventDefault();
+      privacyPolicy_p.style.backgroundColor = "#ff110033";
+    }
+  };
+
+  function validateContactForm(event) {
+    // check required inputs
     reuiredFields.forEach(field => {
-      field.style.backgroundColor = "transparent";
-      if (field.value == "") {
-        event.preventDefault();
-        field.style.backgroundColor = "#ff110033";
-      }
+      validateFormInput(field.value == "", field);
+    });
+    reuiredFields.forEach(field => {
+      field.addEventListener("input", function() {
+        validateFormInput(field.value == "", field);
+      });
     });
 
-    if (validateEmail(email.value) == false) {
-      event.preventDefault();
-      email.style.backgroundColor = "#ff110033";
-    }
+    // validate email
+    validateFormInput(validateEmail(email.value) == false, email);
+    email.addEventListener("input", function() {
+      validateFormInput(validateEmail(email.value) == false, email);
+    });
+
+    // validate checkbox
+    validateCheckBox();
+    contactFormcheckBox.addEventListener("click", validateCheckBox);
   }
 
   donationMethods.forEach(method => {
@@ -639,11 +663,7 @@ window.onload = () => {
     scrollDown.addEventListener("click", scrollPage);
     window.addEventListener("scroll", () => showScrollDown(scrollDown, 50));
     window.onload = showScrollDown(scrollDown, 50);
-    contactFormBtn.addEventListener("click", checkContactForm);
-    reuiredFields.forEach(field => {
-      field.addEventListener("input", checkContactForm);
-    });
-  
+    contactFormBtn.addEventListener("click", validateContactForm);
   }
   // COMMON
   if (

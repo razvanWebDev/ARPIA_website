@@ -42,7 +42,7 @@ if(isset($_POST['email'])) {
   if(strlen($error_message) > 0) {
     died($error_message);
   }
-    $email_message = "Detaliile masejului.\n\n";
+    $email_message = "Detaliile mesajului.\n\n";
      
     function clean_string($string) {
       $bad = array("content-type","bcc:","to:","cc:","href");
