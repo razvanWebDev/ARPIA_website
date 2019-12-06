@@ -264,8 +264,9 @@ footer {
   color: #d0d5e2;
 }
 
-.contact-div {
+.footer-section {
   flex: 1;
+  padding: 0.5em;
 }
 
 footer h3 {
@@ -291,22 +292,17 @@ footer a:hover {
   flex-direction: column;
 }
 
-.footer-links ul {
-  list-style: disc;
-}
-
 .footer-contact {
-  flex: 1.5;
+  flex: 2;
 }
 
-.footer-contact ul li {
-  display: flex;
-  padding-bottom: 0.8em;
+.footer-contact p {
+  padding-bottom: 1em;
 }
 
 .footer-contact-icon {
-  margin-right: 0.5em;
-  transform: translateY(-10%) !important;
+  /* transform: translateY(-10%) !important; */
+  clear: both;
 }
 
 footer .social-media {
@@ -1385,6 +1381,10 @@ footer .social-media {
     margin-bottom: 20px;
   }
 
+  footer {
+    padding: var(--padding-1024px);
+  }
+
   /* foto albums page */
   .photo-albums-container {
     grid-template-columns: repeat(2, 1fr);
@@ -1572,6 +1572,31 @@ footer .social-media {
   .page-title-h2 {
     padding: 40px 0 20px;
     font-size: var(--mobile-title-size);
+  }
+
+  /* footer */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5em;
+
+  }
+
+  .footer-section:first-child {
+    padding-top: 0;
+  }
+
+  footer .social-media {
+    flex-direction: row;
+    padding-top: 0;
   }
 
   /* Home page */
