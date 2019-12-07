@@ -788,8 +788,7 @@ footer .social-media {
   text-align: justify;
 }
 
-.playVideo,
-.ebook-download {
+.playVideo {
   position: absolute;
   top: 0;
   left: 0;
@@ -805,8 +804,6 @@ footer .social-media {
   pointer-events: none;
 }
 
-.ebook-cover:hover .ebook-download,
-.ebook-download:hover,
 .gallery-pic:hover .playVideo,
 .playVideo:hover {
   opacity: 1;
@@ -987,6 +984,7 @@ footer .social-media {
 /* ========================= EBOOKS PAGE ==================== */
 .ebook {
   text-align: justify;
+  margin-bottom: 10em;
 }
 
 .ebook-cover {
