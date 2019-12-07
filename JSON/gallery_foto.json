@@ -1,5 +1,18 @@
 [
   {
+    "albumDate": "06 dec. 2019",
+    "albumName": "Lansare Carte \"Aviația Clujeană\" la Aerportul Avram Iancu",
+    "imgPath": [
+      "./img/06_dec_2019/06_dec_2019_01_small.jpg",
+      "./img/06_dec_2019/06_dec_2019_02_small.jpg",
+      "./img/06_dec_2019/06_dec_2019_03_small.jpg",
+      "./img/06_dec_2019/06_dec_2019_04_small.jpg",
+      "./img/06_dec_2019/06_dec_2019_05_small.jpg",
+      "./img/06_dec_2019/06_dec_2019_06_small.jpg"
+    ],
+    "albumPath": "JSON/06_dec_2019.json"
+  },
+  {
     "albumDate": "05 dec. 2019",
     "albumName": "Lansare Carte \"Aviația Clujeană\" la Casa Radio",
     "imgPath": [
