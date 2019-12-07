@@ -516,7 +516,7 @@ window.onload = () => {
   const displayEbooks = jsonEbooks => {
     const ebooks = jsonEbooks.map(ebook => {
       return `<div class="ebook">               
-                <a href="${ebook.downloadLink}" target="_blank">
+                <a href="${ebook.downloadLink}" target= "_blank">
                   <div class="ebook-cover">
                     <img src="${ifItemExists(
                       ebook.posterSmall
@@ -524,7 +524,9 @@ window.onload = () => {
                     </div>
                 </a>
                   <h3>${ifItemExists(ebook.title)}</h3>
-                  <p class="gray-text" ebook-author>${ifItemExists(ebook.author)}</p>
+                  <p class="gray-text" ebook-author>${ifItemExists(
+                    ebook.author
+                  )}</p>
                   <p class="gray-text ebook-date">${ifItemExists(
                     ebook.date
                   )}</p>
