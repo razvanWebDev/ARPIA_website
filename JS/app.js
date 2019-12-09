@@ -48,6 +48,7 @@ window.onload = () => {
   const modal = document.querySelector(".modal");
   const fotoGalleryModal = document.querySelector("#foto-gallery-modal");
   const videoGalleryModal = document.querySelector("#video-gallery-modal");
+  const fotoDescription_P = document.querySelector(".foto-description-p");
 
   const currentPic = document.querySelector(".current-foto img");
   const currentVideo = document.querySelector(".current-video");
@@ -375,14 +376,22 @@ window.onload = () => {
     );
     const galleryItems = galleryFotos.map(foto => {
       return `<div class="photo-gallery-item">
-                        <div class="gallery-pic" style="background-image: url(${foto.imgPath})" data-path="${foto.imgPath}"></div>
+                        <div class="gallery-pic" style="background-image: url(${
+                          foto.imgPath
+                        })" data-path="${
+        foto.imgPath
+      }" data-fotoDescription="${ifItemExists(foto.fotoDescription)}"></div>
                     </div>`;
     });
     fotoGallery.innerHTML = galleryItems.join("");
 
     //display gallery-modal thumbnails
     const modalThumbnails = fotos.map(foto => {
-      return `<img src="${foto.imgPath}" data-path="${foto.imgPath}" class="modal-slider-pic modal-child">`;
+      return `<img src="${foto.imgPath}" data-path="${
+        foto.imgPath
+      }"  data-fotoDescription="${ifItemExists(
+        foto.fotoDescription
+      )}" class="modal-slider-pic modal-child">`;
     });
     gallerySlider.innerHTML = modalThumbnails.join("");
     //get current img for the modal
@@ -428,6 +437,11 @@ window.onload = () => {
         const currentPicSrc = thumb.getAttribute("data-path");
         currentPic.src = currentPicSrc;
         currentPicLink.href = currentPicSrc;
+        // foto description
+        const currentFotoDescription = thumb.getAttribute(
+          "data-fotoDescription"
+        );
+        fotoDescription_P.innerHTML = currentFotoDescription;
         // modal current foto fade in
         currentPic.classList.add("fade-in");
         // remove fade in class after animation ends
@@ -446,6 +460,9 @@ window.onload = () => {
     galleryPics.forEach(pic => {
       pic.addEventListener("click", () => {
         const imgPath = pic.getAttribute("data-path");
+        // foto description
+        const currentFotoDescription = pic.getAttribute("data-fotoDescription");
+        fotoDescription_P.innerHTML = currentFotoDescription;
 
         //set the selected foto as current img
         currentPicLink.href = imgPath;

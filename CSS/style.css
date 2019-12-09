@@ -842,7 +842,7 @@ footer .social-media {
   z-index: 11;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(42, 56, 93, 0.8);
+  background-color: var(--main-theme-color-transparent);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -873,6 +873,7 @@ footer .social-media {
   animation: fadeIn 0.5s ease-in 1 forwards;
 }
 
+
 .current-foto-link:hover {
   opacity: 1;
   cursor: zoom-in;
@@ -882,7 +883,7 @@ footer .social-media {
   position: relative;
   width: 100%;
   height: calc(100vh - 125px);
-  margin-bottom: 150px;
+  margin-bottom: 125px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -892,6 +893,7 @@ footer .social-media {
 .current-foto {
   max-height: 90%;
   max-width: 90%;
+  text-align: center;
 }
 
 .current-foto img {
@@ -900,13 +902,17 @@ footer .social-media {
   object-fit: contain;
 }
 
+.foto-description-p {
+  color: var(--light-txt-color);
+}
+
 .gallery-slider-container {
   display: flex;
   position: fixed;
   bottom: 0;
   height: 75px;
-  max-width: 85%;
-  margin: 20px;
+  max-width: 90%;
+  margin: 20px 0;
 }
 
 .gallery-slider {
