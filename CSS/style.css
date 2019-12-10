@@ -873,7 +873,6 @@ footer .social-media {
   animation: fadeIn 0.5s ease-in 1 forwards;
 }
 
-
 .current-foto-link:hover {
   opacity: 1;
   cursor: zoom-in;
@@ -904,6 +903,11 @@ footer .social-media {
 
 .foto-description-p {
   color: var(--light-txt-color);
+}
+
+.foto-description-p a {
+  color: var(--secondary-theme-color);
+  font-weight: normal;
 }
 
 .gallery-slider-container {
@@ -995,6 +999,10 @@ footer .social-media {
 .ebook {
   text-align: justify;
   margin-bottom: 10em;
+}
+
+.ebook:last-child {
+  margin-bottom: 0;
 }
 
 .ebook-cover {
@@ -1587,7 +1595,6 @@ footer .social-media {
     flex-direction: column;
     align-items: center;
     text-align: center;
-
   }
 
   .footer-section {
@@ -1595,7 +1602,6 @@ footer .social-media {
     flex-direction: column;
     align-items: center;
     padding-top: 5em;
-
   }
 
   .footer-section:first-child {
@@ -1723,46 +1729,16 @@ footer .social-media {
 
   /* ebooks page */
   .ebook {
-    /* display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    box-orient: vertical; */
     text-align: center;
-  }
-
-  .ebook h3 {
-    -webkit-box-ordinal-group: 1;
-    -moz-box-ordinal-group: 1;
-    box-ordinal-group: 1;
-  }
-
-  .ebook-author {
-    -webkit-box-ordinal-group: 2;
-    -moz-box-ordinal-group: 2;
-    box-ordinal-group: 2;
-  }
-
-  .ebook-date {
-    -webkit-box-ordinal-group: 3;
-    -moz-box-ordinal-group: 3;
-    box-ordinal-group: 3;
   }
 
   .ebook-about {
     text-align: justify;
-    -webkit-box-ordinal-group: 5;
-    -moz-box-ordinal-group: 5;
-    box-ordinal-group: 5;
   }
 
   .ebook-cover {
     float: none;
     margin: 30px auto;
-    -webkit-box-ordinal-group: 4;
-    -moz-box-ordinal-group: 4;
-    box-ordinal-group: 4;
   }
 
   /* contact page */
