@@ -1401,7 +1401,7 @@ footer .social-media {
 
   .album-description {
     color: var(--dark-txt-color);
-    background-color: var(--main-bg-color);
+    background-color: transparent;
     position: relative;
     transform: translateY(0%);
   }
