@@ -917,7 +917,6 @@ footer .social-media {
   height: 75px;
   max-width: 85%;
   margin: 20px 0;
-  border: 1px solid var(--secondary-theme-color);
   border-radius: 100px;
   overflow: hidden;
 }
