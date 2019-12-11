@@ -1,35 +1,36 @@
 [
-    {
-        "albumName": "Inaugurarea monumentului închinat Smarandei Brăescu",
-        "date": "02 nov 2018",
-        "imgPath": "./img/02_nov_2018/02_nov_2018_01.jpg",
-        "description": "În Cimitirul central din Cluj-Napoca și prezentarea filmului documentar realizat de studioul cinematografic al Armatei, Prigoana.Parcela IIB.Locul 1551, la cinema Mărăști din Cluj-Napoca"
-    },
-    {
-        "imgPath": "./img/02_nov_2018/02_nov_2018_02.jpg"
-    },
-    {
-        "imgPath": "./img/02_nov_2018/02_nov_2018_03.jpg"
-    },
-    {
-        "imgPath": "./img/02_nov_2018/02_nov_2018_04.jpg"
-    },
-    {
-        "imgPath": "./img/02_nov_2018/02_nov_2018_05.jpg"
-    },
-    {
-        "imgPath": "./img/02_nov_2018/02_nov_2018_06.jpg"
-    },
-    {
-        "imgPath": "./img/02_nov_2018/02_nov_2018_07.jpg"
-    },
-    {
-        "imgPath": "./img/02_nov_2018/02_nov_2018_08.jpg"
-    },
-    {
-        "imgPath": "./img/02_nov_2018/02_nov_2018_09.jpg"
-    },
-    {
-        "imgPath": "./img/02_nov_2018/02_nov_2018_10.jpg"
-    }
+  {
+    "albumName": "Inaugurarea monumentului închinat Smarandei Brăescu",
+    "date": "02 nov 2018",
+    "imgPath": "./img/02_nov_2018/02_nov_2018_01.jpg",
+    "description": "În Cimitirul central din Cluj-Napoca și prezentarea filmului documentar realizat de studioul cinematografic al Armatei, Prigoana.Parcela IIB.Locul 1551, la cinema Mărăști din Cluj-Napoca",
+    "about": "<p>Pionierii aviaţiei româneşti, Traian Vuia, Aurel Vlaicu, Henri Coandă, prin creaţiile lor de excepţie, au pus naţiunea română pe harta aviaţiei mondiale.</p><p>La spiritualitatea românească aviatică a aderat şi Smaranda Brăescu, „fătuca de la ţară”, micuţă de statură, cu părul purtat împletit, care, în ciuda mentalităţii epocii şi a dezaprobării sociale, şi-a urmat visul. Deşi la Satu Mare, în august 1930, „văzduhul, zeu capricios” a izbit-o de un copac şi i-a zdrobit oasele, acest lucru nu a impiedicat-o să continue, să intre în galeria nemuritoare a pionerilor aviaţiei româneşti şi mondiale, doborând recordul mondial absolut la saltul cu paraşuta şi ulterior fiind prima femeie care a traversat Marea Mediterană la bordul unui avion cu un singur motor şi fără escală pe insule.</p><p>Smaranda Brăescu este un model de urmat, pentru curajul, pasiunea, tenacitatea şi tăria de caracter pe care le-a dovedit, dar şi pentru promovarea aviatorilor şi paraşutiştilor români la nivel mondial.</p><p>Dragi camarazi,<br>În Anul Centenarului Marii Uniri să aducem un pios omagiu memoriei tuturor celor care cu trudă, profesionalism şi putere de sacrificiu au plătit tributul de sânge în misiunile pe care le-au executat în ţară sau peste hotare, pentru apărarea neamului.<p/><p>Vă asigur de întreaga mea consideraţie şi respectul cuvenit pentru eforturile pe care le depuneţi, pentru munca asiduă desfăşurată în scopul păstrării măreţei şi onorantei moşteniri lăsate de cei care, cu dăruire, încredere şi imense sacrificii, au scris pagini de aur în istoria aeronauticii.</p><p>Pasiunea, tradiţia şi profesionalismul, valori regăsite în deviza ARPIA, nu reprezintă doar simple cuvinte, ci sunt trăsăturile ce vă caracterizează pe dumneavoastră ca oameni, ce nu conteniţi să vă exprimaţi pasiunea pentru aviaţie, mai mult, sunt valorile ce vă definesc pe dumneavoastră ca organizaţie, unică în ţara noastră, atât prin proiectele şi acţiunile întreprinse, cât şi prin contribuţia fiecărui membru al organizaţiei.</p><p>Nicolae Ionel Ciucă | 2 noiembrie 2018</p>"
+  },
+  {
+    "imgPath": "./img/02_nov_2018/02_nov_2018_02.jpg"
+  },
+  {
+    "imgPath": "./img/02_nov_2018/02_nov_2018_03.jpg"
+  },
+  {
+    "imgPath": "./img/02_nov_2018/02_nov_2018_04.jpg"
+  },
+  {
+    "imgPath": "./img/02_nov_2018/02_nov_2018_05.jpg"
+  },
+  {
+    "imgPath": "./img/02_nov_2018/02_nov_2018_06.jpg"
+  },
+  {
+    "imgPath": "./img/02_nov_2018/02_nov_2018_07.jpg"
+  },
+  {
+    "imgPath": "./img/02_nov_2018/02_nov_2018_08.jpg"
+  },
+  {
+    "imgPath": "./img/02_nov_2018/02_nov_2018_09.jpg"
+  },
+  {
+    "imgPath": "./img/02_nov_2018/02_nov_2018_10.jpg"
+  }
 ]

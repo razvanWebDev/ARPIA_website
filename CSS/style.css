@@ -625,7 +625,7 @@ footer .social-media {
   object-fit: cover;
 }
 
-/* ================================FOTO-GALLERY-PAGE======================= */
+/* ================================PHOTO GALLERY PAGE======================= */
 .photo-gallery-main {
   display: none;
 }
@@ -648,6 +648,16 @@ footer .social-media {
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
   width: 100%;
+}
+
+.gallery-about {
+  text-align: justify;
+  font-size: 0.9em;
+  padding-top: 2em;
+}
+
+.gallery-about p {
+  padding-top: 1rem;
 }
 
 .gallery-details {

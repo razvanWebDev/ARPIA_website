@@ -38,6 +38,7 @@ window.onload = () => {
   const fotoGalleryMain = document.querySelector(".photo-gallery-main");
   const fotoGallery = document.querySelector(".photo-gallery");
   const fotoAlbums = document.querySelector(".photo-albums-container");
+  const galleryAbout = document.querySelector(".gallery-about");
   const searchBox = document.querySelector("#search");
   const searchTags = document.querySelectorAll(".search-tag");
   const allMovies = document.querySelector("#all-movies");
@@ -369,6 +370,8 @@ window.onload = () => {
     )} <br> ${ifItemExists(fotos[0].date)}`;
     //get gallery description
     galleryDescription.innerHTML = ifItemExists(fotos[0].description);
+    //gallery about
+    galleryAbout.innerHTML = ifItemExists(fotos[0].about);
 
     //display foto gallery
     const galleryFotos = fotos.filter(
