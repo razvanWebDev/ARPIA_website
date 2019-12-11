@@ -6,7 +6,7 @@
 // accessibilty
 
 window.onload = () => {
-  // get current page name to help xhttp requests in loadFotos()
+  // get current page name
   const currentPath = window.location.pathname;
   const currentPageName = currentPath
     .split("/")
@@ -92,7 +92,7 @@ window.onload = () => {
     );
   };
 
-  // Showw scroll up arrow
+  // Show scroll up arrow
   const showItem = (item, scrollHeight) => {
     const y = window.scrollY;
     if (y >= scrollHeight) {
@@ -310,8 +310,6 @@ window.onload = () => {
   const showVideoModal = () => {
     videoGalleryModal.classList.add("show");
     body.style.overflow = "hidden";
-    // TODO disable back event
-    // disableBackEvent(hideVideoModal);
   };
 
   const hideVideoModal = () => {
@@ -406,26 +404,13 @@ window.onload = () => {
   const showGalleryModal = () => {
     body.style.overflow = "hidden";
     modal.classList.add("show");
-
-    // close modal on "back" event
-    // window.addEventListener(
-    //     "popstate",
-    //     function() {
-    //         hideGalleryModal();
-    //     },
-    //     false
-    // );
-    disableBackEvent(hideGalleryModal);
-
     // get current photo
     currentImg();
   };
 
   const hideGalleryModal = event => {
-    if (!event.target.classList.contains("modal-child")) {
-      body.style.overflow = "auto";
-      modal.classList.remove("show");
-    }
+    body.style.overflow = "auto";
+    modal.classList.remove("show");
   };
 
   // select current foto on modal thumbnails click
@@ -705,6 +690,10 @@ window.onload = () => {
     window.location.pathname.includes("gallery_foto.html") ||
     window.location.pathname.includes("events.html")
   ) {
-    modal.addEventListener("click", hideGalleryModal);
+    modal.addEventListener("click", function() {
+      if (!event.target.classList.contains("modal-child")) {
+        hideGalleryModal();
+      }
+    });
   }
 };
