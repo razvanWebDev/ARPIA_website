@@ -104,6 +104,19 @@
     "albumPath": "JSON/21_sept_2018.json"
   },
   {
+    "albumDate": "07 dec. 2016",
+    "albumName": "Expo la Aerportul Avram Iancu",
+    "imgPath": [
+      "./img/07_dec_2016/07_dec_2016_01_small.jpg",
+      "./img/07_dec_2016/07_dec_2016_02_small.jpg",
+      "./img/07_dec_2016/07_dec_2016_03_small.jpg",
+      "./img/07_dec_2016/07_dec_2016_04_small.jpg",
+      "./img/07_dec_2016/07_dec_2016_05_small.jpg",
+      "./img/07_dec_2016/07_dec_2016_06_small.jpg"
+    ],
+    "albumPath": "JSON/07_dec_2016.json"
+  },
+  {
     "albumDate": "10 sept. 2016",
     "albumName": "Comemorarea eroului aviator Ioan Sava",
     "imgPath": [
