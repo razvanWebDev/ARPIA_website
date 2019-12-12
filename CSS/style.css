@@ -255,6 +255,7 @@ main {
 
 /* Footer */
 footer {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: var(--padding-main);
@@ -311,6 +312,15 @@ footer .social-media {
   align-items: center;
 }
 
+.copyright {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 0.8em;
+}
+
 /* Page title */
 .page-title {
   /* header height(6vh+18px) + visible section */
@@ -346,6 +356,7 @@ footer .social-media {
   justify-content: center;
   bottom: 20px;
   right: 20px;
+  z-index: 10;
   padding: 5px 10px;
   border-radius: 3px;
   background-color: var(--secondary-theme-color);
