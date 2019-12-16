@@ -1676,10 +1676,11 @@ footer .social-media {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0;
   }
 
   .event-description {
-    padding: 0 0 20px;
+    padding: 0;
   }
 
   .event-description h3 {
@@ -1688,6 +1689,7 @@ footer .social-media {
 
   .event img {
     max-width: 90%;
+    margin-top: 20px;
   }
 
   .separator {
@@ -1698,7 +1700,7 @@ footer .social-media {
   /* foto albums page */
   .photo-albums-container {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
+    grid-gap: 50px;
   }
 
   /* foto gallery page */
