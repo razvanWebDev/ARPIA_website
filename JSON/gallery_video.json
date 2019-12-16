@@ -2,9 +2,18 @@
   {
     "videoTitle": "Știre Viatv Cluj | Lansare de carte – Aviația Clujeană",
     "keywords": "stire emisiuni tv emisiune tv",
-    "videoDescription": "",
+    "videoDescription": "Data: 06.12.2019",
     "videoThumbLink": "./img/Video_thumbnails/Stire_ViaclujTV_06_12_2019.jpg",
     "videoSrc": "https://www.youtube.com/embed/0jYW3XNReBE"
+  },
+  {
+    "videoTitle": "Regiunea Obiectiv TVR Cluj | Lansare de carte – Aviația Clujeană",
+    "keywords": "stire emisiuni tv emisiune tv tvr tvr cluj tvrcluj",
+    "videoDescription": "Data: 05.12.2019",
+    "videoThumbLink": "./img/Video_thumbnails/Regiunea_in_Obiectiv_05_dec_2019.jpg",
+    "videoSrc": "https://www.youtube.com/embed/EgAivJzdIP0",
+    "startTime": "start=1897",
+    "stopTime": ""
   },
   {
     "videoTitle": "Măndița. Foșnet de mătase albă",
