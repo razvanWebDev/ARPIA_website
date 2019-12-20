@@ -1,5 +1,18 @@
 [
   {
+    "albumDate": "19 dec. 2019",
+    "albumName": "Donație de Carte \"Aviația Clujeană\"",
+    "imgPath": [
+      "./img/19_dec_2019/19_dec_201901_small.jpg",
+      "./img/19_dec_2019/19_dec_201902_small.jpg",
+      "./img/19_dec_2019/19_dec_201903_small.jpg",
+      "./img/19_dec_2019/19_dec_201904_small.jpg",
+      "./img/19_dec_2019/19_dec_201905_small.jpg",
+      "./img/19_dec_2019/19_dec_201906_small.jpg"
+    ],
+    "albumPath": "JSON/19_dec_2019.json"
+  },
+  {
     "albumDate": "06 dec. 2019",
     "albumName": "Lansare Carte \"Aviația Clujeană\" la Aerportul Avram Iancu",
     "imgPath": [
