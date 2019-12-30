@@ -83,12 +83,11 @@
     "videoSrc": "https://www.youtube.com/embed/G5CdG9wfftc"
   },
   {
-    "videoTitle": "Regiunea în Obiectiv TVR Cluj | Smaranda Brăescu, comemorată la Cluj",
-    "keywords": "emisiuni tv emisiune tv stiri știri presedinte arpia Smaranda Braescu Smaranda Brăescu mandita măndița",
-    "videoDescription": "Data: 01.11.2018",
-    "videoThumbLink": "./img/Video_thumbnails/Regiunea_in_Obiectiv_01_noi_2018.jpg",
-    "videoSrc": "https://www.youtube.com/embed/dFq1B9fyzWA",
-    "stopTime": "end=1893"
+    "videoTitle": "TVR Cluj Știre | Zborul Unirii",
+    "keywords": "emisiuni tv stiri știri",
+    "videoDescription": "Data: 16.11.2018",
+    "videoThumbLink": "./img/Video_thumbnails/Stire_TVRCluj_16.11.2018.jpg",
+    "videoSrc": "https://www.youtube.com/embed/IHsr5sX2GyQ"
   },
   {
     "videoTitle": "Actual Regional TVR Cluj | Inaugurarea  monumentului  dedicat Smarandei Brăescu",
@@ -99,20 +98,28 @@
     "startTime": "start=1082"
   },
   {
+    "videoTitle": "Regiunea în Obiectiv TVR Cluj | Smaranda Brăescu, comemorată la Cluj",
+    "keywords": "emisiuni tv emisiune tv stiri știri presedinte arpia Smaranda Braescu Smaranda Brăescu mandita măndița",
+    "videoDescription": "Data: 01.11.2018",
+    "videoThumbLink": "./img/Video_thumbnails/Regiunea_in_Obiectiv_01_noi_2018.jpg",
+    "videoSrc": "https://www.youtube.com/embed/dFq1B9fyzWA",
+    "stopTime": "end=1893"
+  },
+  {
     "videoTitle": "Regiunea în Obiectiv TVR Cluj | Aviația Română în Războiul de Reîntregire Națională",
     "keywords": "emisiuni tv emisiune tv stiri știri Aviatia Romana in Razboiul de Reintregire Nationala dumitru prunariu iosif rus cosmonaut presedinte arpia",
     "videoDescription": "Data: 18.05.2018",
     "videoThumbLink": "./img/Video_thumbnails/Regiunea_in_Obiectiv_18_mai_2018.jpg",
     "videoSrc": "https://www.youtube.com/embed/KR6LnNfDbMI",
-    "startTime": "start=86",
     "stopTime": "end=1575"
   },
   {
-    "videoTitle": "TVR Cluj Știre | Zborul Unirii",
-    "keywords": "emisiuni tv stiri știri",
-    "videoDescription": "Data: 16.11.2018",
-    "videoThumbLink": "./img/Video_thumbnails/Stire_TVRCluj_16.11.2018.jpg",
-    "videoSrc": "https://www.youtube.com/embed/IHsr5sX2GyQ"
+    "videoTitle": "Regiunea în Obiectiv TVR Cluj | Aviația Română în Războiul de Reîntregire Națională",
+    "keywords": "emisiuni tv emisiune tv stiri știri Aviatia Romana in Razboiul de Reintregire Nationala presedinte arpia",
+    "videoDescription": "Data: 14.05.2018",
+    "videoThumbLink": "./img/Video_thumbnails/Regiunea_in_Obiectiv_14_mai_2018.jpg",
+    "videoSrc": "https://www.youtube.com/embed/IIzDaJfWqRY",
+    "stopTime": "end=1215"
   },
   {
     "videoTitle": "Activitate ARPIA 2018",
