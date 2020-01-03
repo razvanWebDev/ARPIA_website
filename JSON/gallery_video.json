@@ -202,8 +202,15 @@
     "videoDescription": "Data: 08.12.2016",
     "videoThumbLink": "./img/Video_thumbnails/Transilvania_la_zi_08_dec_2016.jpg",
     "videoSrc": "https://www.youtube.com/embed/ZH2MeS3r7oE",
-    "startTime": "start=1975",
-    "stopTime": ""
+    "startTime": "start=1975"
+  },
+  {
+    "videoTitle": "Transilvania la zi TVR Cluj | Smaranda Brăescu, o legendă uitată",
+    "keywords": "stire emisiuni tv emisiune tv tvr tvr cluj tvrcluj smaranda braescu o legenda uitata",
+    "videoDescription": "Data: 19.09.2016",
+    "videoThumbLink": "./img/Video_thumbnails/Transilvania_la_zi_29_sep_2016.jpg",
+    "videoSrc": "https://www.youtube.com/embed/xTjm3clIrOc",
+    "startTime": "start=3070"
   },
   {
     "videoTitle": "Activitate ARPIA 2015",

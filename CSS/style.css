@@ -819,7 +819,7 @@ footer .social-media {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-color: rgba(42, 56, 93, 0.5);
+  background-color: var(--main-theme-color-transparent);
   transition: all 0.3s;
   opacity: 0;
   pointer-events: none;
