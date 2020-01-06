@@ -8,8 +8,7 @@
   --dark-txt-color: #2a385d;
   --link-txt-color: #00628b;
   --gray-txt-color: #3e3f42;
-
-  --padding-main: 50px 10%;
+  --padding-main: 100px 10%;
   --padding-1024px: 50px;
   --padding-768px: 35px;
   --padding-450px: 20px;
@@ -177,7 +176,7 @@ header {
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease-in-out;
-  border-collapse: collapse;
+
   transform: translateY(20px);
   color: var(--light-txt-color);
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.85);
@@ -203,7 +202,7 @@ header {
 }
 
 .dropdown-list li a {
-  padding: 0 40px;
+  padding: 0 50px;
 }
 
 .dropdown a:hover + .dropdown-list,
@@ -1397,6 +1396,10 @@ footer .social-media {
 
 .no-padding-top {
   padding-top: 0;
+}
+
+.padding-top-50 {
+  padding-top: 50px;
 }
 
 /* RESPONSIVE */
