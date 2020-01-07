@@ -1,21 +1,5 @@
 [
   {
-    "videoTitle": "Știre Viatv Cluj | Lansare de carte – Aviația Clujeană",
-    "keywords": "stire emisiuni tv emisiune tv",
-    "videoDescription": "Data: 06.12.2019",
-    "videoThumbLink": "./img/Video_thumbnails/Stire_ViaclujTV_06_12_2019.jpg",
-    "videoSrc": "https://www.youtube.com/embed/0jYW3XNReBE"
-  },
-  {
-    "videoTitle": "Regiunea Obiectiv TVR Cluj | Lansare de carte – Aviația Clujeană",
-    "keywords": "stire emisiuni tv emisiune tv tvr tvr cluj tvrcluj",
-    "videoDescription": "Data: 05.12.2019",
-    "videoThumbLink": "./img/Video_thumbnails/Regiunea_in_Obiectiv_05_dec_2019.jpg",
-    "videoSrc": "https://www.youtube.com/embed/EgAivJzdIP0",
-    "startTime": "start=1897",
-    "stopTime": ""
-  },
-  {
     "videoTitle": "Măndița. Foșnet de mătase albă",
     "keywords": "Smaranda Braescu Smaranda Brăescu film artistic Fosnet de matase alba documentar",
     "videoDescription": "Filmul „Foșnet de mătase albă” albă a fost distins cu Sabia de bronz a Festivalului internațional al filmului militar și istoric din Varșovia.",
@@ -58,6 +42,29 @@
     "videoSrc": "https://www.youtube.com/embed/yF6kr7v8yH4"
   },
   {
+    "videoTitle": "Activitate ARPIA 2018-2019",
+    "keywords": "",
+    "videoDescription": "",
+    "videoThumbLink": "./img/17_mai_2019/17_mai_2019_16.jpg",
+    "videoSrc": "https://www.youtube.com/embed/G5CdG9wfftc"
+  },
+  {
+    "videoTitle": "Știre Viatv Cluj | Lansare de carte – Aviația Clujeană",
+    "keywords": "stire emisiuni tv emisiune tv",
+    "videoDescription": "Data: 06.12.2019",
+    "videoThumbLink": "./img/Video_thumbnails/Stire_ViaclujTV_06_12_2019.jpg",
+    "videoSrc": "https://www.youtube.com/embed/0jYW3XNReBE"
+  },
+  {
+    "videoTitle": "Regiunea Obiectiv TVR Cluj | Lansare de carte – Aviația Clujeană",
+    "keywords": "stire emisiuni tv emisiune tv tvr tvr cluj tvrcluj",
+    "videoDescription": "Data: 05.12.2019",
+    "videoThumbLink": "./img/Video_thumbnails/Regiunea_in_Obiectiv_05_dec_2019.jpg",
+    "videoSrc": "https://www.youtube.com/embed/EgAivJzdIP0",
+    "startTime": "start=1897",
+    "stopTime": ""
+  },
+  {
     "videoTitle": "Regiunea Obiectiv TVR Cluj | 20 Iulie Ziua Aviației Și a Forțelor Aeriene Romane",
     "keywords": "stire emisiuni tv emisiune tv tvr tvr cluj tvrcluj dora popovici expozitie expozitii expoziție expoziții pictura ",
     "videoDescription": "Data: 19.06.2019",
@@ -84,11 +91,11 @@
     "stopTime": "end=2033"
   },
   {
-    "videoTitle": "Activitate ARPIA 2018-2019",
+    "videoTitle": "Activitate ARPIA 2018",
     "keywords": "",
     "videoDescription": "",
-    "videoThumbLink": "./img/17_mai_2019/17_mai_2019_16.jpg",
-    "videoSrc": "https://www.youtube.com/embed/G5CdG9wfftc"
+    "videoThumbLink": "./img/20_noi_2018/20_noi_2018_06.jpg",
+    "videoSrc": "https://www.youtube.com/embed/zLYRQNK2KKQ"
   },
   {
     "videoTitle": "TVR Cluj Știre | Zborul Unirii",
@@ -148,20 +155,6 @@
     "stopTime": "end=1215"
   },
   {
-    "videoTitle": "Activitate ARPIA 2018",
-    "keywords": "",
-    "videoDescription": "",
-    "videoThumbLink": "./img/20_noi_2018/20_noi_2018_06.jpg",
-    "videoSrc": "https://www.youtube.com/embed/zLYRQNK2KKQ"
-  },
-  {
-    "videoTitle": "Lansare film \"Măndița. Foșnet de mătase albă\"",
-    "keywords": "Smaranda Braescu Smaranda Brăescu",
-    "videoDescription": "Lansare film \"Măndița. Foșnet de mătase albă\" la Cinema Maraști, Cluj Napoca. <br> Data: 16.06.2017",
-    "videoThumbLink": "./img/Video_thumbnails/Lansare_Film_cinema_Marasti.jpg",
-    "videoSrc": "https://www.youtube.com/embed/xCV2nZm8puE"
-  },
-  {
     "videoTitle": "Activitate ARPIA iulie 2017 - mai 2018",
     "keywords": "",
     "videoDescription": "",
@@ -176,6 +169,21 @@
     "videoSrc": "https://www.youtube.com/embed/dDpSNXlIP4g",
     "startTime": "start=68",
     "stopTime": "end=940"
+  },
+  {
+    "videoTitle": "Bună dimineața Transilvania | 70 de ani de la moartea Smarandei Brăescu",
+    "keywords": "stire emisiuni tv emisiune tv tvr tvr cluj tvrcluj laurentiu buzenchi presedinte arpia cluj smaranda braescu buna dimineata transilvania",
+    "videoDescription": "Data: 30.01.2018",
+    "videoThumbLink": "./img/Video_thumbnails/Buna_dimineata_Translvania_30_ian_2018.jpg",
+    "videoSrc": "https://www.youtube.com/embed/ZD0FZe-QEfk",
+    "startTime": "start=2306"
+  },
+  {
+    "videoTitle": "Activitate ARPIA 2017",
+    "keywords": "",
+    "videoDescription": "",
+    "videoThumbLink": "./img/Video_thumbnails/Activitate_ARPIA_Cluj_2017.jpg",
+    "videoSrc": "https://www.youtube.com/embed/ppRzW7F0KKo"
   },
   {
     "videoTitle": "Transilvania la zi TVR Cluj | Aurel Vlaicu, pionierul Aviației Românești",
@@ -194,18 +202,18 @@
     "videoSrc": "https://www.youtube.com/embed/Fu_OFPD7uxc"
   },
   {
-    "videoTitle": "Expoziție a Aeronauticii din Transilvania",
-    "keywords": " expoziții expoziție expozitie",
-    "videoDescription": "Expoziție a Aeronauticii din Transilvania vernisată la Cetatea Alba Carolina din Alba Iulia <br> Data: 09.06.2017",
-    "videoThumbLink": "./img/Video_thumbnails/Expozitie_Alba_Iulia_2017.jpg",
-    "videoSrc": "https://www.youtube.com/embed/9V03-e1rP04"
+    "videoTitle": "Lansare film \"Măndița. Foșnet de mătase albă\"",
+    "keywords": "Smaranda Braescu Smaranda Brăescu",
+    "videoDescription": "Data: 16.06.2017 <br> Lansare film \"Măndița. Foșnet de mătase albă\" la Cinema Maraști, Cluj Napoca.",
+    "videoThumbLink": "./img/Video_thumbnails/Lansare_Film_cinema_Marasti.jpg",
+    "videoSrc": "https://www.youtube.com/embed/xCV2nZm8puE"
   },
   {
-    "videoTitle": "Activitate ARPIA 2017",
-    "keywords": "",
-    "videoDescription": "",
-    "videoThumbLink": "./img/Video_thumbnails/Activitate_ARPIA_Cluj_2017.jpg",
-    "videoSrc": "https://www.youtube.com/embed/ppRzW7F0KKo"
+    "videoTitle": "Expoziție a Aeronauticii din Transilvania",
+    "keywords": " expoziții expoziție expozitie",
+    "videoDescription": "Data: 09.06.2017 <br> Expoziție a Aeronauticii din Transilvania vernisată la Cetatea Alba Carolina din Alba Iulia",
+    "videoThumbLink": "./img/Video_thumbnails/Expozitie_Alba_Iulia_2017.jpg",
+    "videoSrc": "https://www.youtube.com/embed/9V03-e1rP04"
   },
   {
     "videoTitle": "Activitate ARPIA 2016",
