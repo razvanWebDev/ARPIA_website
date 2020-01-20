@@ -5,16 +5,16 @@
     "eventDescription": "Invitație de participare a ARPIA-filiala Cluj la <a href=\"https://www.ila-berlin.de/de\" target=\"blank\">ILA Berlin</a> (Innovation and Leadership in Aerospace Berlin) – expoziție de aeronave, demonstrații aeriene 13-17 mai 2020. Invitația lansata de omologul german, parțial sponsorizată de <a href=\"https://www.ila-berlin.de/de\" target=\"blank\">ILA Berlin</a>."
   },
   {
-    "eventName": "Comemorare Smaranda Brăescu",
-    "eventDate": "02 februarie 2020",
-    "eventPosterSmall": "./img/02_nov_2018/02_nov_2018_09_small.jpg",
-    "eventDescription": "Depunere de coroane de flori la monumentul Smarandei Brăescu din Cimitirul Central din Cluj-Napoca, cu sprijinul <a href=\" https://primariaclujnapoca.ro/\" target=\"blank\">Primăriei Municipiului</a>."
-  },
-  {
     "eventName": "Comemorare Traian Dârjan",
     "eventDate": "25 februarie 2020",
     "eventPosterSmall": "./img/events/darjan_small.jpg",
     "eventDescription": "75 de ani de la ridicarea la ceruri a lui <a href=\"https://ro.wikipedia.org/wiki/Traian_D%C3%A2rjan\" target=\"blank\">Traian Dârjan</a>, ceremonial militar si religios: eveniment organizat la aeroclub sau/și in cimitirul Someșeni, cu sprijinul Diviziei 4 Infanterie Gemina, <a href=\"https://www.mitropolia-clujului.ro/ \" target=\"blank\"> Mitropoliei </a> și <a href=\" https://primariaclujnapoca.ro/\" target=\"blank\"> Primariei Municipiului Cluj-Napoca</a>."
+  },
+  {
+    "eventName": "Comemorare Smaranda Brăescu",
+    "eventDate": "02 februarie 2020",
+    "eventPosterSmall": "./img/02_nov_2018/02_nov_2018_09_small.jpg",
+    "eventDescription": "Depunere de coroane de flori la monumentul Smarandei Brăescu din Cimitirul Central din Cluj-Napoca, cu sprijinul <a href=\" https://primariaclujnapoca.ro/\" target=\"blank\">Primăriei Municipiului</a>."
   },
   {
     "eventName": "15 ani de la înființarea ARPIA-filiala Torino",
