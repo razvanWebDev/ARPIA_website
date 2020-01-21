@@ -1130,7 +1130,6 @@ footer .social-media {
 .contact-section textarea,
 .donater-details input,
 .donation input {
-  margin-bottom: 10px;
   width: 100%;
   background-color: transparent;
   color: var(--gray-txt-color);
@@ -1153,8 +1152,10 @@ footer .social-media {
   border-bottom: 1px solid var(--main-theme-color-transparent);
 }
 
-.contact-form-checkbox {
-  width: auto !important;
+.form-checkbox {
+  width: 100%;
+  margin-bottom: 0.6em;
+
 }
 
 .methods_div {
@@ -1232,6 +1233,10 @@ footer .social-media {
   flex-direction: column;
 }
 
+.donater-details h3 {
+  padding-top: 30px;
+}
+
 .donation-amounts {
   display: flex;
   width: 100%;
@@ -1269,9 +1274,18 @@ footer .social-media {
   background-color: var(--secondary-theme-color) !important;
   color: var(--main-theme-color) !important;
 }
+
 .donation-amount.input.current-method {
   background-color: transparent !important;
   margin-bottom: 0;
+}
+
+.netopia {
+  padding-top: 2em;
+}
+
+.netopia img {
+  max-width: 20em;
 }
 
 .donater-details-row input {
