@@ -143,6 +143,19 @@
     "albumPath": "JSON/10_sept_2016.json"
   },
   {
+    "albumDate": "13 mai 2015",
+    "albumName": "Expoziție de fotografie \"Primul român in cosmos\"",
+    "imgPath": [
+      "./img/13_mai_2015/13_mai_2015_01_small.jpg",
+      "./img/13_mai_2015/13_mai_2015_02_small.jpg",
+      "./img/13_mai_2015/13_mai_2015_03_small.jpg",
+      "./img/13_mai_2015/13_mai_2015_04_small.jpg",
+      "./img/13_mai_2015/13_mai_2015_05_small.jpg",
+      "./img/13_mai_2015/13_mai_2015_06_small.jpg"
+    ],
+    "albumPath": "JSON/13_mai_2015.json"
+  },
+  {
     "albumDate": "17 mai 2014",
     "albumName": "Adunarea generală anuală a ARPIA-filiala Cluj",
     "imgPath": [
