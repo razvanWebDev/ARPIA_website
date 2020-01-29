@@ -68,6 +68,11 @@ ul {
   list-style: none;
 }
 
+.circle-list {
+  list-style: circle;
+  padding-left: 2em;
+}
+
 button {
   outline: none;
 }
