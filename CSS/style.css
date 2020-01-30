@@ -1160,7 +1160,6 @@ footer .social-media {
 .form-checkbox {
   width: 100%;
   margin-bottom: 0.6em;
-
 }
 
 .methods_div {
@@ -1377,24 +1376,24 @@ footer .social-media {
 
 /*========================Privacy Policy Page=======================  */
 
-.pivacy-policy-section {
+.privacy-policy-section {
   text-align: left;
 }
 
-.pivacy-policy-section h3 {
+.privacy-policy-section h3 {
   width: 100%;
   text-align: left;
   padding: 40px 0 10px;
 }
 
-.pivacy-policy-section p,
-.pivacy-policy-section ol li {
-  width: 100%;
+.privacy-policy-section p,
+.privacy-policy-section ol li {
+  max-width: 100%;
   text-align: justify;
   padding-bottom: 5px;
 }
 
-.pivacy-policy-section ol {
+.privacy-policy-section ol {
   align-self: flex-start;
   padding-left: 50px;
 }
@@ -1833,6 +1832,12 @@ footer .social-media {
   .form230-btn {
     margin-top: 20px;
   }
+
+  /* privacy policy page */
+  .privacy-policy-section ol {
+    padding-left: 15px;
+  }
+
 }
 
 /* ANIMATIONS */
