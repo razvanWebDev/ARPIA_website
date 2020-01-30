@@ -8,7 +8,7 @@
   --dark-txt-color: #2a385d;
   --link-txt-color: #00628b;
   --gray-txt-color: #3e3f42;
-  --padding-main: 100px 10%;
+  --padding-main: 50px 10%;
   --padding-1024px: 50px;
   --padding-768px: 35px;
   --padding-450px: 20px;
@@ -1386,6 +1386,7 @@ footer .social-media {
   text-align: left;
   padding: 40px 0 10px;
 }
+
 .pivacy-policy-section p,
 .pivacy-policy-section ol li {
   width: 100%;
@@ -1394,6 +1395,7 @@ footer .social-media {
 }
 
 .pivacy-policy-section ol {
+  align-self: flex-start;
   padding-left: 50px;
 }
 
