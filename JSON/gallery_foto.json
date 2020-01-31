@@ -1,5 +1,18 @@
 [
   {
+    "albumDate": "30 ian. 2020",
+    "albumName": "Lansare de Carte \"Aviația Clujeană\" la la Scoala gimnazială \"Ion Agârbiceanu\" Cluj-Napoca",
+    "imgPath": [
+      "./img/30_ian_2020/30_ian_2020_01_small.jpg",
+      "./img/30_ian_2020/30_ian_2020_02_small.jpg",
+      "./img/30_ian_2020/30_ian_2020_03_small.jpg",
+      "./img/30_ian_2020/30_ian_2020_04_small.jpg",
+      "./img/30_ian_2020/30_ian_2020_05_small.jpg",
+      "./img/30_ian_2020/30_ian_2020_06_small.jpg"
+    ],
+    "albumPath": "JSON/30_ian_2020.json"
+  },
+  {
     "albumDate": "19 dec. 2019",
     "albumName": "Donație de Carte \"Aviația Clujeană\"",
     "imgPath": [
