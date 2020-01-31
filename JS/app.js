@@ -521,21 +521,27 @@ window.onload = () => {
   const displayEbooks = jsonEbooks => {
     const ebooks = jsonEbooks.map(ebook => {
       return `<div class="ebook">               
-                <a href="${ebook.downloadLink}" target="_blank">
-                  <div class="ebook-cover">
-                    <img src="${ifItemExists(
-                      ebook.posterSmall
-                    )}" class="ebook-poster">
-                    </div>
-                </a>
-                  <h3>${ifItemExists(ebook.title)}</h3>
-                  <p class="gray-text ebook-author">${ifItemExists(
-                    ebook.author
-                  )}</p>
-                  <p class="gray-text ebook-date">${ifItemExists(
-                    ebook.date
-                  )}</p>
-                  <p class="ebook-about">${ifItemExists(ebook.description)}</p> 
+                <div class="ebook-cover">
+                  <img src="${ifItemExists(
+                    ebook.posterSmall
+                  )}" class="ebook-poster">
+                
+                    <a href="${
+                      ebook.downloadLink
+                    }" target="_blank" class="ebook-download-btn">Descarca</a>
+                </div>
+                <div class="ebook-description">
+                    <h3>${ifItemExists(ebook.title)}</h3>
+                    <p class="gray-text ebook-author">${ifItemExists(
+                      ebook.author
+                    )}</p>
+                    <p class="gray-text ebook-date">${ifItemExists(
+                      ebook.date
+                    )}</p>
+                    <p class="ebook-about">${ifItemExists(
+                      ebook.description
+                    )}</p>
+                  </div>
               </div>`;
     });
     ebooksContainer.innerHTML += ebooks.join("");
