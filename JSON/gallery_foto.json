@@ -1,5 +1,18 @@
 [
   {
+    "albumDate": "02 feb. 2020",
+    "albumName": "Comemorarea Smarandei Brăescu la monunentul închinat eroinei în Cimitirul Central din Cluj-Napoca",
+    "imgPath": [
+      "./img/02_feb_2020/02_feb_2020_01_small.jpg",
+      "./img/02_feb_2020/02_feb_2020_02_small.jpg",
+      "./img/02_feb_2020/02_feb_2020_03_small.jpg",
+      "./img/02_feb_2020/02_feb_2020_04_small.jpg",
+      "./img/02_feb_2020/02_feb_2020_05_small.jpg",
+      "./img/02_feb_2020/02_feb_2020_06_small.jpg"
+    ],
+    "albumPath": "JSON/02_feb_2020.json"
+  },
+  {
     "albumDate": "30 ian. 2020",
     "albumName": "Lansare de Carte \"Aviația Clujeană\" la la Scoala gimnazială \"Ion Agârbiceanu\" Cluj-Napoca",
     "imgPath": [
