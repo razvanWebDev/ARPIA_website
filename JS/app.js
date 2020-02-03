@@ -1,8 +1,5 @@
 // TODOS
-// meta tags and SEO
-// finish and review privacy policy page (see red text)
 // credit card
-// forms validation & back end
 // accessibilty
 
 window.onload = () => {
