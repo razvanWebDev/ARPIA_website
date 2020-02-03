@@ -710,6 +710,7 @@ footer .social-media {
 
 /* ==============================VIDEO GALLERY PAGE========================= */
 
+/* searchbox */
 #search-video-form {
   position: relative;
   transition: all 1s;
@@ -768,19 +769,22 @@ footer .social-media {
   color: var(--main-bg-color);
 }
 
+/* search tags */
 .search-tags {
+  max-width: 100%;
   min-height: 4em;
   font-size: 0.7em;
   text-align: center;
 }
 
 .search-tag {
-  margin: 0 2em;
+  margin: 0 1em;
   cursor: pointer;
   transition: all 0.3s;
 }
 
 .search-tag:hover {
+  text-decoration: underline;
   text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.35);
 }
 
