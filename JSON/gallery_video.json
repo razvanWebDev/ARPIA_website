@@ -255,6 +255,13 @@
     "startTime": "start=3070"
   },
   {
+    "videoTitle": "Trustul de presa al Armatei. Emisiunea “Jurnal militar” difuzată pe TVR Cluj",
+    "keywords": "emisiune tv, emisiuni tv, tv, expozitie sibiu",
+    "videoDescription": "Data: 28.06.2016 <br>Vernisajul expoziției de fotografie și machete de aeronave “Istoria aeronauticii din Transilvania” la Cercul Militar Sibiu, realizată cu sprijinul Academiei Trupelor Terestre și Universitatea “Lucian Blaga” Sibiu.",
+    "videoThumbLink": "./img/Video_thumbnails/Expozitie_Sibiu_28_06_2016.jpg",
+    "videoSrc": "https://www.youtube.com/embed/w3GH3IJYxf8"
+  },
+  {
     "videoTitle": "Activitate ARPIA 2015",
     "keywords": "",
     "videoDescription": "",
@@ -264,7 +271,7 @@
   {
     "videoTitle": "Trustul de presa al Armatei. Emisiunea “Jurnal militar” difuzată pe TVR Cluj",
     "keywords": "emisiune tv, emisiuni tv, tv",
-    "videoDescription": "Data: 17.07.2015 <br> Expoziție de fotografie \"Aviația Română Contemporană\" organizată la Aeroportul Internațional \"Avram Iancu\" din Cluj-Napoca de către A.R.P.I.A. - filiala Cluj ",
+    "videoDescription": "Data: 17.07.2015 <br>Vernisajul expoziției de fotografie \"Aviația Română Contemporană\" organizată la Aeroportul Internațional \"Avram Iancu\" din Cluj-Napoca de către A.R.P.I.A. - filiala Cluj ",
     "videoThumbLink": "./img/Video_thumbnails/Expozitie_Aeroport_Cluj_17_07_2015.jpg",
     "videoSrc": "https://www.youtube.com/embed/YQotesJ3kBI"
   },
