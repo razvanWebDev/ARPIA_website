@@ -283,5 +283,13 @@
     "videoSrc": "https://www.youtube.com/embed/hiHoV0z4oDE",
     "startTime": "",
     "stopTime": ""
+  },
+  {
+    "videoTitle": "Trustul de presa al Armatei. Emisiunea “Jurnal militar” difuzată pe TVR Cluj",
+    "keywords": "emisiune tv, emisiuni tv, tv",
+    "videoDescription": "Adunarea generală de constituire a ARPIA-filiala Cluj din 17 mai 2013.",
+    "videoThumbLink": "./img/Video_thumbnails/Constituire_ARPIA_filiala_cluj.jpg",
+    "videoSrc": "https://www.youtube.com/embed/KJtIsJ6htQk",
+    "stopTime": "end=557"
   }
 ]
