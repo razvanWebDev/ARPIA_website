@@ -129,6 +129,7 @@ header {
 }
 
 #logo h1 {
+  font-size: 1.3em;
   margin-left: 15px;
   color: var(--light-txt-color);
 }
