@@ -27,7 +27,7 @@
   },
   {
     "albumDate": "19 dec. 2019",
-    "albumName": "Donație de Carte \"Aviația Clujeană\"",
+    "albumName": "Donație de Carte \"Aviația Clujeană\" la Biblioteca Județeană “Lucian Blaga” Cluj, Biblioteca Universității și Biblioteca Academiei Cluj-Napoca",
     "imgPath": [
       "./img/19_dec_2019/19_dec_201901_small.jpg",
       "./img/19_dec_2019/19_dec_201902_small.jpg",
@@ -66,7 +66,7 @@
   },
   {
     "albumDate": "17 mai 2019",
-    "albumName": "Expoziție de pictură a Dorei Popovici",
+    "albumName": "Expoziție de pictură a Dorei Popovici vernisată la galeriile Radio Romania Cluj ",
     "imgPath": [
       "./img/17_mai_2019/17_mai_2019_01_small.jpg",
       "./img/17_mai_2019/17_mai_2019_02_small.jpg",
@@ -78,7 +78,7 @@
     "albumPath": "JSON/17_mai_2019.json"
   },
   {
-    "albumDate": "20 noi. 2018",
+    "albumDate": "20 nov. 2018",
     "albumName": "Reeditarea Zborului Marii Uniri pe Câmpia Libertății",
     "imgPath": [
       "./img/20_noi_2018/20_noi_2018_01_small.jpg",
@@ -91,8 +91,8 @@
     "albumPath": "JSON/20_noi_2018.json"
   },
   {
-    "albumDate": "16 noi. 2018",
-    "albumName": "Galeriile Casa Radio Romania Cluj",
+    "albumDate": "16 nov. 2018",
+    "albumName": "Expoziția de fotografie dedicată “Zborului Marii Uniri” la Casa Radio Romania Cluj",
     "imgPath": [
       "./img/16_noi_2018/16_noi_2018_01_small.jpg",
       "./img/16_noi_2018/16_noi_2018_02_small.jpg",
@@ -105,7 +105,7 @@
   },
   {
     "albumDate": "02 nov. 2018",
-    "albumName": "Inaugurarea monumentului închinat Smarandei Brăescu",
+    "albumName": "Inaugurarea monumentului închinat Smarandei Brăescu din Cimitirul central Cluj-Napoca",
     "imgPath": [
       "./img/02_nov_2018/02_nov_2018_01_small.jpg",
       "./img/02_nov_2018/02_nov_2018_02_small.jpg",
@@ -118,7 +118,7 @@
   },
   {
     "albumDate": "26 oct. 2018",
-    "albumName": "Eveniment Miercurea Sibiului",
+    "albumName": "Expunerea cu tema “Zborul Marii Uniri” și donație de carte la biblioteca comunei și a Liceului Industrial Miercurea Sibiului",
     "imgPath": [
       "./img/26_oct_2018/26_oct_2018_01_small.jpg",
       "./img/26_oct_2018/26_oct_2018_02_small.jpg",
@@ -131,7 +131,7 @@
   },
   {
     "albumDate": "21 sept. 2018",
-    "albumName": "Eveniment omagial, in memoriam Paul Pop-Osz-Puk",
+    "albumName": "Eveniment omagial, in memoriam Paul Pop-Osz-Puk pe vârful Curcubata Mică din Munții Apuseni",
     "imgPath": [
       "./img/21_sept_2018/21_sept_2018_01_small.jpg",
       "./img/21_sept_2018/21_sept_2018_02_small.jpg",
@@ -144,7 +144,7 @@
   },
   {
     "albumDate": "07 dec. 2016",
-    "albumName": "Expo la Aerportul Avram Iancu",
+    "albumName": "Expoziția “Istoria industriei aeronauticii române. Priorități românești în aviația mondială” de la Aeroportul Internațional “Avram Iancu” Cluj-Napoca",
     "imgPath": [
       "./img/07_dec_2016/07_dec_2016_01_small.jpg",
       "./img/07_dec_2016/07_dec_2016_02_small.jpg",
@@ -157,7 +157,7 @@
   },
   {
     "albumDate": "10 sept. 2016",
-    "albumName": "Comemorarea eroului aviator Ioan Sava",
+    "albumName": "Comemorarea eroului aviator Ioan Sava la Ghijasa de Sus, com. Alțâna, judetul Sibiu",
     "imgPath": [
       "./img/10_sept_2016/10_sept_2016_01_small.jpg",
       "./img/10_sept_2016/10_sept_2016_02_small.jpg",
@@ -170,7 +170,7 @@
   },
   {
     "albumDate": "13 mai 2015",
-    "albumName": "Expoziție de fotografie \"Primul român in cosmos\"",
+    "albumName": "Expoziție de fotografie \"Primul român in cosmos\" la Universitatea “Babes-Bolyai” Cluj-Napoca",
     "imgPath": [
       "./img/13_mai_2015/13_mai_2015_01_small.jpg",
       "./img/13_mai_2015/13_mai_2015_02_small.jpg",
@@ -183,7 +183,7 @@
   },
   {
     "albumDate": "17 mai 2014",
-    "albumName": "Adunarea generală anuală a ARPIA-filiala Cluj",
+    "albumName": "Expoziție de desen “Zborul un vis frumos” la Biblioteca județeană “Lucian Blaga” Cluj și Adunarea generală anuală a ARPIA-filiala Cluj",
     "imgPath": [
       "./img/17_mai_2014/17_mai_2014_01_small.jpg",
       "./img/17_mai_2014/17_mai_2014_02_small.jpg",
