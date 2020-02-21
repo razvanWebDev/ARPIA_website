@@ -68,9 +68,17 @@ ul {
   list-style: none;
 }
 
+.align-left {
+  text-align: left !important;
+}
+
 .circle-list {
   list-style: circle;
   padding-left: 2em;
+}
+
+.disc-list {
+  list-style: disc;
 }
 
 button {
