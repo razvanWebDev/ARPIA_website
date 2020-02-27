@@ -665,6 +665,9 @@ footer .social-media {
   text-align-last: center;
 }
 
+.gallery-about ul{
+  text-align: center;
+}
 .photo-gallery {
   text-align: center;
   justify-content: center;

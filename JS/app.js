@@ -344,7 +344,6 @@ window.onload = () => {
     );
   };
 
-  // TODO Animation ???
   const showAlbumGallery = () => {
     window.scrollTo(0, 0);
     fotoGalleryMain.style.display = "block";
