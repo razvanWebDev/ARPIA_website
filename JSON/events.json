@@ -5,6 +5,18 @@
     "eventDescription": "Invitație de participare a ARPIA-filiala Cluj la <a href=\"https://www.ila-berlin.de/de\" target=\"blank\">ILA Berlin</a> (Innovation and Leadership in Aerospace Berlin) – expoziție de aeronave, demonstrații aeriene 13-17 mai 2020. Invitația lansata de omologul german, parțial sponsorizată de <a href=\"https://www.ila-berlin.de/de\" target=\"blank\">ILA Berlin</a>."
   },
   {
+    "eventName": "Lansare carte <a href=\"ebooks.html\" target=\"_blank\">Aviația Cujeană</a> la <a href=\"https://www.hcc.ro/\" target=\"_blank\">Colegiul Național Horia, Cloșca și Crișan</a> Alba Iulia",
+    "eventDate": "18 martie 2020",
+    "eventPosterSmall": "./img/events/Afis_HCC_Alba_Iulia_18_03_20_small.jpg",
+    "eventDescription": "Asociația Română pentru Propaganda și Istoria Aeronauticii, filialele Cluj și Alba, cu sprijinul Cercului militar Alba Iulia organizează lansarea cărții <a href=\"ebooks.html\" target=\"_blank\">Aviația Cujeană</a> pe 17 martie la <a href=\"https://www.hcc.ro/\" target=\"_blank\">Colegiul Național Horia, Cloșca și Crișan</a>din Alba Iulia.<br><br> Recenzia cărții va fi făcută de către comandor aviator r. Laurețiu Buzenchi, președinte ARPIA - filiala CLUJ."
+  },
+  {
+    "eventName": "Lansare carte <a href=\"ebooks.html\" target=\"_blank\">Aviația Cujeană</a> la <a href=\"http://www.colmil-mv.ro/\" target=\"_blank\">Colegiul Național Militar Mihai Viteazul</a> Alba Iulia",
+    "eventDate": "17 martie 2020",
+    "eventPosterSmall": "./img/events/Afis_CNMV_Alba_Iulia_17_03_20_small.jpg",
+    "eventDescription": "Asociația Română pentru Propaganda și Istoria Aeronauticii, filialele Cluj și Alba, cu sprijinul Cercului militar Alba Iulia organizează lansarea cărții <a href=\"ebooks.html\" target=\"_blank\">Aviația Cujeană</a> pe 17 martie la <a href=\"http://www.colmil-mv.ro/\" target=\"_blank\">Colegiul Național Militar Mihai Viteazul</a> din Alba Iulia.<br><br> Recenzia cărții va fi făcută de către comandor aviator r. Laurețiu Buzenchi, președinte ARPIA - filiala CLUJ."
+  },
+  {
     "eventName": "Comemorare Traian Dârjan",
     "eventDate": "25 februarie 2020",
     "eventPosterSmall": "./img/events/darjan_small.jpg",
@@ -22,15 +34,15 @@
     "eventDescription": "Invitație de participare la aniversarea a 15 ani de la înființarea ARPIA-filiala Torino."
   },
   {
-    "eventName": "Lansare Carte <strong>Aviația Cujeană</strong>",
+    "eventName": "Lansare Carte <a href=\"ebooks.html\" target=\"_blank\">Aviația Cujeană</a>",
     "eventDate": "6 decembrie 2019",
     "eventDescription": "A doua lansare a cărții va fi de Ziua Mondiala a Aviatiei Civile, pe 6 decembrie 2019, la <a href=\"http://airportcluj.ro/\" target=\"blank\">Aeroportul Internațional Avram Iancu</a> din Cluj-Napoca, insoțită de o expoziție cu fotografiile din carte.",
     "eventPosterSmall": "./img/events/afis_lansare_carte_aeroport_small.jpg"
   },
   {
-    "eventName": "Lansare Carte <strong>Aviația Cujeană</strong>",
+    "eventName": "Lansare Carte <a href=\"ebooks.html\" target=\"_blank\">Aviația Cujeană</a>",
     "eventDate": "5 decembrie 2019",
-    "eventDescription": "Lansarea cărții <strong>Aviația Cujeană</strong> care va avea loc la Sala de spectacole a Casei Radio Romania Cluj.",
+    "eventDescription": "Lansarea cărții <a href=\"ebooks.html\" target=\"_blank\">Aviația Cujeană</a> care va avea loc la Sala de spectacole a Casei Radio Romania Cluj.",
     "eventPosterSmall": "./img/events/afis_lansare_carte_casaradio_small.jpg"
   },
   {
