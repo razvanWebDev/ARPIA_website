@@ -524,7 +524,8 @@ window.onload = () => {
                 
                     <a href="${
                       ebook.downloadLink
-                    }" target="_blank" class="ebook-download-btn">Descarcă</a>
+                    }" target="_blank" class="ebook-download-btn"><i
+                    class="fas fa-download"></i>Descarcă</a>
                 </div>
                 <div class="ebook-description">
                     <h3>${ifItemExists(ebook.title)}</h3>
