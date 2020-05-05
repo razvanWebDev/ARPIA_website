@@ -49,5 +49,11 @@
     "eventName": "Zilele Câmpiei Turzii",
     "eventDate": "16 august 2019",
     "eventDescription": "Participarea la “Zilele Câmpiei Turzii” prin susținerea unei expuneri la Centrul Cultural Municipal, insoțită de o succesiune de imagini marca Mircea Macavei, la simpozionul “Uniforma, o a doua familie” și prezentarea expoziției de pictură a doamnei Dora Popovici, “Cer senin”. ARPIA-Cluj a primit o plachetă de participare."
-  }
+  },
+  {
+    "eventName": "Expoziție \"Istoria Aeronauticii din Transilvania\" la Cercul Militar Sibiu",
+    "eventDate": "28 iunie - 10 iulie 2016",
+    "eventDescription": " Expozanți: Muzeul Naţional al Aviaţiei Române din Bucureşti, Muzeul Militar Naţional Bucureşti, I.A.R. Braşov, Autorii \"Istoriei Aviaţiei Militare Române-100 de ani\", Muzeul Naţional de Istorie al Transilvaniei din Cluj-Napoca, Casa memorială Traian Vuia din Lugoj, Casa memorială Hermann Oberth din Mediaş, Colecţia familiei Sireteanu Bucureşti, Colecţia ing. Traian Tomescu din Braşov, Colecţia Cdor. av.r. Paul Sandachi din Craiova. <br> <a href=\"https://www.amosnews.ro/expozitia-itineranta-istoria-aeronauticii-din-transilvania-2016-06-29\" target=\"_blank\">Articol Amosnews</a>",
+    "eventPosterSmall": "./img/events/expozitia-istoria-aeronauticii-din-transilvania_afis_small.jpg"
+  } 
 ]
