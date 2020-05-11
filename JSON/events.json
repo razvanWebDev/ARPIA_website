@@ -29,14 +29,9 @@
     "eventDescription": "Depunere de coroane de flori la monumentul Smarandei Brăescu din Cimitirul Central din Cluj-Napoca, cu sprijinul <a href=\" https://primariaclujnapoca.ro/\" target=\"blank\">Primăriei Municipiului</a>. Găsiți <a href=\"https://cluj.com/evenimente/comemorarea-smaranda-braescu/\" target=\"_blank\">aici</a> pentru mai multe detalii."
   },
   {
-    "eventName": "15 ani de la înființarea ARPIA-filiala Torino",
-    "eventDate": "27 noiembrie 2019",
-    "eventDescription": "Invitație de participare la aniversarea a 15 ani de la înființarea ARPIA-filiala Torino."
-  },
-  {
     "eventName": "Lansare Carte <a href=\"ebooks.html\" target=\"_blank\">Aviația Cujeană</a>",
     "eventDate": "6 decembrie 2019",
-    "eventDescription": "A doua lansare a cărții va fi de Ziua Mondiala a Aviatiei Civile, pe 6 decembrie 2019, la <a href=\"http://airportcluj.ro/\" target=\"blank\">Aeroportul Internațional Avram Iancu</a> din Cluj-Napoca, insoțită de o expoziție cu fotografiile din carte.",
+    "eventDescription": "A doua lansare a cărții va fi de Ziua Mondiala a Aviatiei Civile, pe 6 decembrie 2019, la <a href=\"http://airportcluj.ro/\" target=\"blank\">Aeroportul Internațional Avram Iancu</a> din Cluj-Napoca, insoțită de o expoziție cu fotografiile din carte. <br><a href=\"https://www.amosnews.ro/ziua-internationala-aviatiei-civile-sarbatorita-la-aeroportul-cluj-napoca-2019-12-08\" target=\"_blank\">Articol Amosnews</a>",
     "eventPosterSmall": "./img/events/afis_lansare_carte_aeroport_small.jpg"
   },
   {
@@ -44,6 +39,11 @@
     "eventDate": "5 decembrie 2019",
     "eventDescription": "Lansarea cărții <a href=\"ebooks.html\" target=\"_blank\">Aviația Cujeană</a> care va avea loc la Sala de spectacole a Casei Radio Romania Cluj. <br> <a href=\"https://www.amosnews.ro/lansare-cu-repetitie-cartii-aviatia-clujeana-2019-12-10\" target=\"_blank\">Articol Amosnews</a>",
     "eventPosterSmall": "./img/events/afis_lansare_carte_casaradio_small.jpg"
+  },
+  {
+    "eventName": "15 ani de la înființarea ARPIA-filiala Torino",
+    "eventDate": "27 noiembrie 2019",
+    "eventDescription": "Invitație de participare la aniversarea a 15 ani de la înființarea ARPIA-filiala Torino."
   },
   {
     "eventName": "Zilele Câmpiei Turzii",
