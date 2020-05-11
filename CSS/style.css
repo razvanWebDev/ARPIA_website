@@ -562,7 +562,7 @@ footer .social-media {
   font-size: var(--subtitle-size);
   font-weight: 400;
   text-align: center;
-  padding-bottom: 18px;
+  padding-bottom: 2.5em;
 }
 
 .event img {
