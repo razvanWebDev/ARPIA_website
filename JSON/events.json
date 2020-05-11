@@ -53,8 +53,14 @@
   {
     "eventName": "Acţiuni de promovare a Aviaţiei Române în judetul Alba",
     "eventDate": "27 - 30 martie 2018",
-    "eventDescription": "Serie de activități la școli și licee din județul Alba, în cadrul programului de promovare a valorilor de talie mondială ale Aviației Române. Acțiunile au loc la Școala gimnazială din comuna Ciugud, Colegiul Național Militar \"Mihai Viteazul\" și Școala Gimnazială \"Avram Iancu\"<br><a href=\"https://www.amosnews.ro/actiuni-de-promovare-aviatiei-romane-judetul-alba-2018-03-30\">Articol Amosnews</a>",
+    "eventDescription": "Serie de activități la școli și licee din județul Alba, în cadrul programului de promovare a valorilor de talie mondială ale Aviației Române. Acțiunile au loc la Școala gimnazială din comuna Ciugud, Colegiul Național Militar \"Mihai Viteazul\" și Școala Gimnazială \"Avram Iancu\"<br><a href=\"https://www.amosnews.ro/actiuni-de-promovare-aviatiei-romane-judetul-alba-2018-03-30\" target=\"_blank\">Articol Amosnews</a>",
     "eventPosterSmall": "./img/events/ciugud-elevii_foarte_atenti_la_expunere_small.jpg"
+  },
+  {
+    "eventName": "Acţiuni de promovare a Aviaţiei Române în judetul Alba",
+    "eventDate": "12 - 15 februarie 2018",
+    "eventDescription": "serie de conferinte de promovare a istoriei Aviatiei Romane si lansarea \"Albumului Aurel Vlaicu\", editat de ARPIA filiala Cluj cu prilejul aniversarii a 135 de ani de la nasterea celui care a proiectat, construit si zburat in Romania primul avion 100% romanesc (mai putin motorul). Actiunile s-au desfasurat la liceul \"Avram Iancu\" si Scoala Generala din Campeni, liceul \"Horia, Closca si Crisan\" din Abrud si liceul \"Corneliu Medrea\" din Zlatna <br><a href=\"https://www.amosnews.ro/actiuni-de-promovare-istoriei-aviatiei-romane-judetul-alba-2018-02-16\" target=\"_blank\">Articol Amosnews</a>",
+    "eventPosterSmall": "./img/events/_small.jpg"
   },
   {
     "eventName": "Simpozion dedicat aniversării a 135 de ani de la naşterea celebrului aviator Aurel Vlaicu",
@@ -63,15 +69,15 @@
     "eventPosterSmall": "./img/events/aniversare-a-135-de-ani-de-la-nastere-aurel-vlaicu-arpia-cluj-17-noiembrie-2017_small.jpg"
   },
   {
+    "eventName": "Lansare film \"Măndița. Foșnet de mătase albă\" la Cinematograful Marasti din Cluj-Napoca",
+    "eventDate": "16 iunie 2017",
+    "eventDescription": "Lansarea documentarului, cu o durată de 52 de minute, conceput ca prima parte a unei unei trilogii dedicate vieții Smarandei Brăescu. <br><a href=\"https://www.amosnews.ro/memento-aeronautic-la-cinematograful-marasti-din-cluj-napoca-2017-06-16\" target=\"_blank\">Articol Amosnews</a>"
+  },
+  {
     "eventName": "Vernisajul expoziției \"Istoria industriei aeronautice române - Priorități românești în aviația mondială\"",
     "eventDate": "07 decembrie 2016",
     "eventDescription": "La <a href=\"http://airportcluj.ro/\" target=\"blank\">Aeroportul Internațional Avram Iancu</a> din Cluj-Napoca în zona de legătură dintre Terminalul Plecări şi cel de Sosiri cu prilejul \"Zilei Internaţionale a Aviatiei Civile\". <br><a href=\"https://www.amosnews.ro/expozitie-dedicata-industriei-aeronautice-romanesti-aeroportul-din-cluj-napoca-2016-12-10\" target=\"_blank\">Articol Amosnews</a>",
     "eventPosterSmall": "./img/events/expozitie-dedicata-industriei-aeronautice-romanesti-1445_400pix_small.jpg"
-  },
-  {
-    "eventName": "Lansare film \"Măndița. Foșnet de mătase albă\" la Cinematograful Marasti din Cluj-Napoca",
-    "eventDate": "16 iunie 2017",
-    "eventDescription": "Lansarea documentarului, cu o durată de 52 de minute, conceput ca prima parte a unei unei trilogii dedicate vieții Smarandei Brăescu. <br><a href=\"https://www.amosnews.ro/memento-aeronautic-la-cinematograful-marasti-din-cluj-napoca-2017-06-16\" target=\"_blank\">Articol Amosnews</a>"
   },
   {
     "eventName": "Expoziție \"Istoria Aeronauticii din Transilvania\" la Cercul Militar Sibiu",
