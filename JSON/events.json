@@ -57,10 +57,16 @@
     "eventPosterSmall": "./img/events/ciugud-elevii_foarte_atenti_la_expunere_small.jpg"
   },
   {
+    "eventName": "Adunarea Generală Anuală a Asociaţiei Române pentru Propaganda şi Istoria Aeronauticii (ARPIA)",
+    "eventDate": "12 aprilie 2018",
+    "eventDescription": "Întâlnirea anuală a membrilor asociației sub genericul „ARPIA pentru toţi şi toţi pentru ARPIA şi Aviaţia Română” la Palatul Cercului Militar Național<br><a href=\"https://www.amosnews.ro/adunarea-generala-anuala-asociatiei-romane-pentru-propaganda-si-istoria-aeronauticii-arpia-2018-04\" target=\"_blank\">Articol Amosnews</a>",
+    "eventPosterSmall": "./img/events/adunarea-generala-anuala-arpia-8891_small.jpg"
+  },
+  {
     "eventName": "Acţiuni de promovare a Aviaţiei Române în judetul Alba",
     "eventDate": "12 - 15 februarie 2018",
     "eventDescription": "Serie de conferințe de promovare a istoriei Aviației Române și lansarea \"Albumului Aurel Vlaicu\", editat de ARPIA filiala Cluj cu prilejul aniversării a 135 de ani de la nașterea celui care a proiectat, construit și zburat în România primul avion 100% romanesc (mai puțin motorul). Acțiunile au loc la liceul \"Avram Iancu\" și Școala Generală din Câmpeni, liceul \"Horia, Cloșca și Crișan\" din Abrud și liceul \"Corneliu Medrea\" din Zlatna <br><a href=\"https://www.amosnews.ro/actiuni-de-promovare-istoriei-aviatiei-romane-judetul-alba-2018-02-16\" target=\"_blank\">Articol Amosnews</a>",
-    "eventPosterSmall": "./img/events/_small.jpg"
+    "eventPosterSmall": "./img/events/liceu-abrud_small.jpg"
   },
   {
     "eventName": "Simpozion dedicat aniversării a 135 de ani de la naşterea celebrului aviator Aurel Vlaicu",
