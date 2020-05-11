@@ -59,7 +59,7 @@
   {
     "eventName": "Acţiuni de promovare a Aviaţiei Române în judetul Alba",
     "eventDate": "12 - 15 februarie 2018",
-    "eventDescription": "serie de conferinte de promovare a istoriei Aviatiei Romane si lansarea \"Albumului Aurel Vlaicu\", editat de ARPIA filiala Cluj cu prilejul aniversarii a 135 de ani de la nasterea celui care a proiectat, construit si zburat in Romania primul avion 100% romanesc (mai putin motorul). Actiunile s-au desfasurat la liceul \"Avram Iancu\" si Scoala Generala din Campeni, liceul \"Horia, Closca si Crisan\" din Abrud si liceul \"Corneliu Medrea\" din Zlatna <br><a href=\"https://www.amosnews.ro/actiuni-de-promovare-istoriei-aviatiei-romane-judetul-alba-2018-02-16\" target=\"_blank\">Articol Amosnews</a>",
+    "eventDescription": "Serie de conferințe de promovare a istoriei Aviației Române și lansarea \"Albumului Aurel Vlaicu\", editat de ARPIA filiala Cluj cu prilejul aniversării a 135 de ani de la nașterea celui care a proiectat, construit și zburat în România primul avion 100% romanesc (mai puțin motorul). Acțiunile au loc la liceul \"Avram Iancu\" și Școala Generală din Câmpeni, liceul \"Horia, Cloșca și Crișan\" din Abrud și liceul \"Corneliu Medrea\" din Zlatna <br><a href=\"https://www.amosnews.ro/actiuni-de-promovare-istoriei-aviatiei-romane-judetul-alba-2018-02-16\" target=\"_blank\">Articol Amosnews</a>",
     "eventPosterSmall": "./img/events/_small.jpg"
   },
   {
@@ -78,6 +78,12 @@
     "eventDate": "07 decembrie 2016",
     "eventDescription": "La <a href=\"http://airportcluj.ro/\" target=\"blank\">Aeroportul Internațional Avram Iancu</a> din Cluj-Napoca în zona de legătură dintre Terminalul Plecări şi cel de Sosiri cu prilejul \"Zilei Internaţionale a Aviatiei Civile\". <br><a href=\"https://www.amosnews.ro/expozitie-dedicata-industriei-aeronautice-romanesti-aeroportul-din-cluj-napoca-2016-12-10\" target=\"_blank\">Articol Amosnews</a>",
     "eventPosterSmall": "./img/events/expozitie-dedicata-industriei-aeronautice-romanesti-1445_400pix_small.jpg"
+  },
+  {
+    "eventName": "Eroul aviator Lt. Ioan Sava, comemorat în comuna natală Alțâna, Sibiu",
+    "eventDate": "10 septembrie 2016",
+    "eventDescription": "Primăria comunei Alţîna împreună cu Instituţia Prefectului Judeţul Sibiu, cu sprijinul ARPIA filiala Cluj organizează în localitatea Ghijasa de Sus, comuna Alţîna, judeţul Sibiu, festivităţile prilejuite de comemorarea eroului aviator Lt. Ioan Sava. <br> Programul cuprinde un ceremonial militar asigurat de Garnizoana Sibiu, slujba de pomenire, depuneri de coroane de flori la mormântul eroului aviator, survol de avioane MIG 21 şi Puma Socat aparţinând Bazei 71 Aeriene de la Câmpia Turzii, lansarea cărţii „Lt.Ioan Sava un aviator transilvănean erou”, a istoricului de aviaţie Tudor Vasile, precum şi schimbarea denumirii Şcolii Gimnaziale din comuna Alţîna în Şcoala Gimnazială „Aviator Ioan Sava” Alţîna.<br> <a href=\"https://www.amosnews.ro/eroul-aviator-lt-ioan-sava-comemorat-comuna-natala-altana-sibiu-2016-09-08\" target=\"_blank\">Articol Amosnews</a>",
+    "eventPosterSmall": "./img/events/avion_breguet_14_in_octombrie_1921_ioan_sava_a_zburat_de_la_bucuresti_la_praga_small.jpg"
   },
   {
     "eventName": "Expoziție \"Istoria Aeronauticii din Transilvania\" la Cercul Militar Sibiu",
