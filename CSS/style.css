@@ -936,9 +936,9 @@ footer .social-media {
   text-align: center;
 }
 
-.current-foto img {
-  max-height: 100%;
-  max-width: 100%;
+.current-foto a img {
+  max-height: calc(100vh - 175px);
+  max-width: 90vw;
   object-fit: contain;
 }
 

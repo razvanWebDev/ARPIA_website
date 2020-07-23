@@ -1,5 +1,18 @@
 [
   {
+    "albumDate": "17 iul. 2020",
+    "albumName": "Vernisajul Expoziției De Fotografie și Machete \"Pionieri ai Aviației Române\"",
+    "imgPath": [
+      "./img/17_iul_2020/17_iul_2020_01_small.jpg",
+      "./img/17_iul_2020/17_iul_2020_02_small.jpg",
+      "./img/17_iul_2020/17_iul_2020_03_small.jpg",
+      "./img/17_iul_2020/17_iul_2020_04_small.jpg",
+      "./img/17_iul_2020/17_iul_2020_05_small.jpg",
+      "./img/17_iul_2020/17_iul_2020_06_small.jpg"
+    ],
+    "albumPath": "JSON/17_iul_2020.json"
+  },
+  {
     "albumDate": "25 feb. 2020",
     "albumName": "Comemorarea a 75 de ani de la ultima decolare a eroului Adj. av. Traian Dârjan.",
     "imgPath": [
@@ -9,7 +22,6 @@
       "./img/25_feb_2020/25_02_2020_04_small.jpg",
       "./img/25_feb_2020/25_02_2020_05_small.jpg",
       "./img/25_feb_2020/25_02_2020_06_small.jpg"
-      
     ],
     "albumPath": "JSON/25_feb_2020.json"
   },
