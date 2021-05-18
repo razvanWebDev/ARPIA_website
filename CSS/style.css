@@ -569,7 +569,7 @@ footer .social-media {
 }
 
 .event img {
-  max-width: 25%;
+  width: 25% !important;
   max-height: 225px;
   object-fit: contain;
   cursor: pointer;
