@@ -1,15 +1,7 @@
-// TODOS
-// credit card
-// accessibilty
-
 window.onload = () => {
   // get current page name
   const currentPath = window.location.pathname;
-  const currentPageName = currentPath
-    .split("/")
-    .pop()
-    .split(".")
-    .shift();
+  const currentPageName = currentPath.split("/").pop().split(".").shift();
   // ==========================DOM ELEMENTS==========================================
   // GLOBAL
   const body = document.querySelector("body");
@@ -17,6 +9,7 @@ window.onload = () => {
   const pageHeader = document.querySelector(".page-header");
   const hamburger = document.querySelector("#hamburger");
   const nav = document.querySelector(".header-menu");
+  const submenuContainers = document.querySelectorAll(".submenu-container");
   const headerBlank = document.querySelector(".header-blank");
   const galleryPageTitle = document.querySelector(".gallery-page-title");
   const upArrow = document.querySelector(".to-top-arrow");
@@ -69,9 +62,13 @@ window.onload = () => {
   const donationAmount = document.querySelectorAll(".donation-amount");
 
   // ============================RUN THE APP========================================
+  // Check if element exists before calling function
+  const elementExists = (element) => {
+    return element != undefined && element != null;
+  };
   // GLOBAL
   // Disable back event and use it for another action
-  const disableBackEvent = action => {
+  const disableBackEvent = (action) => {
     history.replaceState(null, document.title, location.pathname + "#!/dummy");
     history.pushState(null, document.title, location.pathname);
 
@@ -79,7 +76,7 @@ window.onload = () => {
       "popstate",
       () => {
         if (location.hash === "#!/dummy") {
-          setTimeout(function() {
+          setTimeout(function () {
             history.replaceState(null, document.title, location.pathname);
           }, 0);
           action();
@@ -111,7 +108,7 @@ window.onload = () => {
   const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
 
   // Check if item exists
-  const ifItemExists = item => {
+  const ifItemExists = (item) => {
     if (item == undefined || item == null) {
       item = "";
     }
@@ -141,12 +138,24 @@ window.onload = () => {
     hamburger.classList.toggle("toggle-burger");
   };
 
+  const showSumenu = () => {
+    submenuContainers.forEach((submenuContainer) => {
+      const submenu = submenuContainer.querySelector(".submenu");
+      submenuContainer.addEventListener("mouseover", () => {
+        submenu.classList.add("show-sumenu");
+      });
+      submenuContainer.addEventListener("mouseout", () => {
+        submenu.classList.remove("show-sumenu");
+      });
+    });
+  };
+
   // AJAX REQUESTS ======================================================
 
   // Load foto albums & video gallery
   const loadGalleryItems = () => {
     const xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
+    xhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
         const albums = JSON.parse(xhttp.responseText);
         const videos = JSON.parse(xhttp.responseText);
@@ -156,7 +165,13 @@ window.onload = () => {
         if (window.location.pathname.includes("gallery_foto.html")) {
           displayAlbums(albums);
         }
-        if (window.location.pathname.includes("gallery_video.html")) {
+        if (window.location.pathname.includes("documentaries.html")) {
+          displayVideos(videos);
+        }
+        if (window.location.pathname.includes("news-video.html")) {
+          displayVideos(videos);
+        }
+        if (window.location.pathname.includes("radio.html")) {
           displayVideos(videos);
         }
         if (window.location.pathname.includes("events.html")) {
@@ -172,9 +187,9 @@ window.onload = () => {
   };
 
   //Load fotos for each album
-  const loadFotos = path => {
+  const loadFotos = (path) => {
     const xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
+    xhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
         const fotos = JSON.parse(xhttp.responseText);
         showAlbumGallery();
@@ -219,12 +234,12 @@ window.onload = () => {
   const scrollPage = () =>
     window.scroll({
       top: window.innerHeight,
-      behavior: "smooth"
+      behavior: "smooth",
     });
 
   //===========================EVENTS PAGE==============================================================
-  const displayEvents = arpiaEvents => {
-    const events = arpiaEvents.map(event => {
+  const displayEvents = (arpiaEvents) => {
+    const events = arpiaEvents.map((event) => {
       return `<div class="event">
                         <div class="event-description">
                             <h3>${ifItemExists(event.eventName)}<br>
@@ -243,8 +258,8 @@ window.onload = () => {
 
   const showEventsModal = () => {
     const eventPics = document.querySelectorAll(".event-poster");
-    eventPics.forEach(pic =>
-      pic.addEventListener("click", function() {
+    eventPics.forEach((pic) =>
+      pic.addEventListener("click", function () {
         currentPicSrc = this.src.replace("_small", "");
         currentPicLink.href = currentPicSrc;
         currentPic.src = currentPicSrc;
@@ -255,8 +270,8 @@ window.onload = () => {
 
   // VIDEO GALLERY PAGE ==================================================================================
   // Display video gallery items
-  const displayVideos = videos => {
-    const galleryItems = videos.map(video => {
+  const displayVideos = (videos) => {
+    const galleryItems = videos.map((video) => {
       return `<div class="video-gallery-item">
                 <div class="gallery-pic" style="background-image: url(${
                   video.videoThumbLink
@@ -282,9 +297,9 @@ window.onload = () => {
     playCurrentVideo();
   };
 
-  const dosearch = value => {
+  const dosearch = (value) => {
     value = value.toLowerCase();
-    const filteredVideos = globalvideos.filter(video => {
+    const filteredVideos = globalvideos.filter((video) => {
       return (
         video.videoTitle.toLowerCase().includes(value) ||
         video.videoDescription.toLowerCase().includes(value) ||
@@ -296,8 +311,8 @@ window.onload = () => {
   // Open modal and play current video
   const playCurrentVideo = () => {
     const playVideoBtns = document.querySelectorAll(".playVideo");
-    playVideoBtns.forEach(button =>
-      button.addEventListener("click", function() {
+    playVideoBtns.forEach((button) =>
+      button.addEventListener("click", function () {
         currentVideo.src = this.getAttribute("data-path");
         showVideoModal();
       })
@@ -317,10 +332,10 @@ window.onload = () => {
 
   // FOTO GALLERY PAGE ====================================================================
   //Display foto albums
-  const displayAlbums = albums => {
+  const displayAlbums = (albums) => {
     //display foto albums
-    const galleryItems = albums.map(album => {
-      const albumPictures = album.imgPath.map(thumbnail => {
+    const galleryItems = albums.map((album) => {
+      const albumPictures = album.imgPath.map((thumbnail) => {
         return `<img src=${thumbnail} class=album-thumbnails>`;
       });
       return ` <div class="foto-album" data-path="${album.albumPath}">
@@ -336,8 +351,8 @@ window.onload = () => {
     fotoAlbums.innerHTML = galleryItems.join("");
 
     const galleryAlbums = document.querySelectorAll(".foto-album");
-    galleryAlbums.forEach(album =>
-      album.addEventListener("click", function() {
+    galleryAlbums.forEach((album) =>
+      album.addEventListener("click", function () {
         const galeryPath = album.getAttribute("data-path");
         loadFotos(galeryPath);
       })
@@ -357,7 +372,7 @@ window.onload = () => {
   };
 
   // Display current album gallery
-  const displayFotos = fotos => {
+  const displayFotos = (fotos) => {
     // get gallery title & date
     galleryPageTitle.innerHTML = `${ifItemExists(
       fotos[0].albumName
@@ -369,9 +384,9 @@ window.onload = () => {
 
     //display foto gallery
     const galleryFotos = fotos.filter(
-      foto => foto.imgPath != undefined || foto.imgPath != ""
+      (foto) => foto.imgPath != undefined || foto.imgPath != ""
     );
-    const galleryItems = galleryFotos.map(foto => {
+    const galleryItems = galleryFotos.map((foto) => {
       return `<div class="photo-gallery-item">
                         <div class="gallery-pic" style="background-image: url(${
                           foto.imgPath
@@ -383,7 +398,7 @@ window.onload = () => {
     fotoGallery.innerHTML = galleryItems.join("");
 
     //display gallery-modal thumbnails
-    const modalThumbnails = fotos.map(foto => {
+    const modalThumbnails = fotos.map((foto) => {
       return `<img src="${foto.imgPath}" data-path="${
         foto.imgPath
       }"  data-fotoDescription="${ifItemExists(
@@ -404,7 +419,7 @@ window.onload = () => {
     currentImg();
   };
 
-  const hideGalleryModal = event => {
+  const hideGalleryModal = (event) => {
     body.style.overflow = "auto";
     modal.classList.remove("show");
   };
@@ -412,9 +427,9 @@ window.onload = () => {
   // select current foto on modal thumbnails click
   const currentImg = () => {
     const thumbs = document.querySelectorAll(".gallery-slider img");
-    thumbs.forEach(thumb => {
+    thumbs.forEach((thumb) => {
       thumb.addEventListener("click", () => {
-        thumbs.forEach(thumb =>
+        thumbs.forEach((thumb) =>
           thumb.classList.remove("current-slide-thumbnail")
         );
         // set modal current foto
@@ -441,7 +456,7 @@ window.onload = () => {
     const galleryPics = document.querySelectorAll(".gallery-pic");
     const thumbs = document.querySelectorAll(".gallery-slider img");
 
-    galleryPics.forEach(pic => {
+    galleryPics.forEach((pic) => {
       pic.addEventListener("click", () => {
         const imgPath = pic.getAttribute("data-path");
         // foto description
@@ -462,7 +477,7 @@ window.onload = () => {
 
   // get current thumbnail on modal open
   const getCurrentThumbnail = (imgPath, thumbs) => {
-    thumbs.forEach(thumb => {
+    thumbs.forEach((thumb) => {
       thumb.classList.remove("current-slide-thumbnail");
     });
     const currentThumb = document.querySelector(
@@ -485,7 +500,7 @@ window.onload = () => {
     // hide slider right arrow is scroll ends
     //get thumbs width + margins
     let thumbsWidth = 0;
-    thumbs.forEach(thumb => (thumbsWidth += thumb.offsetWidth + 6));
+    thumbs.forEach((thumb) => (thumbsWidth += thumb.offsetWidth + 6));
     if (
       thumbsWidth - gallerySlider.offsetWidth - gallerySlider.scrollLeft <
       10
@@ -501,7 +516,7 @@ window.onload = () => {
     gallerySlider.scrollBy({
       top: 0,
       left: gallerySlider.offsetWidth / 4,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
@@ -509,13 +524,13 @@ window.onload = () => {
     gallerySlider.scrollBy({
       top: 0,
       left: -gallerySlider.offsetWidth / 4,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
   // ============================EBOOKS PAGE ============================
-  const displayEbooks = jsonEbooks => {
-    const ebooks = jsonEbooks.map(ebook => {
+  const displayEbooks = (jsonEbooks) => {
+    const ebooks = jsonEbooks.map((ebook) => {
       return `<div class="ebook">               
                 <div class="ebook-cover">
                   <img src="${ifItemExists(
@@ -546,7 +561,8 @@ window.onload = () => {
 
   // ================CONTACT PAGE ===================================
   function validateEmail(email) {
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    var re =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
   }
 
@@ -568,18 +584,18 @@ window.onload = () => {
 
   function validateContactForm(event) {
     // check required inputs
-    reuiredFields.forEach(field => {
+    reuiredFields.forEach((field) => {
       validateFormInput(field.value == "", field);
     });
-    reuiredFields.forEach(field => {
-      field.addEventListener("input", function() {
+    reuiredFields.forEach((field) => {
+      field.addEventListener("input", function () {
         validateFormInput(field.value == "", field);
       });
     });
 
     // validate email
     validateFormInput(validateEmail(email.value) == false, email);
-    email.addEventListener("input", function() {
+    email.addEventListener("input", function () {
       validateFormInput(validateEmail(email.value) == false, email);
     });
 
@@ -593,10 +609,10 @@ window.onload = () => {
     });
   }
 
-  donationMethods.forEach(method => {
-    method.addEventListener("click", function() {
-      methodDivs.forEach(div => (div.style.display = "none"));
-      donationMethods.forEach(method =>
+  donationMethods.forEach((method) => {
+    method.addEventListener("click", function () {
+      methodDivs.forEach((div) => (div.style.display = "none"));
+      donationMethods.forEach((method) =>
         method.classList.remove("current-method")
       );
       this.classList.add("current-method");
@@ -605,9 +621,9 @@ window.onload = () => {
     });
   });
 
-  donationAmount.forEach(amount =>
-    amount.addEventListener("click", function() {
-      donationAmount.forEach(item => item.classList.remove("current-method"));
+  donationAmount.forEach((amount) =>
+    amount.addEventListener("click", function () {
+      donationAmount.forEach((item) => item.classList.remove("current-method"));
       this.classList.add("current-method");
     })
   );
@@ -618,6 +634,10 @@ window.onload = () => {
   hamburger.addEventListener("click", navToggle);
   //hide nav on tap
   headerBlank.addEventListener("click", navToggle);
+
+  if (elementExists(submenuContainers)) {
+    showSumenu();
+  }
   //scroll page to top
   window.addEventListener("scroll", () => showItem(upArrow, 300));
   // scroll page to top
@@ -658,21 +678,50 @@ window.onload = () => {
     slideRight.addEventListener("click", moveSlideRight);
     slideLeft.addEventListener("click", moveSlideLeft);
   }
-  if (window.location.pathname.includes("gallery_video")) {
+  if (window.location.pathname.includes("documentaries")) {
     videoGalleryModal.addEventListener("click", hideVideoModal);
 
     searchBox.addEventListener("input", () => dosearch(searchBox.value));
-    searchTags.forEach(searchTag => {
-      searchTag.addEventListener("click", function() {
+    searchTags.forEach((searchTag) => {
+      searchTag.addEventListener("click", function () {
         const searchTagValue = this.innerHTML.substring(1);
         dosearch(searchTagValue);
       });
     });
 
-    allMovies.addEventListener("click", function() {
+    allMovies.addEventListener("click", function () {
       displayVideos(window.globalvideos);
     });
   }
+
+  if (window.location.pathname.includes("news-video")) {
+    videoGalleryModal.addEventListener("click", hideVideoModal);
+    searchBox.addEventListener("input", () => dosearch(searchBox.value));
+    searchTags.forEach((searchTag) => {
+      searchTag.addEventListener("click", function () {
+        const searchTagValue = this.innerHTML.substring(1);
+        dosearch(searchTagValue);
+      });
+    });
+    allMovies.addEventListener("click", function () {
+      displayVideos(window.globalvideos);
+    });
+  }
+
+  if (window.location.pathname.includes("radio")) {
+    videoGalleryModal.addEventListener("click", hideVideoModal);
+    searchBox.addEventListener("input", () => dosearch(searchBox.value));
+    searchTags.forEach((searchTag) => {
+      searchTag.addEventListener("click", function () {
+        const searchTagValue = this.innerHTML.substring(1);
+        dosearch(searchTagValue);
+      });
+    });
+    allMovies.addEventListener("click", function () {
+      displayVideos(window.globalvideos);
+    });
+  }
+
   // CONTACT PAGE
   if (window.location.pathname.includes("contact.html")) {
     scrollDown.addEventListener("click", scrollPage);
@@ -683,7 +732,9 @@ window.onload = () => {
   // COMMON
   if (
     window.location.pathname.includes("gallery_foto.html") ||
-    window.location.pathname.includes("gallery_video.html") ||
+    window.location.pathname.includes("documentaries.html") ||
+    window.location.pathname.includes("news-video.html") ||
+    window.location.pathname.includes("radio.html") ||
     window.location.pathname.includes("events.html") ||
     window.location.pathname.includes("ebooks.html")
   ) {
@@ -693,7 +744,7 @@ window.onload = () => {
     window.location.pathname.includes("gallery_foto.html") ||
     window.location.pathname.includes("events.html")
   ) {
-    modal.addEventListener("click", function() {
+    modal.addEventListener("click", function () {
       if (!event.target.classList.contains("modal-child")) {
         hideGalleryModal();
       }
