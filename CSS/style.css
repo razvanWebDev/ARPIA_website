@@ -603,7 +603,7 @@ footer .social-media {
 }
 
 .event-description {
-  text-align: justify;
+  text-align: center;
   text-align-last: center;
   padding: 0 30px;
 }
@@ -621,6 +621,16 @@ footer .social-media {
 
 .event p {
   padding-top: 2.5em;
+}
+
+.event-description ul,
+.event-description ol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.event-description ul {
+  list-style: disc;
 }
 
 .event img {
@@ -1108,7 +1118,7 @@ footer .social-media {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 500px;
+  width: 8em;
   height: inherit;
   margin-right: 2em;
 }
