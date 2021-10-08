@@ -549,18 +549,21 @@ footer .social-media {
 
 /* Background images */
 .slide:first-child {
+  background: url("../img/medalie_fata_verso.png") no-repeat center/contain;
+}
+.slide:nth-child(2) {
   background: url("../img/landing-page1.jpg") no-repeat center/cover;
   background-position-y: 70%;
 }
-.slide:nth-child(2) {
+.slide:nth-child(3) {
   background: url("../img/landing-page2.jpg") no-repeat center/cover;
   background-position-y: 30%;
 }
-.slide:nth-child(3) {
+.slide:nth-child(4) {
   background: url("../img/landing-page3.jpg") no-repeat center/cover;
   background-position-y: 35%;
 }
-.slide:nth-child(4) {
+.slide:nth-child(5) {
   background: url("../img/landing-page4.jpg") no-repeat center/cover;
   background-position-y: 40%;
 }
