@@ -627,12 +627,14 @@ footer .social-media {
 }
 
 .event-description ul,
-.event-description ol {
+.event-description ol,
+.gallery-details ul {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.event-description ul {
+.event-description ul,
+.gallery-details ul {
   list-style: disc;
 }
 
