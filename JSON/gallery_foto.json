@@ -1,5 +1,31 @@
 [
   {
+    "albumDate": "07 dec. 2021",
+    "albumName": "Eveniment aniversar Smaranda Baescu la Aeroportul Cluj",
+    "imgPath": [
+      "./img/07_dec_2021/07_dec_2021_01_small.jpg",
+      "./img/07_dec_2021/07_dec_2021_02_small.jpg",
+      "./img/07_dec_2021/07_dec_2021_03_small.jpg",
+      "./img/07_dec_2021/07_dec_2021_04_small.jpg",
+      "./img/07_dec_2021/07_dec_2021_05_small.jpg",
+      "./img/07_dec_2021/07_dec_2021_06_small.jpg"
+    ],
+    "albumPath": "JSON/07_dec_2021.json"
+  },
+  {
+    "albumDate": "29 oct. 2021",
+    "albumName": "Aniversare “Smaranda Brăescu” la UBB Cluj-Napoca",
+    "imgPath": [
+      "./img/29_oct_2021/29_oct_2021_01_small.jpg",
+      "./img/29_oct_2021/29_oct_2021_02_small.jpg",
+      "./img/29_oct_2021/29_oct_2021_03_small.jpg",
+      "./img/29_oct_2021/29_oct_2021_04_small.jpg",
+      "./img/29_oct_2021/29_oct_2021_05_small.jpg",
+      "./img/29_oct_2021/29_oct_2021_06_small.jpg"
+    ],
+    "albumPath": "JSON/29_oct_2021.json"
+  },
+  {
     "albumDate": "16 sep. 2021",
     "albumName": "Eveniment dedicat Smarandei Brăescu la Constanța",
     "imgPath": [
