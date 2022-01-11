@@ -1,5 +1,18 @@
 [
   {
+    "albumDate": "09-11 dec. 2021",
+    "albumName": "Expunere cu tema „Smaranda Braescu în context national și international” la Conferinta Internationala AFASES 2021",
+    "imgPath": [
+      "./img/09_11_dec_2021/09_11_dec_2021_01_small.jpg",
+      "./img/09_11_dec_2021/09_11_dec_2021_02_small.jpg",
+      "./img/09_11_dec_2021/09_11_dec_2021_03_small.jpg",
+      "./img/09_11_dec_2021/09_11_dec_2021_04_small.jpg",
+      "./img/09_11_dec_2021/09_11_dec_2021_05_small.jpg",
+      "./img/09_11_dec_2021/09_11_dec_2021_06_small.jpg"
+    ],
+    "albumPath": "JSON/09_11_dec_2021.json"
+  },
+  {
     "albumDate": "07 dec. 2021",
     "albumName": "Eveniment aniversar Smaranda Baescu la Aeroportul Cluj",
     "imgPath": [
