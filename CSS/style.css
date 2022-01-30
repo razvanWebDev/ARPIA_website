@@ -1281,7 +1281,9 @@ footer .social-media {
 
 .contact-section button,
 .form230-btn {
-  padding: 10px 75px;
+  padding: 10px;
+  min-width: 200px;
+  margin: 0 10px;
   background-color: var(--main-theme-color);
   color: var(--secondary-theme-color);
   border: none;
