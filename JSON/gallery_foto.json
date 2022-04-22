@@ -1,5 +1,70 @@
 [
   {
+    "albumDate": "mar.-apr. 2022",
+    "albumName": "2022 martie-aprilie ÎNTÂLNIRI CU PERSONALITĂȚI",
+    "imgPath": [
+      "./img/mar_apr_2022/mar_apr_2022_01_small.jpg",
+      "./img/mar_apr_2022/mar_apr_2022_02_small.jpg",
+      "./img/mar_apr_2022/mar_apr_2022_03_small.jpg",
+      "./img/mar_apr_2022/mar_apr_2022_04_small.jpg",
+      "./img/mar_apr_2022/mar_apr_2022_05_small.jpg",
+      "./img/mar_apr_2022/mar_apr_2022_06_small.jpg"
+    ],
+    "albumPath": "JSON/mar_apr_2022.json"
+  },
+  {
+    "albumDate": "09 apr. 2022",
+    "albumName": "Colegiul Național militar de aviație Mihai Viteazu din Alba Iulia",
+    "imgPath": [
+      "./img/09_apr_2022/09_apr_2022_01_small.jpg",
+      "./img/09_apr_2022/09_apr_2022_02_small.jpg",
+      "./img/09_apr_2022/09_apr_2022_03_small.jpg",
+      "./img/09_apr_2022/09_apr_2022_04_small.jpg",
+      "./img/09_apr_2022/09_apr_2022_05_small.jpg",
+      "./img/09_apr_2022/09_apr_2022_06_small.jpg"
+    ],
+    "albumPath": "JSON/09_apr_2022.json"
+  },
+  {
+    "albumDate": "08 apr. 2022",
+    "albumName": "Colegiul Național Horea Cloșca și Crișan din Alba Iulia",
+    "imgPath": [
+      "./img/08_apr_2022/08_apr_2022_01_small.jpg",
+      "./img/08_apr_2022/08_apr_2022_02_small.jpg",
+      "./img/08_apr_2022/08_apr_2022_03_small.jpg",
+      "./img/08_apr_2022/08_apr_2022_04_small.jpg",
+      "./img/08_apr_2022/08_apr_2022_05_small.jpg",
+      "./img/08_apr_2022/08_apr_2022_06_small.jpg"
+    ],
+    "albumPath": "JSON/08_apr_2022.json"
+  },
+  {
+    "albumDate": "07 apr. 2022",
+    "albumName": "Școala Gimnazială SMART din Ciugud, Jud. Alba",
+    "imgPath": [
+      "./img/07_apr_2022/07_apr_2022_01_small.jpg",
+      "./img/07_apr_2022/07_apr_2022_02_small.jpg",
+      "./img/07_apr_2022/07_apr_2022_03_small.jpg",
+      "./img/07_apr_2022/07_apr_2022_04_small.jpg",
+      "./img/07_apr_2022/07_apr_2022_05_small.jpg",
+      "./img/07_apr_2022/07_apr_2022_06_small.jpg"
+    ],
+    "albumPath": "JSON/07_apr_2022.json"
+  },
+  {
+    "albumDate": "30 mar. 2022",
+    "albumName": "București, Adunare generală ARPIA",
+    "imgPath": [
+      "./img/30_mar_2022/30_mar_2022_01_small.jpg",
+      "./img/30_mar_2022/30_mar_2022_02_small.jpg",
+      "./img/30_mar_2022/30_mar_2022_03_small.jpg",
+      "./img/30_mar_2022/30_mar_2022_04_small.jpg",
+      "./img/30_mar_2022/30_mar_2022_05_small.jpg",
+      "./img/30_mar_2022/30_mar_2022_06_small.jpg"
+    ],
+    "albumPath": "JSON/30_mar_2022.json"
+  },
+  {
     "albumDate": "09-11 dec. 2021",
     "albumName": "Expunere cu tema „Smaranda Braescu în context national și international” la Conferinta Internationala AFASES 2021",
     "imgPath": [
