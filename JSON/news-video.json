@@ -1,7 +1,15 @@
 [
   {
+    "videoTitle": "2022 – ANUL \"SMARANDA BRĂESCU\"",
+    "keywords": "Emisiuni TV, record mondial, salt cu parasuta, aeronautica",
+    "videoDescription": "SURSA: Prim-plan Obiectiv TVR Cluj din 06 mai 2022",
+    "videoThumbLink": "./img/Video_thumbnails/prim_plan_obiectiv_06_mai_2022.jpg",
+    "videoSrc": "https://www.youtube.com/embed/WoQAyBwAjrQ",
+    "stopTime": "end=1283"
+  },
+  {
     "videoTitle": "Interviu Alba Carolina TV - 11 apr. 2022",
-    "keywords": "Emisiuni Alba, Stiri Alba, Live Alba Iulia",
+    "keywords": "Emisiuni TV, Stiri Alba, Live Alba Iulia",
     "videoDescription": "",
     "videoThumbLink": "./img/Video_thumbnails/Interviu_Alba_Carolina_TV.jpg",
     "videoSrc": "https://www.youtube.com/embed/EMc8f5LUU-Y"
