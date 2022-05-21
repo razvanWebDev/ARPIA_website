@@ -13,6 +13,19 @@
     "albumPath": "JSON/mar_apr_2022.json"
   },
   {
+    "albumDate": "18 apr. 2022",
+    "albumName": "Eveniment organizat de către Departamentul pentru politică de apărare, planificare și relații internaționale și Institutul pentru studii politice de apărare și istorie militară",
+    "imgPath": [
+      "./img/18_apr_2022/18_apr_2022_01_small.jpg",
+      "./img/18_apr_2022/18_apr_2022_02_small.jpg",
+      "./img/18_apr_2022/18_apr_2022_03_small.jpg",
+      "./img/18_apr_2022/18_apr_2022_04_small.jpg",
+      "./img/18_apr_2022/18_apr_2022_05_small.jpg",
+      "./img/18_apr_2022/18_apr_2022_06_small.jpg"
+    ],
+    "albumPath": "JSON/18_apr_2022.json"
+  },
+  {
     "albumDate": "09 apr. 2022",
     "albumName": "Colegiul Național militar de aviație Mihai Viteazu din Alba Iulia",
     "imgPath": [
