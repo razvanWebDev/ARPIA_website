@@ -1,20 +1,41 @@
 [
   {
-    "videoTitle": "Măndița. Foșnet de mătase albă",
+    "videoTitle": "Măndița partea I. Foșnet de mătase albă (subtitrare engleză)",
+    "keywords": "Smaranda Braescu Smaranda Brăescu film artistic Fosnet de matase alba documentar, subtitrare engleza",
+    "videoDescription": "Filmul „Foșnet de mătase albă” albă a fost distins cu Sabia de bronz a Festivalului internațional al filmului militar și istoric din Varșovia. Realizat de Studioul cinematografic al Armatei",
+    "videoThumbLink": "./img/Video_thumbnails/Mandita_Fosnet_de_matase_alba.jpg",
+    "videoSrc": "https://www.youtube.com/embed/69j0_fmhqUw"
+  },
+  {
+    "videoTitle": "Măndița  partea II. Nu mă voi întoarce niciodată din drum (subtitrare engleză)",
+    "keywords": "Smaranda Braescu Smaranda Brăescu film artistic Nu ma voi intoarce niciodata din drum documentar, subtitrare engleza",
+    "videoDescription": "Film dedicat activității de pilot a Smarandei Brăescu, realizat de Studioul cinematografic al Armatei",
+    "videoThumbLink": "./img/Video_thumbnails/Smaranda_Braescu_nu_ma_voi_intoarce.jpg",
+    "videoSrc": "https://www.youtube.com/embed/EAYF5ZI1g7U"
+  },
+  {
+    "videoTitle": "Măndița  partea III. Prigoana (subtitrare engleză)",
+    "keywords": "Smaranda Braescu Smaranda Brăescu film artistic Prigoana documentar, subtitrare engleza",
+    "videoDescription": "Ultima parte din trilogia dedicată activității de pilot a Smarandei Brăescu, realizat de Studioul cinematografic al Armatei",
+    "videoThumbLink": "./img/Video_thumbnails/Smaranda_Braescu_Prigoana.jpg",
+    "videoSrc": "https://www.youtube.com/embed/kP5A0rLFPG0"
+  },
+  {
+    "videoTitle": "Măndița partea I. Foșnet de mătase albă",
     "keywords": "Smaranda Braescu Smaranda Brăescu film artistic Fosnet de matase alba documentar",
     "videoDescription": "Filmul „Foșnet de mătase albă” albă a fost distins cu Sabia de bronz a Festivalului internațional al filmului militar și istoric din Varșovia. Realizat de Studioul cinematografic al Armatei",
     "videoThumbLink": "./img/Video_thumbnails/Mandita_Fosnet_de_matase_alba.jpg",
     "videoSrc": "https://www.youtube.com/embed/jatAOC1VGRw"
   },
   {
-    "videoTitle": "Măndița. Nu mă voi întoarce niciodată din drum",
+    "videoTitle": "Măndița partea II. Nu mă voi întoarce niciodată din drum",
     "keywords": "Smaranda Braescu Smaranda Brăescu film artistic Nu ma voi intoarce niciodata din drum documentar",
     "videoDescription": "Film dedicat activității de pilot a Smarandei Brăescu, realizat de Studioul cinematografic al Armatei",
     "videoThumbLink": "./img/Video_thumbnails/Smaranda_Braescu_nu_ma_voi_intoarce.jpg",
     "videoSrc": "https://www.youtube.com/embed/f3FvQh-myRY"
   },
   {
-    "videoTitle": "Măndița. Prigoana",
+    "videoTitle": "Măndița  partea III. Prigoana",
     "keywords": "Smaranda Braescu Smaranda Brăescu film artistic Prigoana documentar",
     "videoDescription": "Ultima parte din trilogia dedicată activității de pilot a Smarandei Brăescu, realizat de Studioul cinematografic al Armatei",
     "videoThumbLink": "./img/Video_thumbnails/Smaranda_Braescu_Prigoana.jpg",

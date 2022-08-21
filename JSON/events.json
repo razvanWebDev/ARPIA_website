@@ -1,22 +1,28 @@
 [
   {
+    "eventName": "Sâmbătă 3 septembrie 2022, ora 10.00 vă invităm la Aeroportul Băneasa la un regal aeronautic BIAS!",
+    "eventDate": "03 septembrie 2022",
+    "eventPosterSmall": "./img/events/eveniment_aeroport_baneasa_03_sep_2022_small.jpg",
+    "eventDescription": "Asociația Română pentru Propaganda și Istoria Aeronauticii \"Smaranda Brăescu\" Cluj este onorată de a participa cu un stand aniversar dedicat \"Reginei Aerului\" unde se vor expune imagini și machete ale avioanelor din care a stabilit recordurile mondiale și ale celor pe care le-a deținut! <br> BIAS 2022 marchează o dublă aniversare: 90 de ani de la recordul mondial absolut de parașutism al Smarandei Brăescu și 110 ani pe care îi împlinește Aeroportul Băneasa!"
+  },
+  {
     "eventName": "Presedintele Romaniei Klaus Werner Iohannis a promulgat Legea 19/2022 <b>2022 Anul Smaranda Braescu</b>, initiativa pornita de asociatia noastra inca din iunie 2020",
     "eventDate": "13 ianuarie 2022",
     "eventPosterSmall": "./img/events/raspuns_conslier_prezidential_small.jpg",
     "eventDescription": "<a href=\"./Documents/Legea_19_din_13_ian_2022_Anul_Smaranda_Braescu_Monitorul_Oficial_Partea_I_nr_45.pdf\" target=\"_blank\">Monitorul Oficial</a>"
-    },
+  },
   {
     "eventName": "Dezbateri pe proiectul privind instituirea anului 2022 ca ‘Anul Samaranda Brăescu’",
     "eventDate": "20 decembrie 2021",
     "eventPosterSmall": "./img/events/Avers_medalie_small.jpg",
     "eventDescription": "<a href=\"https://ziarulfaclia.ro/dezbateri-pe-proiectul-privind-instituirea-anului-2022-ca-anul-samaranda-braescu/\" target=\"blank\">Articol Ziarul Făclia</a>"
-    },
+  },
   {
     "eventName": "Aniversare Smaranda Brăescu - 90 de ani de la recordul mondial feminin de salt cu parașuta de la înălțimea de 6000 m",
     "eventDate": "",
     "eventPosterSmall": "./img/events/Avers_medalie_small.jpg",
     "eventDescription": "Când condițiile pandemice vor permite, împreună cu Statul Major al Forțelor Aeriene vom organiza un eveniment național, la Cercul Militar București (eveniment  planificat inițial pe data 1 oct.2021) și in Cluj-Napoca împreună cu Universitatea Babeș-Bolyai și Aeroportul Internațional „Avram Iancu”."
-    },
+  },
   {
     "eventName": "Eveniment dedicat Smarandei Brăescu la Constanța",
     "eventDate": "16 septembrie 2021",
