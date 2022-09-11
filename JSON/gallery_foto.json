@@ -1,5 +1,18 @@
 [
   {
+    "albumDate": "01-05 sept. 2022",
+    "albumName": "BUCAREST INTERNATIONAL AIR SHOW 2022 (BIAS)",
+    "imgPath": [
+      "./img/03_sept_2022/03_sept_2022_01_small.jpg",
+      "./img/03_sept_2022/03_sept_2022_02_small.jpg",
+      "./img/03_sept_2022/03_sept_2022_03_small.jpg",
+      "./img/03_sept_2022/03_sept_2022_04_small.jpg",
+      "./img/03_sept_2022/03_sept_2022_05_small.jpg",
+      "./img/03_sept_2022/03_sept_2022_06_small.jpg"
+    ],
+    "albumPath": "JSON/03_sept_2022.json"
+  },
+  {
     "albumDate": "mar.-apr. 2022",
     "albumName": "2022 martie-aprilie ÎNTÂLNIRI CU PERSONALITĂȚI",
     "imgPath": [

@@ -1,5 +1,17 @@
 [
   {
+    "eventName": "INVITAȚIE la evenimentul aniversar Smaranda Brăescu",
+    "eventDate": "12 septembrie ora 13.30",
+    "eventPosterSmall": "./img/events/Afis_muzeu_12_sept_2022_small.jpg",
+    "eventDescription": "Evenimentul  va avea loc la Muzeul Principia din Alba Iulia cu următorul program: <br><br> <ul><li>moderatoare va fi doamna dr. Petruța Pop, directorul Cercului Militar Alba Iulia;</li><li>Domnul primar dr. ing. Gabriel Pleșa va rosti un cuvânt de bun venit;</li><li>doamna Pop va vorbi despre viața și activitatea Smarandei Brăescu;</li><li>Cdr. av. rtr. Laurențiu Buzenchi, președintele ARPIA \"Smaranda Braescu\" Cluj va prezenta filmul documentar Măndița;</li><li>dl. Marius Cristea de la Muzeul Național al Unirii va prezenta \"Smaranda Brăescu în context național și internațional\";</li><li>dl. Părinte prof. dr. George Remete va prezenta tema \"Omul de știință și credința\"</li><li>Se va lansa cartea \"Smaranda Brăescu: Lăsați-mă să zbor!.\"</li></ul>"
+  },
+  {
+    "eventName": "BUCAREST INTERNATIONAL AIR SHOW 2022 (BIAS)",
+    "eventDate": "01-05 septembrie 2022",
+    "eventPosterSmall": "./img/events/eveniment_aeroport_baneasa_03_sep_2022_small.jpg",
+    "eventDescription": "ARPIA \"Smaranda Braescu\" Cluj a avut onoarea sa fie invitata in perioada 01-05 septembrie 2022, de Compania Nationala Aeroporturi Bucuresti care a organizat cel mai mare miting aerian din Romania, la expozitia statica. Am primit cu deosebita generozitate un stand de 12 mp in care am expus imagini din viata si activitatea Smarandei Braescu, sub egida careia s-a desfasurat intregul eveniment, machete ale avioanelor din care a stabilit recordurile mondiale de parasutism, machete ale avioanelor pe care le-a zburat, medalii aniversare. Am prezentat si oferit publicului vizitator cartea \"Smaranda Braescu: Lasati-ma sa zbor!\" si revista aniversara AERONAUTICA. Standul nostru a fost vizitat de un numeros public si personalitati prezente la eveniment: Ing. George Rotaru, director general al Aeroclubului Romaniei, lotul national feminin de parasutism cu o campioana mondiala Andreea Pistea si Bianca Cret, vicecampioana mondiala, etc. <br> La mitingul aerian au participat Fortele Aeriene Militare Romane, Aeroclubul Romaniei si forte aeriene din Germania, Italia, Ungaria, Slovenia, Slovacia, Canada si SUA."
+  },
+  {
     "eventName": "Sâmbătă 3 septembrie 2022, ora 10.00 vă invităm la Aeroportul Băneasa la un regal aeronautic BIAS!",
     "eventDate": "03 septembrie 2022",
     "eventPosterSmall": "./img/events/eveniment_aeroport_baneasa_03_sep_2022_small.jpg",
