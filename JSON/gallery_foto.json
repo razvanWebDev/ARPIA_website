@@ -1,5 +1,18 @@
 [
   {
+    "albumDate": "02 sept. 2022",
+    "albumName": "Eveniment aniversar Smaranda Brăescu la Alba Iulia",
+    "imgPath": [
+      "./img/12_sep_2022/12_sept_2022_01_small.jpg",
+      "./img/12_sep_2022/12_sept_2022_02_small.jpg",
+      "./img/12_sep_2022/12_sept_2022_03_small.jpg",
+      "./img/12_sep_2022/12_sept_2022_04_small.jpg",
+      "./img/12_sep_2022/12_sept_2022_05_small.jpg",
+      "./img/12_sep_2022/12_sept_2022_06_small.jpg"
+    ],
+    "albumPath": "JSON/12_sep_2022.json"
+  },
+  {
     "albumDate": "01-05 sept. 2022",
     "albumName": "BUCAREST INTERNATIONAL AIR SHOW 2022 (BIAS)",
     "imgPath": [
