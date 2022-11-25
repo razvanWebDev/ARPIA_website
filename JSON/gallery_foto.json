@@ -1,5 +1,83 @@
 [
   {
+    "albumDate": "octombrie 2022",
+    "albumName": "San Francisco",
+    "imgPath": [
+      "./img/california_2022/san_francisco_2022/san_francisco_2022_01_small.jpg",
+      "./img/california_2022/san_francisco_2022/san_francisco_2022_02_small.jpg",
+      "./img/california_2022/san_francisco_2022/san_francisco_2022_03_small.jpg",
+      "./img/california_2022/san_francisco_2022/san_francisco_2022_04_small.jpg",
+      "./img/california_2022/san_francisco_2022/san_francisco_2022_05_small.jpg",
+      "./img/california_2022/san_francisco_2022/san_francisco_2022_06_small.jpg"
+    ],
+    "albumPath": "JSON/san_francisco_2022.json"
+  },
+  {
+    "albumDate": "octombrie 2022",
+    "albumName": "Hayword - Biserica Invierii Domnului",
+    "imgPath": [
+      "./img/california_2022/hayword_2022/hayword_2022_01_small.jpg",
+      "./img/california_2022/hayword_2022/hayword_2022_02_small.jpg",
+      "./img/california_2022/hayword_2022/hayword_2022_03_small.jpg",
+      "./img/california_2022/hayword_2022/hayword_2022_04_small.jpg",
+      "./img/california_2022/hayword_2022/hayword_2022_05_small.jpg",
+      "./img/california_2022/hayword_2022/hayword_2022_06_small.jpg"
+    ],
+    "albumPath": "JSON/hayword_2022.json"
+  },
+  {
+    "albumDate": "octombrie 2022",
+    "albumName": "Sacramento",
+    "imgPath": [
+      "./img/california_2022/sacramento_2022/sacramento_2022_01_small.jpg",
+      "./img/california_2022/sacramento_2022/sacramento_2022_02_small.jpg",
+      "./img/california_2022/sacramento_2022/sacramento_2022_03_small.jpg",
+      "./img/california_2022/sacramento_2022/sacramento_2022_04_small.jpg",
+      "./img/california_2022/sacramento_2022/sacramento_2022_05_small.jpg",
+      "./img/california_2022/sacramento_2022/sacramento_2022_06_small.jpg"
+    ],
+    "albumPath": "JSON/sacramento_2022.json"
+  },
+  {
+    "albumDate": "octombrie 2022",
+    "albumName": "Barajul Hoover",
+    "imgPath": [
+      "./img/california_2022/barajul_hoover_2022/barajul_hoover_2022_01_small.jpg",
+      "./img/california_2022/barajul_hoover_2022/barajul_hoover_2022_02_small.jpg",
+      "./img/california_2022/barajul_hoover_2022/barajul_hoover_2022_03_small.jpg",
+      "./img/california_2022/barajul_hoover_2022/barajul_hoover_2022_04_small.jpg",
+      "./img/california_2022/barajul_hoover_2022/barajul_hoover_2022_05_small.jpg",
+      "./img/california_2022/barajul_hoover_2022/barajul_hoover_2022_06_small.jpg"
+    ],
+    "albumPath": "JSON/barajul_hoover_2022.json"
+  },
+  {
+    "albumDate": "octombrie 2022",
+    "albumName": "Palm Springs",
+    "imgPath": [
+      "./img/california_2022/palm_springs_2022/palm_springs_2022_01_small.jpg",
+      "./img/california_2022/palm_springs_2022/palm_springs_2022_02_small.jpg",
+      "./img/california_2022/palm_springs_2022/palm_springs_2022_03_small.jpg",
+      "./img/california_2022/palm_springs_2022/palm_springs_2022_04_small.jpg",
+      "./img/california_2022/palm_springs_2022/palm_springs_2022_05_small.jpg",
+      "./img/california_2022/palm_springs_2022/palm_springs_2022_06_small.jpg"
+    ],
+    "albumPath": "JSON/palm_springs_2022.json"
+  },
+  {
+    "albumDate": "octombrie 2022",
+    "albumName": "Los Angeles",
+    "imgPath": [
+      "./img/california_2022/los_angeles_2022/studiourile_vox_2022_01_small.jpg",
+      "./img/california_2022/los_angeles_2022/studiourile_vox_2022_02_small.jpg",
+      "./img/california_2022/los_angeles_2022/studiourile_vox_2022_03_small.jpg",
+      "./img/california_2022/los_angeles_2022/studiourile_vox_2022_04_small.jpg",
+      "./img/california_2022/los_angeles_2022/studiourile_vox_2022_05_small.jpg",
+      "./img/california_2022/los_angeles_2022/studiourile_vox_2022_06_small.jpg"
+    ],
+    "albumPath": "JSON/los_angeles_2022.json"
+  },
+  {
     "albumDate": "02 sept. 2022",
     "albumName": "Eveniment aniversar Smaranda Brăescu la Alba Iulia",
     "imgPath": [

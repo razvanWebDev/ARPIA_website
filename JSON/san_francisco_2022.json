@@ -1,0 +1,50 @@
+[
+  {
+    "albumName": "San Francisco",
+    "date": "Octombrie 2022",
+    "imgPath": "./img/california_2022/san_francisco_2022/san_francisco_2022_01.jpg",
+    "fotoDescription": "Bay Area",
+    "description": "",
+    "about": ""
+  },
+  {
+    "imgPath": "./img/california_2022/san_francisco_2022/san_francisco_2022_02.jpg",
+    "fotoDescription": "Pe fundal Golden Gate Bridge"
+  },
+  {
+    "imgPath": "./img/california_2022/san_francisco_2022/san_francisco_2022_03.jpg",
+    "fotoDescription": "Port turistic"
+  },
+  {
+    "imgPath": "./img/california_2022/san_francisco_2022/san_francisco_2022_04.jpg",
+    "fotoDescription": "Restaurant chinezesc"
+  },
+  {
+    "imgPath": "./img/california_2022/san_francisco_2022/san_francisco_2022_05.jpg",
+    "fotoDescription": ""
+  },
+  {
+    "imgPath": "./img/california_2022/san_francisco_2022/san_francisco_2022_06.jpg",
+    "fotoDescription": ""
+  },
+  {
+    "imgPath": "./img/california_2022/san_francisco_2022/san_francisco_2022_07.jpg",
+    "fotoDescription": ""
+  },
+  {
+    "imgPath": "./img/california_2022/san_francisco_2022/san_francisco_2022_08.jpg",
+    "fotoDescription": ""
+  },
+  {
+    "imgPath": "./img/california_2022/san_francisco_2022/san_francisco_2022_09.jpg",
+    "fotoDescription": ""
+  },
+  {
+    "imgPath": "./img/california_2022/san_francisco_2022/san_francisco_2022_10.jpg",
+    "fotoDescription": ""
+  },
+  {
+    "imgPath": "./img/california_2022/san_francisco_2022/san_francisco_2022_11.jpg",
+    "fotoDescription": ""
+  }
+]
