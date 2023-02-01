@@ -1,4 +1,20 @@
-[
+[  
+{
+  "videoTitle": "Prim-plan Obiectiv TVR Cluj | Trecut, prezent și viitor la Aeroportul Internațional Cluj",
+  "keywords": "Emisiuni TV",
+  "videoDescription": "Data: 09.12.2022 <br>",
+  "videoThumbLink": "./img/Video_thumbnails/prim_plan_obiectiv_09_dec_2022.jpg",
+  "videoSrc": "https://www.youtube.com/embed/NmKx6kfj2QI",
+  "stopTime": "end=2095"
+},  
+{
+  "videoTitle": "Actual Regional TVR Cluj | Vernisaj /\"ELICOPTERE ÎN ROMÂNIA\" la Aeroportul internațional Cluj",
+  "keywords": "Emisiuni TV",
+  "videoDescription": "Data: 07.12.2022 <br> ACTUAL REGIONAL TVR CLUJ 7 dec. 2022: Vernisajul expoziției de fotografie, tablouri și machete \"ELICOPTERE ÎN ROMANIA\" la Aeroportul internațional Cluj, cu prilejul Zilei internaționale a Aviației Civile",
+  "videoThumbLink": "./img/Video_thumbnails/Actual_Regional_07_dec_2022.jpg",
+  "videoSrc": "https://www.youtube.com/embed/9RggxnIgExA",
+  "stopTime": "end=1050"
+},
   {
     "videoTitle": "2022 – ANUL \"SMARANDA BRĂESCU\"",
     "keywords": "Emisiuni TV, record mondial, salt cu parasuta, aeronautica",
