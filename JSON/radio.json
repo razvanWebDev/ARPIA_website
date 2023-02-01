@@ -1,8 +1,15 @@
-[
-  {
-    "videoTitle": "Academicradio editia din 07.12.2020",
-    "videoDescription": "Despre locul, rolul si activitatile desfasurate de ARPIA Cluj.",
-    "videoThumbLink": "./img/radio_thumbnails/07122020.jpg",
-    "videoSrc": "https://www.youtube.com/embed/WBz8vxHWhq4"
-  }
+[  
+{
+  "videoTitle": "Transmisiune Radio Romania International | \"Lasati-ma sa zbor\"",
+  "keywords": "Smaranda Braescu, record salt cu parasuta, radio romania interbational",
+  "videoDescription": "Transmisiune Radio Romania International dedicata evenimentului zoom \"Lasati-ma sa zbor\" din 20 mai 2021.",
+  "videoThumbLink": "./img/Video_thumbnails/radio_romania_international_20_05_2021.jpg",
+  "videoSrc": "https://www.youtube.com/embed/wvRO9J8gYwA"
+},
+{
+  "videoTitle": "Academicradio editia din 07.12.2020",
+  "videoDescription": "Despre locul, rolul si activitatile desfasurate de ARPIA Cluj.",
+  "videoThumbLink": "./img/radio_thumbnails/07122020.jpg",
+  "videoSrc": "https://www.youtube.com/embed/WBz8vxHWhq4"
+}
 ]

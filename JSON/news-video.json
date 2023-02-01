@@ -10,15 +10,15 @@
 {
   "videoTitle": "Actual Regional TVR Cluj | Vernisaj /\"ELICOPTERE ÎN ROMÂNIA\" la Aeroportul internațional Cluj",
   "keywords": "Emisiuni TV",
-  "videoDescription": "Data: 07.12.2022 <br> ACTUAL REGIONAL TVR CLUJ 7 dec. 2022: Vernisajul expoziției de fotografie, tablouri și machete \"ELICOPTERE ÎN ROMANIA\" la Aeroportul internațional Cluj, cu prilejul Zilei internaționale a Aviației Civile",
+  "videoDescription": "Data: 07.12.2022 <br> Vernisajul expoziției de fotografie, tablouri și machete \"ELICOPTERE ÎN ROMANIA\" la Aeroportul internațional Cluj, cu prilejul Zilei internaționale a Aviației Civile",
   "videoThumbLink": "./img/Video_thumbnails/Actual_Regional_07_dec_2022.jpg",
   "videoSrc": "https://www.youtube.com/embed/9RggxnIgExA",
   "stopTime": "end=1050"
 },
   {
-    "videoTitle": "2022 – ANUL \"SMARANDA BRĂESCU\"",
+    "videoTitle": "Prim-plan Obiectiv TVR Cluj | 2022 – ANUL \"SMARANDA BRĂESCU\"",
     "keywords": "Emisiuni TV, record mondial, salt cu parasuta, aeronautica",
-    "videoDescription": "SURSA: Prim-plan Obiectiv TVR Cluj din 06 mai 2022",
+    "videoDescription": "Data: 06 mai 2022",
     "videoThumbLink": "./img/Video_thumbnails/prim_plan_obiectiv_06_mai_2022.jpg",
     "videoSrc": "https://www.youtube.com/embed/WoQAyBwAjrQ",
     "stopTime": "end=1283"
@@ -46,13 +46,6 @@
     "videoSrc": "https://player.vimeo.com/video/571659950"
   },
   {
-    "videoTitle": "Transmisiune Radio Romania International | \"Lasati-ma sa zbor\"",
-    "keywords": "Smaranda Braescu, record salt cu parasuta, radio romania interbational",
-    "videoDescription": "Transmisiune Radio Romania International dedicata evenimentului zoom \"Lasati-ma sa zbor\" din 20 mai 2021.",
-    "videoThumbLink": "./img/Video_thumbnails/radio_romania_international_20_05_2021.jpg",
-    "videoSrc": "https://www.youtube.com/embed/wvRO9J8gYwA"
-  },
-  {
     "videoTitle": "Smaranda Brăescu - Regina aerului - 89 de ani de la recordul absolut de salt cu parașuta de la înălțime",
     "keywords": "regiunea in obiectiv, Smaranda Braescu, record salt cu parasuta",
     "videoDescription": "SURSA: Regiunea În Obiectiv din 19 mai 2021",
@@ -61,16 +54,16 @@
     "startTime": "start=908"
   },
   {
-    "videoTitle": "Comemorare Adj. av. Traian Dârjan la Cluj-Napoca",
+    "videoTitle": "Actual Regional | Comemorare Adj. av. Traian Dârjan la Cluj-Napoca",
     "keywords": "Traian Darjan",
-    "videoDescription": "Actual Regional din 25.02.2021",
+    "videoDescription": "Data: 25.02.2021",
     "videoThumbLink": "./img/Video_thumbnails/Actual_Regional_25_02_2021.png",
     "videoSrc": "https://www.youtube.com/embed/Z63twSlAZ-g"
   },
   {
     "videoTitle": "Comemorarea Smarandei Brăescu în Cimitirul central din Cluj-Napoca",
     "keywords": "Smaranda Braescu, jurnal militar",
-    "videoDescription": "02.02.2021",
+    "videoDescription": "Data: 02.02.2021",
     "videoThumbLink": "./img/Video_thumbnails/Comemorare_Smaranda_Braescu_02_02_2021.jpg",
     "videoSrc": "https://www.youtube.com/embed/iF4ol88Lmag"
   },
