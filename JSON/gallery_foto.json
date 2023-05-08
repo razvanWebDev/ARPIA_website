@@ -1,4 +1,17 @@
-[
+[ {
+  "albumDate": "24 martie 2023",
+  "albumName": "Prelegere despre aniversarea a 110 ani de Aviație Militară Română",
+  "imgPath": [
+    "./img/24_mar_2023/24_mar_2023_01_small.jpg",
+    "./img/24_mar_2023/24_mar_2023_02_small.jpg",
+    "./img/24_mar_2023/24_mar_2023_03_small.jpg",
+    "./img/24_mar_2023/24_mar_2023_04_small.jpg",
+    "./img/24_mar_2023/24_mar_2023_01_small.jpg",
+    "./img/24_mar_2023/24_mar_2023_02_small.jpg"
+    
+  ],
+  "albumPath": "JSON/24_mar_2023.json"
+},
   {
     "albumDate": "octombrie 2022",
     "albumName": "San Francisco",
