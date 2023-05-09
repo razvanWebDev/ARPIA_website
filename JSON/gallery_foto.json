@@ -1,4 +1,17 @@
 [ {
+  "albumDate": "31 martie 2023",
+  "albumName": "Aniversarea Smarandei Brăescu la Casa de cultură a comunei Ciucea",
+  "imgPath": [
+    "./img/31_mar_2023/31_mar_2023_01_small.jpg",
+    "./img/31_mar_2023/31_mar_2023_02_small.jpg",
+    "./img/31_mar_2023/31_mar_2023_03_small.jpg",
+    "./img/31_mar_2023/31_mar_2023_04_small.jpg",
+    "./img/31_mar_2023/31_mar_2023_05_small.jpg",
+    "./img/31_mar_2023/31_mar_2023_01_small.jpg"
+  ],
+  "albumPath": "JSON/31_mar_2023.json"
+},
+  {
   "albumDate": "30 martie 2023",
   "albumName": "Prelegere despre aniversarea a 110 ani a Aviației Militare Române la Baza 71 Aeriană <i>gl. Emanoil Ionescu</i> Câmpia Turzii",
   "imgPath": [
