@@ -1,5 +1,11 @@
 [
   {
+    "eventName": "Lansare carte \"Elicoptere în România\"",
+    "eventDate": "19 iunie 2023 ora 12:00",
+    "eventPosterSmall": "./img/events/afis_lansare_elicoptere_in_ro_small.jpg",
+    "eventDescription": "<a href=\"http://airportcluj.ro/\" target=\"blank\">Aeroportul Internațional \"Avram Iancu\" Cluj</a> și ARPIA \"Smaranda Brăescu\" Cluj vă invită cu ocazia ZILEI AVIAȚIEI ROMÂNE, în spațiul expozițonal al aeroportului la lansarea cărții \"Elicoptere în România\". Salutul din aer al evenimentului va fi marcat printr-un survol al unei formații de elicoptere de la Baza 71 Aeriană."
+  },
+  {
     "eventName": "Aniversare Smaranda Brăescu la Academia Forțelor Terestre \"Nicolae Bălcescu\" din Sibiu",
     "eventDate": "22 noiembrie 2022",
     "eventPosterSmall": "./img/events/academia_fortelor_terestre_sibiu_2020_small.jpg",
