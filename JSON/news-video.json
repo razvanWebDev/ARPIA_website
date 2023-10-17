@@ -1,4 +1,20 @@
-[  
+[
+  {
+    "videoTitle": "Prim-plan Obiectiv TVR Cluj | Ziua Aviației Române și a Forțelor Aeriene",
+    "keywords": "Emisiuni TV",
+    "videoDescription": "Data: 20.07.2023",
+    "videoThumbLink": "./img/Video_thumbnails/prim_plan_obiectiv_20_iulie_2023.jpg",
+    "videoSrc": "https://www.youtube.com/embed/sJdPibqPXCM",
+    "startTime": "start=2145"
+  },
+{
+  "videoTitle": "Prim-plan Obiectiv TVR Cluj | Elicoptere în România",
+  "keywords": "Emisiuni TV",
+  "videoDescription": "Data: 18.07.2023",
+  "videoThumbLink": "./img/Video_thumbnails/Regiunea_in_Obiectiv_18_iul_2023.jpg",
+  "videoSrc": "https://www.youtube.com/embed/w9NgG8rB-lM",
+  "startTime": "start=1516"
+},
 {
   "videoTitle": "Prim-plan Obiectiv TVR Cluj | Trecut, prezent și viitor la Aeroportul Internațional Cluj",
   "keywords": "Emisiuni TV",
