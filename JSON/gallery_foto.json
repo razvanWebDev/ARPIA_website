@@ -155,6 +155,19 @@
     "albumPath": "JSON/03_sept_2022.json"
   },
   {
+    "albumDate": "12 mai 2022",
+    "albumName": "Eveniment anibversar desfasurat la Sala de marmura a Cercului Militar National Bucuresti.",
+    "imgPath": [
+      "./img/12_mai_2022/12_mai_2022_01_small.jpg",
+      "./img/12_mai_2022/12_mai_2022_02_small.jpg",
+      "./img/12_mai_2022/12_mai_2022_03_small.jpg",
+      "./img/12_mai_2022/12_mai_2022_04_small.jpg",
+      "./img/12_mai_2022/12_mai_2022_05_small.jpg",
+      "./img/12_mai_2022/12_mai_2022_06_small.jpg"
+    ],
+    "albumPath": "JSON/12_mai_2022.json"
+  },
+  {
     "albumDate": "mar.-apr. 2022",
     "albumName": "2022 martie-aprilie ÎNTÂLNIRI CU PERSONALITĂȚI",
     "imgPath": [
