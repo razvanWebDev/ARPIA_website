@@ -1,4 +1,18 @@
-[ {
+[ 
+{
+  "albumDate": "19 octombrie 2023",
+  "albumName": "Evocarea personalității \"Reginei Aerului\" Smaranda Brăescu la Colegiul Militar Național \"Tudor Vladimirescu\" Craiova.",
+  "imgPath": [
+    "./img/19_oct_2023/19_oct_2023_01_small.jpg",
+    "./img/19_oct_2023/19_oct_2023_02_small.jpg",
+    "./img/19_oct_2023/19_oct_2023_03_small.jpg",
+    "./img/19_oct_2023/19_oct_2023_04_small.jpg",
+    "./img/19_oct_2023/19_oct_2023_05_small.jpg",
+    "./img/19_oct_2023/19_oct_2023_06_small.jpg"
+  ],
+  "albumPath": "JSON/19_oct_2023.json"
+},
+{
   "albumDate": "01 aprilie 2023",
   "albumName": "Vernisajul expoziției de fotografie și machete de avioane dedicată aniversării recordurilor mondiale ale Smarandei Brăescu, la Muzeul memorial „Octavian Goga” Ciucea.",
   "imgPath": [
