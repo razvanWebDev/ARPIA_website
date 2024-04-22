@@ -13,6 +13,32 @@
     "albumPath": "JSON/03_apr_2024.json"
   },
   {
+    "albumDate": "02 aprilie 2024",
+    "albumName": "Baza 90 Tp. Aer",
+    "imgPath": [
+      "./img/02_apr_2024/02_apr_2024_01_small.jpg",
+      "./img/02_apr_2024/02_apr_2024_02_small.jpg", 
+      "./img/02_apr_2024/02_apr_2024_03_small.jpg", 
+      "./img/02_apr_2024/02_apr_2024_04_small.jpg", 
+      "./img/02_apr_2024/02_apr_2024_05_small.jpg", 
+      "./img/02_apr_2024/02_apr_2024_06_small.jpg"
+    ],
+    "albumPath": "JSON/02_apr_2024.json"
+  },
+  {
+    "albumDate": "01 aprilie 2024",
+    "albumName": "Meka",
+    "imgPath": [
+      "./img/01_apr_2024/01_apr_2024_01_small.jpg",
+      "./img/01_apr_2024/01_apr_2024_02_small.jpg",
+      "./img/01_apr_2024/01_apr_2024_03_small.jpg",
+      "./img/01_apr_2024/01_apr_2024_04_small.jpg",
+      "./img/01_apr_2024/01_apr_2024_05_small.jpg",
+      "./img/01_apr_2024/01_apr_2024_06_small.jpg"
+    ],
+    "albumPath": "JSON/01_apr_2024.json"
+  },
+  {
     "albumDate": "29 martie 2024",
     "albumName": "Urziceni",
     "imgPath": [

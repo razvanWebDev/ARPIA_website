@@ -1,0 +1,31 @@
+[
+  {
+    "albumName": "Meka",
+    "date": "01 aprilie 2024",
+    "imgPath": "./img/01_apr_2024/01_apr_2024_01.jpg",
+    "fotoDescription": "",
+    "description": "",
+    "about": ""
+  },
+  {
+    "imgPath": "./img/01_apr_2024/01_apr_2024_02.jpg"
+  },
+  {
+    "imgPath": "./img/01_apr_2024/01_apr_2024_03.jpg"
+  },
+  {
+    "imgPath": "./img/01_apr_2024/01_apr_2024_04.jpg"
+  },
+  {
+    "imgPath": "./img/01_apr_2024/01_apr_2024_05.jpg"
+  },
+  {
+    "imgPath": "./img/01_apr_2024/01_apr_2024_06.jpg"
+  },
+  {
+    "imgPath": "./img/01_apr_2024/01_apr_2024_07.jpg"
+  },
+  {
+    "imgPath": "./img/01_apr_2024/01_apr_2024_08.jpg"
+  }
+]
