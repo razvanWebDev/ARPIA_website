@@ -327,7 +327,7 @@ main {
   padding: 5px;
   top: 90px;
   left: 0;
-  z-index: 10;
+  z-index: 1;
   width: 100%;
   text-align: center;
 }
@@ -426,7 +426,6 @@ footer .social-media {
   text-align: center;
   padding: 60px 20px;
   color: var(--dark-txt-color);
-  animation: focus-in-expand-fwd 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .to-top-arrow {

@@ -1,4 +1,30 @@
-[ 
+[
+  {
+    "albumDate": "19 noiembrie 2023",
+    "albumName": "Breaza, Prahova",
+    "imgPath": [
+      "./img/19_noi_2023/19_noi_2023_01_small.jpg",
+      "./img/19_noi_2023/19_noi_2023_02_small.jpg",
+      "./img/19_noi_2023/19_noi_2023_03_small.jpg",
+      "./img/19_noi_2023/19_noi_2023_04_small.jpg",
+      "./img/19_noi_2023/19_noi_2023_05_small.jpg",
+      "./img/19_noi_2023/19_noi_2023_06_small.jpg"
+    ],
+    "albumPath": "JSON/19_noi_2023.json"
+  },
+  {
+    "albumDate": "09-12 noiembrie 2023",
+    "albumName": "Promovarea Smarandei Brăescu în comuna Rădeni, Republica Moldova ",
+    "imgPath": [
+      "./img/09_12_noi_2023/09_12_noi_01_small.jpg",
+      "./img/09_12_noi_2023/09_12_noi_02_small.jpg",
+      "./img/09_12_noi_2023/09_12_noi_03_small.jpg",
+      "./img/09_12_noi_2023/09_12_noi_04_small.jpg",
+      "./img/09_12_noi_2023/09_12_noi_05_small.jpg",
+      "./img/09_12_noi_2023/09_12_noi_06_small.jpg"
+    ],
+    "albumPath": "JSON/09_12_noi_2023.json"
+  },
 {
   "albumDate": "19 octombrie 2023",
   "albumName": "Evocarea personalității \"Reginei Aerului\" Smaranda Brăescu la Colegiul Militar Național \"Tudor Vladimirescu\" Craiova.",
