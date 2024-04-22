@@ -1,9 +1,35 @@
 [
   {
+    "albumDate": "08 decembrire 2023",
+    "albumName": "Campia Turzii",
+    "imgPath": [
+      "./img/08_dec_2023/08_dec_2023_01_small.jpg",
+      "./img/08_dec_2023/08_dec_2023_02_small.jpg",
+      "./img/08_dec_2023/08_dec_2023_03_small.jpg",
+      "./img/08_dec_2023/08_dec_2023_04_small.jpg",
+      "./img/08_dec_2023/08_dec_2023_05_small.jpg",
+      "./img/08_dec_2023/08_dec_2023_06_small.jpg"
+    ],
+    "albumPath": "JSON/08_dec_2023.json"
+  },
+  {
+    "albumDate": "21 noiembrie 2023",
+    "albumName": "Bacau",
+    "imgPath": [
+      "./img/21_noi_2023/21_noi_2023_01_small.jpg",
+      "./img/21_noi_2023/21_noi_2023_02_small.jpg",
+      "./img/21_noi_2023/21_noi_2023_03_small.jpg",
+      "./img/21_noi_2023/21_noi_2023_04_small.jpg",
+      "./img/21_noi_2023/21_noi_2023_05_small.jpg",
+      "./img/21_noi_2023/21_noi_2023_06_small.jpg"
+    ],
+    "albumPath": "JSON/21_noi_2023.json"
+  },
+  {
     "albumDate": "20 noiembrie 2023",
     "albumName": "Bobocu",
     "imgPath": [
-      "./img/20_noi_2023/20_noi_2023_01_small.jpg",
+      "./img/20_noi_2023/20_noi_2023_01_small.jpg", 
       "./img/20_noi_2023/20_noi_2023_02_small.jpg",
       "./img/20_noi_2023/20_noi_2023_03_small.jpg",
       "./img/20_noi_2023/20_noi_2023_04_small.jpg",
