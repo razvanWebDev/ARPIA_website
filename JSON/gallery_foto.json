@@ -1,5 +1,18 @@
 [
   {
+    "albumDate": "20 noiembrie 2023",
+    "albumName": "Bobocu",
+    "imgPath": [
+      "./img/20_noi_2023/20_noi_2023_01_small.jpg",
+      "./img/20_noi_2023/20_noi_2023_02_small.jpg",
+      "./img/20_noi_2023/20_noi_2023_03_small.jpg",
+      "./img/20_noi_2023/20_noi_2023_04_small.jpg",
+      "./img/20_noi_2023/20_noi_2023_05_small.jpg",
+      "./img/20_noi_2023/20_noi_2023_06_small.jpg"
+    ],
+    "albumPath": "JSON/20_noi_2023.json"
+  },
+  {
     "albumDate": "19 noiembrie 2023",
     "albumName": "Breaza, Prahova",
     "imgPath": [
