@@ -143,6 +143,45 @@
   "albumPath": "JSON/19_oct_2023.json"
 },
 {
+  "albumDate": "13 octombrie 2023",
+  "albumName": "Ciucea",
+  "imgPath": [
+    "./img/13_oct_2023/13_oct_2023_01_small.jpg",
+    "./img/13_oct_2023/13_oct_2023_02_small.jpg",
+    "./img/13_oct_2023/13_oct_2023_03_small.jpg",
+    "./img/13_oct_2023/13_oct_2023_04_small.jpg",
+    "./img/13_oct_2023/13_oct_2023_05_small.jpg",
+    "./img/13_oct_2023/13_oct_2023_06_small.jpg"
+  ],
+  "albumPath": "JSON/13_oct_2023.json"
+},
+{
+  "albumDate": "14 septembrie 2023",
+  "albumName": "Breaza",
+  "imgPath": [
+    "./img/01_noi_2023/01_noi_2023_01_small.jpg",
+    "./img/01_noi_2023/01_noi_2023_02_small.jpg",
+    "./img/01_noi_2023/01_noi_2023_03_small.jpg",
+    "./img/01_noi_2023/01_noi_2023_04_small.jpg",
+    "./img/01_noi_2023/01_noi_2023_05_small.jpg",
+    "./img/01_noi_2023/01_noi_2023_06_small.jpg"
+  ],
+  "albumPath": "JSON/01_noi_2023.json"
+},
+{
+  "albumDate": "13 septembrie 2023",
+  "albumName": "Campina",
+  "imgPath": [
+    "./img/13_sep_2023/13_sep_2023_01_small.jpg",
+    "./img/13_sep_2023/13_sep_2023_02_small.jpg",
+    "./img/13_sep_2023/13_sep_2023_03_small.jpg",
+    "./img/13_sep_2023/13_sep_2023_04_small.jpg",
+    "./img/13_sep_2023/13_sep_2023_05_small.jpg",
+    "./img/13_sep_2023/13_sep_2023_06_small.jpg"
+  ],
+  "albumPath": "JSON/13_sep_2023.json"
+},
+{
   "albumDate": "01 aprilie 2023",
   "albumName": "Vernisajul expoziției de fotografie și machete de avioane dedicată aniversării recordurilor mondiale ale Smarandei Brăescu, la Muzeul memorial „Octavian Goga” Ciucea.",
   "imgPath": [
