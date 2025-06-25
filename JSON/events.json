@@ -1,4 +1,22 @@
 [
+    {
+    "eventName": "Vernisaj Jerry W McDaniel la Centrul de Cultură Urbană Casino Cluj-Napoca",
+    "eventDate": "07 mai 2025 ora 12:00",
+    "eventPosterSmall": "./img/events/jerry_mc_daniel_small.jpg",
+    "eventDescription": "ARPIA \"Smaranda Brăescu\" Cluj împreună cu Academia Româno-Americană de Arte și Științe vă invită la vernisajul expoziției de pictură a artistului american Jerry W McDaniel, la Centrul de Cultură Urbană Casino Cluj-Napoca. <br> Prezentator și curator al expoziției va fi prof. dr. Ileana Costea, Profesor Emeritus al Universității Northridge California și Președinte interimar al Academiei Româno-Americane de Arte și Științe. <br> Participă online primul cosmonaut român, gl. lt. dr. ing. Dumitru Prunariu, Membru de Onoare al Academiei Române și Președinte de Onoare al ARPIA \"Smaranda Brăescu\" Cluj. <br> Moderator Cdr. av. rtr. Laurențiu Buzenchi, Președinte executiv al ARPIA \"Smaranda Brăescu\" Cluj."
+  },
+  {
+    "eventName": "120 de ani de la nașterea marelui aviator Alexandru Papană",
+    "eventDate": "03 decembrie 2024 ora 12:00",
+    "eventPosterSmall": "./img/events/afis_papana_aeroport_small.jpg",
+    "eventDescription": "<a href=\"http://airportcluj.ro/\" target=\"blank\">Aeroportul Internațional \"Avram Iancu\" Cluj</a> și ARPIA \"Smaranda Brăescu\" Cluj vă invită să celebrăm împreună 120 de ani de la nașterea marelui aviator Alexandru Papană, primul român care a zburat peste Atlantic. Evenimentul va avea loc în spațiul expozițional al aeroportului, unde va fi vernisată o expoziție dedicată marelui aviator."
+  },
+    {
+    "eventName": "Ziua Aviației Române",
+    "eventDate": "19 iulie 2024 ora 12:00",
+    "eventPosterSmall": "./img/events/afis_ziua_aviatiei_romane_2024_small.jpg",
+    "eventDescription": "<a href=\"http://airportcluj.ro/\" target=\"blank\">Aeroportul Internațional \"Avram Iancu\" Cluj</a> și ARPIA \"Smaranda Brăescu\" Cluj vă invită la vernisajul expoziției de pictură \"Aviația dă Senzația\" a doamnei DORA VIOLETA POPOVICI, Membreu de onoare al ARPIA \"Smaranda Brăescu\" Cluj, cu ocazia Zilei Aviației Române."
+  },
   {
     "eventName": "Lansare carte \"Elicoptere în România\"",
     "eventDate": "19 iunie 2023 ora 12:00",

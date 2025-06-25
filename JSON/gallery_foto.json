@@ -1,5 +1,44 @@
 [
   {
+    "albumDate": "31 ianuarie 2025",
+    "albumName": "Comemorare Smaranda Brăescu",
+    "imgPath": [
+      "./img/31_ian_2025/31_ian_2025_01_small.jpg",
+      "./img/31_ian_2025/31_ian_2025_02_small.jpg",
+      "./img/31_ian_2025/31_ian_2025_03_small.jpg",
+      "./img/31_ian_2025/31_ian_2025_04_small.jpg",
+      "./img/31_ian_2025/31_ian_2025_05_small.jpg",
+      "./img/31_ian_2025/31_ian_2025_06_small.jpg"
+    ],
+    "albumPath": "JSON/31_ian_2025.json"
+  },
+   {
+    "albumDate": "06 decembrie 2024",
+    "albumName": "120 de ani de la nașterea marelui aviator Alexandru Papană",
+    "imgPath": [
+      "./img/06_dec_2024/06_12_2024_01_small.png",
+      "./img/06_dec_2024/06_12_2024_02_small.png",
+      "./img/06_dec_2024/06_12_2024_03_small.png",
+      "./img/06_dec_2024/06_12_2024_04_small.png",
+      "./img/06_dec_2024/06_12_2024_05_small.png",
+      "./img/06_dec_2024/06_12_2024_06_small.png"
+    ],
+    "albumPath": "JSON/06_dec_2024.json"
+  },
+   {
+    "albumDate": "19 iulie 2024",
+    "albumName": "Ziua Aviației Române 2024",
+    "imgPath": [
+      "./img/19_iul_2024/19_iul_2024_01_small.jpg",
+      "./img/19_iul_2024/19_iul_2024_02_small.jpg",
+      "./img/19_iul_2024/19_iul_2024_03_small.jpg",
+      "./img/19_iul_2024/19_iul_2024_04_small.jpg",
+      "./img/19_iul_2024/19_iul_2024_05_small.jpg",
+      "./img/19_iul_2024/19_iul_2024_06_small.jpg"
+    ],
+    "albumPath": "JSON/19_iul_2024.json"
+  },
+  {
     "albumDate": "03 aprilie 2024",
     "albumName": "Lansare Carte la Academia Fortelor Aeriene",
     "imgPath": [

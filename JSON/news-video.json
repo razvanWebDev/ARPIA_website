@@ -1,5 +1,37 @@
 [
   {
+    "videoTitle": "Jerry McDaniel - ARPIA & ARA - Casino Cluj-Napoca",
+    "keywords": "Emisiuni TV",
+    "videoDescription": "Data: 07.05.2024",
+    "videoThumbLink": "./img/Video_thumbnails/jerry_mc_daniel.jpg",
+    "videoSrc": "https://www.youtube.com/embed/UMYv-Kbrh7A"
+  },
+  {
+    "videoTitle": "Prim-plan Obiectiv TVR Cluj",
+    "keywords": "Emisiuni TV",
+    "videoDescription": "Data: 06.05.2024",
+    "videoThumbLink": "./img/Video_thumbnails/prim_plan_obiectiv_06_mai_2024.jpg",
+    "videoSrc": "https://www.youtube.com/embed/4A1l0B0wX2E",
+    "startTime": "start=1980"
+  },
+  {
+    "videoTitle": "Prim-plan Obiectiv TVR Cluj",
+    "keywords": "Emisiuni TV",
+    "videoDescription": "Data: 10.12.2024",
+    "videoThumbLink": "./img/Video_thumbnails/prim_plan_obiectiv_10_dec_2024.jpg",
+    "videoSrc": "https://www.youtube.com/embed/3YoJUiDCGN0",
+    "startTime": "start=1266",
+    "stopTime": "start=2045"
+  },
+    {
+    "videoTitle": "Vara pentru voi | TVR Cluj",
+    "keywords": "Emisiuni TV",
+    "videoDescription": "Data: 01.07.2024 <br> Invitati: Comandor de aviație r. LAURENȚIU BUZENCHI, președinte ARPIA Cluj DORA VIOLETA POPOVICI, Membru de Onoare al Asociației, \"Aviația dă senzația\"",
+    "videoThumbLink": "./img/Video_thumbnails/vara_pentru_voi_01_iul_2024.png",
+    "videoSrc": "https://www.youtube.com/embed/PwdSJcvzE1Y",
+    "stopTime": "start=1233"
+  },
+  {
     "videoTitle": "Prim-plan Obiectiv TVR Cluj | Ziua Aviației Române și a Forțelor Aeriene",
     "keywords": "Emisiuni TV",
     "videoDescription": "Data: 20.07.2023",
@@ -7,30 +39,30 @@
     "videoSrc": "https://www.youtube.com/embed/sJdPibqPXCM",
     "startTime": "start=2145"
   },
-{
-  "videoTitle": "Prim-plan Obiectiv TVR Cluj | Elicoptere în România",
-  "keywords": "Emisiuni TV",
-  "videoDescription": "Data: 18.07.2023",
-  "videoThumbLink": "./img/Video_thumbnails/Regiunea_in_Obiectiv_18_iul_2023.jpg",
-  "videoSrc": "https://www.youtube.com/embed/w9NgG8rB-lM",
-  "startTime": "start=1516"
-},
-{
-  "videoTitle": "Prim-plan Obiectiv TVR Cluj | Trecut, prezent și viitor la Aeroportul Internațional Cluj",
-  "keywords": "Emisiuni TV",
-  "videoDescription": "Data: 09.12.2022 <br>",
-  "videoThumbLink": "./img/Video_thumbnails/prim_plan_obiectiv_09_dec_2022.jpg",
-  "videoSrc": "https://www.youtube.com/embed/NmKx6kfj2QI",
-  "stopTime": "end=2095"
-},  
-{
-  "videoTitle": "Actual Regional TVR Cluj | Vernisaj /\"ELICOPTERE ÎN ROMÂNIA\" la Aeroportul internațional Cluj",
-  "keywords": "Emisiuni TV",
-  "videoDescription": "Data: 07.12.2022 <br> Vernisajul expoziției de fotografie, tablouri și machete \"ELICOPTERE ÎN ROMANIA\" la Aeroportul internațional Cluj, cu prilejul Zilei internaționale a Aviației Civile",
-  "videoThumbLink": "./img/Video_thumbnails/Actual_Regional_07_dec_2022.jpg",
-  "videoSrc": "https://www.youtube.com/embed/9RggxnIgExA",
-  "stopTime": "end=1050"
-},
+  {
+    "videoTitle": "Prim-plan Obiectiv TVR Cluj | Elicoptere în România",
+    "keywords": "Emisiuni TV",
+    "videoDescription": "Data: 18.07.2023",
+    "videoThumbLink": "./img/Video_thumbnails/Regiunea_in_Obiectiv_18_iul_2023.jpg",
+    "videoSrc": "https://www.youtube.com/embed/w9NgG8rB-lM",
+    "startTime": "start=1516"
+  },
+  {
+    "videoTitle": "Prim-plan Obiectiv TVR Cluj | Trecut, prezent și viitor la Aeroportul Internațional Cluj",
+    "keywords": "Emisiuni TV",
+    "videoDescription": "Data: 09.12.2022 <br>",
+    "videoThumbLink": "./img/Video_thumbnails/prim_plan_obiectiv_09_dec_2022.jpg",
+    "videoSrc": "https://www.youtube.com/embed/NmKx6kfj2QI",
+    "stopTime": "end=2095"
+  },  
+  {
+    "videoTitle": "Actual Regional TVR Cluj | Vernisaj /\"ELICOPTERE ÎN ROMÂNIA\" la Aeroportul internațional Cluj",
+    "keywords": "Emisiuni TV",
+    "videoDescription": "Data: 07.12.2022 <br> Vernisajul expoziției de fotografie, tablouri și machete \"ELICOPTERE ÎN ROMANIA\" la Aeroportul internațional Cluj, cu prilejul Zilei internaționale a Aviației Civile",
+    "videoThumbLink": "./img/Video_thumbnails/Actual_Regional_07_dec_2022.jpg",
+    "videoSrc": "https://www.youtube.com/embed/9RggxnIgExA",
+    "stopTime": "end=1050"
+  },
   {
     "videoTitle": "Prim-plan Obiectiv TVR Cluj | 2022 – ANUL \"SMARANDA BRĂESCU\"",
     "keywords": "Emisiuni TV, record mondial, salt cu parasuta, aeronautica",
